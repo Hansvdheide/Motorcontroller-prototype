@@ -1,0 +1,60 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+testBench=.\testBench\testBench.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+testBench=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\PWM_GEN.vhd=-1
+/..\..\COMMUTATION.vhd=-1
+/..\..\HallInput.vhd=-1
+/..\..\PID.vhd=-1
+/..\..\SPI loopbacktest v2.vhd=-1
+/..\..\Clockdivider.vhd=-1
+/..\..\ToplevelFinal.vhd=-1
+/..\..\testBench.vhd=-1
+[Files.Data]
+.\..\PWM_GEN.vhd=VHDL Source Code
+.\..\COMMUTATION.vhd=VHDL Source Code
+.\..\HallInput.vhd=VHDL Source Code
+.\..\PID.vhd=VHDL Source Code
+.\..\SPI loopbacktest v2.vhd=VHDL Source Code
+.\..\Clockdivider.vhd=VHDL Source Code
+.\..\ToplevelFinal.vhd=VHDL Source Code
+.\..\testBench.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=testbench|arch|0                                 
+ShowHide=ShowTopLevel
+Selected=

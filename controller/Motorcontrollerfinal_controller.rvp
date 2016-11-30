@@ -1,0 +1,41 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LCMXO2-7000HE-4TG144C
+family = MachXO2
+device = LCMXO2-7000HE
+speed = 4
+package = TQFP144
+operation = Commercial
+
+#design options
+[Design]
+title = Motorcontrollerfinal
+path = C:/Users/gebruiker/workspace/lattice/Final code software/controller
+core_generate = C:/Users/gebruiker/workspace/lattice/Final code software/controller
+search_path = C:/Users/gebruiker/workspace/lattice/Final code software
+top = SPI_loopback_Top
+lpf = C:/Users/gebruiker/workspace/lattice/Final code software/Motorcontrollerfinal.lpf
+synthesis = lse
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+C:/Users/gebruiker/workspace/lattice/Final code software/Clockdivider.vhd = VHDL, work
+C:/Users/gebruiker/workspace/lattice/Final code software/COMMUTATION.vhd = VHDL, work
+C:/Users/gebruiker/workspace/lattice/Final code software/HallInput.vhd = VHDL, work
+C:/Users/gebruiker/workspace/lattice/Final code software/PWM_GEN.vhd = VHDL, work
+C:/Users/gebruiker/workspace/lattice/Final code software/SPI loopbacktest v2.vhd = VHDL, work
+C:/Users/gebruiker/workspace/lattice/Final code software/ToplevelFinal.vhd = VHDL, work
+C:/Users/gebruiker/workspace/lattice/Final code software/PID.vhd = VHDL, work
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+C:/Users/gebruiker/workspace/lattice/Final code software/controller/reveal_workspace/tmpreveal/spi_loopback_top_la0_trig_gen.v=Verilog
+C:/Users/gebruiker/workspace/lattice/Final code software/controller/reveal_workspace/tmpreveal/spi_loopback_top_la0_gen.v=Verilog
+C:/Users/gebruiker/workspace/lattice/Final code software/controller/reveal_workspace/tmpreveal/SPI_loopback_Top_rvl_top.vhd=VHDL,work

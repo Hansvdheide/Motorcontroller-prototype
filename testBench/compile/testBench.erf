@@ -1,0 +1,4 @@
+MESSAGE "File: C:\Users\gebruiker\workspace\lattice\Final code software\testBench.vhd" 
+MESSAGE "Compile Entity "TestBench"" 
+MESSAGE "Compile Architecture "arch" of Entity "TestBench"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

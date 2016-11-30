@@ -1,0 +1,17 @@
+8
+~E 1 "./../../Clockdivider.vhd" 20 CLKDIV
+~A 1 "./../../Clockdivider.vhd" 32 CLKDIV
+~E 1 "./../../COMMUTATION.vhd" 28 COMMUTATION
+~A 1 "./../../COMMUTATION.vhd" 50 COMMUTATION
+~E 1 "./../../HallInput.vhd" 22 HALL
+~A 1 "./../../HallInput.vhd" 41 HALL
+~E 1 "./../../PID.vhd" 9 PID
+~A 1 "./../../PID.vhd" 42 PID
+~E 1 "./../../PWM_GEN.vhd" 25 PWMGENERATOR
+~A 1 "./../../PWM_GEN.vhd" 35 PWMGENERATOR
+~E 1 "./../../SPI loopbacktest v2.vhd" 21 SPI
+~A 1 "./../../SPI loopbacktest v2.vhd" 54 SPI
+~E 1 "./../../ToplevelFinal.vhd" 23 SPI_loopback_Top
+~A 1 "./../../ToplevelFinal.vhd" 74 arch
+~E 1 "./../../testBench.vhd" 7 TestBench
+~A 1 "./../../testBench.vhd" 16 arch

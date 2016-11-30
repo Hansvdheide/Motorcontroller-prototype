@@ -1,0 +1,47 @@
+Active-HDL 10.3.3558.6081  2016-11-24 10:19:43
+
+Elaboration top modules:
+Architecture                  arch(TestBench)
+
+
+---------------------------------------------------------------------------------------------------
+Entity           | Architecture | Library | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------
+TestBench        | arch         | work    |      | 10.3.3558.6081  (Windows) | -dbg
+SPI_loopback_Top | arch         | work    |      | 10.3.3558.6081  (Windows) | -dbg
+osch             | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+CLKDIV           | CLKDIV       | work    |      | 10.3.3558.6081  (Windows) | -dbg
+SPI              | SPI          | work    |      | 10.3.3558.6081  (Windows) | -dbg
+PID              | PID          | work    |      | 10.3.3558.6081  (Windows) | -dbg
+HALL             | HALL         | work    |      | 10.3.3558.6081  (Windows) | -dbg
+COMMUTATION      | COMMUTATION  | work    |      | 10.3.3558.6081  (Windows) | -dbg
+PWMGENERATOR     | PWMGENERATOR | work    |      | 10.3.3558.6081  (Windows) | -dbg
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+VHDL Package                    | Library | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------
+standard                        | std     |      |                           | <unavailable>
+TEXTIO                          | std     |      | 10.3.3558.6081  (Windows) |  -2008
+std_logic_1164                  | ieee    |      | 10.3.3558.6081  (Windows) |  -2008
+NUMERIC_STD                     | ieee    |      | 10.3.3558.6081  (Windows) |  -2008
+std_logic_arith                 | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+components                      | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+VITAL_Timing                    | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+VITAL_Primitives                | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+Library                         | Comment
+---------------------------------------------------------------------------------------------------
+ieee                            | Standard IEEE packages library
+machxo2                         | LATTICE Diamond 3.8, MACHXO2 VHDL LIBRARY
+std                             | Standard VHDL library
+work                            | None
+---------------------------------------------------------------------------------------------------
+
+
+Simulation Options: vsim +access +r TestBench -PL pmi_work -L ovi_machxo2
+
+
+The performance of simulation is reduced. Version Lattice Edition

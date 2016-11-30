@@ -1,0 +1,8 @@
+i<>.\..\PWM_GEN.vhd
+i<>.\..\COMMUTATION.vhd
+i<>.\..\HallInput.vhd
+i<>.\..\PID.vhd
+i<>.\..\SPI loopbacktest v2.vhd
+i<>.\..\Clockdivider.vhd
+i<>.\..\ToplevelFinal.vhd
+i<>.\..\testBench.vhd

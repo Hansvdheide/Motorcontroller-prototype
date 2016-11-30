@@ -1,0 +1,23 @@
+[Files List]
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\std/src/standard.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\std/src/textio.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/numeric_std.vhdl=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/numeric_std-body.vhdl=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/arith_p.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/arith_b.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\machxo2/src/MACHXO2COMP.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/timing_p_2000.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/timing_b_2000.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/prmtvs_p_2000.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\ieee/src/prmtvs_b_2000.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/PWM_GEN.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/COMMUTATION.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/HallInput.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/PID.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/SPI loopbacktest v2.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/Clockdivider.vhd=S
+C:\lscc\diamond\3.8_x64\active-hdl\vlib\machxo2/src/MACHXO2_MISC.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/ToplevelFinal.vhd=S
+C:\Users\gebruiker\workspace\lattice\Final code software/testBench.vhd=S

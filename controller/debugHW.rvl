@@ -1,0 +1,28 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/gebruiker/workspace/lattice/Final code software/controller/debugHW.rvl" Date="2016-11-24">
+    <IP Version="1_5_062609"/>
+    <Design DesignEntry="Schematic/VHDL" Synthesis="lse" DeviceFamily="MachXO2" DesignName="Motorcontrollerfinal"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="49331722" Name="SPI_loopback_Top_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="256"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_SPI_loopback_Top_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Bus Name="pid_i/ss">
+                    <Sig Type="SIG" Name="pid_i/ss:0"/>
+                    <Sig Type="SIG" Name="pid_i/ss:1"/>
+                    <Sig Type="SIG" Name="pid_i/ss:2"/>
+                    <Sig Type="SIG" Name="pid_i/ss:3"/>
+                </Bus>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig=""/>
+                <TE MaxSequence="1" MaxEvnCnt="1" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

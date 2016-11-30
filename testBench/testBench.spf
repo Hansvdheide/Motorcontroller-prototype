@@ -1,0 +1,14 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="testBench" simType="Active-HDL">
+    <Source worklib="work" path="PWM_GEN.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="COMMUTATION.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="HallInput.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="PID.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="SPI loopbacktest v2.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="Clockdivider.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="ToplevelFinal.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="testBench.vhd" type="VHDL" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="TestBench"/>
+</BaliSimProject>
