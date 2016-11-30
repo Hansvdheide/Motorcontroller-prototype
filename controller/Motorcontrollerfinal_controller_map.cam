@@ -1,0 +1,272 @@
+[ START MERGED ]
+n2128 SPI_I/MISO_N_596
+COM_I_M2/enable_N_1438 LED2_c
+COM_I_M3/enable_N_1438 LED3_c
+clk_N_634 CLKDIV_I/pi_clk
+COM_I_M4/enable_N_1438 LED4_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+PID_I/mult_26s_25s_0_pp_4_8
+PID_I/mult_26s_25s_0_pp_5_10
+PID_I/mult_26s_25s_0_pp_6_12
+PID_I/mult_26s_25s_0_pp_7_14
+PID_I/mult_26s_25s_0_pp_8_16
+PID_I/mult_26s_25s_0_pp_9_18
+PID_I/mult_26s_25s_0_pp_10_20
+PID_I/mult_26s_25s_0_pp_11_22
+PID_I/mult_26s_25s_0_pp_12_24
+PID_I/mult_26s_25s_0_pp_12_25
+PID_I/mult_26s_25s_0_pp_12_26
+PWM_I_M2/cnt_1044_add_4_1/S0
+PWM_I_M2/cnt_1044_add_4_1/CI
+PWM_I_M2/cnt_1044_add_4_11/S1
+PWM_I_M2/cnt_1044_add_4_11/CO
+PWM_I_M2/sub_930_add_2_1/S1
+PWM_I_M2/sub_930_add_2_1/S0
+PWM_I_M2/sub_930_add_2_1/CI
+PWM_I_M2/sub_930_add_2_3/S1
+PWM_I_M2/sub_930_add_2_3/S0
+PWM_I_M2/sub_930_add_2_5/S1
+PWM_I_M2/sub_930_add_2_5/S0
+PWM_I_M2/sub_930_add_2_7/S1
+PWM_I_M2/sub_930_add_2_7/S0
+PWM_I_M2/sub_930_add_2_9/S1
+PWM_I_M2/sub_930_add_2_9/S0
+PWM_I_M2/sub_930_add_2_11/S0
+PWM_I_M2/sub_930_add_2_11/CO
+PWM_I_M4/sub_934_add_2_7/S1
+PWM_I_M4/sub_934_add_2_7/S0
+PWM_I_M4/sub_934_add_2_9/S1
+PWM_I_M4/sub_934_add_2_9/S0
+PWM_I_M4/sub_934_add_2_11/S0
+PWM_I_M4/sub_934_add_2_11/CO
+PWM_I_M4/cnt_1046_add_4_1/S0
+PWM_I_M4/cnt_1046_add_4_1/CI
+PWM_I_M4/cnt_1046_add_4_11/S1
+PWM_I_M4/cnt_1046_add_4_11/CO
+PWM_I_M4/sub_934_add_2_1/S1
+PWM_I_M4/sub_934_add_2_1/S0
+PWM_I_M4/sub_934_add_2_1/CI
+PWM_I_M4/sub_934_add_2_3/S1
+PWM_I_M4/sub_934_add_2_3/S0
+PWM_I_M4/sub_934_add_2_5/S1
+PWM_I_M4/sub_934_add_2_5/S0
+HALL_I_M4/add_7_1/S0
+HALL_I_M4/add_7_1/CI
+HALL_I_M4/add_7_21/S1
+HALL_I_M4/add_7_21/CO
+PWM_I_M3/cnt_1045_add_4_1/S0
+PWM_I_M3/cnt_1045_add_4_1/CI
+PWM_I_M3/sub_932_add_2_1/S1
+PWM_I_M3/sub_932_add_2_1/S0
+PWM_I_M3/sub_932_add_2_1/CI
+PWM_I_M3/sub_932_add_2_3/S1
+PWM_I_M3/sub_932_add_2_3/S0
+PWM_I_M3/sub_932_add_2_5/S1
+PWM_I_M3/sub_932_add_2_5/S0
+PWM_I_M3/sub_932_add_2_7/S1
+PWM_I_M3/sub_932_add_2_7/S0
+PWM_I_M3/cnt_1045_add_4_11/S1
+PWM_I_M3/cnt_1045_add_4_11/CO
+PWM_I_M3/sub_932_add_2_9/S1
+PWM_I_M3/sub_932_add_2_9/S0
+PWM_I_M3/sub_932_add_2_11/S0
+PWM_I_M3/sub_932_add_2_11/CO
+PWM_I_M1/cnt_1043_add_4_1/S0
+PWM_I_M1/cnt_1043_add_4_1/CI
+PWM_I_M1/cnt_1043_add_4_11/S1
+PWM_I_M1/cnt_1043_add_4_11/CO
+PWM_I_M1/sub_928_add_2_1/S1
+PWM_I_M1/sub_928_add_2_1/S0
+PWM_I_M1/sub_928_add_2_1/CI
+PWM_I_M1/sub_928_add_2_3/S1
+PWM_I_M1/sub_928_add_2_3/S0
+PWM_I_M1/sub_928_add_2_5/S1
+PWM_I_M1/sub_928_add_2_5/S0
+PWM_I_M1/sub_928_add_2_7/S1
+PWM_I_M1/sub_928_add_2_7/S0
+PWM_I_M1/sub_928_add_2_9/S1
+PWM_I_M1/sub_928_add_2_9/S0
+PWM_I_M1/sub_928_add_2_11/S0
+PWM_I_M1/sub_928_add_2_11/CO
+HALL_I_M3/add_7_1/S0
+HALL_I_M3/add_7_1/CI
+HALL_I_M3/add_7_21/S1
+HALL_I_M3/add_7_21/CO
+PID_I/sub_5_add_2_23/S1
+PID_I/sub_5_add_2_23/CO
+PID_I/add_7578_18/S1
+PID_I/add_7578_18/S0
+PID_I/add_7578_20/S1
+PID_I/add_7578_20/S0
+PID_I/add_85_1/S0
+PID_I/add_85_1/CI
+PID_I/add_7578_cout/S1
+PID_I/add_7578_cout/CO
+PID_I/addOut_1042_add_4_1/S0
+PID_I/addOut_1042_add_4_1/CI
+PID_I/add_85_15/CO
+PID_I/add_89_1/S0
+PID_I/add_89_1/CI
+PID_I/addOut_1042_add_4_27/S1
+PID_I/addOut_1042_add_4_27/CO
+PID_I/add_89_15/CO
+PID_I/add_93_1/S0
+PID_I/add_93_1/CI
+PID_I/add_93_15/CO
+PID_I/add_97_1/S0
+PID_I/add_97_1/CI
+PID_I/add_7577_1/S1
+PID_I/add_7577_1/S0
+PID_I/add_7577_1/CI
+PID_I/add_7577_3/S1
+PID_I/add_7577_3/S0
+PID_I/add_7577_5/S1
+PID_I/add_7577_5/S0
+PID_I/add_7577_7/S1
+PID_I/add_7577_7/S0
+PID_I/add_7577_9/S1
+PID_I/add_7577_9/S0
+PID_I/add_7577_11/S1
+PID_I/add_7577_11/S0
+PID_I/add_7577_13/S1
+PID_I/add_7577_13/S0
+PID_I/add_7577_15/S1
+PID_I/add_7577_15/S0
+PID_I/add_97_15/CO
+PID_I/add_7577_17/S1
+PID_I/add_7577_17/S0
+PID_I/sub_5_add_2_1/S0
+PID_I/sub_5_add_2_1/CI
+PID_I/add_7577_19/S1
+PID_I/add_7577_19/S0
+PID_I/add_7577_21/S1
+PID_I/add_7577_21/S0
+PID_I/add_7577_23/S1
+PID_I/add_7577_23/S0
+PID_I/add_7577_25/S1
+PID_I/add_7577_25/S0
+PID_I/add_7577_cout/S1
+PID_I/add_7577_cout/CO
+PID_I/add_7578_2/S1
+PID_I/add_7578_2/S0
+PID_I/add_7578_2/CI
+PID_I/add_7578_4/S1
+PID_I/add_7578_4/S0
+PID_I/mult_26s_25s_0_cin_lr_add_0/S1
+PID_I/mult_26s_25s_0_cin_lr_add_0/S0
+PID_I/mult_26s_25s_0_mult_22_1/CO
+PID_I/mult_26s_25s_0_mult_20_2/CO
+PID_I/mult_26s_25s_0_mult_18_3/CO
+PID_I/mult_26s_25s_0_mult_16_4/CO
+PID_I/mult_26s_25s_0_mult_14_5/CO
+PID_I/mult_26s_25s_0_mult_12_6/CO
+PID_I/mult_26s_25s_0_mult_10_7/CO
+PID_I/mult_26s_25s_0_mult_8_8/CO
+PID_I/mult_26s_25s_0_mult_6_9/CO
+PID_I/mult_26s_25s_0_mult_4_10/CO
+PID_I/mult_26s_25s_0_mult_2_11/CO
+PID_I/mult_26s_25s_0_mult_0_12/CO
+PID_I/t_mult_26s_25s_0_add_12_6/S1
+PID_I/t_mult_26s_25s_0_add_12_6/COUT
+PID_I/Cadd_t_mult_26s_25s_0_12_1/S0
+PID_I/mult_26s_25s_0_add_11_2/COUT
+PID_I/Cadd_mult_26s_25s_0_11_1/S0
+PID_I/mult_26s_25s_0_add_10_10/COUT
+PID_I/Cadd_mult_26s_25s_0_10_1/S0
+PID_I/mult_26s_25s_0_add_9_4/COUT
+PID_I/Cadd_mult_26s_25s_0_9_1/S0
+PID_I/mult_26s_25s_0_add_8_8/COUT
+PID_I/Cadd_mult_26s_25s_0_8_1/S0
+PID_I/mult_26s_25s_0_add_7_12/COUT
+PID_I/Cadd_mult_26s_25s_0_7_1/S0
+PID_I/mult_26s_25s_0_add_6_2/COUT
+PID_I/Cadd_mult_26s_25s_0_6_1/S0
+PID_I/mult_26s_25s_0_add_5_3/COUT
+PID_I/Cadd_mult_26s_25s_0_5_1/S0
+PID_I/mult_26s_25s_0_add_4_5/COUT
+PID_I/Cadd_mult_26s_25s_0_4_1/S0
+PID_I/mult_26s_25s_0_add_3_7/COUT
+PID_I/Cadd_mult_26s_25s_0_3_1/S0
+PID_I/mult_26s_25s_0_add_2_9/COUT
+PID_I/Cadd_mult_26s_25s_0_2_1/S0
+PID_I/mult_26s_25s_0_add_1_11/COUT
+PID_I/Cadd_mult_26s_25s_0_1_1/S0
+PID_I/mult_26s_25s_0_add_0_13/COUT
+PID_I/Cadd_mult_26s_25s_0_0_1/S0
+PID_I/mult_26s_25s_0_cin_lr_add_22/S1
+PID_I/mult_26s_25s_0_cin_lr_add_22/S0
+PID_I/mult_26s_25s_0_cin_lr_add_20/S1
+PID_I/mult_26s_25s_0_cin_lr_add_20/S0
+PID_I/mult_26s_25s_0_cin_lr_add_18/S1
+PID_I/mult_26s_25s_0_cin_lr_add_18/S0
+PID_I/mult_26s_25s_0_cin_lr_add_16/S1
+PID_I/mult_26s_25s_0_cin_lr_add_16/S0
+PID_I/mult_26s_25s_0_cin_lr_add_14/S1
+PID_I/mult_26s_25s_0_cin_lr_add_14/S0
+PID_I/mult_26s_25s_0_cin_lr_add_12/S1
+PID_I/mult_26s_25s_0_cin_lr_add_12/S0
+PID_I/mult_26s_25s_0_cin_lr_add_10/S1
+PID_I/mult_26s_25s_0_cin_lr_add_10/S0
+PID_I/mult_26s_25s_0_cin_lr_add_8/S1
+PID_I/mult_26s_25s_0_cin_lr_add_8/S0
+PID_I/mult_26s_25s_0_cin_lr_add_6/S1
+PID_I/mult_26s_25s_0_cin_lr_add_6/S0
+PID_I/mult_26s_25s_0_cin_lr_add_4/S1
+PID_I/mult_26s_25s_0_cin_lr_add_4/S0
+PID_I/mult_26s_25s_0_cin_lr_add_2/S1
+PID_I/mult_26s_25s_0_cin_lr_add_2/S0
+PID_I/add_706_1/S0
+PID_I/add_706_1/CI
+PID_I/add_706_11/S1
+PID_I/add_706_11/CO
+PID_I/add_7578_6/S1
+PID_I/add_7578_6/S0
+PID_I/add_7578_8/S1
+PID_I/add_7578_8/S0
+PID_I/add_7578_10/S1
+PID_I/add_7578_10/S0
+PID_I/add_7578_12/S1
+PID_I/add_7578_12/S0
+PID_I/add_7578_14/S1
+PID_I/add_7578_14/S0
+PID_I/add_7578_16/S1
+PID_I/add_7578_16/S0
+CLKDIV_I/cntpi_1040_add_4_1/S0
+CLKDIV_I/cntpi_1040_add_4_1/CI
+CLKDIV_I/cntpi_1040_add_4_13/S1
+CLKDIV_I/cntpi_1040_add_4_13/CO
+HALL_I_M2/add_7_1/S0
+HALL_I_M2/add_7_1/CI
+HALL_I_M2/add_7_21/S1
+HALL_I_M2/add_7_21/CO
+HALL_I_M1/add_7_1/S0
+HALL_I_M1/add_7_1/CI
+HALL_I_M1/add_7_21/S1
+HALL_I_M1/add_7_21/CO
+[ END CLIPPED ]
+[ START OSC ]
+clkout_c 38.00
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.8.0.115.3 -- WARNING: Map write only section -- Wed Nov 30 14:30:27 2016
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF ;
+LOCATE COMP "H_C_m1" SITE "138" ;
+LOCATE COMP "MISO" SITE "45" ;
+LOCATE COMP "H_B_m1" SITE "142" ;
+LOCATE COMP "H_A_m1" SITE "140" ;
+LOCATE COMP "MOSI" SITE "50" ;
+LOCATE COMP "SCK" SITE "56" ;
+LOCATE COMP "CS" SITE "41" ;
+LOCATE COMP "MC_m1[0]" SITE "117" ;
+LOCATE COMP "MC_m1[1]" SITE "115" ;
+LOCATE COMP "MB_m1[0]" SITE "110" ;
+LOCATE COMP "MB_m1[1]" SITE "109" ;
+LOCATE COMP "MA_m1[0]" SITE "126" ;
+LOCATE COMP "MA_m1[1]" SITE "125" ;
+FREQUENCY NET "clkout_c" 38.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

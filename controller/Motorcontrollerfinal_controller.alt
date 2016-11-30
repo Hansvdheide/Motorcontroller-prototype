@@ -1,0 +1,53 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Nov 30 14:30:53 2016 *
+NOTE DESIGN NAME: SPI_loopback_Top *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS MC_m2[1] : 92 : out *
+NOTE PINS LED2 : 95 : out *
+NOTE PINS LED1 : 143 : out *
+NOTE PINS MB_m2[0] : 89 : out *
+NOTE PINS H_B_m2 : 57 : in *
+NOTE PINS H_A_m2 : 87 : in *
+NOTE PINS H_C_m1 : 138 : in *
+NOTE PINS MISO : 45 : out *
+NOTE PINS MB_m2[1] : 114 : out *
+NOTE PINS H_B_m1 : 142 : in *
+NOTE PINS H_A_m1 : 140 : in *
+NOTE PINS MOSI : 50 : in *
+NOTE PINS SCK : 56 : in *
+NOTE PINS CS : 41 : in *
+NOTE PINS MC_m4[0] : 44 : out *
+NOTE PINS MC_m4[1] : 47 : out *
+NOTE PINS MA_m2[0] : 93 : out *
+NOTE PINS MA_m2[1] : 94 : out *
+NOTE PINS MB_m4[0] : 48 : out *
+NOTE PINS MC_m1[0] : 117 : out *
+NOTE PINS MB_m4[1] : 49 : out *
+NOTE PINS MC_m1[1] : 115 : out *
+NOTE PINS MA_m4[0] : 52 : out *
+NOTE PINS MB_m1[0] : 110 : out *
+NOTE PINS MA_m4[1] : 54 : out *
+NOTE PINS MB_m1[1] : 109 : out *
+NOTE PINS MC_m3[0] : 121 : out *
+NOTE PINS H_C_m4 : 127 : in *
+NOTE PINS MA_m1[0] : 126 : out *
+NOTE PINS MC_m3[1] : 120 : out *
+NOTE PINS H_B_m4 : 19 : in *
+NOTE PINS MA_m1[1] : 125 : out *
+NOTE PINS MB_m3[0] : 119 : out *
+NOTE PINS H_A_m4 : 15 : in *
+NOTE PINS clkout : 70 : out *
+NOTE PINS MB_m3[1] : 122 : out *
+NOTE PINS H_C_m3 : 20 : in *
+NOTE PINS LED4 : 55 : out *
+NOTE PINS MA_m3[0] : 128 : out *
+NOTE PINS H_B_m3 : 58 : in *
+NOTE PINS LED3 : 132 : out *
+NOTE PINS MA_m3[1] : 133 : out *
+NOTE PINS H_A_m3 : 60 : in *
+NOTE PINS MC_m2[0] : 91 : out *
+NOTE PINS H_C_m2 : 59 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *
