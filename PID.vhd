@@ -35,10 +35,10 @@ ENTITY PID IS
 			dirout_m1 : OUT std_logic;
 			dirout_m2 : OUT std_logic;
 			dirout_m3 : OUT std_logic;
-			dirout_m4 : OUT std_logic;
+			dirout_m4 : OUT std_logic
 			
-			debug1 : OUT integer RANGE -1000000 to 1000000;
-			debug2 : OUT integer RANGE -1000000 to 1000000
+			--debug1 : OUT integer RANGE -1000000 to 1000000;
+			--debug2 : OUT integer RANGE -1000000 to 1000000
 		);
 end PID;
 
@@ -201,7 +201,7 @@ BEGIN
 		WHEN S0 =>		
 			ss <= S1;
 		WHEN S1 =>	
-			debug1 <= subOut;
+			--debug1 <= subOut;
 			ss <= S2;
 		WHEN S2 =>	
 			ss <= S3;
@@ -217,7 +217,7 @@ BEGIN
 			ss <= S4;
 		WHEN S4 =>
 			out0 <= addOut;
-			debug2 <= addOut;
+			--debug2 <= addOut;
 			ss <= S5;
 		WHEN S5 =>
 			intgOut1 <= addOut;
