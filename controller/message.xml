@@ -110,18 +110,18 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(11): </Dynamic>
             <Dynamic>pid</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>9</Navigation>
+            <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(47): </Dynamic>
             <Dynamic>pid</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>47</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
@@ -135,10 +135,10 @@
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194): </Dynamic>
             <Dynamic>a[25]</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>192</Navigation>
+            <Navigation>194</Navigation>
         </Message>
         <Message>
             <ID>35935013</ID>

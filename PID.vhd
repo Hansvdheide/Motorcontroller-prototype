@@ -6,6 +6,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 
+-- baanbrekende entity
+
 ENTITY PID IS
 		GENERIC( 	
 			INPUT_RANGE: integer := 2000000;
