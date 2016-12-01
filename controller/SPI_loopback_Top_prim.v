@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.8.0.115.3
-// Netlist written on Thu Dec 01 09:45:24 2016
+// Netlist written on Thu Dec 01 10:07:12 2016
 //
 // Verilog Description of module SPI_loopback_Top
 //
@@ -46,7 +46,7 @@ module SPI_loopback_Top (CS, SCK, MOSI, MISO, LED1, LED2, LED3,
     wire clkout_c /* synthesis SET_AS_NETWORK=clkout_c, is_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(38[2:8])
     wire clk_1mhz /* synthesis is_clock=1, SET_AS_NETWORK=clk_1mhz */ ;   // c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80[9:17])
     wire pwm_clk /* synthesis SET_AS_NETWORK=pwm_clk, is_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(82[9:16])
-    wire clk_N_634 /* synthesis is_inv_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(30[4:14])
+    wire clk_N_634 /* synthesis is_inv_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(32[4:14])
     
     wire GND_net, VCC_net, CS_c, SCK_c, MOSI_c, LED1_c, LED2_c, 
         LED3_c, LED4_c, H_A_m1_c, H_B_m1_c, H_C_m1_c, MA_m1_c_1, 
@@ -2315,7 +2315,7 @@ module CLKDIV (clk_N_634, clkout_c, clk_1mhz, pwm_clk, GND_net);
     output pwm_clk;
     input GND_net;
     
-    wire clk_N_634 /* synthesis is_inv_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(30[4:14])
+    wire clk_N_634 /* synthesis is_inv_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(32[4:14])
     wire pi_clk /* synthesis is_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(83[9:15])
     wire clkout_c /* synthesis SET_AS_NETWORK=clkout_c, is_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(38[2:8])
     wire clk_1mhz /* synthesis is_clock=1, SET_AS_NETWORK=clk_1mhz */ ;   // c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80[9:17])
@@ -4272,11 +4272,11 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     input \speed_m1[0] ;
     input \speed_m2[0] ;
     
-    wire clk_N_634 /* synthesis is_inv_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(30[4:14])
+    wire clk_N_634 /* synthesis is_inv_clock=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(32[4:14])
     
     wire n9762, n9759;
-    wire [25:0]intgOut0;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(62[9:17])
-    wire [25:0]intgOut1;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(63[9:17])
+    wire [25:0]intgOut0;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(64[9:17])
+    wire [25:0]intgOut1;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(65[9:17])
     wire [25:0]addIn2_25__N_1094;
     wire [14:0]dirout_m1_N_1189;
     wire [9:0]n1301;
@@ -4285,40 +4285,40 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     wire [9:0]n660;
     
     wire n8425;
-    wire [21:0]subIn2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(73[9:15])
+    wire [21:0]subIn2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(75[9:15])
     wire [20:0]subIn1_21__N_875;
     
     wire n708;
     wire [22:0]subOut_21__N_920;
     
     wire n8426;
-    wire [3:0]ss;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(86[9:11])
+    wire [3:0]ss;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(88[9:11])
     
     wire n1921;
-    wire [25:0]Out2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(69[9:13])
+    wire [25:0]Out2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(71[9:13])
     
     wire n12, n8611, n1912, clk_N_634_enable_191, n497, n1634;
-    wire [25:0]addOut;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(82[9:15])
+    wire [25:0]addOut;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(84[9:15])
     wire [25:0]intgOut0_25__N_665;
-    wire [25:0]multOut;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(78[9:16])
+    wire [25:0]multOut;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(80[9:16])
     wire [50:0]multOut_25__N_958;
     
     wire clk_N_634_enable_251, clk_N_634_enable_41;
     wire [25:0]Out0_25__N_771;
-    wire [25:0]intgOut2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(64[9:17])
+    wire [25:0]intgOut2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(66[9:17])
     
     wire clk_N_634_enable_66, n14;
-    wire [25:0]intgOut3;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(65[9:17])
+    wire [25:0]intgOut3;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(67[9:17])
     
     wire clk_N_634_enable_91;
-    wire [25:0]Out0;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(67[9:13])
+    wire [25:0]Out0;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(69[9:13])
     
     wire clk_N_634_enable_116;
-    wire [25:0]Out1;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(68[9:13])
+    wire [25:0]Out1;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(70[9:13])
     
     wire clk_N_634_enable_141, clk_N_634_enable_166;
-    wire [25:0]Out3;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(70[9:13])
-    wire [21:0]subOut;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(74[9:15])
+    wire [25:0]Out3;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(72[9:13])
+    wire [21:0]subOut;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(76[9:15])
     
     wire clk_N_634_enable_252;
     wire [14:0]dirout_m2_N_1207;
@@ -4337,7 +4337,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     
     wire n10_adj_1398, n8_adj_1399, n4, n9389, n8570, n8597, n8386, 
         n8382, n9292, n7_adj_1400, n8_adj_1401;
-    wire [23:0]multIn2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(77[9:16])
+    wire [23:0]multIn2;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(79[9:16])
     
     wire n7_adj_1402, n8556, n10_adj_1403, n8_adj_1404, n4_adj_1405, 
         n9747, mult_26s_25s_0_mult_0_12_n3, mult_26s_25s_0_mult_0_12_n1, 
@@ -4531,15 +4531,15 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
         n8385, n8501, n8500, n8429, n8428, n8427;
     
     LUT4 mux_64_i23_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[22]), 
-         .D(intgOut1[22]), .Z(addIn2_25__N_1094[22])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[22]), .Z(addIn2_25__N_1094[22])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i23_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_104_i7_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[6]), .C(n630), 
-         .Z(n660[6])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[6])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i7_3_lut.init = 16'hcaca;
     CCU2D sub_5_add_2_15 (.A0(subIn2[13]), .B0(subIn1_21__N_875[13]), .C0(speed_set_m1[13]), 
           .D0(n708), .A1(subIn2[14]), .B1(subIn1_21__N_875[14]), .C1(speed_set_m1[14]), 
           .D1(n708), .CIN(n8425), .COUT(n8426), .S0(subOut_21__N_920[13]), 
-          .S1(subOut_21__N_920[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_15.INIT0 = 16'ha599;
     defparam sub_5_add_2_15.INIT1 = 16'ha599;
     defparam sub_5_add_2_15.INJECT1_0 = "NO";
@@ -4548,91 +4548,91 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .Z(n1921)) /* synthesis lut_function=(!(A (((D)+!C)+!B)+!A (B+(C+!(D))))) */ ;
     defparam i14_4_lut_4_lut.init = 16'h0180;
     LUT4 i5_4_lut (.A(Out2[0]), .B(Out2[1]), .C(Out2[8]), .D(Out2[5]), 
-         .Z(n12)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+         .Z(n12)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam i5_4_lut.init = 16'hfffe;
     LUT4 mux_104_i6_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[5]), .C(n630), 
-         .Z(n660[5])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[5])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i6_3_lut.init = 16'hcaca;
     LUT4 i3_4_lut (.A(Out2[3]), .B(Out2[9]), .C(Out2[7]), .D(Out2[4]), 
-         .Z(n8611)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+         .Z(n8611)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam i3_4_lut.init = 16'hfffe;
     LUT4 i1_4_lut_4_lut (.A(ss[3]), .B(ss[0]), .C(ss[1]), .D(ss[2]), 
          .Z(n1912)) /* synthesis lut_function=(!(A+(B ((D)+!C)+!B (C+!(D))))) */ ;
     defparam i1_4_lut_4_lut.init = 16'h0140;
     LUT4 mux_104_i4_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[3]), .C(n630), 
-         .Z(n660[3])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[3])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i4_3_lut.init = 16'hcaca;
     LUT4 i1_3_lut_4_lut_4_lut (.A(ss[3]), .B(ss[1]), .C(ss[0]), .D(ss[2]), 
          .Z(clk_N_634_enable_191)) /* synthesis lut_function=(A (B (C+(D))+!B (C (D)))) */ ;
     defparam i1_3_lut_4_lut_4_lut.init = 16'ha880;
     LUT4 mux_64_i24_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[23]), 
-         .D(intgOut1[23]), .Z(addIn2_25__N_1094[23])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[23]), .Z(addIn2_25__N_1094[23])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i24_3_lut_4_lut.init = 16'hfb40;
     LUT4 i1_2_lut_3_lut_4_lut (.A(n497), .B(n1634), .C(addOut[0]), .D(ss[3]), 
          .Z(intgOut0_25__N_665[0])) /* synthesis lut_function=(!(A+(B+((D)+!C)))) */ ;
     defparam i1_2_lut_3_lut_4_lut.init = 16'h0010;
-    FD1S3AX multOut_i0 (.D(multOut_25__N_958[0]), .CK(clk_N_634), .Q(multOut[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i0 (.D(multOut_25__N_958[0]), .CK(clk_N_634), .Q(multOut[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i0.GSR = "DISABLED";
     FD1P3AX intgOut0_i0 (.D(intgOut0_25__N_665[0]), .SP(clk_N_634_enable_251), 
-            .CK(clk_N_634), .Q(intgOut0[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut0[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i0.GSR = "DISABLED";
     FD1P3AX intgOut1_i0 (.D(Out0_25__N_771[0]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i0.GSR = "DISABLED";
     FD1P3AX intgOut2_i0 (.D(n14), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i0.GSR = "DISABLED";
     FD1P3AX intgOut3_i0 (.D(n14), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i0.GSR = "DISABLED";
     FD1P3AX Out0_i0 (.D(Out0_25__N_771[0]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i0.GSR = "DISABLED";
     FD1P3AX Out1_i0 (.D(Out0_25__N_771[0]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i0.GSR = "DISABLED";
     FD1P3AX Out2_i0 (.D(n14), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i0.GSR = "DISABLED";
     FD1P3AX Out3_i0 (.D(n14), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i0.GSR = "DISABLED";
     LUT4 i1_3_lut_4_lut_4_lut_adj_20 (.A(ss[3]), .B(ss[1]), .C(ss[0]), 
          .D(ss[2]), .Z(clk_N_634_enable_166)) /* synthesis lut_function=(A (B (D)+!B (C))) */ ;
     defparam i1_3_lut_4_lut_4_lut_adj_20.init = 16'ha820;
-    FD1S3AX subOut_i0 (.D(subOut_21__N_920[0]), .CK(clk_N_634), .Q(subOut[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i0 (.D(subOut_21__N_920[0]), .CK(clk_N_634), .Q(subOut[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i0.GSR = "DISABLED";
     FD1P3AX dirout_m1_184 (.D(dirout_m1_N_1189[14]), .SP(clk_N_634_enable_252), 
-            .CK(clk_N_634), .Q(dir_m1)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(dir_m1)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dirout_m1_184.GSR = "DISABLED";
     FD1P3AX dirout_m2_185 (.D(dirout_m2_N_1207[14]), .SP(clk_N_634_enable_252), 
-            .CK(clk_N_634), .Q(dir_m2)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(dir_m2)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dirout_m2_185.GSR = "DISABLED";
     FD1P3AX dirout_m3_186 (.D(dirout_m3_N_1225[14]), .SP(clk_N_634_enable_252), 
-            .CK(clk_N_634), .Q(dir_m3)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(dir_m3)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dirout_m3_186.GSR = "DISABLED";
     FD1P3AX dirout_m4_187 (.D(dirout_m4_N_1243[14]), .SP(clk_N_634_enable_252), 
-            .CK(clk_N_634), .Q(dir_m4)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(dir_m4)) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dirout_m4_187.GSR = "DISABLED";
     FD1S3IX ss_i0 (.D(n9772), .CK(clk_N_634), .CD(clk_N_634_enable_252), 
-            .Q(ss[0])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(ss[0])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam ss_i0.GSR = "DISABLED";
     FD1S3IX ss_i1 (.D(n9766), .CK(clk_N_634), .CD(clk_N_634_enable_252), 
-            .Q(ss[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(ss[1])) /* synthesis lse_init_val=0, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam ss_i1.GSR = "DISABLED";
-    FD1S3AY ss_i2 (.D(ss_3__N_1040[2]), .CK(clk_N_634), .Q(ss[2])) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AY ss_i2 (.D(ss_3__N_1040[2]), .CK(clk_N_634), .Q(ss[2])) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam ss_i2.GSR = "DISABLED";
-    FD1S3AY ss_i3 (.D(ss_3__N_1040[3]), .CK(clk_N_634), .Q(ss[3])) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AY ss_i3 (.D(ss_3__N_1040[3]), .CK(clk_N_634), .Q(ss[3])) /* synthesis lse_init_val=1, LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam ss_i3.GSR = "DISABLED";
-    LUT4 i1402_3_lut (.A(n1634), .B(n497), .C(addOut[25]), .Z(intgOut0_25__N_1120[25])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1402_3_lut (.A(n1634), .B(n497), .C(addOut[25]), .Z(intgOut0_25__N_1120[25])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1402_3_lut.init = 16'h3232;
     LUT4 i8290_3_lut_3_lut_4_lut_4_lut (.A(ss[2]), .B(ss[3]), .C(ss[0]), 
-         .D(ss[1]), .Z(n9286)) /* synthesis lut_function=(!(A (B+((D)+!C))+!A (B+!(C (D))))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(ss[1]), .Z(n9286)) /* synthesis lut_function=(!(A (B+((D)+!C))+!A (B+!(C (D))))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam i8290_3_lut_3_lut_4_lut_4_lut.init = 16'h1020;
     LUT4 i6_4_lut (.A(Out1[6]), .B(n12_adj_1395), .C(Out1[10]), .D(Out1[2]), 
-         .Z(n8607)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+         .Z(n8607)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam i6_4_lut.init = 16'hfffe;
-    LUT4 i1400_3_lut (.A(n1634), .B(n497), .C(addOut[24]), .Z(intgOut0_25__N_1120[24])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1400_3_lut (.A(n1634), .B(n497), .C(addOut[24]), .Z(intgOut0_25__N_1120[24])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1400_3_lut.init = 16'h3232;
     LUT4 i8224_4_lut_4_lut (.A(ss[0]), .B(ss[1]), .C(ss[2]), .D(ss[3]), 
          .Z(clk_N_634_enable_141)) /* synthesis lut_function=(A (B (C)+!B (C (D)))+!A (B (C (D)))) */ ;
@@ -4641,37 +4641,37 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .Z(clk_N_634_enable_116)) /* synthesis lut_function=(A (B ((D)+!C)+!B (C (D)))) */ ;
     defparam i1_4_lut_4_lut_adj_21.init = 16'ha808;
     LUT4 mux_64_i26_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[25]), 
-         .D(intgOut1[25]), .Z(addIn2_25__N_1094[25])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[25]), .Z(addIn2_25__N_1094[25])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i26_3_lut_4_lut.init = 16'hfb40;
-    LUT4 i1398_3_lut (.A(n1634), .B(n497), .C(addOut[23]), .Z(intgOut0_25__N_1120[23])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1398_3_lut (.A(n1634), .B(n497), .C(addOut[23]), .Z(intgOut0_25__N_1120[23])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1398_3_lut.init = 16'h3232;
     CCU2D sub_5_add_2_13 (.A0(subIn2[11]), .B0(subIn1_21__N_875[11]), .C0(speed_set_m1[11]), 
           .D0(n708), .A1(subIn2[12]), .B1(subIn1_21__N_875[12]), .C1(speed_set_m1[12]), 
           .D1(n708), .CIN(n8424), .COUT(n8425), .S0(subOut_21__N_920[11]), 
-          .S1(subOut_21__N_920[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_13.INIT0 = 16'ha599;
     defparam sub_5_add_2_13.INIT1 = 16'ha599;
     defparam sub_5_add_2_13.INJECT1_0 = "NO";
     defparam sub_5_add_2_13.INJECT1_1 = "NO";
-    LUT4 i1396_3_lut (.A(n1634), .B(n497), .C(addOut[22]), .Z(intgOut0_25__N_1120[22])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1396_3_lut (.A(n1634), .B(n497), .C(addOut[22]), .Z(intgOut0_25__N_1120[22])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1396_3_lut.init = 16'h3232;
     LUT4 i1_4_lut_4_lut_adj_22 (.A(ss[2]), .B(ss[1]), .C(ss[0]), .D(ss[3]), 
          .Z(clk_N_634_enable_41)) /* synthesis lut_function=(A (B ((D)+!C)+!B (C (D)))) */ ;
     defparam i1_4_lut_4_lut_adj_22.init = 16'ha808;
-    LUT4 i1394_3_lut (.A(n1634), .B(n497), .C(addOut[21]), .Z(intgOut0_25__N_1120[21])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1394_3_lut (.A(n1634), .B(n497), .C(addOut[21]), .Z(intgOut0_25__N_1120[21])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1394_3_lut.init = 16'h3232;
     LUT4 mux_64_i11_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[10]), 
-         .D(intgOut1[10]), .Z(addIn2_25__N_1094[10])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[10]), .Z(addIn2_25__N_1094[10])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i11_3_lut_4_lut.init = 16'hfb40;
     LUT4 i5_4_lut_adj_23 (.A(Out1[0]), .B(Out1[1]), .C(Out1[8]), .D(Out1[5]), 
-         .Z(n12_adj_1395)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+         .Z(n12_adj_1395)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam i5_4_lut_adj_23.init = 16'hfffe;
-    LUT4 i1392_3_lut (.A(n1634), .B(n497), .C(addOut[19]), .Z(intgOut0_25__N_1120[19])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1392_3_lut (.A(n1634), .B(n497), .C(addOut[19]), .Z(intgOut0_25__N_1120[19])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1392_3_lut.init = 16'h3232;
-    LUT4 i5990_2_lut (.A(addOut[0]), .B(ss[3]), .Z(Out0_25__N_771[0])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i5990_2_lut (.A(addOut[0]), .B(ss[3]), .Z(Out0_25__N_771[0])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i5990_2_lut.init = 16'h2222;
     LUT4 i3_4_lut_adj_24 (.A(Out1[3]), .B(Out1[9]), .C(Out1[7]), .D(Out1[4]), 
-         .Z(n8608)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+         .Z(n8608)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam i3_4_lut_adj_24.init = 16'hfffe;
     LUT4 i8347_4_lut (.A(dirout_m1_N_1189[3]), .B(n9393), .C(n10), .D(dirout_m1_N_1189[13]), 
          .Z(n9144)) /* synthesis lut_function=(!(A+((C+(D))+!B))) */ ;
@@ -4680,7 +4680,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .D(n9143), .Z(n9393)) /* synthesis lut_function=(!(A+(B+(C+(D))))) */ ;
     defparam i8346_4_lut.init = 16'h0001;
     LUT4 subIn1_21__I_7_i12_4_lut (.A(speed_set_m3[11]), .B(speed_set_m2[11]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[11])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[11])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i12_4_lut.init = 16'hcac0;
     LUT4 i2_2_lut (.A(dirout_m1_N_1189[12]), .B(dirout_m1_N_1189[10]), .Z(n10)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i2_2_lut.init = 16'heeee;
@@ -4702,12 +4702,12 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     LUT4 i1_2_lut (.A(dirout_m1_N_1189[8]), .B(dirout_m1_N_1189[9]), .Z(n6)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i1_2_lut.init = 16'heeee;
     LUT4 subIn1_21__I_7_i13_4_lut (.A(speed_set_m3[12]), .B(speed_set_m2[12]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[12])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[12])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i13_4_lut.init = 16'hcac0;
     LUT4 i8341_4_lut (.A(n9386), .B(dirout_m2_N_1207[13]), .C(n8572), 
          .D(dirout_m2_N_1207[10]), .Z(n8602)) /* synthesis lut_function=(!((B+(C+(D)))+!A)) */ ;
     defparam i8341_4_lut.init = 16'h0002;
-    LUT4 i1390_3_lut (.A(n1634), .B(n497), .C(addOut[16]), .Z(intgOut0_25__N_1120[16])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+    LUT4 i1390_3_lut (.A(n1634), .B(n497), .C(addOut[16]), .Z(intgOut0_25__N_1120[16])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1390_3_lut.init = 16'h3232;
     LUT4 i8339_2_lut (.A(dirout_m2_N_1207[11]), .B(dirout_m2_N_1207[12]), 
          .Z(n9386)) /* synthesis lut_function=(!(A+(B))) */ ;
@@ -4715,7 +4715,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     LUT4 i5_4_lut_adj_27 (.A(dirout_m2_N_1207[5]), .B(n7), .C(dirout_m2_N_1207[8]), 
          .D(n8_adj_1396), .Z(n8572)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i5_4_lut_adj_27.init = 16'h8000;
-    LUT4 i5998_2_lut (.A(addOut[0]), .B(ss[2]), .Z(n14)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i5998_2_lut (.A(addOut[0]), .B(ss[2]), .Z(n14)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i5998_2_lut.init = 16'h2222;
     LUT4 i1_3_lut (.A(dirout_m2_N_1207[3]), .B(dirout_m2_N_1207[6]), .C(dirout_m2_N_1207[4]), 
          .Z(n7)) /* synthesis lut_function=(A (B)+!A (B (C))) */ ;
@@ -4752,14 +4752,14 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam i8344_4_lut.init = 16'h0002;
     CCU2D add_654_11 (.A0(dirout_m1_N_1189[9]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .CIN(n8386), .S0(n1301[9]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(248[20:29])
+          .CIN(n8386), .S0(n1301[9]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(250[20:29])
     defparam add_654_11.INIT0 = 16'hf555;
     defparam add_654_11.INIT1 = 16'h0000;
     defparam add_654_11.INJECT1_0 = "NO";
     defparam add_654_11.INJECT1_1 = "NO";
     CCU2D add_654_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(dirout_m1_N_1189[0]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
-          .COUT(n8382), .S1(n1301[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(248[20:29])
+          .COUT(n8382), .S1(n1301[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(250[20:29])
     defparam add_654_1.INIT0 = 16'hF000;
     defparam add_654_1.INIT1 = 16'h0aaa;
     defparam add_654_1.INJECT1_0 = "NO";
@@ -4784,7 +4784,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .C(dirout_m3_N_1225[4]), .Z(n7_adj_1400)) /* synthesis lut_function=(A (B)+!A (B (C))) */ ;
     defparam i1_3_lut_adj_33.init = 16'hc8c8;
     LUT4 subIn1_21__I_7_i4_4_lut (.A(speed_set_m3[3]), .B(speed_set_m2[3]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[3])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[3])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i4_4_lut.init = 16'hcac0;
     LUT4 i2_2_lut_adj_34 (.A(dirout_m3_N_1225[7]), .B(dirout_m3_N_1225[9]), 
          .Z(n8_adj_1401)) /* synthesis lut_function=(A (B)) */ ;
@@ -4793,7 +4793,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .D(dirout_m3_N_1225[10]), .Z(n8556)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i4_4_lut_adj_35.init = 16'h8000;
     LUT4 subIn1_21__I_7_i5_4_lut (.A(speed_set_m3[4]), .B(speed_set_m2[4]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[4])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[4])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i5_4_lut.init = 16'hcac0;
     PFUMX addIn2_25__I_13_i1 (.BLUT(n276[0]), .ALUT(addIn2_25__N_1094[0]), 
           .C0(n9286), .Z(addIn2_25__N_984[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
@@ -4801,14 +4801,14 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .C(n10_adj_1403), .D(dirout_m3_N_1225[7]), .Z(n7_adj_1402)) /* synthesis lut_function=(A (B+(C+(D)))) */ ;
     defparam i2_4_lut_adj_36.init = 16'haaa8;
     LUT4 subIn1_21__I_7_i2_4_lut (.A(speed_set_m3[1]), .B(speed_set_m2[1]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[1])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[1])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i2_4_lut.init = 16'hcac0;
     LUT4 i4_4_lut_adj_37 (.A(dirout_m3_N_1225[6]), .B(n8_adj_1404), .C(dirout_m3_N_1225[4]), 
          .D(n4_adj_1405), .Z(n10_adj_1403)) /* synthesis lut_function=(A+(B+(C (D)))) */ ;
     defparam i4_4_lut_adj_37.init = 16'hfeee;
-    ND2 ND2_t60 (.A(subOut[21]), .B(n9747), .Z(mult_26s_25s_0_mult_0_12_n3)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+    ND2 ND2_t60 (.A(subOut[21]), .B(n9747), .Z(mult_26s_25s_0_mult_0_12_n3)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     AND2 AND2_t61 (.A(subOut[0]), .B(n9747), .Z(multOut_25__N_958[0])) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1148[10:66])
-    ND2 ND2_t59 (.A(subOut[21]), .B(multIn2[1]), .Z(mult_26s_25s_0_mult_0_12_n1)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+    ND2 ND2_t59 (.A(subOut[21]), .B(multIn2[1]), .Z(mult_26s_25s_0_mult_0_12_n1)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     AND2 AND2_t58 (.A(subOut[0]), .B(multIn2[1]), .Z(mult_26s_25s_0_pp_1_2)) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1154[10:66])
     AND2 AND2_t55 (.A(subOut[0]), .B(n9747), .Z(mult_26s_25s_0_pp_2_4)) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1160[10:66])
     AND2 AND2_t52 (.A(subOut[0]), .B(multIn2[1]), .Z(mult_26s_25s_0_pp_3_6)) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1166[10:66])
@@ -4820,702 +4820,702 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     AND2 AND2_t34 (.A(subOut[0]), .B(GND_net), .Z(mult_26s_25s_0_pp_9_18)) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1202[10:68])
     AND2 AND2_t31 (.A(subOut[0]), .B(GND_net), .Z(mult_26s_25s_0_pp_10_20)) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1208[10:69])
     AND2 AND2_t28 (.A(subOut[0]), .B(GND_net), .Z(mult_26s_25s_0_pp_11_22)) /* synthesis syn_instantiated=1 */ ;   // mult_26s_25s.v(1214[10:69])
-    ND2 ND2_t25 (.A(subOut[0]), .B(GND_net), .Z(mult_26s_25s_0_pp_12_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
-    ND2 ND2_t24 (.A(subOut[1]), .B(GND_net), .Z(mult_26s_25s_0_pp_12_25)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
-    ND2 ND2_t23 (.A(subOut[2]), .B(GND_net), .Z(mult_26s_25s_0_pp_12_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+    ND2 ND2_t25 (.A(subOut[0]), .B(GND_net), .Z(mult_26s_25s_0_pp_12_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
+    ND2 ND2_t24 (.A(subOut[1]), .B(GND_net), .Z(mult_26s_25s_0_pp_12_25)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
+    ND2 ND2_t23 (.A(subOut[2]), .B(GND_net), .Z(mult_26s_25s_0_pp_12_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 ss_0__bdd_4_lut (.A(ss[0]), .B(ss[2]), .C(ss[3]), .D(ss[1]), 
          .Z(n708)) /* synthesis lut_function=(!(A (B (C+!(D))+!B (C+(D)))+!A (B+(C (D)+!C !(D))))) */ ;
     defparam ss_0__bdd_4_lut.init = 16'h0912;
     FADD2B mult_26s_25s_0_cin_lr_add_2 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_2)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_2)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_4 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 subIn1_21__I_7_i3_4_lut (.A(speed_set_m3[2]), .B(speed_set_m2[2]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[2])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[2])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i3_4_lut.init = 16'hcac0;
     FADD2B mult_26s_25s_0_cin_lr_add_6 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_8 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_10 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 subIn1_21__I_7_i1_4_lut (.A(speed_set_m3[0]), .B(speed_set_m2[0]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[0])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[0])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i1_4_lut.init = 16'hcac0;
     FADD2B mult_26s_25s_0_cin_lr_add_12 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_14 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_16 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_18 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_20 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_22 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_mult_26s_25s_0_0_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_0_2), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_1_2), .CI(GND_net), .COUT(co_mult_26s_25s_0_0_1), 
-           .S1(multOut_25__N_958[2])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[2])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_2 (.A0(mult_26s_25s_0_pp_0_3), .A1(mult_26s_25s_0_pp_0_4), 
            .B0(mult_26s_25s_0_pp_1_3), .B1(mult_26s_25s_0_pp_1_4), .CI(co_mult_26s_25s_0_0_1), 
-           .COUT(co_mult_26s_25s_0_0_2), .S0(multOut_25__N_958[3]), .S1(s_mult_26s_25s_0_0_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_2), .S0(multOut_25__N_958[3]), .S1(s_mult_26s_25s_0_0_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_3 (.A0(mult_26s_25s_0_pp_0_5), .A1(mult_26s_25s_0_pp_0_6), 
            .B0(mult_26s_25s_0_pp_1_5), .B1(mult_26s_25s_0_pp_1_6), .CI(co_mult_26s_25s_0_0_2), 
-           .COUT(co_mult_26s_25s_0_0_3), .S0(s_mult_26s_25s_0_0_5), .S1(s_mult_26s_25s_0_0_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_3), .S0(s_mult_26s_25s_0_0_5), .S1(s_mult_26s_25s_0_0_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_4 (.A0(mult_26s_25s_0_pp_0_7), .A1(mult_26s_25s_0_pp_0_8), 
            .B0(mult_26s_25s_0_pp_1_7), .B1(mult_26s_25s_0_pp_1_8), .CI(co_mult_26s_25s_0_0_3), 
-           .COUT(co_mult_26s_25s_0_0_4), .S0(s_mult_26s_25s_0_0_7), .S1(s_mult_26s_25s_0_0_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_4), .S0(s_mult_26s_25s_0_0_7), .S1(s_mult_26s_25s_0_0_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_5 (.A0(mult_26s_25s_0_pp_0_9), .A1(mult_26s_25s_0_pp_0_10), 
            .B0(mult_26s_25s_0_pp_1_9), .B1(mult_26s_25s_0_pp_1_10), .CI(co_mult_26s_25s_0_0_4), 
-           .COUT(co_mult_26s_25s_0_0_5), .S0(s_mult_26s_25s_0_0_9), .S1(s_mult_26s_25s_0_0_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_5), .S0(s_mult_26s_25s_0_0_9), .S1(s_mult_26s_25s_0_0_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_6 (.A0(mult_26s_25s_0_pp_0_11), .A1(mult_26s_25s_0_pp_0_12), 
            .B0(mult_26s_25s_0_pp_1_11), .B1(mult_26s_25s_0_pp_1_12), .CI(co_mult_26s_25s_0_0_5), 
-           .COUT(co_mult_26s_25s_0_0_6), .S0(s_mult_26s_25s_0_0_11), .S1(s_mult_26s_25s_0_0_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_6), .S0(s_mult_26s_25s_0_0_11), .S1(s_mult_26s_25s_0_0_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_7 (.A0(mult_26s_25s_0_pp_0_13), .A1(mult_26s_25s_0_pp_0_14), 
            .B0(mult_26s_25s_0_pp_1_13), .B1(mult_26s_25s_0_pp_1_14), .CI(co_mult_26s_25s_0_0_6), 
-           .COUT(co_mult_26s_25s_0_0_7), .S0(s_mult_26s_25s_0_0_13), .S1(s_mult_26s_25s_0_0_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_7), .S0(s_mult_26s_25s_0_0_13), .S1(s_mult_26s_25s_0_0_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_8 (.A0(mult_26s_25s_0_pp_0_15), .A1(mult_26s_25s_0_pp_0_16), 
            .B0(mult_26s_25s_0_pp_1_15), .B1(mult_26s_25s_0_pp_1_16), .CI(co_mult_26s_25s_0_0_7), 
-           .COUT(co_mult_26s_25s_0_0_8), .S0(s_mult_26s_25s_0_0_15), .S1(s_mult_26s_25s_0_0_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_8), .S0(s_mult_26s_25s_0_0_15), .S1(s_mult_26s_25s_0_0_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_9 (.A0(mult_26s_25s_0_pp_0_17), .A1(mult_26s_25s_0_pp_0_18), 
            .B0(mult_26s_25s_0_pp_1_17), .B1(mult_26s_25s_0_pp_1_18), .CI(co_mult_26s_25s_0_0_8), 
-           .COUT(co_mult_26s_25s_0_0_9), .S0(s_mult_26s_25s_0_0_17), .S1(s_mult_26s_25s_0_0_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_9), .S0(s_mult_26s_25s_0_0_17), .S1(s_mult_26s_25s_0_0_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_10 (.A0(mult_26s_25s_0_pp_0_19), .A1(mult_26s_25s_0_pp_0_20), 
            .B0(mult_26s_25s_0_pp_1_19), .B1(mult_26s_25s_0_pp_1_20), .CI(co_mult_26s_25s_0_0_9), 
-           .COUT(co_mult_26s_25s_0_0_10), .S0(s_mult_26s_25s_0_0_19), .S1(s_mult_26s_25s_0_0_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_10), .S0(s_mult_26s_25s_0_0_19), .S1(s_mult_26s_25s_0_0_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_11 (.A0(mult_26s_25s_0_pp_0_21), .A1(mult_26s_25s_0_pp_0_22), 
            .B0(mult_26s_25s_0_pp_1_21), .B1(mult_26s_25s_0_pp_1_22), .CI(co_mult_26s_25s_0_0_10), 
-           .COUT(co_mult_26s_25s_0_0_11), .S0(s_mult_26s_25s_0_0_21), .S1(s_mult_26s_25s_0_0_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_11), .S0(s_mult_26s_25s_0_0_21), .S1(s_mult_26s_25s_0_0_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_12 (.A0(mult_26s_25s_0_pp_0_23), .A1(mult_26s_25s_0_pp_0_24), 
            .B0(mult_26s_25s_0_pp_1_23), .B1(mult_26s_25s_0_pp_1_24), .CI(co_mult_26s_25s_0_0_11), 
-           .COUT(co_mult_26s_25s_0_0_12), .S0(s_mult_26s_25s_0_0_23), .S1(s_mult_26s_25s_0_0_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_0_12), .S0(s_mult_26s_25s_0_0_23), .S1(s_mult_26s_25s_0_0_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_0_13 (.A0(mult_26s_25s_0_pp_0_25), .A1(mult_26s_25s_0_pp_0_26), 
            .B0(mult_26s_25s_0_pp_1_25), .B1(mult_26s_25s_0_pp_1_26), .CI(co_mult_26s_25s_0_0_12), 
-           .S0(s_mult_26s_25s_0_0_25), .S1(s_mult_26s_25s_0_0_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_0_25), .S1(s_mult_26s_25s_0_0_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_mult_26s_25s_0_1_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_2_6), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_3_6), .CI(GND_net), .COUT(co_mult_26s_25s_0_1_1), 
-           .S1(s_mult_26s_25s_0_1_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_1_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_2 (.A0(mult_26s_25s_0_pp_2_7), .A1(mult_26s_25s_0_pp_2_8), 
            .B0(mult_26s_25s_0_pp_3_7), .B1(mult_26s_25s_0_pp_3_8), .CI(co_mult_26s_25s_0_1_1), 
-           .COUT(co_mult_26s_25s_0_1_2), .S0(s_mult_26s_25s_0_1_7), .S1(s_mult_26s_25s_0_1_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_2), .S0(s_mult_26s_25s_0_1_7), .S1(s_mult_26s_25s_0_1_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_3 (.A0(mult_26s_25s_0_pp_2_9), .A1(mult_26s_25s_0_pp_2_10), 
            .B0(mult_26s_25s_0_pp_3_9), .B1(mult_26s_25s_0_pp_3_10), .CI(co_mult_26s_25s_0_1_2), 
-           .COUT(co_mult_26s_25s_0_1_3), .S0(s_mult_26s_25s_0_1_9), .S1(s_mult_26s_25s_0_1_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_3), .S0(s_mult_26s_25s_0_1_9), .S1(s_mult_26s_25s_0_1_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_4 (.A0(mult_26s_25s_0_pp_2_11), .A1(mult_26s_25s_0_pp_2_12), 
            .B0(mult_26s_25s_0_pp_3_11), .B1(mult_26s_25s_0_pp_3_12), .CI(co_mult_26s_25s_0_1_3), 
-           .COUT(co_mult_26s_25s_0_1_4), .S0(s_mult_26s_25s_0_1_11), .S1(s_mult_26s_25s_0_1_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_4), .S0(s_mult_26s_25s_0_1_11), .S1(s_mult_26s_25s_0_1_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_5 (.A0(mult_26s_25s_0_pp_2_13), .A1(mult_26s_25s_0_pp_2_14), 
            .B0(mult_26s_25s_0_pp_3_13), .B1(mult_26s_25s_0_pp_3_14), .CI(co_mult_26s_25s_0_1_4), 
-           .COUT(co_mult_26s_25s_0_1_5), .S0(s_mult_26s_25s_0_1_13), .S1(s_mult_26s_25s_0_1_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_5), .S0(s_mult_26s_25s_0_1_13), .S1(s_mult_26s_25s_0_1_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_6 (.A0(mult_26s_25s_0_pp_2_15), .A1(mult_26s_25s_0_pp_2_16), 
            .B0(mult_26s_25s_0_pp_3_15), .B1(mult_26s_25s_0_pp_3_16), .CI(co_mult_26s_25s_0_1_5), 
-           .COUT(co_mult_26s_25s_0_1_6), .S0(s_mult_26s_25s_0_1_15), .S1(s_mult_26s_25s_0_1_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_6), .S0(s_mult_26s_25s_0_1_15), .S1(s_mult_26s_25s_0_1_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_7 (.A0(mult_26s_25s_0_pp_2_17), .A1(mult_26s_25s_0_pp_2_18), 
            .B0(mult_26s_25s_0_pp_3_17), .B1(mult_26s_25s_0_pp_3_18), .CI(co_mult_26s_25s_0_1_6), 
-           .COUT(co_mult_26s_25s_0_1_7), .S0(s_mult_26s_25s_0_1_17), .S1(s_mult_26s_25s_0_1_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_7), .S0(s_mult_26s_25s_0_1_17), .S1(s_mult_26s_25s_0_1_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_8 (.A0(mult_26s_25s_0_pp_2_19), .A1(mult_26s_25s_0_pp_2_20), 
            .B0(mult_26s_25s_0_pp_3_19), .B1(mult_26s_25s_0_pp_3_20), .CI(co_mult_26s_25s_0_1_7), 
-           .COUT(co_mult_26s_25s_0_1_8), .S0(s_mult_26s_25s_0_1_19), .S1(s_mult_26s_25s_0_1_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_8), .S0(s_mult_26s_25s_0_1_19), .S1(s_mult_26s_25s_0_1_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_9 (.A0(mult_26s_25s_0_pp_2_21), .A1(mult_26s_25s_0_pp_2_22), 
            .B0(mult_26s_25s_0_pp_3_21), .B1(mult_26s_25s_0_pp_3_22), .CI(co_mult_26s_25s_0_1_8), 
-           .COUT(co_mult_26s_25s_0_1_9), .S0(s_mult_26s_25s_0_1_21), .S1(s_mult_26s_25s_0_1_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_9), .S0(s_mult_26s_25s_0_1_21), .S1(s_mult_26s_25s_0_1_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_10 (.A0(mult_26s_25s_0_pp_2_23), .A1(mult_26s_25s_0_pp_2_24), 
            .B0(mult_26s_25s_0_pp_3_23), .B1(mult_26s_25s_0_pp_3_24), .CI(co_mult_26s_25s_0_1_9), 
-           .COUT(co_mult_26s_25s_0_1_10), .S0(s_mult_26s_25s_0_1_23), .S1(s_mult_26s_25s_0_1_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_1_10), .S0(s_mult_26s_25s_0_1_23), .S1(s_mult_26s_25s_0_1_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_1_11 (.A0(mult_26s_25s_0_pp_2_25), .A1(mult_26s_25s_0_pp_2_26), 
            .B0(mult_26s_25s_0_pp_3_25), .B1(mult_26s_25s_0_pp_3_26), .CI(co_mult_26s_25s_0_1_10), 
-           .S0(s_mult_26s_25s_0_1_25), .S1(s_mult_26s_25s_0_1_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_1_25), .S1(s_mult_26s_25s_0_1_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_mult_26s_25s_0_2_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_4_10), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_5_10), .CI(GND_net), .COUT(co_mult_26s_25s_0_2_1), 
-           .S1(s_mult_26s_25s_0_2_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_2_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_2 (.A0(mult_26s_25s_0_pp_4_11), .A1(mult_26s_25s_0_pp_4_12), 
            .B0(mult_26s_25s_0_pp_5_11), .B1(mult_26s_25s_0_pp_5_12), .CI(co_mult_26s_25s_0_2_1), 
-           .COUT(co_mult_26s_25s_0_2_2), .S0(s_mult_26s_25s_0_2_11), .S1(s_mult_26s_25s_0_2_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_2), .S0(s_mult_26s_25s_0_2_11), .S1(s_mult_26s_25s_0_2_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_3 (.A0(mult_26s_25s_0_pp_4_13), .A1(mult_26s_25s_0_pp_4_14), 
            .B0(mult_26s_25s_0_pp_5_13), .B1(mult_26s_25s_0_pp_5_14), .CI(co_mult_26s_25s_0_2_2), 
-           .COUT(co_mult_26s_25s_0_2_3), .S0(s_mult_26s_25s_0_2_13), .S1(s_mult_26s_25s_0_2_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_3), .S0(s_mult_26s_25s_0_2_13), .S1(s_mult_26s_25s_0_2_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_4 (.A0(mult_26s_25s_0_pp_4_15), .A1(mult_26s_25s_0_pp_4_16), 
            .B0(mult_26s_25s_0_pp_5_15), .B1(mult_26s_25s_0_pp_5_16), .CI(co_mult_26s_25s_0_2_3), 
-           .COUT(co_mult_26s_25s_0_2_4), .S0(s_mult_26s_25s_0_2_15), .S1(s_mult_26s_25s_0_2_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_4), .S0(s_mult_26s_25s_0_2_15), .S1(s_mult_26s_25s_0_2_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_5 (.A0(mult_26s_25s_0_pp_4_17), .A1(mult_26s_25s_0_pp_4_18), 
            .B0(mult_26s_25s_0_pp_5_17), .B1(mult_26s_25s_0_pp_5_18), .CI(co_mult_26s_25s_0_2_4), 
-           .COUT(co_mult_26s_25s_0_2_5), .S0(s_mult_26s_25s_0_2_17), .S1(s_mult_26s_25s_0_2_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_5), .S0(s_mult_26s_25s_0_2_17), .S1(s_mult_26s_25s_0_2_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_6 (.A0(mult_26s_25s_0_pp_4_19), .A1(mult_26s_25s_0_pp_4_20), 
            .B0(mult_26s_25s_0_pp_5_19), .B1(mult_26s_25s_0_pp_5_20), .CI(co_mult_26s_25s_0_2_5), 
-           .COUT(co_mult_26s_25s_0_2_6), .S0(s_mult_26s_25s_0_2_19), .S1(s_mult_26s_25s_0_2_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_6), .S0(s_mult_26s_25s_0_2_19), .S1(s_mult_26s_25s_0_2_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_7 (.A0(mult_26s_25s_0_pp_4_21), .A1(mult_26s_25s_0_pp_4_22), 
            .B0(mult_26s_25s_0_pp_5_21), .B1(mult_26s_25s_0_pp_5_22), .CI(co_mult_26s_25s_0_2_6), 
-           .COUT(co_mult_26s_25s_0_2_7), .S0(s_mult_26s_25s_0_2_21), .S1(s_mult_26s_25s_0_2_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_7), .S0(s_mult_26s_25s_0_2_21), .S1(s_mult_26s_25s_0_2_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_8 (.A0(mult_26s_25s_0_pp_4_23), .A1(mult_26s_25s_0_pp_4_24), 
            .B0(mult_26s_25s_0_pp_5_23), .B1(mult_26s_25s_0_pp_5_24), .CI(co_mult_26s_25s_0_2_7), 
-           .COUT(co_mult_26s_25s_0_2_8), .S0(s_mult_26s_25s_0_2_23), .S1(s_mult_26s_25s_0_2_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_2_8), .S0(s_mult_26s_25s_0_2_23), .S1(s_mult_26s_25s_0_2_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_2_9 (.A0(mult_26s_25s_0_pp_4_25), .A1(mult_26s_25s_0_pp_4_26), 
            .B0(mult_26s_25s_0_pp_5_25), .B1(mult_26s_25s_0_pp_5_26), .CI(co_mult_26s_25s_0_2_8), 
-           .S0(s_mult_26s_25s_0_2_25), .S1(s_mult_26s_25s_0_2_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_2_25), .S1(s_mult_26s_25s_0_2_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_mult_26s_25s_0_3_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_6_14), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_7_14), .CI(GND_net), .COUT(co_mult_26s_25s_0_3_1), 
-           .S1(s_mult_26s_25s_0_3_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_3_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_3_2 (.A0(mult_26s_25s_0_pp_6_15), .A1(mult_26s_25s_0_pp_6_16), 
            .B0(mult_26s_25s_0_pp_7_15), .B1(mult_26s_25s_0_pp_7_16), .CI(co_mult_26s_25s_0_3_1), 
-           .COUT(co_mult_26s_25s_0_3_2), .S0(s_mult_26s_25s_0_3_15), .S1(s_mult_26s_25s_0_3_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_3_2), .S0(s_mult_26s_25s_0_3_15), .S1(s_mult_26s_25s_0_3_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_3_3 (.A0(mult_26s_25s_0_pp_6_17), .A1(mult_26s_25s_0_pp_6_18), 
            .B0(mult_26s_25s_0_pp_7_17), .B1(mult_26s_25s_0_pp_7_18), .CI(co_mult_26s_25s_0_3_2), 
-           .COUT(co_mult_26s_25s_0_3_3), .S0(s_mult_26s_25s_0_3_17), .S1(s_mult_26s_25s_0_3_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_3_3), .S0(s_mult_26s_25s_0_3_17), .S1(s_mult_26s_25s_0_3_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_3_4 (.A0(mult_26s_25s_0_pp_6_19), .A1(mult_26s_25s_0_pp_6_20), 
            .B0(mult_26s_25s_0_pp_7_19), .B1(mult_26s_25s_0_pp_7_20), .CI(co_mult_26s_25s_0_3_3), 
-           .COUT(co_mult_26s_25s_0_3_4), .S0(s_mult_26s_25s_0_3_19), .S1(s_mult_26s_25s_0_3_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_3_4), .S0(s_mult_26s_25s_0_3_19), .S1(s_mult_26s_25s_0_3_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_3_5 (.A0(mult_26s_25s_0_pp_6_21), .A1(mult_26s_25s_0_pp_6_22), 
            .B0(mult_26s_25s_0_pp_7_21), .B1(mult_26s_25s_0_pp_7_22), .CI(co_mult_26s_25s_0_3_4), 
-           .COUT(co_mult_26s_25s_0_3_5), .S0(s_mult_26s_25s_0_3_21), .S1(s_mult_26s_25s_0_3_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_3_5), .S0(s_mult_26s_25s_0_3_21), .S1(s_mult_26s_25s_0_3_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_3_6 (.A0(mult_26s_25s_0_pp_6_23), .A1(mult_26s_25s_0_pp_6_24), 
            .B0(mult_26s_25s_0_pp_7_23), .B1(mult_26s_25s_0_pp_7_24), .CI(co_mult_26s_25s_0_3_5), 
-           .COUT(co_mult_26s_25s_0_3_6), .S0(s_mult_26s_25s_0_3_23), .S1(s_mult_26s_25s_0_3_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_3_6), .S0(s_mult_26s_25s_0_3_23), .S1(s_mult_26s_25s_0_3_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_3_7 (.A0(mult_26s_25s_0_pp_6_25), .A1(mult_26s_25s_0_pp_6_26), 
            .B0(mult_26s_25s_0_pp_7_25), .B1(mult_26s_25s_0_pp_7_26), .CI(co_mult_26s_25s_0_3_6), 
-           .S0(s_mult_26s_25s_0_3_25), .S1(s_mult_26s_25s_0_3_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
-    LUT4 i1388_3_lut (.A(n1634), .B(n497), .C(addOut[12]), .Z(intgOut0_25__N_1120[12])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+           .S0(s_mult_26s_25s_0_3_25), .S1(s_mult_26s_25s_0_3_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
+    LUT4 i1388_3_lut (.A(n1634), .B(n497), .C(addOut[12]), .Z(intgOut0_25__N_1120[12])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1388_3_lut.init = 16'h3232;
     FADD2B Cadd_mult_26s_25s_0_4_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_8_18), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_9_18), .CI(GND_net), .COUT(co_mult_26s_25s_0_4_1), 
-           .S1(s_mult_26s_25s_0_4_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_4_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_4_2 (.A0(mult_26s_25s_0_pp_8_19), .A1(mult_26s_25s_0_pp_8_20), 
            .B0(mult_26s_25s_0_pp_9_19), .B1(mult_26s_25s_0_pp_9_20), .CI(co_mult_26s_25s_0_4_1), 
-           .COUT(co_mult_26s_25s_0_4_2), .S0(s_mult_26s_25s_0_4_19), .S1(s_mult_26s_25s_0_4_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_4_2), .S0(s_mult_26s_25s_0_4_19), .S1(s_mult_26s_25s_0_4_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_4_3 (.A0(mult_26s_25s_0_pp_8_21), .A1(mult_26s_25s_0_pp_8_22), 
            .B0(mult_26s_25s_0_pp_9_21), .B1(mult_26s_25s_0_pp_9_22), .CI(co_mult_26s_25s_0_4_2), 
-           .COUT(co_mult_26s_25s_0_4_3), .S0(s_mult_26s_25s_0_4_21), .S1(s_mult_26s_25s_0_4_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_4_3), .S0(s_mult_26s_25s_0_4_21), .S1(s_mult_26s_25s_0_4_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_4_4 (.A0(mult_26s_25s_0_pp_8_23), .A1(mult_26s_25s_0_pp_8_24), 
            .B0(mult_26s_25s_0_pp_9_23), .B1(mult_26s_25s_0_pp_9_24), .CI(co_mult_26s_25s_0_4_3), 
-           .COUT(co_mult_26s_25s_0_4_4), .S0(s_mult_26s_25s_0_4_23), .S1(s_mult_26s_25s_0_4_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_4_4), .S0(s_mult_26s_25s_0_4_23), .S1(s_mult_26s_25s_0_4_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_4_5 (.A0(mult_26s_25s_0_pp_8_25), .A1(mult_26s_25s_0_pp_8_26), 
            .B0(mult_26s_25s_0_pp_9_25), .B1(mult_26s_25s_0_pp_9_26), .CI(co_mult_26s_25s_0_4_4), 
-           .S0(s_mult_26s_25s_0_4_25), .S1(s_mult_26s_25s_0_4_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
-    LUT4 i1386_3_lut (.A(n1634), .B(n497), .C(addOut[11]), .Z(intgOut0_25__N_1120[11])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+           .S0(s_mult_26s_25s_0_4_25), .S1(s_mult_26s_25s_0_4_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
+    LUT4 i1386_3_lut (.A(n1634), .B(n497), .C(addOut[11]), .Z(intgOut0_25__N_1120[11])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1386_3_lut.init = 16'h3232;
     FADD2B Cadd_mult_26s_25s_0_5_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_10_22), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_11_22), .CI(GND_net), .COUT(co_mult_26s_25s_0_5_1), 
-           .S1(s_mult_26s_25s_0_5_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_5_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_5_2 (.A0(mult_26s_25s_0_pp_10_23), .A1(mult_26s_25s_0_pp_10_24), 
            .B0(mult_26s_25s_0_pp_11_23), .B1(mult_26s_25s_0_pp_11_24), .CI(co_mult_26s_25s_0_5_1), 
-           .COUT(co_mult_26s_25s_0_5_2), .S0(s_mult_26s_25s_0_5_23), .S1(s_mult_26s_25s_0_5_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_5_2), .S0(s_mult_26s_25s_0_5_23), .S1(s_mult_26s_25s_0_5_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_5_3 (.A0(mult_26s_25s_0_pp_10_25), .A1(mult_26s_25s_0_pp_10_26), 
            .B0(mult_26s_25s_0_pp_11_25), .B1(mult_26s_25s_0_pp_11_26), .CI(co_mult_26s_25s_0_5_2), 
-           .S0(s_mult_26s_25s_0_5_25), .S1(s_mult_26s_25s_0_5_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
-    LUT4 i1384_3_lut (.A(n1634), .B(n497), .C(addOut[10]), .Z(intgOut0_25__N_1120[10])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+           .S0(s_mult_26s_25s_0_5_25), .S1(s_mult_26s_25s_0_5_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
+    LUT4 i1384_3_lut (.A(n1634), .B(n497), .C(addOut[10]), .Z(intgOut0_25__N_1120[10])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1384_3_lut.init = 16'h3232;
     FADD2B Cadd_mult_26s_25s_0_6_1 (.A0(GND_net), .A1(mult_26s_25s_0_pp_12_24), 
            .B0(GND_net), .B1(VCC_net), .CI(GND_net), .COUT(co_mult_26s_25s_0_6_1), 
-           .S1(s_mult_26s_25s_0_6_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_6_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_6_2 (.A0(mult_26s_25s_0_pp_12_25), .A1(mult_26s_25s_0_pp_12_26), 
            .B0(GND_net), .B1(GND_net), .CI(co_mult_26s_25s_0_6_1), .S0(s_mult_26s_25s_0_6_25), 
-           .S1(s_mult_26s_25s_0_6_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
-    LUT4 i1382_3_lut (.A(n1634), .B(n497), .C(addOut[7]), .Z(intgOut0_25__N_1120[7])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(209[4] 215[11])
+           .S1(s_mult_26s_25s_0_6_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
+    LUT4 i1382_3_lut (.A(n1634), .B(n497), .C(addOut[7]), .Z(intgOut0_25__N_1120[7])) /* synthesis lut_function=(!(A (B)+!A (B+!(C)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(211[4] 217[11])
     defparam i1382_3_lut.init = 16'h3232;
     LUT4 mux_64_i21_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[20]), 
-         .D(intgOut1[20]), .Z(addIn2_25__N_1094[20])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[20]), .Z(addIn2_25__N_1094[20])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i21_3_lut_4_lut.init = 16'hfb40;
     FADD2B Cadd_mult_26s_25s_0_7_1 (.A0(GND_net), .A1(s_mult_26s_25s_0_0_4), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_2_4), .CI(GND_net), .COUT(co_mult_26s_25s_0_7_1), 
-           .S1(multOut_25__N_958[4])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[4])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_2 (.A0(s_mult_26s_25s_0_0_5), .A1(s_mult_26s_25s_0_0_6), 
            .B0(mult_26s_25s_0_pp_2_5), .B1(s_mult_26s_25s_0_1_6), .CI(co_mult_26s_25s_0_7_1), 
-           .COUT(co_mult_26s_25s_0_7_2), .S0(multOut_25__N_958[5]), .S1(multOut_25__N_958[6])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_2), .S0(multOut_25__N_958[5]), .S1(multOut_25__N_958[6])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_3 (.A0(s_mult_26s_25s_0_0_7), .A1(s_mult_26s_25s_0_0_8), 
            .B0(s_mult_26s_25s_0_1_7), .B1(s_mult_26s_25s_0_1_8), .CI(co_mult_26s_25s_0_7_2), 
-           .COUT(co_mult_26s_25s_0_7_3), .S0(multOut_25__N_958[7]), .S1(s_mult_26s_25s_0_7_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_3), .S0(multOut_25__N_958[7]), .S1(s_mult_26s_25s_0_7_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_4 (.A0(s_mult_26s_25s_0_0_9), .A1(s_mult_26s_25s_0_0_10), 
            .B0(s_mult_26s_25s_0_1_9), .B1(s_mult_26s_25s_0_1_10), .CI(co_mult_26s_25s_0_7_3), 
-           .COUT(co_mult_26s_25s_0_7_4), .S0(s_mult_26s_25s_0_7_9), .S1(s_mult_26s_25s_0_7_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_4), .S0(s_mult_26s_25s_0_7_9), .S1(s_mult_26s_25s_0_7_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_5 (.A0(s_mult_26s_25s_0_0_11), .A1(s_mult_26s_25s_0_0_12), 
            .B0(s_mult_26s_25s_0_1_11), .B1(s_mult_26s_25s_0_1_12), .CI(co_mult_26s_25s_0_7_4), 
-           .COUT(co_mult_26s_25s_0_7_5), .S0(s_mult_26s_25s_0_7_11), .S1(s_mult_26s_25s_0_7_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_5), .S0(s_mult_26s_25s_0_7_11), .S1(s_mult_26s_25s_0_7_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_6 (.A0(s_mult_26s_25s_0_0_13), .A1(s_mult_26s_25s_0_0_14), 
            .B0(s_mult_26s_25s_0_1_13), .B1(s_mult_26s_25s_0_1_14), .CI(co_mult_26s_25s_0_7_5), 
-           .COUT(co_mult_26s_25s_0_7_6), .S0(s_mult_26s_25s_0_7_13), .S1(s_mult_26s_25s_0_7_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_6), .S0(s_mult_26s_25s_0_7_13), .S1(s_mult_26s_25s_0_7_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_7 (.A0(s_mult_26s_25s_0_0_15), .A1(s_mult_26s_25s_0_0_16), 
            .B0(s_mult_26s_25s_0_1_15), .B1(s_mult_26s_25s_0_1_16), .CI(co_mult_26s_25s_0_7_6), 
-           .COUT(co_mult_26s_25s_0_7_7), .S0(s_mult_26s_25s_0_7_15), .S1(s_mult_26s_25s_0_7_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_7), .S0(s_mult_26s_25s_0_7_15), .S1(s_mult_26s_25s_0_7_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_8 (.A0(s_mult_26s_25s_0_0_17), .A1(s_mult_26s_25s_0_0_18), 
            .B0(s_mult_26s_25s_0_1_17), .B1(s_mult_26s_25s_0_1_18), .CI(co_mult_26s_25s_0_7_7), 
-           .COUT(co_mult_26s_25s_0_7_8), .S0(s_mult_26s_25s_0_7_17), .S1(s_mult_26s_25s_0_7_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_8), .S0(s_mult_26s_25s_0_7_17), .S1(s_mult_26s_25s_0_7_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_9 (.A0(s_mult_26s_25s_0_0_19), .A1(s_mult_26s_25s_0_0_20), 
            .B0(s_mult_26s_25s_0_1_19), .B1(s_mult_26s_25s_0_1_20), .CI(co_mult_26s_25s_0_7_8), 
-           .COUT(co_mult_26s_25s_0_7_9), .S0(s_mult_26s_25s_0_7_19), .S1(s_mult_26s_25s_0_7_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_9), .S0(s_mult_26s_25s_0_7_19), .S1(s_mult_26s_25s_0_7_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_10 (.A0(s_mult_26s_25s_0_0_21), .A1(s_mult_26s_25s_0_0_22), 
            .B0(s_mult_26s_25s_0_1_21), .B1(s_mult_26s_25s_0_1_22), .CI(co_mult_26s_25s_0_7_9), 
-           .COUT(co_mult_26s_25s_0_7_10), .S0(s_mult_26s_25s_0_7_21), .S1(s_mult_26s_25s_0_7_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_10), .S0(s_mult_26s_25s_0_7_21), .S1(s_mult_26s_25s_0_7_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_11 (.A0(s_mult_26s_25s_0_0_23), .A1(s_mult_26s_25s_0_0_24), 
            .B0(s_mult_26s_25s_0_1_23), .B1(s_mult_26s_25s_0_1_24), .CI(co_mult_26s_25s_0_7_10), 
-           .COUT(co_mult_26s_25s_0_7_11), .S0(s_mult_26s_25s_0_7_23), .S1(s_mult_26s_25s_0_7_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_7_11), .S0(s_mult_26s_25s_0_7_23), .S1(s_mult_26s_25s_0_7_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_7_12 (.A0(s_mult_26s_25s_0_0_25), .A1(s_mult_26s_25s_0_0_26), 
            .B0(s_mult_26s_25s_0_1_25), .B1(s_mult_26s_25s_0_1_26), .CI(co_mult_26s_25s_0_7_11), 
-           .S0(s_mult_26s_25s_0_7_25), .S1(s_mult_26s_25s_0_7_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_7_25), .S1(s_mult_26s_25s_0_7_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_mult_26s_25s_0_8_1 (.A0(GND_net), .A1(s_mult_26s_25s_0_2_12), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_6_12), .CI(GND_net), .COUT(co_mult_26s_25s_0_8_1), 
-           .S1(s_mult_26s_25s_0_8_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_8_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_2 (.A0(s_mult_26s_25s_0_2_13), .A1(s_mult_26s_25s_0_2_14), 
            .B0(mult_26s_25s_0_pp_6_13), .B1(s_mult_26s_25s_0_3_14), .CI(co_mult_26s_25s_0_8_1), 
-           .COUT(co_mult_26s_25s_0_8_2), .S0(s_mult_26s_25s_0_8_13), .S1(s_mult_26s_25s_0_8_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_8_2), .S0(s_mult_26s_25s_0_8_13), .S1(s_mult_26s_25s_0_8_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_3 (.A0(s_mult_26s_25s_0_2_15), .A1(s_mult_26s_25s_0_2_16), 
            .B0(s_mult_26s_25s_0_3_15), .B1(s_mult_26s_25s_0_3_16), .CI(co_mult_26s_25s_0_8_2), 
-           .COUT(co_mult_26s_25s_0_8_3), .S0(s_mult_26s_25s_0_8_15), .S1(s_mult_26s_25s_0_8_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_8_3), .S0(s_mult_26s_25s_0_8_15), .S1(s_mult_26s_25s_0_8_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_4 (.A0(s_mult_26s_25s_0_2_17), .A1(s_mult_26s_25s_0_2_18), 
            .B0(s_mult_26s_25s_0_3_17), .B1(s_mult_26s_25s_0_3_18), .CI(co_mult_26s_25s_0_8_3), 
-           .COUT(co_mult_26s_25s_0_8_4), .S0(s_mult_26s_25s_0_8_17), .S1(s_mult_26s_25s_0_8_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_8_4), .S0(s_mult_26s_25s_0_8_17), .S1(s_mult_26s_25s_0_8_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_5 (.A0(s_mult_26s_25s_0_2_19), .A1(s_mult_26s_25s_0_2_20), 
            .B0(s_mult_26s_25s_0_3_19), .B1(s_mult_26s_25s_0_3_20), .CI(co_mult_26s_25s_0_8_4), 
-           .COUT(co_mult_26s_25s_0_8_5), .S0(s_mult_26s_25s_0_8_19), .S1(s_mult_26s_25s_0_8_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_8_5), .S0(s_mult_26s_25s_0_8_19), .S1(s_mult_26s_25s_0_8_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_6 (.A0(s_mult_26s_25s_0_2_21), .A1(s_mult_26s_25s_0_2_22), 
            .B0(s_mult_26s_25s_0_3_21), .B1(s_mult_26s_25s_0_3_22), .CI(co_mult_26s_25s_0_8_5), 
-           .COUT(co_mult_26s_25s_0_8_6), .S0(s_mult_26s_25s_0_8_21), .S1(s_mult_26s_25s_0_8_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_8_6), .S0(s_mult_26s_25s_0_8_21), .S1(s_mult_26s_25s_0_8_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_7 (.A0(s_mult_26s_25s_0_2_23), .A1(s_mult_26s_25s_0_2_24), 
            .B0(s_mult_26s_25s_0_3_23), .B1(s_mult_26s_25s_0_3_24), .CI(co_mult_26s_25s_0_8_6), 
-           .COUT(co_mult_26s_25s_0_8_7), .S0(s_mult_26s_25s_0_8_23), .S1(s_mult_26s_25s_0_8_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_8_7), .S0(s_mult_26s_25s_0_8_23), .S1(s_mult_26s_25s_0_8_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_8_8 (.A0(s_mult_26s_25s_0_2_25), .A1(s_mult_26s_25s_0_2_26), 
            .B0(s_mult_26s_25s_0_3_25), .B1(s_mult_26s_25s_0_3_26), .CI(co_mult_26s_25s_0_8_7), 
-           .S0(s_mult_26s_25s_0_8_25), .S1(s_mult_26s_25s_0_8_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_8_25), .S1(s_mult_26s_25s_0_8_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_mult_26s_25s_0_9_1 (.A0(GND_net), .A1(s_mult_26s_25s_0_4_20), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_10_20), .CI(GND_net), .COUT(co_mult_26s_25s_0_9_1), 
-           .S1(s_mult_26s_25s_0_9_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_9_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_9_2 (.A0(s_mult_26s_25s_0_4_21), .A1(s_mult_26s_25s_0_4_22), 
            .B0(mult_26s_25s_0_pp_10_21), .B1(s_mult_26s_25s_0_5_22), .CI(co_mult_26s_25s_0_9_1), 
-           .COUT(co_mult_26s_25s_0_9_2), .S0(s_mult_26s_25s_0_9_21), .S1(s_mult_26s_25s_0_9_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_9_2), .S0(s_mult_26s_25s_0_9_21), .S1(s_mult_26s_25s_0_9_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_9_3 (.A0(s_mult_26s_25s_0_4_23), .A1(s_mult_26s_25s_0_4_24), 
            .B0(s_mult_26s_25s_0_5_23), .B1(s_mult_26s_25s_0_5_24), .CI(co_mult_26s_25s_0_9_2), 
-           .COUT(co_mult_26s_25s_0_9_3), .S0(s_mult_26s_25s_0_9_23), .S1(s_mult_26s_25s_0_9_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_9_3), .S0(s_mult_26s_25s_0_9_23), .S1(s_mult_26s_25s_0_9_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_9_4 (.A0(s_mult_26s_25s_0_4_25), .A1(s_mult_26s_25s_0_4_26), 
            .B0(s_mult_26s_25s_0_5_25), .B1(s_mult_26s_25s_0_5_26), .CI(co_mult_26s_25s_0_9_3), 
-           .S0(s_mult_26s_25s_0_9_25), .S1(s_mult_26s_25s_0_9_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_9_25), .S1(s_mult_26s_25s_0_9_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 mux_64_i8_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[7]), 
-         .D(intgOut1[7]), .Z(addIn2_25__N_1094[7])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[7]), .Z(addIn2_25__N_1094[7])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i8_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i15_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[14]), 
-         .D(intgOut1[14]), .Z(addIn2_25__N_1094[14])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[14]), .Z(addIn2_25__N_1094[14])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i15_3_lut_4_lut.init = 16'hfb40;
     FADD2B Cadd_mult_26s_25s_0_10_1 (.A0(GND_net), .A1(s_mult_26s_25s_0_7_8), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_4_8), .CI(GND_net), .COUT(co_mult_26s_25s_0_10_1), 
-           .S1(multOut_25__N_958[8])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[8])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_2 (.A0(s_mult_26s_25s_0_7_9), .A1(s_mult_26s_25s_0_7_10), 
            .B0(mult_26s_25s_0_pp_4_9), .B1(s_mult_26s_25s_0_2_10), .CI(co_mult_26s_25s_0_10_1), 
-           .COUT(co_mult_26s_25s_0_10_2), .S0(multOut_25__N_958[9]), .S1(multOut_25__N_958[10])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_2), .S0(multOut_25__N_958[9]), .S1(multOut_25__N_958[10])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_3 (.A0(s_mult_26s_25s_0_7_11), .A1(s_mult_26s_25s_0_7_12), 
            .B0(s_mult_26s_25s_0_2_11), .B1(s_mult_26s_25s_0_8_12), .CI(co_mult_26s_25s_0_10_2), 
-           .COUT(co_mult_26s_25s_0_10_3), .S0(multOut_25__N_958[11]), .S1(multOut_25__N_958[12])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_3), .S0(multOut_25__N_958[11]), .S1(multOut_25__N_958[12])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_4 (.A0(s_mult_26s_25s_0_7_13), .A1(s_mult_26s_25s_0_7_14), 
            .B0(s_mult_26s_25s_0_8_13), .B1(s_mult_26s_25s_0_8_14), .CI(co_mult_26s_25s_0_10_3), 
-           .COUT(co_mult_26s_25s_0_10_4), .S0(multOut_25__N_958[13]), .S1(multOut_25__N_958[14])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_4), .S0(multOut_25__N_958[13]), .S1(multOut_25__N_958[14])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_5 (.A0(s_mult_26s_25s_0_7_15), .A1(s_mult_26s_25s_0_7_16), 
            .B0(s_mult_26s_25s_0_8_15), .B1(s_mult_26s_25s_0_8_16), .CI(co_mult_26s_25s_0_10_4), 
-           .COUT(co_mult_26s_25s_0_10_5), .S0(multOut_25__N_958[15]), .S1(s_mult_26s_25s_0_10_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_5), .S0(multOut_25__N_958[15]), .S1(s_mult_26s_25s_0_10_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_6 (.A0(s_mult_26s_25s_0_7_17), .A1(s_mult_26s_25s_0_7_18), 
            .B0(s_mult_26s_25s_0_8_17), .B1(s_mult_26s_25s_0_8_18), .CI(co_mult_26s_25s_0_10_5), 
-           .COUT(co_mult_26s_25s_0_10_6), .S0(s_mult_26s_25s_0_10_17), .S1(s_mult_26s_25s_0_10_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_6), .S0(s_mult_26s_25s_0_10_17), .S1(s_mult_26s_25s_0_10_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_7 (.A0(s_mult_26s_25s_0_7_19), .A1(s_mult_26s_25s_0_7_20), 
            .B0(s_mult_26s_25s_0_8_19), .B1(s_mult_26s_25s_0_8_20), .CI(co_mult_26s_25s_0_10_6), 
-           .COUT(co_mult_26s_25s_0_10_7), .S0(s_mult_26s_25s_0_10_19), .S1(s_mult_26s_25s_0_10_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_7), .S0(s_mult_26s_25s_0_10_19), .S1(s_mult_26s_25s_0_10_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_8 (.A0(s_mult_26s_25s_0_7_21), .A1(s_mult_26s_25s_0_7_22), 
            .B0(s_mult_26s_25s_0_8_21), .B1(s_mult_26s_25s_0_8_22), .CI(co_mult_26s_25s_0_10_7), 
-           .COUT(co_mult_26s_25s_0_10_8), .S0(s_mult_26s_25s_0_10_21), .S1(s_mult_26s_25s_0_10_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_8), .S0(s_mult_26s_25s_0_10_21), .S1(s_mult_26s_25s_0_10_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_9 (.A0(s_mult_26s_25s_0_7_23), .A1(s_mult_26s_25s_0_7_24), 
            .B0(s_mult_26s_25s_0_8_23), .B1(s_mult_26s_25s_0_8_24), .CI(co_mult_26s_25s_0_10_8), 
-           .COUT(co_mult_26s_25s_0_10_9), .S0(s_mult_26s_25s_0_10_23), .S1(s_mult_26s_25s_0_10_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .COUT(co_mult_26s_25s_0_10_9), .S0(s_mult_26s_25s_0_10_23), .S1(s_mult_26s_25s_0_10_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_10_10 (.A0(s_mult_26s_25s_0_7_25), .A1(s_mult_26s_25s_0_7_26), 
            .B0(s_mult_26s_25s_0_8_25), .B1(s_mult_26s_25s_0_8_26), .CI(co_mult_26s_25s_0_10_9), 
-           .S0(s_mult_26s_25s_0_10_25), .S1(s_mult_26s_25s_0_10_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_10_25), .S1(s_mult_26s_25s_0_10_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 mux_64_i20_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[19]), 
-         .D(intgOut1[19]), .Z(addIn2_25__N_1094[19])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[19]), .Z(addIn2_25__N_1094[19])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i20_3_lut_4_lut.init = 16'hfb40;
     FADD2B Cadd_mult_26s_25s_0_11_1 (.A0(GND_net), .A1(s_mult_26s_25s_0_9_24), 
            .B0(GND_net), .B1(s_mult_26s_25s_0_6_24), .CI(GND_net), .COUT(co_mult_26s_25s_0_11_1), 
-           .S1(s_mult_26s_25s_0_11_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(s_mult_26s_25s_0_11_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_add_11_2 (.A0(s_mult_26s_25s_0_9_25), .A1(s_mult_26s_25s_0_9_26), 
            .B0(s_mult_26s_25s_0_6_25), .B1(s_mult_26s_25s_0_6_26), .CI(co_mult_26s_25s_0_11_1), 
-           .S0(s_mult_26s_25s_0_11_25), .S1(s_mult_26s_25s_0_11_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(s_mult_26s_25s_0_11_25), .S1(s_mult_26s_25s_0_11_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B Cadd_t_mult_26s_25s_0_12_1 (.A0(GND_net), .A1(s_mult_26s_25s_0_10_16), 
            .B0(GND_net), .B1(mult_26s_25s_0_pp_8_16), .CI(GND_net), .COUT(co_t_mult_26s_25s_0_12_1), 
-           .S1(multOut_25__N_958[16])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[16])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B t_mult_26s_25s_0_add_12_2 (.A0(s_mult_26s_25s_0_10_17), .A1(s_mult_26s_25s_0_10_18), 
            .B0(mult_26s_25s_0_pp_8_17), .B1(s_mult_26s_25s_0_4_18), .CI(co_t_mult_26s_25s_0_12_1), 
            .COUT(co_t_mult_26s_25s_0_12_2), .S0(multOut_25__N_958[17]), 
-           .S1(multOut_25__N_958[18])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[18])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B t_mult_26s_25s_0_add_12_3 (.A0(s_mult_26s_25s_0_10_19), .A1(s_mult_26s_25s_0_10_20), 
            .B0(s_mult_26s_25s_0_4_19), .B1(s_mult_26s_25s_0_9_20), .CI(co_t_mult_26s_25s_0_12_2), 
            .COUT(co_t_mult_26s_25s_0_12_3), .S0(multOut_25__N_958[19]), 
-           .S1(multOut_25__N_958[20])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[20])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B t_mult_26s_25s_0_add_12_4 (.A0(s_mult_26s_25s_0_10_21), .A1(s_mult_26s_25s_0_10_22), 
            .B0(s_mult_26s_25s_0_9_21), .B1(s_mult_26s_25s_0_9_22), .CI(co_t_mult_26s_25s_0_12_3), 
            .COUT(co_t_mult_26s_25s_0_12_4), .S0(multOut_25__N_958[21]), 
-           .S1(multOut_25__N_958[22])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[22])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B t_mult_26s_25s_0_add_12_5 (.A0(s_mult_26s_25s_0_10_23), .A1(s_mult_26s_25s_0_10_24), 
            .B0(s_mult_26s_25s_0_9_23), .B1(s_mult_26s_25s_0_11_24), .CI(co_t_mult_26s_25s_0_12_4), 
            .COUT(co_t_mult_26s_25s_0_12_5), .S0(multOut_25__N_958[23]), 
-           .S1(multOut_25__N_958[24])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S1(multOut_25__N_958[24])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B t_mult_26s_25s_0_add_12_6 (.A0(s_mult_26s_25s_0_10_25), .A1(s_mult_26s_25s_0_10_26), 
            .B0(s_mult_26s_25s_0_11_25), .B1(s_mult_26s_25s_0_11_26), .CI(co_t_mult_26s_25s_0_12_5), 
-           .S0(multOut_25__N_958[25])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .S0(multOut_25__N_958[25])) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mult_26s_25s_0_cin_lr_0), .CO(mco), .P0(multOut_25__N_958[1]), 
-          .P1(mult_26s_25s_0_pp_0_2)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_2)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco), .CO(mco_1), .P0(mult_26s_25s_0_pp_0_3), 
-          .P1(mult_26s_25s_0_pp_0_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_1), .CO(mco_2), .P0(mult_26s_25s_0_pp_0_5), 
-          .P1(mult_26s_25s_0_pp_0_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_2), .CO(mco_3), .P0(mult_26s_25s_0_pp_0_7), 
-          .P1(mult_26s_25s_0_pp_0_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_3), .CO(mco_4), .P0(mult_26s_25s_0_pp_0_9), 
-          .P1(mult_26s_25s_0_pp_0_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_4), .CO(mco_5), .P0(mult_26s_25s_0_pp_0_11), 
-          .P1(mult_26s_25s_0_pp_0_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_5), .CO(mco_6), .P0(mult_26s_25s_0_pp_0_13), 
-          .P1(mult_26s_25s_0_pp_0_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_7 (.A0(subOut[14]), .A1(subOut[15]), .A2(subOut[15]), 
           .A3(subOut[16]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_6), .CO(mco_7), .P0(mult_26s_25s_0_pp_0_15), 
-          .P1(mult_26s_25s_0_pp_0_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_8 (.A0(subOut[16]), .A1(subOut[17]), .A2(subOut[17]), 
           .A3(subOut[18]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_7), .CO(mco_8), .P0(mult_26s_25s_0_pp_0_17), 
-          .P1(mult_26s_25s_0_pp_0_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_9 (.A0(subOut[18]), .A1(subOut[19]), .A2(subOut[19]), 
           .A3(subOut[20]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_8), .CO(mco_9), .P0(mult_26s_25s_0_pp_0_19), 
-          .P1(mult_26s_25s_0_pp_0_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_10 (.A0(subOut[20]), .A1(subOut[21]), .A2(subOut[21]), 
           .A3(subOut[21]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_9), .CO(mco_10), .P0(mult_26s_25s_0_pp_0_21), 
-          .P1(mult_26s_25s_0_pp_0_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_11 (.A0(subOut[21]), .A1(subOut[21]), .A2(subOut[21]), 
           .A3(subOut[21]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_10), .CO(mco_11), .P0(mult_26s_25s_0_pp_0_23), 
-          .P1(mult_26s_25s_0_pp_0_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_0_12 (.A0(subOut[21]), .A1(subOut[21]), .A2(mult_26s_25s_0_mult_0_12_n1), 
           .A3(mult_26s_25s_0_mult_0_12_n3), .B0(multIn2[1]), .B1(n9747), 
           .B2(VCC_net), .B3(VCC_net), .CI(mco_11), .P0(mult_26s_25s_0_pp_0_25), 
-          .P1(mult_26s_25s_0_pp_0_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_0_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mult_26s_25s_0_cin_lr_2), .CO(mco_12), 
-          .P0(mult_26s_25s_0_pp_1_3), .P1(mult_26s_25s_0_pp_1_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P0(mult_26s_25s_0_pp_1_3), .P1(mult_26s_25s_0_pp_1_4)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_12), .CO(mco_13), .P0(mult_26s_25s_0_pp_1_5), 
-          .P1(mult_26s_25s_0_pp_1_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_13), .CO(mco_14), .P0(mult_26s_25s_0_pp_1_7), 
-          .P1(mult_26s_25s_0_pp_1_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_14), .CO(mco_15), .P0(mult_26s_25s_0_pp_1_9), 
-          .P1(mult_26s_25s_0_pp_1_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_15), .CO(mco_16), .P0(mult_26s_25s_0_pp_1_11), 
-          .P1(mult_26s_25s_0_pp_1_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_16), .CO(mco_17), .P0(mult_26s_25s_0_pp_1_13), 
-          .P1(mult_26s_25s_0_pp_1_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_17), .CO(mco_18), .P0(mult_26s_25s_0_pp_1_15), 
-          .P1(mult_26s_25s_0_pp_1_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_7 (.A0(subOut[14]), .A1(subOut[15]), .A2(subOut[15]), 
           .A3(subOut[16]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_18), .CO(mco_19), .P0(mult_26s_25s_0_pp_1_17), 
-          .P1(mult_26s_25s_0_pp_1_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_8 (.A0(subOut[16]), .A1(subOut[17]), .A2(subOut[17]), 
           .A3(subOut[18]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_19), .CO(mco_20), .P0(mult_26s_25s_0_pp_1_19), 
-          .P1(mult_26s_25s_0_pp_1_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_9 (.A0(subOut[18]), .A1(subOut[19]), .A2(subOut[19]), 
           .A3(subOut[20]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_20), .CO(mco_21), .P0(mult_26s_25s_0_pp_1_21), 
-          .P1(mult_26s_25s_0_pp_1_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_10 (.A0(subOut[20]), .A1(subOut[21]), .A2(subOut[21]), 
           .A3(subOut[21]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
           .B3(multIn2[1]), .CI(mco_21), .CO(mco_22), .P0(mult_26s_25s_0_pp_1_23), 
-          .P1(mult_26s_25s_0_pp_1_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_1_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_2_11 (.A0(subOut[21]), .A1(subOut[21]), .A2(subOut[21]), 
           .A3(subOut[21]), .B0(multIn2[3]), .B1(multIn2[1]), .B2(multIn2[3]), 
-          .B3(multIn2[1]), .CI(mco_22), .P0(mult_26s_25s_0_pp_1_25), .P1(mult_26s_25s_0_pp_1_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(multIn2[1]), .CI(mco_22), .P0(mult_26s_25s_0_pp_1_25), .P1(mult_26s_25s_0_pp_1_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mult_26s_25s_0_cin_lr_4), .CO(mco_24), .P0(mult_26s_25s_0_pp_2_5), 
-          .P1(mult_26s_25s_0_pp_2_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_6)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_24), .CO(mco_25), .P0(mult_26s_25s_0_pp_2_7), 
-          .P1(mult_26s_25s_0_pp_2_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_25), .CO(mco_26), .P0(mult_26s_25s_0_pp_2_9), 
-          .P1(mult_26s_25s_0_pp_2_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_26), .CO(mco_27), .P0(mult_26s_25s_0_pp_2_11), 
-          .P1(mult_26s_25s_0_pp_2_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_27), .CO(mco_28), .P0(mult_26s_25s_0_pp_2_13), 
-          .P1(mult_26s_25s_0_pp_2_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_28), .CO(mco_29), .P0(mult_26s_25s_0_pp_2_15), 
-          .P1(mult_26s_25s_0_pp_2_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_29), .CO(mco_30), .P0(mult_26s_25s_0_pp_2_17), 
-          .P1(mult_26s_25s_0_pp_2_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_7 (.A0(subOut[14]), .A1(subOut[15]), .A2(subOut[15]), 
           .A3(subOut[16]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_30), .CO(mco_31), .P0(mult_26s_25s_0_pp_2_19), 
-          .P1(mult_26s_25s_0_pp_2_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_8 (.A0(subOut[16]), .A1(subOut[17]), .A2(subOut[17]), 
           .A3(subOut[18]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_31), .CO(mco_32), .P0(mult_26s_25s_0_pp_2_21), 
-          .P1(mult_26s_25s_0_pp_2_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_9 (.A0(subOut[18]), .A1(subOut[19]), .A2(subOut[19]), 
           .A3(subOut[20]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
           .B3(n9747), .CI(mco_32), .CO(mco_33), .P0(mult_26s_25s_0_pp_2_23), 
-          .P1(mult_26s_25s_0_pp_2_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_2_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_4_10 (.A0(subOut[20]), .A1(subOut[21]), .A2(subOut[21]), 
           .A3(subOut[21]), .B0(multIn2[1]), .B1(n9747), .B2(multIn2[1]), 
-          .B3(n9747), .CI(mco_33), .P0(mult_26s_25s_0_pp_2_25), .P1(mult_26s_25s_0_pp_2_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(n9747), .CI(mco_33), .P0(mult_26s_25s_0_pp_2_25), .P1(mult_26s_25s_0_pp_2_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mult_26s_25s_0_cin_lr_6), .CO(mco_36), 
-          .P0(mult_26s_25s_0_pp_3_7), .P1(mult_26s_25s_0_pp_3_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P0(mult_26s_25s_0_pp_3_7), .P1(mult_26s_25s_0_pp_3_8)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_36), .CO(mco_37), .P0(mult_26s_25s_0_pp_3_9), 
-          .P1(mult_26s_25s_0_pp_3_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_37), .CO(mco_38), .P0(mult_26s_25s_0_pp_3_11), 
-          .P1(mult_26s_25s_0_pp_3_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_38), .CO(mco_39), .P0(mult_26s_25s_0_pp_3_13), 
-          .P1(mult_26s_25s_0_pp_3_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_39), .CO(mco_40), .P0(mult_26s_25s_0_pp_3_15), 
-          .P1(mult_26s_25s_0_pp_3_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_40), .CO(mco_41), .P0(mult_26s_25s_0_pp_3_17), 
-          .P1(mult_26s_25s_0_pp_3_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_41), .CO(mco_42), .P0(mult_26s_25s_0_pp_3_19), 
-          .P1(mult_26s_25s_0_pp_3_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_7 (.A0(subOut[14]), .A1(subOut[15]), .A2(subOut[15]), 
           .A3(subOut[16]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_42), .CO(mco_43), .P0(mult_26s_25s_0_pp_3_21), 
-          .P1(mult_26s_25s_0_pp_3_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_8 (.A0(subOut[16]), .A1(subOut[17]), .A2(subOut[17]), 
           .A3(subOut[18]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
           .B3(multIn2[1]), .CI(mco_43), .CO(mco_44), .P0(mult_26s_25s_0_pp_3_23), 
-          .P1(mult_26s_25s_0_pp_3_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_3_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_6_9 (.A0(subOut[18]), .A1(subOut[19]), .A2(subOut[19]), 
           .A3(subOut[20]), .B0(multIn2[1]), .B1(multIn2[1]), .B2(multIn2[1]), 
-          .B3(multIn2[1]), .CI(mco_44), .P0(mult_26s_25s_0_pp_3_25), .P1(mult_26s_25s_0_pp_3_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(multIn2[1]), .CI(mco_44), .P0(mult_26s_25s_0_pp_3_25), .P1(mult_26s_25s_0_pp_3_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_8), .CO(mco_48), .P0(mult_26s_25s_0_pp_4_9), 
-          .P1(mult_26s_25s_0_pp_4_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_10)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_48), .CO(mco_49), .P0(mult_26s_25s_0_pp_4_11), 
-          .P1(mult_26s_25s_0_pp_4_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_49), .CO(mco_50), .P0(mult_26s_25s_0_pp_4_13), 
-          .P1(mult_26s_25s_0_pp_4_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_50), .CO(mco_51), .P0(mult_26s_25s_0_pp_4_15), 
-          .P1(mult_26s_25s_0_pp_4_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_51), .CO(mco_52), .P0(mult_26s_25s_0_pp_4_17), 
-          .P1(mult_26s_25s_0_pp_4_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_52), .CO(mco_53), .P0(mult_26s_25s_0_pp_4_19), 
-          .P1(mult_26s_25s_0_pp_4_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_53), .CO(mco_54), .P0(mult_26s_25s_0_pp_4_21), 
-          .P1(mult_26s_25s_0_pp_4_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_7 (.A0(subOut[14]), .A1(subOut[15]), .A2(subOut[15]), 
           .A3(subOut[16]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
           .B3(GND_net), .CI(mco_54), .CO(mco_55), .P0(mult_26s_25s_0_pp_4_23), 
-          .P1(mult_26s_25s_0_pp_4_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_4_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_8_8 (.A0(subOut[16]), .A1(subOut[17]), .A2(subOut[17]), 
           .A3(subOut[18]), .B0(multIn2[1]), .B1(GND_net), .B2(multIn2[1]), 
-          .B3(GND_net), .CI(mco_55), .P0(mult_26s_25s_0_pp_4_25), .P1(mult_26s_25s_0_pp_4_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_55), .P0(mult_26s_25s_0_pp_4_25), .P1(mult_26s_25s_0_pp_4_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_10), .CO(mco_60), .P0(mult_26s_25s_0_pp_5_11), 
-          .P1(mult_26s_25s_0_pp_5_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_12)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_60), .CO(mco_61), .P0(mult_26s_25s_0_pp_5_13), 
-          .P1(mult_26s_25s_0_pp_5_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_61), .CO(mco_62), .P0(mult_26s_25s_0_pp_5_15), 
-          .P1(mult_26s_25s_0_pp_5_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_62), .CO(mco_63), .P0(mult_26s_25s_0_pp_5_17), 
-          .P1(mult_26s_25s_0_pp_5_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_63), .CO(mco_64), .P0(mult_26s_25s_0_pp_5_19), 
-          .P1(mult_26s_25s_0_pp_5_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_64), .CO(mco_65), .P0(mult_26s_25s_0_pp_5_21), 
-          .P1(mult_26s_25s_0_pp_5_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_65), .CO(mco_66), .P0(mult_26s_25s_0_pp_5_23), 
-          .P1(mult_26s_25s_0_pp_5_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_5_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_10_7 (.A0(subOut[14]), .A1(subOut[15]), .A2(subOut[15]), 
           .A3(subOut[16]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_66), .P0(mult_26s_25s_0_pp_5_25), .P1(mult_26s_25s_0_pp_5_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_66), .P0(mult_26s_25s_0_pp_5_25), .P1(mult_26s_25s_0_pp_5_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_12), .CO(mco_72), .P0(mult_26s_25s_0_pp_6_13), 
-          .P1(mult_26s_25s_0_pp_6_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_6_14)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_72), .CO(mco_73), .P0(mult_26s_25s_0_pp_6_15), 
-          .P1(mult_26s_25s_0_pp_6_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_6_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_73), .CO(mco_74), .P0(mult_26s_25s_0_pp_6_17), 
-          .P1(mult_26s_25s_0_pp_6_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_6_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_74), .CO(mco_75), .P0(mult_26s_25s_0_pp_6_19), 
-          .P1(mult_26s_25s_0_pp_6_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_6_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_75), .CO(mco_76), .P0(mult_26s_25s_0_pp_6_21), 
-          .P1(mult_26s_25s_0_pp_6_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_6_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_76), .CO(mco_77), .P0(mult_26s_25s_0_pp_6_23), 
-          .P1(mult_26s_25s_0_pp_6_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_6_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_12_6 (.A0(subOut[12]), .A1(subOut[13]), .A2(subOut[13]), 
           .A3(subOut[14]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_77), .P0(mult_26s_25s_0_pp_6_25), .P1(mult_26s_25s_0_pp_6_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_77), .P0(mult_26s_25s_0_pp_6_25), .P1(mult_26s_25s_0_pp_6_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_14_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_14), .CO(mco_84), .P0(mult_26s_25s_0_pp_7_15), 
-          .P1(mult_26s_25s_0_pp_7_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_7_16)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_14_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_84), .CO(mco_85), .P0(mult_26s_25s_0_pp_7_17), 
-          .P1(mult_26s_25s_0_pp_7_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_7_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_14_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_85), .CO(mco_86), .P0(mult_26s_25s_0_pp_7_19), 
-          .P1(mult_26s_25s_0_pp_7_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_7_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_14_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_86), .CO(mco_87), .P0(mult_26s_25s_0_pp_7_21), 
-          .P1(mult_26s_25s_0_pp_7_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_7_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_14_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_87), .CO(mco_88), .P0(mult_26s_25s_0_pp_7_23), 
-          .P1(mult_26s_25s_0_pp_7_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_7_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_14_5 (.A0(subOut[10]), .A1(subOut[11]), .A2(subOut[11]), 
           .A3(subOut[12]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_88), .P0(mult_26s_25s_0_pp_7_25), .P1(mult_26s_25s_0_pp_7_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_88), .P0(mult_26s_25s_0_pp_7_25), .P1(mult_26s_25s_0_pp_7_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_16_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_16), .CO(mco_96), .P0(mult_26s_25s_0_pp_8_17), 
-          .P1(mult_26s_25s_0_pp_8_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_8_18)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_16_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_96), .CO(mco_97), .P0(mult_26s_25s_0_pp_8_19), 
-          .P1(mult_26s_25s_0_pp_8_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_8_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_16_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_97), .CO(mco_98), .P0(mult_26s_25s_0_pp_8_21), 
-          .P1(mult_26s_25s_0_pp_8_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_8_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_16_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_98), .CO(mco_99), .P0(mult_26s_25s_0_pp_8_23), 
-          .P1(mult_26s_25s_0_pp_8_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_8_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_16_4 (.A0(subOut[8]), .A1(subOut[9]), .A2(subOut[9]), 
           .A3(subOut[10]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_99), .P0(mult_26s_25s_0_pp_8_25), .P1(mult_26s_25s_0_pp_8_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_99), .P0(mult_26s_25s_0_pp_8_25), .P1(mult_26s_25s_0_pp_8_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_18_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_18), .CO(mco_108), .P0(mult_26s_25s_0_pp_9_19), 
-          .P1(mult_26s_25s_0_pp_9_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_9_20)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_18_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_108), .CO(mco_109), .P0(mult_26s_25s_0_pp_9_21), 
-          .P1(mult_26s_25s_0_pp_9_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_9_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_18_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_109), .CO(mco_110), .P0(mult_26s_25s_0_pp_9_23), 
-          .P1(mult_26s_25s_0_pp_9_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_9_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_18_3 (.A0(subOut[6]), .A1(subOut[7]), .A2(subOut[7]), 
           .A3(subOut[8]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_110), .P0(mult_26s_25s_0_pp_9_25), .P1(mult_26s_25s_0_pp_9_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_110), .P0(mult_26s_25s_0_pp_9_25), .P1(mult_26s_25s_0_pp_9_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_20_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_20), .CO(mco_120), .P0(mult_26s_25s_0_pp_10_21), 
-          .P1(mult_26s_25s_0_pp_10_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_10_22)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_20_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mco_120), .CO(mco_121), .P0(mult_26s_25s_0_pp_10_23), 
-          .P1(mult_26s_25s_0_pp_10_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_10_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_20_2 (.A0(subOut[4]), .A1(subOut[5]), .A2(subOut[5]), 
           .A3(subOut[6]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_121), .P0(mult_26s_25s_0_pp_10_25), .P1(mult_26s_25s_0_pp_10_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_121), .P0(mult_26s_25s_0_pp_10_25), .P1(mult_26s_25s_0_pp_10_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 mux_64_i25_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[24]), 
-         .D(intgOut1[24]), .Z(addIn2_25__N_1094[24])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[24]), .Z(addIn2_25__N_1094[24])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i25_3_lut_4_lut.init = 16'hfb40;
     MULT2 mult_26s_25s_0_mult_22_0 (.A0(subOut[0]), .A1(subOut[1]), .A2(subOut[1]), 
           .A3(subOut[2]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
           .B3(GND_net), .CI(mult_26s_25s_0_cin_lr_22), .CO(mco_132), .P0(mult_26s_25s_0_pp_11_23), 
-          .P1(mult_26s_25s_0_pp_11_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .P1(mult_26s_25s_0_pp_11_24)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     MULT2 mult_26s_25s_0_mult_22_1 (.A0(subOut[2]), .A1(subOut[3]), .A2(subOut[3]), 
           .A3(subOut[4]), .B0(GND_net), .B1(GND_net), .B2(GND_net), 
-          .B3(GND_net), .CI(mco_132), .P0(mult_26s_25s_0_pp_11_25), .P1(mult_26s_25s_0_pp_11_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+          .B3(GND_net), .CI(mco_132), .P0(mult_26s_25s_0_pp_11_25), .P1(mult_26s_25s_0_pp_11_26)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     FADD2B mult_26s_25s_0_cin_lr_add_0 (.A0(GND_net), .A1(GND_net), .B0(GND_net), 
-           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_0)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192[14:21])
+           .B1(GND_net), .CI(GND_net), .COUT(mult_26s_25s_0_cin_lr_0)) /* synthesis syn_instantiated=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194[14:21])
     LUT4 mux_64_i17_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[16]), 
-         .D(intgOut1[16]), .Z(addIn2_25__N_1094[16])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[16]), .Z(addIn2_25__N_1094[16])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i17_3_lut_4_lut.init = 16'hfb40;
     LUT4 i2_2_lut_adj_38 (.A(dirout_m3_N_1225[5]), .B(dirout_m3_N_1225[8]), 
          .Z(n8_adj_1404)) /* synthesis lut_function=(A+(B)) */ ;
     defparam i2_2_lut_adj_38.init = 16'heeee;
     LUT4 mux_64_i9_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[8]), 
-         .D(intgOut1[8]), .Z(addIn2_25__N_1094[8])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[8]), .Z(addIn2_25__N_1094[8])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i9_3_lut_4_lut.init = 16'hfb40;
     LUT4 i1_4_lut_adj_39 (.A(dirout_m3_N_1225[3]), .B(dirout_m3_N_1225[2]), 
          .C(dirout_m3_N_1225[1]), .D(dirout_m3_N_1225[0]), .Z(n4_adj_1405)) /* synthesis lut_function=(A (B+(C+(D)))) */ ;
@@ -5529,7 +5529,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     LUT4 i5_4_lut_adj_40 (.A(dirout_m4_N_1243[5]), .B(n7_adj_1406), .C(dirout_m4_N_1243[8]), 
          .D(n8_adj_1407), .Z(n8571)) /* synthesis lut_function=(A (B (C (D)))) */ ;
     defparam i5_4_lut_adj_40.init = 16'h8000;
-    FD1S3AX addOut_990__i0 (.D(n109[0]), .CK(clk_N_634), .Q(addOut[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i0 (.D(n109[0]), .CK(clk_N_634), .Q(addOut[0])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i0.GSR = "DISABLED";
     LUT4 i1_3_lut_adj_41 (.A(dirout_m4_N_1243[3]), .B(dirout_m4_N_1243[6]), 
          .C(dirout_m4_N_1243[4]), .Z(n7_adj_1406)) /* synthesis lut_function=(A (B)+!A (B (C))) */ ;
@@ -5555,887 +5555,887 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     LUT4 ss_2__bdd_4_lut (.A(ss[2]), .B(ss[3]), .C(ss[1]), .D(ss[0]), 
          .Z(n4_adj_1412)) /* synthesis lut_function=(!(A (B+!(C (D)))+!A (B (C+(D))+!B (C+!(D))))) */ ;
     defparam ss_2__bdd_4_lut.init = 16'h2104;
-    LUT4 i6076_2_lut (.A(addOut[1]), .B(ss[3]), .Z(Out0_25__N_771[1])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6076_2_lut (.A(addOut[1]), .B(ss[3]), .Z(Out0_25__N_771[1])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6076_2_lut.init = 16'h2222;
     LUT4 mux_885_i13_4_lut (.A(\speed_m4[12] ), .B(\speed_m3[12] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[12])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[12])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i13_4_lut.init = 16'hcac0;
-    LUT4 i6077_2_lut (.A(addOut[2]), .B(ss[3]), .Z(Out0_25__N_771[2])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6077_2_lut (.A(addOut[2]), .B(ss[3]), .Z(Out0_25__N_771[2])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6077_2_lut.init = 16'h2222;
-    LUT4 i6078_2_lut (.A(addOut[3]), .B(ss[3]), .Z(Out0_25__N_771[3])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6078_2_lut (.A(addOut[3]), .B(ss[3]), .Z(Out0_25__N_771[3])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6078_2_lut.init = 16'h2222;
-    LUT4 i6079_2_lut (.A(addOut[4]), .B(ss[3]), .Z(Out0_25__N_771[4])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6079_2_lut (.A(addOut[4]), .B(ss[3]), .Z(Out0_25__N_771[4])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6079_2_lut.init = 16'h2222;
     LUT4 mux_885_i14_4_lut (.A(\speed_m4[13] ), .B(\speed_m3[13] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[13])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[13])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i14_4_lut.init = 16'hcac0;
-    LUT4 i6080_2_lut (.A(addOut[5]), .B(ss[3]), .Z(Out0_25__N_771[5])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6080_2_lut (.A(addOut[5]), .B(ss[3]), .Z(Out0_25__N_771[5])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6080_2_lut.init = 16'h2222;
     LUT4 mux_64_i16_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[15]), 
-         .D(intgOut1[15]), .Z(addIn2_25__N_1094[15])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[15]), .Z(addIn2_25__N_1094[15])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i16_3_lut_4_lut.init = 16'hfb40;
-    FD1S3AX multOut_i1 (.D(multOut_25__N_958[1]), .CK(clk_N_634), .Q(multOut[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i1 (.D(multOut_25__N_958[1]), .CK(clk_N_634), .Q(multOut[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i1.GSR = "DISABLED";
     LUT4 mux_885_i15_4_lut (.A(\speed_m4[14] ), .B(\speed_m3[14] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[14])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[14])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i15_4_lut.init = 16'hcac0;
     LUT4 mux_81_i19_3_lut_3_lut (.A(n497), .B(n1634), .C(addOut[18]), 
          .Z(intgOut0_25__N_1120[18])) /* synthesis lut_function=(A+!(B+!(C))) */ ;
     defparam mux_81_i19_3_lut_3_lut.init = 16'hbaba;
     LUT4 mux_64_i10_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[9]), 
-         .D(intgOut1[9]), .Z(addIn2_25__N_1094[9])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[9]), .Z(addIn2_25__N_1094[9])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i10_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i22_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[21]), 
-         .D(intgOut1[21]), .Z(addIn2_25__N_1094[21])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[21]), .Z(addIn2_25__N_1094[21])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i22_3_lut_4_lut.init = 16'hfb40;
     LUT4 i1_2_lut_3_lut_4_lut_adj_48 (.A(n497), .B(n1634), .C(addOut[1]), 
          .D(ss[3]), .Z(n9138)) /* synthesis lut_function=(!(A+(B+((D)+!C)))) */ ;
     defparam i1_2_lut_3_lut_4_lut_adj_48.init = 16'h0010;
     LUT4 mux_64_i1_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[0]), 
-         .D(intgOut1[0]), .Z(addIn2_25__N_1094[0])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[0]), .Z(addIn2_25__N_1094[0])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i1_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i12_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[11]), 
-         .D(intgOut1[11]), .Z(addIn2_25__N_1094[11])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[11]), .Z(addIn2_25__N_1094[11])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i12_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i18_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[17]), 
-         .D(intgOut1[17]), .Z(addIn2_25__N_1094[17])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[17]), .Z(addIn2_25__N_1094[17])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i18_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i2_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[1]), 
-         .D(intgOut1[1]), .Z(addIn2_25__N_1094[1])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[1]), .Z(addIn2_25__N_1094[1])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i2_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i13_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[12]), 
-         .D(intgOut1[12]), .Z(addIn2_25__N_1094[12])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[12]), .Z(addIn2_25__N_1094[12])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i13_3_lut_4_lut.init = 16'hfb40;
-    FD1S3AX multOut_i2 (.D(multOut_25__N_958[2]), .CK(clk_N_634), .Q(multOut[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i2 (.D(multOut_25__N_958[2]), .CK(clk_N_634), .Q(multOut[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i2.GSR = "DISABLED";
-    FD1S3AX multOut_i3 (.D(multOut_25__N_958[3]), .CK(clk_N_634), .Q(multOut[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i3 (.D(multOut_25__N_958[3]), .CK(clk_N_634), .Q(multOut[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i3.GSR = "DISABLED";
-    FD1S3AX multOut_i4 (.D(multOut_25__N_958[4]), .CK(clk_N_634), .Q(multOut[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i4 (.D(multOut_25__N_958[4]), .CK(clk_N_634), .Q(multOut[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i4.GSR = "DISABLED";
-    FD1S3AX multOut_i5 (.D(multOut_25__N_958[5]), .CK(clk_N_634), .Q(multOut[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i5 (.D(multOut_25__N_958[5]), .CK(clk_N_634), .Q(multOut[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i5.GSR = "DISABLED";
-    FD1S3AX multOut_i6 (.D(multOut_25__N_958[6]), .CK(clk_N_634), .Q(multOut[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i6 (.D(multOut_25__N_958[6]), .CK(clk_N_634), .Q(multOut[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i6.GSR = "DISABLED";
-    FD1S3AX multOut_i7 (.D(multOut_25__N_958[7]), .CK(clk_N_634), .Q(multOut[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i7 (.D(multOut_25__N_958[7]), .CK(clk_N_634), .Q(multOut[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i7.GSR = "DISABLED";
-    FD1S3AX multOut_i8 (.D(multOut_25__N_958[8]), .CK(clk_N_634), .Q(multOut[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i8 (.D(multOut_25__N_958[8]), .CK(clk_N_634), .Q(multOut[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i8.GSR = "DISABLED";
-    FD1S3AX multOut_i9 (.D(multOut_25__N_958[9]), .CK(clk_N_634), .Q(multOut[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i9 (.D(multOut_25__N_958[9]), .CK(clk_N_634), .Q(multOut[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i9.GSR = "DISABLED";
-    FD1S3AX multOut_i10 (.D(multOut_25__N_958[10]), .CK(clk_N_634), .Q(multOut[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i10 (.D(multOut_25__N_958[10]), .CK(clk_N_634), .Q(multOut[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i10.GSR = "DISABLED";
-    FD1S3AX multOut_i11 (.D(multOut_25__N_958[11]), .CK(clk_N_634), .Q(multOut[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i11 (.D(multOut_25__N_958[11]), .CK(clk_N_634), .Q(multOut[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i11.GSR = "DISABLED";
-    FD1S3AX multOut_i12 (.D(multOut_25__N_958[12]), .CK(clk_N_634), .Q(multOut[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i12 (.D(multOut_25__N_958[12]), .CK(clk_N_634), .Q(multOut[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i12.GSR = "DISABLED";
-    FD1S3AX multOut_i13 (.D(multOut_25__N_958[13]), .CK(clk_N_634), .Q(multOut[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i13 (.D(multOut_25__N_958[13]), .CK(clk_N_634), .Q(multOut[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i13.GSR = "DISABLED";
-    FD1S3AX multOut_i14 (.D(multOut_25__N_958[14]), .CK(clk_N_634), .Q(multOut[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i14 (.D(multOut_25__N_958[14]), .CK(clk_N_634), .Q(multOut[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i14.GSR = "DISABLED";
-    FD1S3AX multOut_i15 (.D(multOut_25__N_958[15]), .CK(clk_N_634), .Q(multOut[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i15 (.D(multOut_25__N_958[15]), .CK(clk_N_634), .Q(multOut[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i15.GSR = "DISABLED";
-    FD1S3AX multOut_i16 (.D(multOut_25__N_958[16]), .CK(clk_N_634), .Q(multOut[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i16 (.D(multOut_25__N_958[16]), .CK(clk_N_634), .Q(multOut[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i16.GSR = "DISABLED";
-    FD1S3AX multOut_i17 (.D(multOut_25__N_958[17]), .CK(clk_N_634), .Q(multOut[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i17 (.D(multOut_25__N_958[17]), .CK(clk_N_634), .Q(multOut[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i17.GSR = "DISABLED";
-    FD1S3AX multOut_i18 (.D(multOut_25__N_958[18]), .CK(clk_N_634), .Q(multOut[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i18 (.D(multOut_25__N_958[18]), .CK(clk_N_634), .Q(multOut[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i18.GSR = "DISABLED";
-    FD1S3AX multOut_i19 (.D(multOut_25__N_958[19]), .CK(clk_N_634), .Q(multOut[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i19 (.D(multOut_25__N_958[19]), .CK(clk_N_634), .Q(multOut[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i19.GSR = "DISABLED";
-    FD1S3AX multOut_i20 (.D(multOut_25__N_958[20]), .CK(clk_N_634), .Q(multOut[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i20 (.D(multOut_25__N_958[20]), .CK(clk_N_634), .Q(multOut[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i20.GSR = "DISABLED";
-    FD1S3AX multOut_i21 (.D(multOut_25__N_958[21]), .CK(clk_N_634), .Q(multOut[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i21 (.D(multOut_25__N_958[21]), .CK(clk_N_634), .Q(multOut[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i21.GSR = "DISABLED";
-    FD1S3AX multOut_i22 (.D(multOut_25__N_958[22]), .CK(clk_N_634), .Q(multOut[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i22 (.D(multOut_25__N_958[22]), .CK(clk_N_634), .Q(multOut[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i22.GSR = "DISABLED";
-    FD1S3AX multOut_i23 (.D(multOut_25__N_958[23]), .CK(clk_N_634), .Q(multOut[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i23 (.D(multOut_25__N_958[23]), .CK(clk_N_634), .Q(multOut[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i23.GSR = "DISABLED";
-    FD1S3AX multOut_i24 (.D(multOut_25__N_958[24]), .CK(clk_N_634), .Q(multOut[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i24 (.D(multOut_25__N_958[24]), .CK(clk_N_634), .Q(multOut[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i24.GSR = "DISABLED";
-    FD1S3AX multOut_i25 (.D(multOut_25__N_958[25]), .CK(clk_N_634), .Q(multOut[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX multOut_i25 (.D(multOut_25__N_958[25]), .CK(clk_N_634), .Q(multOut[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam multOut_i25.GSR = "DISABLED";
     FD1P3AX intgOut0_i1 (.D(n9138), .SP(clk_N_634_enable_251), .CK(clk_N_634), 
-            .Q(intgOut0[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut0[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i1.GSR = "DISABLED";
     FD1P3AX intgOut0_i2 (.D(n9137), .SP(clk_N_634_enable_251), .CK(clk_N_634), 
-            .Q(intgOut0[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut0[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i2.GSR = "DISABLED";
     FD1P3AX intgOut0_i3 (.D(intgOut0_25__N_665[3]), .SP(clk_N_634_enable_251), 
-            .CK(clk_N_634), .Q(intgOut0[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut0[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i3.GSR = "DISABLED";
     FD1P3AX intgOut0_i4 (.D(intgOut0_25__N_665[4]), .SP(clk_N_634_enable_251), 
-            .CK(clk_N_634), .Q(intgOut0[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut0[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i4.GSR = "DISABLED";
     LUT4 mux_64_i4_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[3]), 
-         .D(intgOut1[3]), .Z(addIn2_25__N_1094[3])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[3]), .Z(addIn2_25__N_1094[3])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i4_3_lut_4_lut.init = 16'hfb40;
     LUT4 i5952_2_lut_4_lut_4_lut_4_lut (.A(ss[3]), .B(ss[2]), .C(ss[1]), 
          .Z(multIn2[3])) /* synthesis lut_function=(!(A (B+(C))+!A !(B+(C)))) */ ;
     defparam i5952_2_lut_4_lut_4_lut_4_lut.init = 16'h5656;
-    LUT4 i6081_2_lut (.A(addOut[6]), .B(ss[3]), .Z(Out0_25__N_771[6])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6081_2_lut (.A(addOut[6]), .B(ss[3]), .Z(Out0_25__N_771[6])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6081_2_lut.init = 16'h2222;
     LUT4 mux_64_i5_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[4]), 
-         .D(intgOut1[4]), .Z(addIn2_25__N_1094[4])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[4]), .Z(addIn2_25__N_1094[4])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i5_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_885_i16_4_lut (.A(\speed_m4[15] ), .B(\speed_m3[15] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[15])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[15])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i16_4_lut.init = 16'hcac0;
     LUT4 mux_64_i6_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[5]), 
-         .D(intgOut1[5]), .Z(addIn2_25__N_1094[5])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[5]), .Z(addIn2_25__N_1094[5])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i6_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_885_i17_4_lut (.A(\speed_m4[16] ), .B(\speed_m3[16] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[16])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[16])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i17_4_lut.init = 16'hcac0;
     FD1P3AX intgOut1_i1 (.D(Out0_25__N_771[1]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i1.GSR = "DISABLED";
     FD1P3AX intgOut1_i2 (.D(Out0_25__N_771[2]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i2.GSR = "DISABLED";
     FD1P3AX intgOut1_i3 (.D(Out0_25__N_771[3]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i3.GSR = "DISABLED";
     FD1P3AX intgOut1_i4 (.D(Out0_25__N_771[4]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i4.GSR = "DISABLED";
     FD1P3AX intgOut1_i5 (.D(Out0_25__N_771[5]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i5.GSR = "DISABLED";
     FD1P3AX intgOut1_i6 (.D(Out0_25__N_771[6]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i6.GSR = "DISABLED";
     FD1P3AX intgOut1_i7 (.D(Out0_25__N_771[7]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i7.GSR = "DISABLED";
     FD1P3AX intgOut1_i8 (.D(Out0_25__N_771[8]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i8.GSR = "DISABLED";
     FD1P3AX intgOut1_i9 (.D(Out0_25__N_771[9]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i9.GSR = "DISABLED";
     FD1P3AX intgOut1_i10 (.D(Out0_25__N_771[10]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i10.GSR = "DISABLED";
     FD1P3AX intgOut1_i11 (.D(Out0_25__N_771[11]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i11.GSR = "DISABLED";
     FD1P3AX intgOut1_i12 (.D(Out0_25__N_771[12]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i12.GSR = "DISABLED";
     FD1P3AX intgOut1_i13 (.D(Out0_25__N_771[13]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i13.GSR = "DISABLED";
     FD1P3AX intgOut1_i14 (.D(Out0_25__N_771[14]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i14.GSR = "DISABLED";
     FD1P3AX intgOut1_i15 (.D(Out0_25__N_771[15]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i15.GSR = "DISABLED";
     FD1P3AX intgOut1_i16 (.D(Out0_25__N_771[16]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i16.GSR = "DISABLED";
     FD1P3AX intgOut1_i17 (.D(Out0_25__N_771[17]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i17.GSR = "DISABLED";
     FD1P3AX intgOut1_i18 (.D(Out0_25__N_771[18]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i18.GSR = "DISABLED";
     FD1P3AX intgOut1_i19 (.D(Out0_25__N_771[19]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i19.GSR = "DISABLED";
     FD1P3AX intgOut1_i20 (.D(Out0_25__N_771[20]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i20.GSR = "DISABLED";
     FD1P3AX intgOut1_i21 (.D(Out0_25__N_771[21]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i21.GSR = "DISABLED";
     FD1P3AX intgOut1_i22 (.D(Out0_25__N_771[22]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i22.GSR = "DISABLED";
     FD1P3AX intgOut1_i23 (.D(Out0_25__N_771[23]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i23.GSR = "DISABLED";
     FD1P3AX intgOut1_i24 (.D(Out0_25__N_771[24]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i24.GSR = "DISABLED";
     FD1P3AX intgOut1_i25 (.D(Out0_25__N_771[25]), .SP(clk_N_634_enable_41), 
-            .CK(clk_N_634), .Q(intgOut1[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(intgOut1[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut1_i25.GSR = "DISABLED";
     FD1P3AX intgOut2_i1 (.D(n14_adj_1413), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i1.GSR = "DISABLED";
     FD1P3AX intgOut2_i2 (.D(n14_adj_1414), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i2.GSR = "DISABLED";
     FD1P3AX intgOut2_i3 (.D(n14_adj_1415), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i3.GSR = "DISABLED";
     FD1P3AX intgOut2_i4 (.D(n14_adj_1416), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i4.GSR = "DISABLED";
     FD1P3AX intgOut2_i5 (.D(n14_adj_1417), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i5.GSR = "DISABLED";
     FD1P3AX intgOut2_i6 (.D(n14_adj_1418), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i6.GSR = "DISABLED";
     FD1P3AX intgOut2_i7 (.D(n14_adj_1419), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i7.GSR = "DISABLED";
     FD1P3AX intgOut2_i8 (.D(n14_adj_1420), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i8.GSR = "DISABLED";
     FD1P3AX intgOut2_i9 (.D(n14_adj_1421), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i9.GSR = "DISABLED";
     FD1P3AX intgOut2_i10 (.D(n14_adj_1422), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i10.GSR = "DISABLED";
     FD1P3AX intgOut2_i11 (.D(n14_adj_1423), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i11.GSR = "DISABLED";
     FD1P3AX intgOut2_i12 (.D(n14_adj_1424), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i12.GSR = "DISABLED";
     FD1P3AX intgOut2_i13 (.D(n14_adj_1425), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i13.GSR = "DISABLED";
     FD1P3AX intgOut2_i14 (.D(n14_adj_1426), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i14.GSR = "DISABLED";
     FD1P3AX intgOut2_i15 (.D(n14_adj_1427), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i15.GSR = "DISABLED";
     FD1P3AX intgOut2_i16 (.D(n14_adj_1428), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i16.GSR = "DISABLED";
     FD1P3AX intgOut2_i17 (.D(n14_adj_1429), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i17.GSR = "DISABLED";
     FD1P3AX intgOut2_i18 (.D(n14_adj_1430), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i18.GSR = "DISABLED";
     FD1P3AX intgOut2_i19 (.D(n14_adj_1431), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i19.GSR = "DISABLED";
     FD1P3AX intgOut2_i20 (.D(n14_adj_1432), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i20.GSR = "DISABLED";
     FD1P3AX intgOut2_i21 (.D(n14_adj_1433), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i21.GSR = "DISABLED";
     FD1P3AX intgOut2_i22 (.D(n14_adj_1434), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i22.GSR = "DISABLED";
     FD1P3AX intgOut2_i23 (.D(n14_adj_1435), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i23.GSR = "DISABLED";
     FD1P3AX intgOut2_i24 (.D(n14_adj_1436), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i24.GSR = "DISABLED";
     FD1P3AX intgOut2_i25 (.D(n14_adj_1437), .SP(clk_N_634_enable_66), .CK(clk_N_634), 
-            .Q(intgOut2[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut2[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut2_i25.GSR = "DISABLED";
     FD1P3AX intgOut3_i1 (.D(n14_adj_1413), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i1.GSR = "DISABLED";
     FD1P3AX intgOut3_i2 (.D(n14_adj_1414), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i2.GSR = "DISABLED";
     FD1P3AX intgOut3_i3 (.D(n14_adj_1415), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i3.GSR = "DISABLED";
     FD1P3AX intgOut3_i4 (.D(n14_adj_1416), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i4.GSR = "DISABLED";
     FD1P3AX intgOut3_i5 (.D(n14_adj_1417), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i5.GSR = "DISABLED";
     FD1P3AX intgOut3_i6 (.D(n14_adj_1418), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i6.GSR = "DISABLED";
     FD1P3AX intgOut3_i7 (.D(n14_adj_1419), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i7.GSR = "DISABLED";
     FD1P3AX intgOut3_i8 (.D(n14_adj_1420), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i8.GSR = "DISABLED";
     FD1P3AX intgOut3_i9 (.D(n14_adj_1421), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i9.GSR = "DISABLED";
     FD1P3AX intgOut3_i10 (.D(n14_adj_1422), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i10.GSR = "DISABLED";
     FD1P3AX intgOut3_i11 (.D(n14_adj_1423), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i11.GSR = "DISABLED";
     FD1P3AX intgOut3_i12 (.D(n14_adj_1424), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i12.GSR = "DISABLED";
     FD1P3AX intgOut3_i13 (.D(n14_adj_1425), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i13.GSR = "DISABLED";
     FD1P3AX intgOut3_i14 (.D(n14_adj_1426), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i14.GSR = "DISABLED";
     FD1P3AX intgOut3_i15 (.D(n14_adj_1427), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i15.GSR = "DISABLED";
     FD1P3AX intgOut3_i16 (.D(n14_adj_1428), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i16.GSR = "DISABLED";
     FD1P3AX intgOut3_i17 (.D(n14_adj_1429), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i17.GSR = "DISABLED";
     FD1P3AX intgOut3_i18 (.D(n14_adj_1430), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i18.GSR = "DISABLED";
     FD1P3AX intgOut3_i19 (.D(n14_adj_1431), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i19.GSR = "DISABLED";
     FD1P3AX intgOut3_i20 (.D(n14_adj_1432), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i20.GSR = "DISABLED";
     FD1P3AX intgOut3_i21 (.D(n14_adj_1433), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i21.GSR = "DISABLED";
     FD1P3AX intgOut3_i22 (.D(n14_adj_1434), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i22.GSR = "DISABLED";
     FD1P3AX intgOut3_i23 (.D(n14_adj_1435), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i23.GSR = "DISABLED";
     FD1P3AX intgOut3_i24 (.D(n14_adj_1436), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i24.GSR = "DISABLED";
     FD1P3AX intgOut3_i25 (.D(n14_adj_1437), .SP(clk_N_634_enable_91), .CK(clk_N_634), 
-            .Q(intgOut3[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(intgOut3[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut3_i25.GSR = "DISABLED";
     FD1P3AX Out0_i1 (.D(Out0_25__N_771[1]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i1.GSR = "DISABLED";
     FD1P3AX Out0_i2 (.D(Out0_25__N_771[2]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i2.GSR = "DISABLED";
     FD1P3AX Out0_i3 (.D(Out0_25__N_771[3]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i3.GSR = "DISABLED";
     FD1P3AX Out0_i4 (.D(Out0_25__N_771[4]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i4.GSR = "DISABLED";
     FD1P3AX Out0_i5 (.D(Out0_25__N_771[5]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i5.GSR = "DISABLED";
     FD1P3AX Out0_i6 (.D(Out0_25__N_771[6]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i6.GSR = "DISABLED";
     FD1P3AX Out0_i7 (.D(Out0_25__N_771[7]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i7.GSR = "DISABLED";
     FD1P3AX Out0_i8 (.D(Out0_25__N_771[8]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i8.GSR = "DISABLED";
     FD1P3AX Out0_i9 (.D(Out0_25__N_771[9]), .SP(clk_N_634_enable_116), .CK(clk_N_634), 
-            .Q(Out0[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out0[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i9.GSR = "DISABLED";
     FD1P3AX Out0_i10 (.D(Out0_25__N_771[10]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i10.GSR = "DISABLED";
     FD1P3AX Out0_i11 (.D(Out0_25__N_771[11]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i11.GSR = "DISABLED";
     FD1P3AX Out0_i12 (.D(Out0_25__N_771[12]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i12.GSR = "DISABLED";
     FD1P3AX Out0_i13 (.D(Out0_25__N_771[13]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i13.GSR = "DISABLED";
     FD1P3AX Out0_i14 (.D(Out0_25__N_771[14]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i14.GSR = "DISABLED";
     FD1P3AX Out0_i15 (.D(Out0_25__N_771[15]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i15.GSR = "DISABLED";
     FD1P3AX Out0_i16 (.D(Out0_25__N_771[16]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i16.GSR = "DISABLED";
     FD1P3AX Out0_i17 (.D(Out0_25__N_771[17]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i17.GSR = "DISABLED";
     FD1P3AX Out0_i18 (.D(Out0_25__N_771[18]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i18.GSR = "DISABLED";
     FD1P3AX Out0_i19 (.D(Out0_25__N_771[19]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i19.GSR = "DISABLED";
     FD1P3AX Out0_i20 (.D(Out0_25__N_771[20]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i20.GSR = "DISABLED";
     FD1P3AX Out0_i21 (.D(Out0_25__N_771[21]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i21.GSR = "DISABLED";
     FD1P3AX Out0_i22 (.D(Out0_25__N_771[22]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i22.GSR = "DISABLED";
     FD1P3AX Out0_i23 (.D(Out0_25__N_771[23]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i23.GSR = "DISABLED";
     FD1P3AX Out0_i24 (.D(Out0_25__N_771[24]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i24.GSR = "DISABLED";
     FD1P3AX Out0_i25 (.D(Out0_25__N_771[25]), .SP(clk_N_634_enable_116), 
-            .CK(clk_N_634), .Q(Out0[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out0[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out0_i25.GSR = "DISABLED";
     FD1P3AX Out1_i1 (.D(Out0_25__N_771[1]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i1.GSR = "DISABLED";
     FD1P3AX Out1_i2 (.D(Out0_25__N_771[2]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i2.GSR = "DISABLED";
     FD1P3AX Out1_i3 (.D(Out0_25__N_771[3]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i3.GSR = "DISABLED";
     FD1P3AX Out1_i4 (.D(Out0_25__N_771[4]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i4.GSR = "DISABLED";
     FD1P3AX Out1_i5 (.D(Out0_25__N_771[5]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i5.GSR = "DISABLED";
     FD1P3AX Out1_i6 (.D(Out0_25__N_771[6]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i6.GSR = "DISABLED";
     FD1P3AX Out1_i7 (.D(Out0_25__N_771[7]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i7.GSR = "DISABLED";
     FD1P3AX Out1_i8 (.D(Out0_25__N_771[8]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i8.GSR = "DISABLED";
     FD1P3AX Out1_i9 (.D(Out0_25__N_771[9]), .SP(clk_N_634_enable_141), .CK(clk_N_634), 
-            .Q(Out1[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out1[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i9.GSR = "DISABLED";
     FD1P3AX Out1_i10 (.D(Out0_25__N_771[10]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i10.GSR = "DISABLED";
     FD1P3AX Out1_i11 (.D(Out0_25__N_771[11]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i11.GSR = "DISABLED";
     FD1P3AX Out1_i12 (.D(Out0_25__N_771[12]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i12.GSR = "DISABLED";
     FD1P3AX Out1_i13 (.D(Out0_25__N_771[13]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i13.GSR = "DISABLED";
     FD1P3AX Out1_i14 (.D(Out0_25__N_771[14]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i14.GSR = "DISABLED";
     FD1P3AX Out1_i15 (.D(Out0_25__N_771[15]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i15.GSR = "DISABLED";
     FD1P3AX Out1_i16 (.D(Out0_25__N_771[16]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i16.GSR = "DISABLED";
     FD1P3AX Out1_i17 (.D(Out0_25__N_771[17]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i17.GSR = "DISABLED";
     FD1P3AX Out1_i18 (.D(Out0_25__N_771[18]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i18.GSR = "DISABLED";
     FD1P3AX Out1_i19 (.D(Out0_25__N_771[19]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i19.GSR = "DISABLED";
     FD1P3AX Out1_i20 (.D(Out0_25__N_771[20]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i20.GSR = "DISABLED";
     FD1P3AX Out1_i21 (.D(Out0_25__N_771[21]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i21.GSR = "DISABLED";
     FD1P3AX Out1_i22 (.D(Out0_25__N_771[22]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i22.GSR = "DISABLED";
     FD1P3AX Out1_i23 (.D(Out0_25__N_771[23]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i23.GSR = "DISABLED";
     FD1P3AX Out1_i24 (.D(Out0_25__N_771[24]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i24.GSR = "DISABLED";
     FD1P3AX Out1_i25 (.D(Out0_25__N_771[25]), .SP(clk_N_634_enable_141), 
-            .CK(clk_N_634), .Q(Out1[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(Out1[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out1_i25.GSR = "DISABLED";
     FD1P3AX Out2_i1 (.D(n14_adj_1413), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i1.GSR = "DISABLED";
     FD1P3AX Out2_i2 (.D(n14_adj_1414), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i2.GSR = "DISABLED";
     FD1P3AX Out2_i3 (.D(n14_adj_1415), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i3.GSR = "DISABLED";
     FD1P3AX Out2_i4 (.D(n14_adj_1416), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i4.GSR = "DISABLED";
     FD1P3AX Out2_i5 (.D(n14_adj_1417), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i5.GSR = "DISABLED";
     FD1P3AX Out2_i6 (.D(n14_adj_1418), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i6.GSR = "DISABLED";
     FD1P3AX Out2_i7 (.D(n14_adj_1419), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i7.GSR = "DISABLED";
     FD1P3AX Out2_i8 (.D(n14_adj_1420), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i8.GSR = "DISABLED";
     FD1P3AX Out2_i9 (.D(n14_adj_1421), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i9.GSR = "DISABLED";
     FD1P3AX Out2_i10 (.D(n14_adj_1422), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i10.GSR = "DISABLED";
     FD1P3AX Out2_i11 (.D(n14_adj_1423), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i11.GSR = "DISABLED";
     FD1P3AX Out2_i12 (.D(n14_adj_1424), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i12.GSR = "DISABLED";
     FD1P3AX Out2_i13 (.D(n14_adj_1425), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i13.GSR = "DISABLED";
     FD1P3AX Out2_i14 (.D(n14_adj_1426), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i14.GSR = "DISABLED";
     FD1P3AX Out2_i15 (.D(n14_adj_1427), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i15.GSR = "DISABLED";
     FD1P3AX Out2_i16 (.D(n14_adj_1428), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i16.GSR = "DISABLED";
     FD1P3AX Out2_i17 (.D(n14_adj_1429), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i17.GSR = "DISABLED";
     FD1P3AX Out2_i18 (.D(n14_adj_1430), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i18.GSR = "DISABLED";
     FD1P3AX Out2_i19 (.D(n14_adj_1431), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i19.GSR = "DISABLED";
     FD1P3AX Out2_i20 (.D(n14_adj_1432), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i20.GSR = "DISABLED";
     FD1P3AX Out2_i21 (.D(n14_adj_1433), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i21.GSR = "DISABLED";
     FD1P3AX Out2_i22 (.D(n14_adj_1434), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i22.GSR = "DISABLED";
     FD1P3AX Out2_i23 (.D(n14_adj_1435), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i23.GSR = "DISABLED";
     FD1P3AX Out2_i24 (.D(n14_adj_1436), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i24.GSR = "DISABLED";
     FD1P3AX Out2_i25 (.D(n14_adj_1437), .SP(clk_N_634_enable_166), .CK(clk_N_634), 
-            .Q(Out2[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out2[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out2_i25.GSR = "DISABLED";
     FD1P3AX Out3_i1 (.D(n14_adj_1413), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i1.GSR = "DISABLED";
     FD1P3AX Out3_i2 (.D(n14_adj_1414), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i2.GSR = "DISABLED";
     FD1P3AX Out3_i3 (.D(n14_adj_1415), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i3.GSR = "DISABLED";
     FD1P3AX Out3_i4 (.D(n14_adj_1416), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i4.GSR = "DISABLED";
     FD1P3AX Out3_i5 (.D(n14_adj_1417), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i5.GSR = "DISABLED";
     FD1P3AX Out3_i6 (.D(n14_adj_1418), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i6.GSR = "DISABLED";
     FD1P3AX Out3_i7 (.D(n14_adj_1419), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i7.GSR = "DISABLED";
     FD1P3AX Out3_i8 (.D(n14_adj_1420), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i8.GSR = "DISABLED";
     FD1P3AX Out3_i9 (.D(n14_adj_1421), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i9.GSR = "DISABLED";
     FD1P3AX Out3_i10 (.D(n14_adj_1422), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i10.GSR = "DISABLED";
     FD1P3AX Out3_i11 (.D(n14_adj_1423), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i11.GSR = "DISABLED";
     FD1P3AX Out3_i12 (.D(n14_adj_1424), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i12.GSR = "DISABLED";
     FD1P3AX Out3_i13 (.D(n14_adj_1425), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i13.GSR = "DISABLED";
     FD1P3AX Out3_i14 (.D(n14_adj_1426), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i14.GSR = "DISABLED";
     FD1P3AX Out3_i15 (.D(n14_adj_1427), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i15.GSR = "DISABLED";
     FD1P3AX Out3_i16 (.D(n14_adj_1428), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i16.GSR = "DISABLED";
     FD1P3AX Out3_i17 (.D(n14_adj_1429), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i17.GSR = "DISABLED";
     FD1P3AX Out3_i18 (.D(n14_adj_1430), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i18.GSR = "DISABLED";
     FD1P3AX Out3_i19 (.D(n14_adj_1431), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i19.GSR = "DISABLED";
     FD1P3AX Out3_i20 (.D(n14_adj_1432), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i20.GSR = "DISABLED";
     FD1P3AX Out3_i21 (.D(n14_adj_1433), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i21.GSR = "DISABLED";
     FD1P3AX Out3_i22 (.D(n14_adj_1434), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i22.GSR = "DISABLED";
     FD1P3AX Out3_i23 (.D(n14_adj_1435), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i23.GSR = "DISABLED";
     FD1P3AX Out3_i24 (.D(n14_adj_1436), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i24.GSR = "DISABLED";
     FD1P3AX Out3_i25 (.D(n14_adj_1437), .SP(clk_N_634_enable_191), .CK(clk_N_634), 
-            .Q(Out3[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .Q(Out3[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam Out3_i25.GSR = "DISABLED";
     LUT4 i6_4_lut_adj_49 (.A(Out3[6]), .B(n12_adj_1438), .C(Out3[10]), 
-         .D(Out3[2]), .Z(n8620)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+         .D(Out3[2]), .Z(n8620)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam i6_4_lut_adj_49.init = 16'hfffe;
     LUT4 mux_64_i14_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[13]), 
-         .D(intgOut1[13]), .Z(addIn2_25__N_1094[13])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[13]), .Z(addIn2_25__N_1094[13])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i14_3_lut_4_lut.init = 16'hfb40;
     LUT4 i5_4_lut_adj_50 (.A(Out3[0]), .B(Out3[1]), .C(Out3[8]), .D(Out3[5]), 
-         .Z(n12_adj_1438)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+         .Z(n12_adj_1438)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam i5_4_lut_adj_50.init = 16'hfffe;
     LUT4 i3_4_lut_adj_51 (.A(Out3[3]), .B(Out3[9]), .C(Out3[7]), .D(Out3[4]), 
-         .Z(n8621)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+         .Z(n8621)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam i3_4_lut_adj_51.init = 16'hfffe;
-    LUT4 i6082_2_lut (.A(addOut[7]), .B(ss[3]), .Z(Out0_25__N_771[7])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6082_2_lut (.A(addOut[7]), .B(ss[3]), .Z(Out0_25__N_771[7])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6082_2_lut.init = 16'h2222;
     LUT4 i6_4_lut_adj_52 (.A(Out2[6]), .B(n12), .C(Out2[10]), .D(Out2[2]), 
-         .Z(n8610)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+         .Z(n8610)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam i6_4_lut_adj_52.init = 16'hfffe;
     LUT4 mux_64_i3_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[2]), 
-         .D(intgOut1[2]), .Z(addIn2_25__N_1094[2])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[2]), .Z(addIn2_25__N_1094[2])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i3_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i19_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[18]), 
-         .D(intgOut1[18]), .Z(addIn2_25__N_1094[18])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[18]), .Z(addIn2_25__N_1094[18])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i19_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_64_i7_3_lut_4_lut (.A(n9762), .B(n9759), .C(intgOut0[6]), 
-         .D(intgOut1[6]), .Z(addIn2_25__N_1094[6])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(intgOut1[6]), .Z(addIn2_25__N_1094[6])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam mux_64_i7_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_885_i18_4_lut (.A(\speed_m4[17] ), .B(\speed_m3[17] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[17])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[17])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i18_4_lut.init = 16'hcac0;
-    LUT4 i6083_2_lut (.A(addOut[8]), .B(ss[3]), .Z(Out0_25__N_771[8])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6083_2_lut (.A(addOut[8]), .B(ss[3]), .Z(Out0_25__N_771[8])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6083_2_lut.init = 16'h2222;
-    LUT4 i6084_2_lut (.A(addOut[9]), .B(ss[3]), .Z(Out0_25__N_771[9])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6084_2_lut (.A(addOut[9]), .B(ss[3]), .Z(Out0_25__N_771[9])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6084_2_lut.init = 16'h2222;
     LUT4 mux_885_i19_4_lut (.A(\speed_m4[18] ), .B(\speed_m3[18] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[18])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[18])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i19_4_lut.init = 16'hcac0;
     LUT4 mux_885_i20_4_lut (.A(\speed_m4[19] ), .B(\speed_m3[19] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[19])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[19])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i20_4_lut.init = 16'hcac0;
-    LUT4 i6085_2_lut (.A(addOut[10]), .B(ss[3]), .Z(Out0_25__N_771[10])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6085_2_lut (.A(addOut[10]), .B(ss[3]), .Z(Out0_25__N_771[10])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6085_2_lut.init = 16'h2222;
-    FD1S3AX subOut_i1 (.D(subOut_21__N_920[1]), .CK(clk_N_634), .Q(subOut[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i1 (.D(subOut_21__N_920[1]), .CK(clk_N_634), .Q(subOut[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i1.GSR = "DISABLED";
-    FD1S3AX subOut_i2 (.D(subOut_21__N_920[2]), .CK(clk_N_634), .Q(subOut[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i2 (.D(subOut_21__N_920[2]), .CK(clk_N_634), .Q(subOut[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i2.GSR = "DISABLED";
-    FD1S3AX subOut_i3 (.D(subOut_21__N_920[3]), .CK(clk_N_634), .Q(subOut[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i3 (.D(subOut_21__N_920[3]), .CK(clk_N_634), .Q(subOut[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i3.GSR = "DISABLED";
-    FD1S3AX subOut_i4 (.D(subOut_21__N_920[4]), .CK(clk_N_634), .Q(subOut[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i4 (.D(subOut_21__N_920[4]), .CK(clk_N_634), .Q(subOut[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i4.GSR = "DISABLED";
-    FD1S3AX subOut_i5 (.D(subOut_21__N_920[5]), .CK(clk_N_634), .Q(subOut[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i5 (.D(subOut_21__N_920[5]), .CK(clk_N_634), .Q(subOut[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i5.GSR = "DISABLED";
-    FD1S3AX subOut_i6 (.D(subOut_21__N_920[6]), .CK(clk_N_634), .Q(subOut[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i6 (.D(subOut_21__N_920[6]), .CK(clk_N_634), .Q(subOut[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i6.GSR = "DISABLED";
-    FD1S3AX subOut_i7 (.D(subOut_21__N_920[7]), .CK(clk_N_634), .Q(subOut[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i7 (.D(subOut_21__N_920[7]), .CK(clk_N_634), .Q(subOut[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i7.GSR = "DISABLED";
-    FD1S3AX subOut_i8 (.D(subOut_21__N_920[8]), .CK(clk_N_634), .Q(subOut[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i8 (.D(subOut_21__N_920[8]), .CK(clk_N_634), .Q(subOut[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i8.GSR = "DISABLED";
-    FD1S3AX subOut_i9 (.D(subOut_21__N_920[9]), .CK(clk_N_634), .Q(subOut[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i9 (.D(subOut_21__N_920[9]), .CK(clk_N_634), .Q(subOut[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i9.GSR = "DISABLED";
-    FD1S3AX subOut_i10 (.D(subOut_21__N_920[10]), .CK(clk_N_634), .Q(subOut[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i10 (.D(subOut_21__N_920[10]), .CK(clk_N_634), .Q(subOut[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i10.GSR = "DISABLED";
-    FD1S3AX subOut_i11 (.D(subOut_21__N_920[11]), .CK(clk_N_634), .Q(subOut[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i11 (.D(subOut_21__N_920[11]), .CK(clk_N_634), .Q(subOut[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i11.GSR = "DISABLED";
-    FD1S3AX subOut_i12 (.D(subOut_21__N_920[12]), .CK(clk_N_634), .Q(subOut[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i12 (.D(subOut_21__N_920[12]), .CK(clk_N_634), .Q(subOut[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i12.GSR = "DISABLED";
-    FD1S3AX subOut_i13 (.D(subOut_21__N_920[13]), .CK(clk_N_634), .Q(subOut[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i13 (.D(subOut_21__N_920[13]), .CK(clk_N_634), .Q(subOut[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i13.GSR = "DISABLED";
-    FD1S3AX subOut_i14 (.D(subOut_21__N_920[14]), .CK(clk_N_634), .Q(subOut[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i14 (.D(subOut_21__N_920[14]), .CK(clk_N_634), .Q(subOut[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i14.GSR = "DISABLED";
-    FD1S3AX subOut_i15 (.D(subOut_21__N_920[15]), .CK(clk_N_634), .Q(subOut[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i15 (.D(subOut_21__N_920[15]), .CK(clk_N_634), .Q(subOut[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i15.GSR = "DISABLED";
-    FD1S3AX subOut_i16 (.D(subOut_21__N_920[16]), .CK(clk_N_634), .Q(subOut[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i16 (.D(subOut_21__N_920[16]), .CK(clk_N_634), .Q(subOut[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i16.GSR = "DISABLED";
-    FD1S3AX subOut_i17 (.D(subOut_21__N_920[17]), .CK(clk_N_634), .Q(subOut[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i17 (.D(subOut_21__N_920[17]), .CK(clk_N_634), .Q(subOut[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i17.GSR = "DISABLED";
-    FD1S3AX subOut_i18 (.D(subOut_21__N_920[18]), .CK(clk_N_634), .Q(subOut[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i18 (.D(subOut_21__N_920[18]), .CK(clk_N_634), .Q(subOut[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i18.GSR = "DISABLED";
-    FD1S3AX subOut_i19 (.D(subOut_21__N_920[19]), .CK(clk_N_634), .Q(subOut[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i19 (.D(subOut_21__N_920[19]), .CK(clk_N_634), .Q(subOut[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i19.GSR = "DISABLED";
-    FD1S3AX subOut_i20 (.D(subOut_21__N_920[20]), .CK(clk_N_634), .Q(subOut[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i20 (.D(subOut_21__N_920[20]), .CK(clk_N_634), .Q(subOut[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i20.GSR = "DISABLED";
-    FD1S3AX subOut_i21 (.D(subOut_21__N_920[21]), .CK(clk_N_634), .Q(subOut[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+    FD1S3AX subOut_i21 (.D(subOut_21__N_920[21]), .CK(clk_N_634), .Q(subOut[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam subOut_i21.GSR = "DISABLED";
     LUT4 mux_885_i2_4_lut (.A(\speed_m4[1] ), .B(\speed_m3[1] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[1])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[1])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i2_4_lut.init = 16'hcac0;
     FD1P3IX dutyout_m4_i9 (.D(n702[9]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m4[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m4[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i9.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i8 (.D(n702[8]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m4[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m4[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i8.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i7 (.D(n702[7]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m4[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m4[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i7.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i6 (.D(n702[6]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m4[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m4[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i6.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i5 (.D(n702[5]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m4[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m4[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i5.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i4 (.D(dirout_m4_N_1243[4]), .SP(clk_N_634_enable_252), 
-            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i4.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i3 (.D(n702[3]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m4[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m4[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i3.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i2 (.D(dirout_m4_N_1243[2]), .SP(clk_N_634_enable_252), 
-            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i2.GSR = "DISABLED";
     FD1P3IX dutyout_m4_i1 (.D(dirout_m4_N_1243[1]), .SP(clk_N_634_enable_252), 
-            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i1.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i9 (.D(n688[9]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m3[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m3[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i9.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i8 (.D(n688[8]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m3[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m3[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i8.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i7 (.D(n688[7]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m3[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m3[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i7.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i6 (.D(n688[6]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m3[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m3[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i6.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i5 (.D(n688[5]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m3[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m3[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i5.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i4 (.D(dirout_m3_N_1225[4]), .SP(clk_N_634_enable_252), 
-            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i4.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i3 (.D(n688[3]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m3[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m3[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i3.GSR = "DISABLED";
     CCU2D sub_5_add_2_11 (.A0(subIn2[9]), .B0(subIn1_21__N_875[9]), .C0(speed_set_m1[9]), 
           .D0(n708), .A1(subIn2[10]), .B1(subIn1_21__N_875[10]), .C1(speed_set_m1[10]), 
           .D1(n708), .CIN(n8423), .COUT(n8424), .S0(subOut_21__N_920[9]), 
-          .S1(subOut_21__N_920[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_11.INIT0 = 16'ha599;
     defparam sub_5_add_2_11.INIT1 = 16'ha599;
     defparam sub_5_add_2_11.INJECT1_0 = "NO";
     defparam sub_5_add_2_11.INJECT1_1 = "NO";
     LUT4 mux_885_i3_4_lut (.A(\speed_m4[2] ), .B(\speed_m3[2] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[2])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[2])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i3_4_lut.init = 16'hcac0;
     CCU2D sub_5_add_2_9 (.A0(subIn2[7]), .B0(subIn1_21__N_875[7]), .C0(speed_set_m1[7]), 
           .D0(n708), .A1(subIn2[8]), .B1(subIn1_21__N_875[8]), .C1(speed_set_m1[8]), 
           .D1(n708), .CIN(n8422), .COUT(n8423), .S0(subOut_21__N_920[7]), 
-          .S1(subOut_21__N_920[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_9.INIT0 = 16'ha599;
     defparam sub_5_add_2_9.INIT1 = 16'ha599;
     defparam sub_5_add_2_9.INJECT1_0 = "NO";
     defparam sub_5_add_2_9.INJECT1_1 = "NO";
-    LUT4 i6086_2_lut (.A(addOut[11]), .B(ss[3]), .Z(Out0_25__N_771[11])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6086_2_lut (.A(addOut[11]), .B(ss[3]), .Z(Out0_25__N_771[11])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6086_2_lut.init = 16'h2222;
-    LUT4 i6087_2_lut (.A(addOut[12]), .B(ss[3]), .Z(Out0_25__N_771[12])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6087_2_lut (.A(addOut[12]), .B(ss[3]), .Z(Out0_25__N_771[12])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6087_2_lut.init = 16'h2222;
     CCU2D sub_5_add_2_7 (.A0(subIn2[5]), .B0(subIn1_21__N_875[5]), .C0(speed_set_m1[5]), 
           .D0(n708), .A1(subIn2[6]), .B1(subIn1_21__N_875[6]), .C1(speed_set_m1[6]), 
           .D1(n708), .CIN(n8421), .COUT(n8422), .S0(subOut_21__N_920[5]), 
-          .S1(subOut_21__N_920[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_7.INIT0 = 16'ha599;
     defparam sub_5_add_2_7.INIT1 = 16'ha599;
     defparam sub_5_add_2_7.INJECT1_0 = "NO";
     defparam sub_5_add_2_7.INJECT1_1 = "NO";
     FD1P3IX dutyout_m3_i0 (.D(dirout_m3_N_1225[0]), .SP(clk_N_634_enable_252), 
-            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i0.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i2 (.D(dirout_m3_N_1225[2]), .SP(clk_N_634_enable_252), 
-            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i2.GSR = "DISABLED";
     FD1P3IX dutyout_m3_i1 (.D(dirout_m3_N_1225[1]), .SP(clk_N_634_enable_252), 
-            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5503), .CK(clk_N_634), .Q(PWMdut_m3[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m3_i1.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i0 (.D(dirout_m2_N_1207[0]), .SP(clk_N_634_enable_252), 
-            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i0.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i9 (.D(n674[9]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m2[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m2[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i9.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i8 (.D(n674[8]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m2[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m2[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i8.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i0 (.D(n660[0]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i0.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i7 (.D(n674[7]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m2[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m2[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i7.GSR = "DISABLED";
     LUT4 mux_885_i4_4_lut (.A(\speed_m4[3] ), .B(\speed_m3[3] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[3])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[3])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i4_4_lut.init = 16'hcac0;
-    LUT4 i6088_2_lut (.A(addOut[13]), .B(ss[3]), .Z(Out0_25__N_771[13])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6088_2_lut (.A(addOut[13]), .B(ss[3]), .Z(Out0_25__N_771[13])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6088_2_lut.init = 16'h2222;
     FD1P3IX dutyout_m2_i6 (.D(n674[6]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m2[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m2[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i6.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i5 (.D(n674[5]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m2[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m2[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i5.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i4 (.D(dirout_m2_N_1207[4]), .SP(clk_N_634_enable_252), 
-            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i4.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i3 (.D(n674[3]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m2[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m2[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i3.GSR = "DISABLED";
     LUT4 mux_885_i5_4_lut (.A(\speed_m4[4] ), .B(\speed_m3[4] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[4])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[4])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i5_4_lut.init = 16'hcac0;
     LUT4 mux_885_i6_4_lut (.A(\speed_m4[5] ), .B(\speed_m3[5] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[5])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[5])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i6_4_lut.init = 16'hcac0;
     FD1P3IX dutyout_m2_i2 (.D(dirout_m2_N_1207[2]), .SP(clk_N_634_enable_252), 
-            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i2.GSR = "DISABLED";
     FD1P3IX dutyout_m2_i1 (.D(dirout_m2_N_1207[1]), .SP(clk_N_634_enable_252), 
-            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5494), .CK(clk_N_634), .Q(PWMdut_m2[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m2_i1.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i9 (.D(n660[9]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i9.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i8 (.D(n660[8]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i8.GSR = "DISABLED";
-    LUT4 i6089_2_lut (.A(addOut[14]), .B(ss[3]), .Z(Out0_25__N_771[14])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6089_2_lut (.A(addOut[14]), .B(ss[3]), .Z(Out0_25__N_771[14])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6089_2_lut.init = 16'h2222;
     CCU2D add_7418_cout (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(GND_net), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8551), 
@@ -6452,63 +6452,63 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_20.INJECT1_0 = "NO";
     defparam add_7418_20.INJECT1_1 = "NO";
     LUT4 subIn1_21__I_7_i14_4_lut (.A(speed_set_m3[13]), .B(speed_set_m2[13]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[13])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[13])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i14_4_lut.init = 16'hcac0;
-    LUT4 i6090_2_lut (.A(addOut[15]), .B(ss[3]), .Z(Out0_25__N_771[15])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6090_2_lut (.A(addOut[15]), .B(ss[3]), .Z(Out0_25__N_771[15])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6090_2_lut.init = 16'h2222;
     FD1P3IX dutyout_m1_i7 (.D(n660[7]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i7.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i6 (.D(n660[6]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i6.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i5 (.D(n660[5]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i5.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i4 (.D(n1301[4]), .SP(clk_N_634_enable_252), .CD(n5482), 
-            .CK(clk_N_634), .Q(PWMdut_m1[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[4])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i4.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i3 (.D(n660[3]), .SP(clk_N_634_enable_252), .CD(n5486), 
-            .CK(clk_N_634), .Q(PWMdut_m1[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[3])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i3.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i2 (.D(n1301[2]), .SP(clk_N_634_enable_252), .CD(n5482), 
-            .CK(clk_N_634), .Q(PWMdut_m1[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[2])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i2.GSR = "DISABLED";
     FD1P3IX dutyout_m1_i1 (.D(n1301[1]), .SP(clk_N_634_enable_252), .CD(n5482), 
-            .CK(clk_N_634), .Q(PWMdut_m1[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CK(clk_N_634), .Q(PWMdut_m1[1])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m1_i1.GSR = "DISABLED";
     FD1P3IX intgOut0_i25 (.D(intgOut0_25__N_1120[25]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[25])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i25.GSR = "DISABLED";
     FD1P3IX intgOut0_i24 (.D(intgOut0_25__N_1120[24]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[24])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i24.GSR = "DISABLED";
     FD1P3IX intgOut0_i23 (.D(intgOut0_25__N_1120[23]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i23.GSR = "DISABLED";
     FD1P3IX intgOut0_i22 (.D(intgOut0_25__N_1120[22]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i22.GSR = "DISABLED";
     FD1P3IX intgOut0_i21 (.D(intgOut0_25__N_1120[21]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i21.GSR = "DISABLED";
     FD1P3IX intgOut0_i20 (.D(intgOut0_25__N_1120[20]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i20.GSR = "DISABLED";
     FD1P3IX intgOut0_i19 (.D(intgOut0_25__N_1120[19]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i19.GSR = "DISABLED";
     FD1P3IX intgOut0_i18 (.D(intgOut0_25__N_1120[18]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[18])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i18.GSR = "DISABLED";
     FD1P3IX intgOut0_i17 (.D(intgOut0_25__N_1120[17]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[17])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i17.GSR = "DISABLED";
     FD1P3IX intgOut0_i16 (.D(intgOut0_25__N_1120[16]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[16])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i16.GSR = "DISABLED";
     FD1P3IX intgOut0_i15 (.D(intgOut0_25__N_1120[15]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[15])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i15.GSR = "DISABLED";
     CCU2D add_7418_18 (.A0(addOut[22]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[23]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6520,79 +6520,79 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D sub_5_add_2_5 (.A0(subIn2[3]), .B0(subIn1_21__N_875[3]), .C0(speed_set_m1[3]), 
           .D0(n708), .A1(subIn2[4]), .B1(subIn1_21__N_875[4]), .C1(speed_set_m1[4]), 
           .D1(n708), .CIN(n8420), .COUT(n8421), .S0(subOut_21__N_920[3]), 
-          .S1(subOut_21__N_920[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_5.INIT0 = 16'ha599;
     defparam sub_5_add_2_5.INIT1 = 16'ha599;
     defparam sub_5_add_2_5.INJECT1_0 = "NO";
     defparam sub_5_add_2_5.INJECT1_1 = "NO";
     LUT4 mux_885_i7_4_lut (.A(\speed_m4[6] ), .B(\speed_m3[6] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[6])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[6])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i7_4_lut.init = 16'hcac0;
     CCU2D sub_5_add_2_3 (.A0(subIn2[1]), .B0(subIn1_21__N_875[1]), .C0(speed_set_m1[1]), 
           .D0(n708), .A1(subIn2[2]), .B1(subIn1_21__N_875[2]), .C1(speed_set_m1[2]), 
           .D1(n708), .CIN(n8419), .COUT(n8420), .S0(subOut_21__N_920[1]), 
-          .S1(subOut_21__N_920[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_3.INIT0 = 16'ha599;
     defparam sub_5_add_2_3.INIT1 = 16'ha599;
     defparam sub_5_add_2_3.INJECT1_0 = "NO";
     defparam sub_5_add_2_3.INJECT1_1 = "NO";
     CCU2D sub_5_add_2_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(subIn2[0]), .B1(subIn1_21__N_875[0]), .C1(speed_set_m1[0]), 
-          .D1(n708), .COUT(n8419), .S1(subOut_21__N_920[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .D1(n708), .COUT(n8419), .S1(subOut_21__N_920[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_1.INIT0 = 16'h0000;
     defparam sub_5_add_2_1.INIT1 = 16'ha599;
     defparam sub_5_add_2_1.INJECT1_0 = "NO";
     defparam sub_5_add_2_1.INJECT1_1 = "NO";
-    LUT4 i6091_2_lut (.A(addOut[16]), .B(ss[3]), .Z(Out0_25__N_771[16])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6091_2_lut (.A(addOut[16]), .B(ss[3]), .Z(Out0_25__N_771[16])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6091_2_lut.init = 16'h2222;
     LUT4 mux_885_i8_4_lut (.A(\speed_m4[7] ), .B(\speed_m3[7] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[7])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[7])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i8_4_lut.init = 16'hcac0;
     LUT4 mux_885_i9_4_lut (.A(\speed_m4[8] ), .B(\speed_m3[8] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[8])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[8])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i9_4_lut.init = 16'hcac0;
-    LUT4 i6092_2_lut (.A(addOut[17]), .B(ss[3]), .Z(Out0_25__N_771[17])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6092_2_lut (.A(addOut[17]), .B(ss[3]), .Z(Out0_25__N_771[17])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6092_2_lut.init = 16'h2222;
     FD1P3IX intgOut0_i14 (.D(intgOut0_25__N_1120[14]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i14.GSR = "DISABLED";
     FD1P3IX intgOut0_i13 (.D(intgOut0_25__N_1120[13]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[13])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i13.GSR = "DISABLED";
     FD1P3IX intgOut0_i12 (.D(intgOut0_25__N_1120[12]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[12])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i12.GSR = "DISABLED";
     FD1P3IX intgOut0_i11 (.D(intgOut0_25__N_1120[11]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[11])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i11.GSR = "DISABLED";
     FD1P3IX intgOut0_i10 (.D(intgOut0_25__N_1120[10]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[10])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i10.GSR = "DISABLED";
     FD1P3IX intgOut0_i9 (.D(intgOut0_25__N_1120[9]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[9])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i9.GSR = "DISABLED";
     FD1P3IX intgOut0_i8 (.D(intgOut0_25__N_1120[8]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[8])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i8.GSR = "DISABLED";
     FD1P3IX intgOut0_i7 (.D(intgOut0_25__N_1120[7]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i7.GSR = "DISABLED";
     FD1P3IX intgOut0_i6 (.D(intgOut0_25__N_1120[6]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[6])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i6.GSR = "DISABLED";
     FD1P3IX intgOut0_i5 (.D(intgOut0_25__N_1120[5]), .SP(clk_N_634_enable_251), 
-            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5462), .CK(clk_N_634), .Q(intgOut0[5])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam intgOut0_i5.GSR = "DISABLED";
     CCU2D add_97_15 (.A0(Out3[24]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[25]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8417), 
-          .S0(dirout_m4_N_1243[13]), .S1(dirout_m4_N_1243[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .S0(dirout_m4_N_1243[13]), .S1(dirout_m4_N_1243[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_15.INIT0 = 16'h5aaa;
     defparam add_97_15.INIT1 = 16'h5aaa;
     defparam add_97_15.INJECT1_0 = "NO";
     defparam add_97_15.INJECT1_1 = "NO";
     CCU2D add_97_13 (.A0(Out3[22]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[23]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8416), 
-          .COUT(n8417), .S0(dirout_m4_N_1243[11]), .S1(dirout_m4_N_1243[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .COUT(n8417), .S0(dirout_m4_N_1243[11]), .S1(dirout_m4_N_1243[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_13.INIT0 = 16'h5aaa;
     defparam add_97_13.INIT1 = 16'h5aaa;
     defparam add_97_13.INJECT1_0 = "NO";
@@ -6614,11 +6614,11 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_14.INIT1 = 16'h5555;
     defparam add_7418_14.INJECT1_0 = "NO";
     defparam add_7418_14.INJECT1_1 = "NO";
-    LUT4 i6093_2_lut (.A(addOut[18]), .B(ss[3]), .Z(Out0_25__N_771[18])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6093_2_lut (.A(addOut[18]), .B(ss[3]), .Z(Out0_25__N_771[18])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6093_2_lut.init = 16'h2222;
     CCU2D add_97_11 (.A0(Out3[20]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[21]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8415), 
-          .COUT(n8416), .S0(dirout_m4_N_1243[9]), .S1(dirout_m4_N_1243[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .COUT(n8416), .S0(dirout_m4_N_1243[9]), .S1(dirout_m4_N_1243[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_11.INIT0 = 16'h5aaa;
     defparam add_97_11.INIT1 = 16'h5aaa;
     defparam add_97_11.INJECT1_0 = "NO";
@@ -6633,7 +6633,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_12.INIT1 = 16'h5aaa;
     defparam add_7418_12.INJECT1_0 = "NO";
     defparam add_7418_12.INJECT1_1 = "NO";
-    LUT4 i6094_2_lut (.A(addOut[19]), .B(ss[3]), .Z(Out0_25__N_771[19])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6094_2_lut (.A(addOut[19]), .B(ss[3]), .Z(Out0_25__N_771[19])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6094_2_lut.init = 16'h2222;
     CCU2D add_7418_10 (.A0(addOut[14]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[15]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6643,32 +6643,32 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_10.INJECT1_0 = "NO";
     defparam add_7418_10.INJECT1_1 = "NO";
     LUT4 mux_885_i10_4_lut (.A(\speed_m4[9] ), .B(\speed_m3[9] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[9])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[9])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i10_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i15_4_lut (.A(speed_set_m3[14]), .B(speed_set_m2[14]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[14])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[14])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i15_4_lut.init = 16'hcac0;
     LUT4 mux_885_i11_4_lut (.A(\speed_m4[10] ), .B(\speed_m3[10] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[10])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[10])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i11_4_lut.init = 16'hcac0;
-    LUT4 i6095_2_lut (.A(addOut[20]), .B(ss[3]), .Z(Out0_25__N_771[20])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6095_2_lut (.A(addOut[20]), .B(ss[3]), .Z(Out0_25__N_771[20])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6095_2_lut.init = 16'h2222;
     CCU2D add_97_9 (.A0(Out3[18]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[19]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8414), 
-          .COUT(n8415), .S0(dirout_m4_N_1243[7]), .S1(dirout_m4_N_1243[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .COUT(n8415), .S0(dirout_m4_N_1243[7]), .S1(dirout_m4_N_1243[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_9.INIT0 = 16'h5aaa;
     defparam add_97_9.INIT1 = 16'h5aaa;
     defparam add_97_9.INJECT1_0 = "NO";
     defparam add_97_9.INJECT1_1 = "NO";
     CCU2D add_97_7 (.A0(Out3[16]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[17]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8413), 
-          .COUT(n8414), .S0(dirout_m4_N_1243[5]), .S1(dirout_m4_N_1243[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .COUT(n8414), .S0(dirout_m4_N_1243[5]), .S1(dirout_m4_N_1243[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_7.INIT0 = 16'h5aaa;
     defparam add_97_7.INIT1 = 16'h5aaa;
     defparam add_97_7.INJECT1_0 = "NO";
     defparam add_97_7.INJECT1_1 = "NO";
     LUT4 mux_885_i12_4_lut (.A(\speed_m4[11] ), .B(\speed_m3[11] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[11])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[11])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i12_4_lut.init = 16'hcac0;
     CCU2D add_7418_8 (.A0(addOut[12]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[13]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6677,7 +6677,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_8.INIT1 = 16'h5aaa;
     defparam add_7418_8.INJECT1_0 = "NO";
     defparam add_7418_8.INJECT1_1 = "NO";
-    LUT4 i6096_2_lut (.A(addOut[21]), .B(ss[3]), .Z(Out0_25__N_771[21])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6096_2_lut (.A(addOut[21]), .B(ss[3]), .Z(Out0_25__N_771[21])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6096_2_lut.init = 16'h2222;
     CCU2D add_7418_6 (.A0(addOut[10]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[11]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6688,7 +6688,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_6.INJECT1_1 = "NO";
     CCU2D add_97_5 (.A0(Out3[14]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[15]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8412), 
-          .COUT(n8413), .S0(dirout_m4_N_1243[3]), .S1(dirout_m4_N_1243[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .COUT(n8413), .S0(dirout_m4_N_1243[3]), .S1(dirout_m4_N_1243[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_5.INIT0 = 16'h5aaa;
     defparam add_97_5.INIT1 = 16'h5aaa;
     defparam add_97_5.INJECT1_0 = "NO";
@@ -6700,22 +6700,22 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_4.INIT1 = 16'h5aaa;
     defparam add_7418_4.INJECT1_0 = "NO";
     defparam add_7418_4.INJECT1_1 = "NO";
-    LUT4 i6097_2_lut (.A(addOut[22]), .B(ss[3]), .Z(Out0_25__N_771[22])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6097_2_lut (.A(addOut[22]), .B(ss[3]), .Z(Out0_25__N_771[22])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6097_2_lut.init = 16'h2222;
     LUT4 mux_885_i1_4_lut (.A(\speed_m4[0] ), .B(\speed_m3[0] ), .C(n9738), 
-         .D(n1921), .Z(subIn2_21__N_1067[0])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(122[18] 126[17])
+         .D(n1921), .Z(subIn2_21__N_1067[0])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(124[18] 128[17])
     defparam mux_885_i1_4_lut.init = 16'hcac0;
     LUT4 mux_104_i8_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[7]), .C(n630), 
-         .Z(n660[7])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[7])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i8_3_lut.init = 16'hcaca;
-    LUT4 i6098_2_lut (.A(addOut[23]), .B(ss[3]), .Z(Out0_25__N_771[23])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6098_2_lut (.A(addOut[23]), .B(ss[3]), .Z(Out0_25__N_771[23])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6098_2_lut.init = 16'h2222;
     LUT4 mux_63_i22_4_lut (.A(intgOut2[21]), .B(intgOut3[21]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[21])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[21])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i22_4_lut.init = 16'h0aca;
-    LUT4 i6099_2_lut (.A(addOut[24]), .B(ss[3]), .Z(Out0_25__N_771[24])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6099_2_lut (.A(addOut[24]), .B(ss[3]), .Z(Out0_25__N_771[24])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6099_2_lut.init = 16'h2222;
-    LUT4 i6152_2_lut (.A(addOut[25]), .B(ss[3]), .Z(Out0_25__N_771[25])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6152_2_lut (.A(addOut[25]), .B(ss[3]), .Z(Out0_25__N_771[25])) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6152_2_lut.init = 16'h2222;
     CCU2D add_7418_2 (.A0(addOut[6]), .B0(addOut[5]), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[7]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6725,13 +6725,13 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7418_2.INJECT1_0 = "NO";
     defparam add_7418_2.INJECT1_1 = "NO";
     LUT4 mux_63_i20_4_lut (.A(intgOut2[19]), .B(intgOut3[19]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[19])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[19])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i20_4_lut.init = 16'h0aca;
-    LUT4 i6100_2_lut (.A(addOut[1]), .B(ss[2]), .Z(n14_adj_1413)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6100_2_lut (.A(addOut[1]), .B(ss[2]), .Z(n14_adj_1413)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6100_2_lut.init = 16'h2222;
     CCU2D add_97_3 (.A0(Out3[12]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[13]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8411), 
-          .COUT(n8412), .S0(dirout_m4_N_1243[1]), .S1(dirout_m4_N_1243[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .COUT(n8412), .S0(dirout_m4_N_1243[1]), .S1(dirout_m4_N_1243[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_3.INIT0 = 16'h5aaa;
     defparam add_97_3.INIT1 = 16'h5aaa;
     defparam add_97_3.INJECT1_0 = "NO";
@@ -6743,19 +6743,19 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7417_cout.INIT1 = 16'h0000;
     defparam add_7417_cout.INJECT1_0 = "NO";
     defparam add_7417_cout.INJECT1_1 = "NO";
-    LUT4 i6101_2_lut (.A(addOut[2]), .B(ss[2]), .Z(n14_adj_1414)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6101_2_lut (.A(addOut[2]), .B(ss[2]), .Z(n14_adj_1414)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6101_2_lut.init = 16'h2222;
     LUT4 mux_63_i15_4_lut (.A(intgOut2[14]), .B(intgOut3[14]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[14])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[14])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i15_4_lut.init = 16'h0aca;
     CCU2D add_97_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out3[11]), .B1(n8620), .C1(n8621), .D1(Out3[25]), .COUT(n8411), 
-          .S1(dirout_m4_N_1243[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
+          .S1(dirout_m4_N_1243[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[17:21])
     defparam add_97_1.INIT0 = 16'hF000;
     defparam add_97_1.INIT1 = 16'h56aa;
     defparam add_97_1.INJECT1_0 = "NO";
     defparam add_97_1.INJECT1_1 = "NO";
-    LUT4 i6102_2_lut (.A(addOut[3]), .B(ss[2]), .Z(n14_adj_1415)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6102_2_lut (.A(addOut[3]), .B(ss[2]), .Z(n14_adj_1415)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6102_2_lut.init = 16'h2222;
     CCU2D add_7417_25 (.A0(addOut[24]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[25]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6766,14 +6766,14 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7417_25.INJECT1_1 = "NO";
     CCU2D add_93_15 (.A0(Out2[24]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[25]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8409), 
-          .S0(dirout_m3_N_1225[13]), .S1(dirout_m3_N_1225[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .S0(dirout_m3_N_1225[13]), .S1(dirout_m3_N_1225[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_15.INIT0 = 16'h5aaa;
     defparam add_93_15.INIT1 = 16'h5aaa;
     defparam add_93_15.INJECT1_0 = "NO";
     defparam add_93_15.INJECT1_1 = "NO";
     CCU2D add_93_13 (.A0(Out2[22]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[23]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8408), 
-          .COUT(n8409), .S0(dirout_m3_N_1225[11]), .S1(dirout_m3_N_1225[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .COUT(n8409), .S0(dirout_m3_N_1225[11]), .S1(dirout_m3_N_1225[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_13.INIT0 = 16'h5aaa;
     defparam add_93_13.INIT1 = 16'h5aaa;
     defparam add_93_13.INJECT1_0 = "NO";
@@ -6801,7 +6801,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7417_19.INJECT1_1 = "NO";
     CCU2D add_93_11 (.A0(Out2[20]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[21]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8407), 
-          .COUT(n8408), .S0(dirout_m3_N_1225[9]), .S1(dirout_m3_N_1225[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .COUT(n8408), .S0(dirout_m3_N_1225[9]), .S1(dirout_m3_N_1225[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_11.INIT0 = 16'h5aaa;
     defparam add_93_11.INIT1 = 16'h5aaa;
     defparam add_93_11.INJECT1_0 = "NO";
@@ -6843,7 +6843,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     LUT4 i1_2_lut_3_lut_4_lut_adj_55 (.A(n497), .B(n1634), .C(addOut[4]), 
          .D(ss[3]), .Z(intgOut0_25__N_665[4])) /* synthesis lut_function=(!(A+(B+((D)+!C)))) */ ;
     defparam i1_2_lut_3_lut_4_lut_adj_55.init = 16'h0010;
-    LUT4 i6103_2_lut (.A(addOut[4]), .B(ss[2]), .Z(n14_adj_1416)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6103_2_lut (.A(addOut[4]), .B(ss[2]), .Z(n14_adj_1416)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6103_2_lut.init = 16'h2222;
     CCU2D add_7417_9 (.A0(addOut[8]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[9]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6854,29 +6854,29 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7417_9.INJECT1_1 = "NO";
     CCU2D add_93_9 (.A0(Out2[18]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[19]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8406), 
-          .COUT(n8407), .S0(dirout_m3_N_1225[7]), .S1(dirout_m3_N_1225[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .COUT(n8407), .S0(dirout_m3_N_1225[7]), .S1(dirout_m3_N_1225[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_9.INIT0 = 16'h5aaa;
     defparam add_93_9.INIT1 = 16'h5aaa;
     defparam add_93_9.INJECT1_0 = "NO";
     defparam add_93_9.INJECT1_1 = "NO";
     CCU2D add_93_7 (.A0(Out2[16]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[17]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8405), 
-          .COUT(n8406), .S0(dirout_m3_N_1225[5]), .S1(dirout_m3_N_1225[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .COUT(n8406), .S0(dirout_m3_N_1225[5]), .S1(dirout_m3_N_1225[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_7.INIT0 = 16'h5aaa;
     defparam add_93_7.INIT1 = 16'h5aaa;
     defparam add_93_7.INJECT1_0 = "NO";
     defparam add_93_7.INJECT1_1 = "NO";
-    LUT4 i6104_2_lut (.A(addOut[5]), .B(ss[2]), .Z(n14_adj_1417)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6104_2_lut (.A(addOut[5]), .B(ss[2]), .Z(n14_adj_1417)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6104_2_lut.init = 16'h2222;
     CCU2D add_93_5 (.A0(Out2[14]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[15]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8404), 
-          .COUT(n8405), .S0(dirout_m3_N_1225[3]), .S1(dirout_m3_N_1225[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .COUT(n8405), .S0(dirout_m3_N_1225[3]), .S1(dirout_m3_N_1225[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_5.INIT0 = 16'h5aaa;
     defparam add_93_5.INIT1 = 16'h5aaa;
     defparam add_93_5.INJECT1_0 = "NO";
     defparam add_93_5.INJECT1_1 = "NO";
     LUT4 mux_63_i8_4_lut (.A(intgOut2[7]), .B(intgOut3[7]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[7])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[7])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i8_4_lut.init = 16'h0aca;
     CCU2D add_7417_7 (.A0(addOut[6]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(addOut[7]), .B1(GND_net), .C1(GND_net), .D1(GND_net), 
@@ -6906,172 +6906,172 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam add_7417_1.INIT1 = 16'ha666;
     defparam add_7417_1.INJECT1_0 = "NO";
     defparam add_7417_1.INJECT1_1 = "NO";
-    LUT4 i6105_2_lut (.A(addOut[6]), .B(ss[2]), .Z(n14_adj_1418)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6105_2_lut (.A(addOut[6]), .B(ss[2]), .Z(n14_adj_1418)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6105_2_lut.init = 16'h2222;
-    LUT4 i6106_2_lut (.A(addOut[7]), .B(ss[2]), .Z(n14_adj_1419)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6106_2_lut (.A(addOut[7]), .B(ss[2]), .Z(n14_adj_1419)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6106_2_lut.init = 16'h2222;
-    LUT4 i6107_2_lut (.A(addOut[8]), .B(ss[2]), .Z(n14_adj_1420)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6107_2_lut (.A(addOut[8]), .B(ss[2]), .Z(n14_adj_1420)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6107_2_lut.init = 16'h2222;
     CCU2D add_93_3 (.A0(Out2[12]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[13]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8403), 
-          .COUT(n8404), .S0(dirout_m3_N_1225[1]), .S1(dirout_m3_N_1225[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .COUT(n8404), .S0(dirout_m3_N_1225[1]), .S1(dirout_m3_N_1225[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_3.INIT0 = 16'h5aaa;
     defparam add_93_3.INIT1 = 16'h5aaa;
     defparam add_93_3.INJECT1_0 = "NO";
     defparam add_93_3.INJECT1_1 = "NO";
     LUT4 mux_63_i25_4_lut (.A(intgOut2[24]), .B(intgOut3[24]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[24])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[24])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i25_4_lut.init = 16'h0aca;
-    LUT4 i6108_2_lut (.A(addOut[9]), .B(ss[2]), .Z(n14_adj_1421)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6108_2_lut (.A(addOut[9]), .B(ss[2]), .Z(n14_adj_1421)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6108_2_lut.init = 16'h2222;
     CCU2D add_93_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out2[11]), .B1(n8610), .C1(n8611), .D1(Out2[25]), .COUT(n8403), 
-          .S1(dirout_m3_N_1225[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
+          .S1(dirout_m3_N_1225[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(246[17:21])
     defparam add_93_1.INIT0 = 16'hF000;
     defparam add_93_1.INIT1 = 16'h56aa;
     defparam add_93_1.INJECT1_0 = "NO";
     defparam add_93_1.INJECT1_1 = "NO";
     CCU2D add_89_15 (.A0(Out1[24]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[25]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8401), 
-          .S0(dirout_m2_N_1207[13]), .S1(dirout_m2_N_1207[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .S0(dirout_m2_N_1207[13]), .S1(dirout_m2_N_1207[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_15.INIT0 = 16'h5aaa;
     defparam add_89_15.INIT1 = 16'h5aaa;
     defparam add_89_15.INJECT1_0 = "NO";
     defparam add_89_15.INJECT1_1 = "NO";
     LUT4 subIn1_21__I_7_i21_4_lut (.A(speed_set_m3[20]), .B(speed_set_m2[20]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[20])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[20])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i21_4_lut.init = 16'hcac0;
     CCU2D add_89_13 (.A0(Out1[22]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[23]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8400), 
-          .COUT(n8401), .S0(dirout_m2_N_1207[11]), .S1(dirout_m2_N_1207[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .COUT(n8401), .S0(dirout_m2_N_1207[11]), .S1(dirout_m2_N_1207[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_13.INIT0 = 16'h5aaa;
     defparam add_89_13.INIT1 = 16'h5aaa;
     defparam add_89_13.INJECT1_0 = "NO";
     defparam add_89_13.INJECT1_1 = "NO";
-    LUT4 i6109_2_lut (.A(addOut[10]), .B(ss[2]), .Z(n14_adj_1422)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6109_2_lut (.A(addOut[10]), .B(ss[2]), .Z(n14_adj_1422)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6109_2_lut.init = 16'h2222;
     CCU2D add_89_11 (.A0(Out1[20]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[21]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8399), 
-          .COUT(n8400), .S0(dirout_m2_N_1207[9]), .S1(dirout_m2_N_1207[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .COUT(n8400), .S0(dirout_m2_N_1207[9]), .S1(dirout_m2_N_1207[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_11.INIT0 = 16'h5aaa;
     defparam add_89_11.INIT1 = 16'h5aaa;
     defparam add_89_11.INJECT1_0 = "NO";
     defparam add_89_11.INJECT1_1 = "NO";
     LUT4 subIn1_21__I_7_i20_4_lut (.A(speed_set_m3[19]), .B(speed_set_m2[19]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[19])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[19])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i20_4_lut.init = 16'hcac0;
-    LUT4 i6110_2_lut (.A(addOut[11]), .B(ss[2]), .Z(n14_adj_1423)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6110_2_lut (.A(addOut[11]), .B(ss[2]), .Z(n14_adj_1423)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6110_2_lut.init = 16'h2222;
     LUT4 i6_4_lut_adj_56 (.A(Out0[6]), .B(n12_adj_1441), .C(Out0[10]), 
-         .D(Out0[2]), .Z(n8590)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+         .D(Out0[2]), .Z(n8590)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam i6_4_lut_adj_56.init = 16'hfffe;
     CCU2D add_89_9 (.A0(Out1[18]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[19]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8398), 
-          .COUT(n8399), .S0(dirout_m2_N_1207[7]), .S1(dirout_m2_N_1207[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .COUT(n8399), .S0(dirout_m2_N_1207[7]), .S1(dirout_m2_N_1207[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_9.INIT0 = 16'h5aaa;
     defparam add_89_9.INIT1 = 16'h5aaa;
     defparam add_89_9.INJECT1_0 = "NO";
     defparam add_89_9.INJECT1_1 = "NO";
     LUT4 i5_4_lut_adj_57 (.A(Out0[0]), .B(Out0[1]), .C(Out0[8]), .D(Out0[5]), 
-         .Z(n12_adj_1441)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+         .Z(n12_adj_1441)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam i5_4_lut_adj_57.init = 16'hfffe;
     CCU2D add_89_7 (.A0(Out1[16]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[17]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8397), 
-          .COUT(n8398), .S0(dirout_m2_N_1207[5]), .S1(dirout_m2_N_1207[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .COUT(n8398), .S0(dirout_m2_N_1207[5]), .S1(dirout_m2_N_1207[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_7.INIT0 = 16'h5aaa;
     defparam add_89_7.INIT1 = 16'h5aaa;
     defparam add_89_7.INJECT1_0 = "NO";
     defparam add_89_7.INJECT1_1 = "NO";
-    LUT4 i6111_2_lut (.A(addOut[12]), .B(ss[2]), .Z(n14_adj_1424)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6111_2_lut (.A(addOut[12]), .B(ss[2]), .Z(n14_adj_1424)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6111_2_lut.init = 16'h2222;
     LUT4 i3_4_lut_adj_58 (.A(Out0[3]), .B(Out0[9]), .C(Out0[7]), .D(Out0[4]), 
-         .Z(n8591)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+         .Z(n8591)) /* synthesis lut_function=(A+(B+(C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam i3_4_lut_adj_58.init = 16'hfffe;
     LUT4 mux_63_i21_4_lut (.A(intgOut2[20]), .B(intgOut3[20]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[20])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[20])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i21_4_lut.init = 16'h0aca;
     CCU2D add_89_5 (.A0(Out1[14]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[15]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8396), 
-          .COUT(n8397), .S0(dirout_m2_N_1207[3]), .S1(dirout_m2_N_1207[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .COUT(n8397), .S0(dirout_m2_N_1207[3]), .S1(dirout_m2_N_1207[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_5.INIT0 = 16'h5aaa;
     defparam add_89_5.INIT1 = 16'h5aaa;
     defparam add_89_5.INJECT1_0 = "NO";
     defparam add_89_5.INJECT1_1 = "NO";
-    LUT4 i6112_2_lut (.A(addOut[13]), .B(ss[2]), .Z(n14_adj_1425)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6112_2_lut (.A(addOut[13]), .B(ss[2]), .Z(n14_adj_1425)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6112_2_lut.init = 16'h2222;
     CCU2D add_89_3 (.A0(Out1[12]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[13]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8395), 
-          .COUT(n8396), .S0(dirout_m2_N_1207[1]), .S1(dirout_m2_N_1207[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .COUT(n8396), .S0(dirout_m2_N_1207[1]), .S1(dirout_m2_N_1207[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_3.INIT0 = 16'h5aaa;
     defparam add_89_3.INIT1 = 16'h5aaa;
     defparam add_89_3.INJECT1_0 = "NO";
     defparam add_89_3.INJECT1_1 = "NO";
     LUT4 mux_63_i16_4_lut (.A(intgOut2[15]), .B(intgOut3[15]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[15])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[15])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i16_4_lut.init = 16'h0aca;
-    LUT4 i6113_2_lut (.A(addOut[14]), .B(ss[2]), .Z(n14_adj_1426)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6113_2_lut (.A(addOut[14]), .B(ss[2]), .Z(n14_adj_1426)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6113_2_lut.init = 16'h2222;
-    LUT4 i6114_2_lut (.A(addOut[15]), .B(ss[2]), .Z(n14_adj_1427)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6114_2_lut (.A(addOut[15]), .B(ss[2]), .Z(n14_adj_1427)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6114_2_lut.init = 16'h2222;
     LUT4 mux_63_i9_4_lut (.A(intgOut2[8]), .B(intgOut3[8]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[8])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[8])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i9_4_lut.init = 16'h0aca;
     CCU2D add_89_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out1[11]), .B1(n8607), .C1(n8608), .D1(Out1[25]), .COUT(n8395), 
-          .S1(dirout_m2_N_1207[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(243[17:21])
+          .S1(dirout_m2_N_1207[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(245[17:21])
     defparam add_89_1.INIT0 = 16'hF000;
     defparam add_89_1.INIT1 = 16'h56aa;
     defparam add_89_1.INJECT1_0 = "NO";
     defparam add_89_1.INJECT1_1 = "NO";
-    LUT4 i6115_2_lut (.A(addOut[16]), .B(ss[2]), .Z(n14_adj_1428)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6115_2_lut (.A(addOut[16]), .B(ss[2]), .Z(n14_adj_1428)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6115_2_lut.init = 16'h2222;
-    LUT4 i6116_2_lut (.A(addOut[17]), .B(ss[2]), .Z(n14_adj_1429)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6116_2_lut (.A(addOut[17]), .B(ss[2]), .Z(n14_adj_1429)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6116_2_lut.init = 16'h2222;
     CCU2D add_85_15 (.A0(Out0[24]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[25]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8393), 
-          .S0(dirout_m1_N_1189[13]), .S1(dirout_m1_N_1189[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .S0(dirout_m1_N_1189[13]), .S1(dirout_m1_N_1189[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_15.INIT0 = 16'h5aaa;
     defparam add_85_15.INIT1 = 16'h5aaa;
     defparam add_85_15.INJECT1_0 = "NO";
     defparam add_85_15.INJECT1_1 = "NO";
     LUT4 mux_63_i17_4_lut (.A(intgOut2[16]), .B(intgOut3[16]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[16])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[16])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i17_4_lut.init = 16'h0aca;
-    LUT4 i6117_2_lut (.A(addOut[18]), .B(ss[2]), .Z(n14_adj_1430)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6117_2_lut (.A(addOut[18]), .B(ss[2]), .Z(n14_adj_1430)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6117_2_lut.init = 16'h2222;
     LUT4 mux_886_i11_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[10] ), 
          .D(\speed_m2[10] ), .Z(subIn2_21__N_899[10])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i11_3_lut_4_lut.init = 16'hfb40;
     CCU2D add_85_13 (.A0(Out0[22]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[23]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8392), 
-          .COUT(n8393), .S0(dirout_m1_N_1189[11]), .S1(dirout_m1_N_1189[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .COUT(n8393), .S0(dirout_m1_N_1189[11]), .S1(dirout_m1_N_1189[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_13.INIT0 = 16'h5aaa;
     defparam add_85_13.INIT1 = 16'h5aaa;
     defparam add_85_13.INJECT1_0 = "NO";
     defparam add_85_13.INJECT1_1 = "NO";
     LUT4 mux_63_i10_4_lut (.A(intgOut2[9]), .B(intgOut3[9]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[9])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[9])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i10_4_lut.init = 16'h0aca;
     LUT4 mux_886_i9_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[8] ), 
          .D(\speed_m2[8] ), .Z(subIn2_21__N_899[8])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i9_3_lut_4_lut.init = 16'hfb40;
-    LUT4 i6118_2_lut (.A(addOut[19]), .B(ss[2]), .Z(n14_adj_1431)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6118_2_lut (.A(addOut[19]), .B(ss[2]), .Z(n14_adj_1431)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6118_2_lut.init = 16'h2222;
     CCU2D add_85_11 (.A0(Out0[20]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[21]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8391), 
-          .COUT(n8392), .S0(dirout_m1_N_1189[9]), .S1(dirout_m1_N_1189[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .COUT(n8392), .S0(dirout_m1_N_1189[9]), .S1(dirout_m1_N_1189[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_11.INIT0 = 16'h5aaa;
     defparam add_85_11.INIT1 = 16'h5aaa;
     defparam add_85_11.INJECT1_0 = "NO";
     defparam add_85_11.INJECT1_1 = "NO";
     LUT4 mux_63_i18_4_lut (.A(intgOut2[17]), .B(intgOut3[17]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[17])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[17])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i18_4_lut.init = 16'h0aca;
-    LUT4 i6119_2_lut (.A(addOut[20]), .B(ss[2]), .Z(n14_adj_1432)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6119_2_lut (.A(addOut[20]), .B(ss[2]), .Z(n14_adj_1432)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6119_2_lut.init = 16'h2222;
     CCU2D addOut_990_add_4_27 (.A0(multOut[25]), .B0(n7262), .C0(addOut[25]), 
           .D0(addIn2_25__N_984[25]), .A1(GND_net), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n8512), .S0(n109[25]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .D1(GND_net), .CIN(n8512), .S0(n109[25]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_27.INIT0 = 16'h569a;
     defparam addOut_990_add_4_27.INIT1 = 16'h0000;
     defparam addOut_990_add_4_27.INJECT1_0 = "NO";
@@ -7080,31 +7080,31 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .D(\speed_m2[9] ), .Z(subIn2_21__N_899[9])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i10_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_63_i11_4_lut (.A(intgOut2[10]), .B(intgOut3[10]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[10])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[10])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i11_4_lut.init = 16'h0aca;
     LUT4 mux_886_i4_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[3] ), 
          .D(\speed_m2[3] ), .Z(subIn2_21__N_899[3])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i4_3_lut_4_lut.init = 16'hfb40;
-    LUT4 i6120_2_lut (.A(addOut[21]), .B(ss[2]), .Z(n14_adj_1433)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6120_2_lut (.A(addOut[21]), .B(ss[2]), .Z(n14_adj_1433)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6120_2_lut.init = 16'h2222;
     LUT4 mux_886_i13_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[12] ), 
          .D(\speed_m2[12] ), .Z(subIn2_21__N_899[12])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i13_3_lut_4_lut.init = 16'hfb40;
-    LUT4 i6121_2_lut (.A(addOut[22]), .B(ss[2]), .Z(n14_adj_1434)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6121_2_lut (.A(addOut[22]), .B(ss[2]), .Z(n14_adj_1434)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6121_2_lut.init = 16'h2222;
     LUT4 mux_63_i19_4_lut (.A(intgOut2[18]), .B(intgOut3[18]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[18])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[18])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i19_4_lut.init = 16'h0aca;
     LUT4 mux_886_i16_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[15] ), 
          .D(\speed_m2[15] ), .Z(subIn2_21__N_899[15])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i16_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_63_i26_4_lut (.A(intgOut2[25]), .B(intgOut3[25]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[25])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[25])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i26_4_lut.init = 16'h0aca;
     CCU2D addOut_990_add_4_25 (.A0(multOut[23]), .B0(n7262), .C0(addOut[23]), 
           .D0(addIn2_25__N_984[23]), .A1(multOut[24]), .B1(n7262), .C1(addOut[24]), 
           .D1(addIn2_25__N_984[24]), .CIN(n8511), .COUT(n8512), .S0(n109[23]), 
-          .S1(n109[24]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[24]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_25.INIT0 = 16'h569a;
     defparam addOut_990_add_4_25.INIT1 = 16'h569a;
     defparam addOut_990_add_4_25.INJECT1_0 = "NO";
@@ -7114,13 +7114,13 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam mux_886_i19_3_lut_4_lut.init = 16'hfb40;
     CCU2D add_85_9 (.A0(Out0[18]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[19]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8390), 
-          .COUT(n8391), .S0(dirout_m1_N_1189[7]), .S1(dirout_m1_N_1189[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .COUT(n8391), .S0(dirout_m1_N_1189[7]), .S1(dirout_m1_N_1189[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_9.INIT0 = 16'h5aaa;
     defparam add_85_9.INIT1 = 16'h5aaa;
     defparam add_85_9.INJECT1_0 = "NO";
     defparam add_85_9.INJECT1_1 = "NO";
     LUT4 mux_63_i1_4_lut (.A(intgOut2[0]), .B(intgOut3[0]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[0])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[0])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i1_4_lut.init = 16'h0aca;
     LUT4 i4534_3_lut_4_lut (.A(ss[1]), .B(ss[0]), .C(n630), .D(clk_N_634_enable_252), 
          .Z(n5482)) /* synthesis lut_function=(A (D)+!A (B (D)+!B !(C+!(D)))) */ ;
@@ -7147,12 +7147,12 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .Z(n5494)) /* synthesis lut_function=(A (D)+!A (B (D)+!B !(C+!(D)))) */ ;
     defparam i4493_3_lut_4_lut.init = 16'hef00;
     LUT4 mux_63_i12_4_lut (.A(intgOut2[11]), .B(intgOut3[11]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[11])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[11])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i12_4_lut.init = 16'h0aca;
     LUT4 i1_4_lut_4_lut_adj_60 (.A(ss[1]), .B(ss[0]), .C(ss[2]), .D(ss[3]), 
          .Z(clk_N_634_enable_91)) /* synthesis lut_function=(A (B (C (D))+!B (D))+!A (B (C (D)))) */ ;
     defparam i1_4_lut_4_lut_adj_60.init = 16'he200;
-    LUT4 i5901_2_lut_rep_228 (.A(ss[0]), .B(ss[1]), .Z(n9759)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i5901_2_lut_rep_228 (.A(ss[0]), .B(ss[1]), .Z(n9759)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i5901_2_lut_rep_228.init = 16'h8888;
     LUT4 mux_886_i2_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[1] ), 
          .D(\speed_m2[1] ), .Z(subIn2_21__N_899[1])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
@@ -7160,7 +7160,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     LUT4 mux_886_i6_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[5] ), 
          .D(\speed_m2[5] ), .Z(subIn2_21__N_899[5])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i6_3_lut_4_lut.init = 16'hfb40;
-    LUT4 i6122_2_lut (.A(addOut[23]), .B(ss[2]), .Z(n14_adj_1435)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6122_2_lut (.A(addOut[23]), .B(ss[2]), .Z(n14_adj_1435)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6122_2_lut.init = 16'h2222;
     LUT4 mux_886_i8_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[7] ), 
          .D(\speed_m2[7] ), .Z(subIn2_21__N_899[7])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
@@ -7168,25 +7168,25 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D addOut_990_add_4_23 (.A0(multOut[21]), .B0(n7262), .C0(addOut[21]), 
           .D0(addIn2_25__N_984[21]), .A1(multOut[22]), .B1(n7262), .C1(addOut[22]), 
           .D1(addIn2_25__N_984[22]), .CIN(n8510), .COUT(n8511), .S0(n109[21]), 
-          .S1(n109[22]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[22]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_23.INIT0 = 16'h569a;
     defparam addOut_990_add_4_23.INIT1 = 16'h569a;
     defparam addOut_990_add_4_23.INJECT1_0 = "NO";
     defparam addOut_990_add_4_23.INJECT1_1 = "NO";
     LUT4 i1305_3_lut_4_lut (.A(ss[0]), .B(ss[1]), .C(ss[2]), .D(ss[3]), 
-         .Z(ss_3__N_1040[2])) /* synthesis lut_function=(!(A (B (C)+!B ((D)+!C))+!A ((D)+!C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+         .Z(ss_3__N_1040[2])) /* synthesis lut_function=(!(A (B (C)+!B ((D)+!C))+!A ((D)+!C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i1305_3_lut_4_lut.init = 16'h0878;
     LUT4 mux_886_i17_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[16] ), 
          .D(\speed_m2[16] ), .Z(subIn2_21__N_899[16])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i17_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_63_i2_4_lut (.A(intgOut2[1]), .B(intgOut3[1]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[1])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[1])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i2_4_lut.init = 16'h0aca;
-    LUT4 i6123_2_lut (.A(addOut[24]), .B(ss[2]), .Z(n14_adj_1436)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6123_2_lut (.A(addOut[24]), .B(ss[2]), .Z(n14_adj_1436)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6123_2_lut.init = 16'h2222;
     CCU2D add_85_7 (.A0(Out0[16]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[17]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8389), 
-          .COUT(n8390), .S0(dirout_m1_N_1189[5]), .S1(dirout_m1_N_1189[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .COUT(n8390), .S0(dirout_m1_N_1189[5]), .S1(dirout_m1_N_1189[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_7.INIT0 = 16'h5aaa;
     defparam add_85_7.INIT1 = 16'h5aaa;
     defparam add_85_7.INJECT1_0 = "NO";
@@ -7195,18 +7195,18 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .D(\speed_m2[4] ), .Z(subIn2_21__N_899[4])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i5_3_lut_4_lut.init = 16'hfb40;
     LUT4 mux_63_i13_4_lut (.A(intgOut2[12]), .B(intgOut3[12]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[12])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[12])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i13_4_lut.init = 16'h0aca;
     PFUMX i6375 (.BLUT(n9144), .ALUT(n8579), .C0(dirout_m1_N_1189[14]), 
           .Z(n630));
-    LUT4 i6124_2_lut (.A(addOut[25]), .B(ss[2]), .Z(n14_adj_1437)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i6124_2_lut (.A(addOut[25]), .B(ss[2]), .Z(n14_adj_1437)) /* synthesis lut_function=(!((B)+!A)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i6124_2_lut.init = 16'h2222;
     PFUMX i6376 (.BLUT(n8602), .ALUT(n8582), .C0(dirout_m2_N_1207[14]), 
           .Z(n673));
     CCU2D addOut_990_add_4_21 (.A0(multOut[19]), .B0(n7262), .C0(addOut[19]), 
           .D0(addIn2_25__N_984[19]), .A1(multOut[20]), .B1(n7262), .C1(addOut[20]), 
           .D1(addIn2_25__N_984[20]), .CIN(n8509), .COUT(n8510), .S0(n109[19]), 
-          .S1(n109[20]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[20]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_21.INIT0 = 16'h569a;
     defparam addOut_990_add_4_21.INIT1 = 16'h569a;
     defparam addOut_990_add_4_21.INJECT1_0 = "NO";
@@ -7217,7 +7217,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     PFUMX i6377 (.BLUT(n8597), .ALUT(n8556), .C0(dirout_m3_N_1225[14]), 
           .Z(n687));
     LUT4 mux_63_i3_4_lut (.A(intgOut2[2]), .B(intgOut3[2]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[2])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[2])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i3_4_lut.init = 16'h0aca;
     PFUMX i6378 (.BLUT(n8594), .ALUT(n8583), .C0(dirout_m4_N_1243[14]), 
           .Z(n701));
@@ -7225,17 +7225,17 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .D(\speed_m2[17] ), .Z(subIn2_21__N_899[17])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i18_3_lut_4_lut.init = 16'hfb40;
     LUT4 ss_3__I_0_199_Mux_3_i15_3_lut_4_lut (.A(ss[0]), .B(ss[1]), .C(ss[2]), 
-         .D(ss[3]), .Z(ss_3__N_1040[3])) /* synthesis lut_function=(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (C+!(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+         .D(ss[3]), .Z(ss_3__N_1040[3])) /* synthesis lut_function=(!(A (B (C (D)+!C !(D))+!B (C+!(D)))+!A (C+!(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam ss_3__I_0_199_Mux_3_i15_3_lut_4_lut.init = 16'h0f80;
     PFUMX mux_887_i13 (.BLUT(subIn2_21__N_1067[12]), .ALUT(subIn2_21__N_899[12]), 
           .C0(n9292), .Z(subIn2[12]));
     LUT4 mux_886_i7_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[6] ), 
          .D(\speed_m2[6] ), .Z(subIn2_21__N_899[6])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i7_3_lut_4_lut.init = 16'hfb40;
-    LUT4 ss_3__I_0_194_i6_2_lut_rep_231 (.A(ss[2]), .B(ss[3]), .Z(n9762)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(139[20:27])
+    LUT4 ss_3__I_0_194_i6_2_lut_rep_231 (.A(ss[2]), .B(ss[3]), .Z(n9762)) /* synthesis lut_function=(A+(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[20:27])
     defparam ss_3__I_0_194_i6_2_lut_rep_231.init = 16'heeee;
     LUT4 mux_63_i4_4_lut (.A(intgOut2[3]), .B(intgOut3[3]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[3])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[3])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i4_4_lut.init = 16'h0aca;
     PFUMX mux_887_i14 (.BLUT(subIn2_21__N_1067[13]), .ALUT(subIn2_21__N_899[13]), 
           .C0(n9292), .Z(subIn2[13]));
@@ -7243,14 +7243,14 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
          .D(\speed_m2[2] ), .Z(subIn2_21__N_899[2])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i3_3_lut_4_lut.init = 16'hfb40;
     LUT4 i5974_3_lut_4_lut (.A(ss[2]), .B(ss[3]), .C(ss[1]), .D(ss[0]), 
-         .Z(n6884)) /* synthesis lut_function=(A+(B+((D)+!C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(139[20:27])
+         .Z(n6884)) /* synthesis lut_function=(A+(B+((D)+!C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[20:27])
     defparam i5974_3_lut_4_lut.init = 16'hffef;
     PFUMX mux_887_i15 (.BLUT(subIn2_21__N_1067[14]), .ALUT(subIn2_21__N_899[14]), 
           .C0(n9292), .Z(subIn2[14]));
     LUT4 mux_886_i14_3_lut_4_lut (.A(ss[2]), .B(n9749), .C(\speed_m1[13] ), 
          .D(\speed_m2[13] ), .Z(subIn2_21__N_899[13])) /* synthesis lut_function=(A (D)+!A (B (C)+!B (D))) */ ;
     defparam mux_886_i14_3_lut_4_lut.init = 16'hfb40;
-    LUT4 i5997_2_lut (.A(dirout_m4_N_1243[9]), .B(n701), .Z(n702[9])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(267[4] 271[11])
+    LUT4 i5997_2_lut (.A(dirout_m4_N_1243[9]), .B(n701), .Z(n702[9])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(269[4] 273[11])
     defparam i5997_2_lut.init = 16'hbbbb;
     PFUMX mux_887_i16 (.BLUT(subIn2_21__N_1067[15]), .ALUT(subIn2_21__N_899[15]), 
           .C0(n9292), .Z(subIn2[15]));
@@ -7262,7 +7262,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D addOut_990_add_4_19 (.A0(multOut[17]), .B0(n7262), .C0(addOut[17]), 
           .D0(addIn2_25__N_984[17]), .A1(multOut[18]), .B1(n7262), .C1(addOut[18]), 
           .D1(addIn2_25__N_984[18]), .CIN(n8508), .COUT(n8509), .S0(n109[17]), 
-          .S1(n109[18]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[18]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_19.INIT0 = 16'h569a;
     defparam addOut_990_add_4_19.INIT1 = 16'h569a;
     defparam addOut_990_add_4_19.INJECT1_0 = "NO";
@@ -7270,13 +7270,13 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     PFUMX mux_887_i18 (.BLUT(subIn2_21__N_1067[17]), .ALUT(subIn2_21__N_899[17]), 
           .C0(n9292), .Z(subIn2[17]));
     LUT4 mux_63_i5_4_lut (.A(intgOut2[4]), .B(intgOut3[4]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[4])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[4])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i5_4_lut.init = 16'h0aca;
     PFUMX mux_887_i19 (.BLUT(subIn2_21__N_1067[18]), .ALUT(subIn2_21__N_899[18]), 
           .C0(n9292), .Z(subIn2[18]));
     CCU2D add_85_5 (.A0(Out0[14]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[15]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8388), 
-          .COUT(n8389), .S0(dirout_m1_N_1189[3]), .S1(dirout_m1_N_1189[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .COUT(n8389), .S0(dirout_m1_N_1189[3]), .S1(dirout_m1_N_1189[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_5.INIT0 = 16'h5aaa;
     defparam add_85_5.INIT1 = 16'h5aaa;
     defparam add_85_5.INJECT1_0 = "NO";
@@ -7284,7 +7284,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     PFUMX mux_887_i20 (.BLUT(subIn2_21__N_1067[19]), .ALUT(subIn2_21__N_899[19]), 
           .C0(n9292), .Z(subIn2[19]));
     LUT4 ss_3__I_0_198_i7_2_lut_3_lut_4_lut (.A(ss[2]), .B(ss[3]), .C(ss[1]), 
-         .D(ss[0]), .Z(n7_adj_1440)) /* synthesis lut_function=(A+((C+!(D))+!B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(142[9:16])
+         .D(ss[0]), .Z(n7_adj_1440)) /* synthesis lut_function=(A+((C+!(D))+!B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(144[9:16])
     defparam ss_3__I_0_198_i7_2_lut_3_lut_4_lut.init = 16'hfbff;
     PFUMX mux_887_i2 (.BLUT(subIn2_21__N_1067[1]), .ALUT(subIn2_21__N_899[1]), 
           .C0(n9292), .Z(subIn2[1]));
@@ -7302,27 +7302,27 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D addOut_990_add_4_17 (.A0(multOut[15]), .B0(n7262), .C0(addOut[15]), 
           .D0(addIn2_25__N_984[15]), .A1(multOut[16]), .B1(n7262), .C1(addOut[16]), 
           .D1(addIn2_25__N_984[16]), .CIN(n8507), .COUT(n8508), .S0(n109[15]), 
-          .S1(n109[16]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[16]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_17.INIT0 = 16'h569a;
     defparam addOut_990_add_4_17.INIT1 = 16'h569a;
     defparam addOut_990_add_4_17.INJECT1_0 = "NO";
     defparam addOut_990_add_4_17.INJECT1_1 = "NO";
-    LUT4 i1_3_lut_4_lut_3_lut (.A(ss[2]), .B(ss[3]), .C(ss[0]), .Z(n7262)) /* synthesis lut_function=(A (B+(C))+!A ((C)+!B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+    LUT4 i1_3_lut_4_lut_3_lut (.A(ss[2]), .B(ss[3]), .C(ss[0]), .Z(n7262)) /* synthesis lut_function=(A (B+(C))+!A ((C)+!B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam i1_3_lut_4_lut_3_lut.init = 16'hf9f9;
     CCU2D add_85_3 (.A0(Out0[12]), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[13]), .B1(GND_net), .C1(GND_net), .D1(GND_net), .CIN(n8387), 
-          .COUT(n8388), .S0(dirout_m1_N_1189[1]), .S1(dirout_m1_N_1189[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .COUT(n8388), .S0(dirout_m1_N_1189[1]), .S1(dirout_m1_N_1189[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_3.INIT0 = 16'h5aaa;
     defparam add_85_3.INIT1 = 16'h5aaa;
     defparam add_85_3.INJECT1_0 = "NO";
     defparam add_85_3.INJECT1_1 = "NO";
     LUT4 i1_2_lut_3_lut_4_lut_adj_61 (.A(ss[2]), .B(ss[3]), .C(ss[1]), 
-         .D(ss[0]), .Z(n7_adj_1439)) /* synthesis lut_function=((B+!(C (D)))+!A) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(141[9:16])
+         .D(ss[0]), .Z(n7_adj_1439)) /* synthesis lut_function=((B+!(C (D)))+!A) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(143[9:16])
     defparam i1_2_lut_3_lut_4_lut_adj_61.init = 16'hdfff;
     PFUMX mux_887_i7 (.BLUT(subIn2_21__N_1067[6]), .ALUT(subIn2_21__N_899[6]), 
           .C0(n9292), .Z(subIn2[6]));
     LUT4 mux_63_i14_4_lut (.A(intgOut2[13]), .B(intgOut3[13]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[13])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[13])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i14_4_lut.init = 16'h0aca;
     PFUMX mux_887_i8 (.BLUT(subIn2_21__N_1067[7]), .ALUT(subIn2_21__N_899[7]), 
           .C0(n9292), .Z(subIn2[7]));
@@ -7330,26 +7330,26 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
           .C0(n9292), .Z(subIn2[8]));
     PFUMX mux_887_i10 (.BLUT(subIn2_21__N_1067[9]), .ALUT(subIn2_21__N_899[9]), 
           .C0(n9292), .Z(subIn2[9]));
-    LUT4 i910_2_lut_rep_235 (.A(ss[0]), .B(ss[1]), .Z(n9766)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i910_2_lut_rep_235 (.A(ss[0]), .B(ss[1]), .Z(n9766)) /* synthesis lut_function=(!(A (B)+!A !(B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i910_2_lut_rep_235.init = 16'h6666;
     PFUMX mux_887_i11 (.BLUT(subIn2_21__N_1067[10]), .ALUT(subIn2_21__N_899[10]), 
           .C0(n9292), .Z(subIn2[10]));
     LUT4 i1_2_lut_rep_207_3_lut_4_lut (.A(ss[0]), .B(ss[1]), .C(ss[2]), 
-         .D(ss[3]), .Z(n9738)) /* synthesis lut_function=(!(A (B+((D)+!C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+         .D(ss[3]), .Z(n9738)) /* synthesis lut_function=(!(A (B+((D)+!C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i1_2_lut_rep_207_3_lut_4_lut.init = 16'h0060;
     CCU2D add_654_5 (.A0(dirout_m1_N_1189[3]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(dirout_m1_N_1189[4]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n8383), .COUT(n8384), .S0(n1301[3]), .S1(n1301[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(248[20:29])
+          .D1(GND_net), .CIN(n8383), .COUT(n8384), .S0(n1301[3]), .S1(n1301[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(250[20:29])
     defparam add_654_5.INIT0 = 16'hf555;
     defparam add_654_5.INIT1 = 16'hf555;
     defparam add_654_5.INJECT1_0 = "NO";
     defparam add_654_5.INJECT1_1 = "NO";
-    LUT4 i1_2_lut_rep_218_3_lut (.A(ss[0]), .B(ss[1]), .C(ss[3]), .Z(n9749)) /* synthesis lut_function=(!(A (B+(C))+!A ((C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i1_2_lut_rep_218_3_lut (.A(ss[0]), .B(ss[1]), .C(ss[3]), .Z(n9749)) /* synthesis lut_function=(!(A (B+(C))+!A ((C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i1_2_lut_rep_218_3_lut.init = 16'h0606;
     CCU2D addOut_990_add_4_15 (.A0(multOut[13]), .B0(n7262), .C0(addOut[13]), 
           .D0(addIn2_25__N_984[13]), .A1(multOut[14]), .B1(n7262), .C1(addOut[14]), 
           .D1(addIn2_25__N_984[14]), .CIN(n8506), .COUT(n8507), .S0(n109[13]), 
-          .S1(n109[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[14]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_15.INIT0 = 16'h569a;
     defparam addOut_990_add_4_15.INIT1 = 16'h569a;
     defparam addOut_990_add_4_15.INJECT1_0 = "NO";
@@ -7362,14 +7362,14 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
           .C0(n9286), .Z(addIn2_25__N_984[21])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
     PFUMX addIn2_25__I_13_i20 (.BLUT(n276[19]), .ALUT(addIn2_25__N_1094[19]), 
           .C0(n9286), .Z(addIn2_25__N_984[19])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
-    LUT4 i5996_2_lut (.A(dirout_m4_N_1243[8]), .B(n701), .Z(n702[8])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(267[4] 271[11])
+    LUT4 i5996_2_lut (.A(dirout_m4_N_1243[8]), .B(n701), .Z(n702[8])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(269[4] 273[11])
     defparam i5996_2_lut.init = 16'hbbbb;
     LUT4 mux_63_i6_4_lut (.A(intgOut2[5]), .B(intgOut3[5]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[5])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[5])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i6_4_lut.init = 16'h0aca;
     LUT4 i3_1_lut_rep_241 (.A(ss[0]), .Z(n9772)) /* synthesis lut_function=(!(A)) */ ;
     defparam i3_1_lut_rep_241.init = 16'h5555;
-    LUT4 i5995_2_lut (.A(dirout_m4_N_1243[7]), .B(n701), .Z(n702[7])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(267[4] 271[11])
+    LUT4 i5995_2_lut (.A(dirout_m4_N_1243[7]), .B(n701), .Z(n702[7])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(269[4] 273[11])
     defparam i5995_2_lut.init = 16'hbbbb;
     LUT4 i1_3_lut_rep_216_4_lut_4_lut (.A(ss[0]), .B(ss[3]), .C(ss[1]), 
          .D(ss[2]), .Z(n9747)) /* synthesis lut_function=(!(A+(B (C+(D))+!B !(C+(D))))) */ ;
@@ -7377,68 +7377,68 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D addOut_990_add_4_13 (.A0(multOut[11]), .B0(n7262), .C0(addOut[11]), 
           .D0(addIn2_25__N_984[11]), .A1(multOut[12]), .B1(n7262), .C1(addOut[12]), 
           .D1(addIn2_25__N_984[12]), .CIN(n8505), .COUT(n8506), .S0(n109[11]), 
-          .S1(n109[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[12]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_13.INIT0 = 16'h569a;
     defparam addOut_990_add_4_13.INIT1 = 16'h569a;
     defparam addOut_990_add_4_13.INJECT1_0 = "NO";
     defparam addOut_990_add_4_13.INJECT1_1 = "NO";
-    LUT4 i2863_2_lut_rep_242 (.A(ss[2]), .B(ss[3]), .Z(clk_N_634_enable_252)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+    LUT4 i2863_2_lut_rep_242 (.A(ss[2]), .B(ss[3]), .Z(clk_N_634_enable_252)) /* synthesis lut_function=(A (B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i2863_2_lut_rep_242.init = 16'h8888;
     LUT4 i4569_2_lut_3_lut_4_lut (.A(ss[2]), .B(ss[3]), .C(ss[0]), .D(ss[1]), 
-         .Z(n5486)) /* synthesis lut_function=(A (B (C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(198[3] 301[12])
+         .Z(n5486)) /* synthesis lut_function=(A (B (C+(D)))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(200[3] 303[12])
     defparam i4569_2_lut_3_lut_4_lut.init = 16'h8880;
-    LUT4 i5994_2_lut (.A(dirout_m4_N_1243[6]), .B(n701), .Z(n702[6])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(267[4] 271[11])
+    LUT4 i5994_2_lut (.A(dirout_m4_N_1243[6]), .B(n701), .Z(n702[6])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(269[4] 273[11])
     defparam i5994_2_lut.init = 16'hbbbb;
     LUT4 mux_63_i7_4_lut (.A(intgOut2[6]), .B(intgOut3[6]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[6])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[6])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i7_4_lut.init = 16'h0aca;
-    LUT4 i5993_2_lut (.A(dirout_m4_N_1243[5]), .B(n701), .Z(n702[5])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(267[4] 271[11])
+    LUT4 i5993_2_lut (.A(dirout_m4_N_1243[5]), .B(n701), .Z(n702[5])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(269[4] 273[11])
     defparam i5993_2_lut.init = 16'hbbbb;
     LUT4 mux_63_i23_4_lut (.A(intgOut2[22]), .B(intgOut3[22]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[22])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[22])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i23_4_lut.init = 16'h0aca;
     LUT4 mux_63_i24_4_lut (.A(intgOut2[23]), .B(intgOut3[23]), .C(n7_adj_1439), 
-         .D(n7_adj_1440), .Z(n276[23])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(151[17] 154[26])
+         .D(n7_adj_1440), .Z(n276[23])) /* synthesis lut_function=(!(A (B (C (D))+!B (C))+!A (((D)+!C)+!B))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(153[17] 156[26])
     defparam mux_63_i24_4_lut.init = 16'h0aca;
-    LUT4 i5992_2_lut (.A(dirout_m4_N_1243[3]), .B(n701), .Z(n702[3])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(267[4] 271[11])
+    LUT4 i5992_2_lut (.A(dirout_m4_N_1243[3]), .B(n701), .Z(n702[3])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(269[4] 273[11])
     defparam i5992_2_lut.init = 16'hbbbb;
     CCU2D addOut_990_add_4_11 (.A0(multOut[9]), .B0(n7262), .C0(addOut[9]), 
           .D0(addIn2_25__N_984[9]), .A1(multOut[10]), .B1(n7262), .C1(addOut[10]), 
           .D1(addIn2_25__N_984[10]), .CIN(n8504), .COUT(n8505), .S0(n109[9]), 
-          .S1(n109[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[10]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_11.INIT0 = 16'h569a;
     defparam addOut_990_add_4_11.INIT1 = 16'h569a;
     defparam addOut_990_add_4_11.INJECT1_0 = "NO";
     defparam addOut_990_add_4_11.INJECT1_1 = "NO";
-    LUT4 i5989_2_lut (.A(dirout_m3_N_1225[9]), .B(n687), .Z(n688[9])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(261[4] 265[11])
+    LUT4 i5989_2_lut (.A(dirout_m3_N_1225[9]), .B(n687), .Z(n688[9])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(263[4] 267[11])
     defparam i5989_2_lut.init = 16'hbbbb;
     PFUMX addIn2_25__I_13_i15 (.BLUT(n276[14]), .ALUT(addIn2_25__N_1094[14]), 
           .C0(n9286), .Z(addIn2_25__N_984[14])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
-    LUT4 i5988_2_lut (.A(dirout_m3_N_1225[8]), .B(n687), .Z(n688[8])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(261[4] 265[11])
+    LUT4 i5988_2_lut (.A(dirout_m3_N_1225[8]), .B(n687), .Z(n688[8])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(263[4] 267[11])
     defparam i5988_2_lut.init = 16'hbbbb;
     CCU2D addOut_990_add_4_9 (.A0(multOut[7]), .B0(n7262), .C0(addOut[7]), 
           .D0(addIn2_25__N_984[7]), .A1(multOut[8]), .B1(n7262), .C1(addOut[8]), 
           .D1(addIn2_25__N_984[8]), .CIN(n8503), .COUT(n8504), .S0(n109[7]), 
-          .S1(n109[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_9.INIT0 = 16'h569a;
     defparam addOut_990_add_4_9.INIT1 = 16'h569a;
     defparam addOut_990_add_4_9.INJECT1_0 = "NO";
     defparam addOut_990_add_4_9.INJECT1_1 = "NO";
     LUT4 subIn1_21__I_7_i18_4_lut (.A(speed_set_m3[17]), .B(speed_set_m2[17]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[17])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[17])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i18_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i19_4_lut (.A(speed_set_m3[18]), .B(speed_set_m2[18]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[18])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[18])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i19_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i16_4_lut (.A(speed_set_m3[15]), .B(speed_set_m2[15]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[15])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[15])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i16_4_lut.init = 16'hcac0;
-    LUT4 i5987_2_lut (.A(dirout_m3_N_1225[7]), .B(n687), .Z(n688[7])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(261[4] 265[11])
+    LUT4 i5987_2_lut (.A(dirout_m3_N_1225[7]), .B(n687), .Z(n688[7])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(263[4] 267[11])
     defparam i5987_2_lut.init = 16'hbbbb;
     LUT4 subIn1_21__I_7_i17_4_lut (.A(speed_set_m3[16]), .B(speed_set_m2[16]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[16])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[16])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i17_4_lut.init = 16'hcac0;
-    LUT4 i5986_2_lut (.A(dirout_m3_N_1225[6]), .B(n687), .Z(n688[6])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(261[4] 265[11])
+    LUT4 i5986_2_lut (.A(dirout_m3_N_1225[6]), .B(n687), .Z(n688[6])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(263[4] 267[11])
     defparam i5986_2_lut.init = 16'hbbbb;
     LUT4 mux_81_i15_3_lut_3_lut (.A(n497), .B(n1634), .C(addOut[14]), 
          .Z(intgOut0_25__N_1120[14])) /* synthesis lut_function=(A+!(B+!(C))) */ ;
@@ -7446,99 +7446,99 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D addOut_990_add_4_7 (.A0(multOut[5]), .B0(n7262), .C0(addOut[5]), 
           .D0(addIn2_25__N_984[5]), .A1(multOut[6]), .B1(n7262), .C1(addOut[6]), 
           .D1(addIn2_25__N_984[6]), .CIN(n8502), .COUT(n8503), .S0(n109[5]), 
-          .S1(n109[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_7.INIT0 = 16'h569a;
     defparam addOut_990_add_4_7.INIT1 = 16'h569a;
     defparam addOut_990_add_4_7.INJECT1_0 = "NO";
     defparam addOut_990_add_4_7.INJECT1_1 = "NO";
-    LUT4 i5985_2_lut (.A(dirout_m3_N_1225[5]), .B(n687), .Z(n688[5])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(261[4] 265[11])
+    LUT4 i5985_2_lut (.A(dirout_m3_N_1225[5]), .B(n687), .Z(n688[5])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(263[4] 267[11])
     defparam i5985_2_lut.init = 16'hbbbb;
-    LUT4 i5984_2_lut (.A(dirout_m3_N_1225[3]), .B(n687), .Z(n688[3])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(261[4] 265[11])
+    LUT4 i5984_2_lut (.A(dirout_m3_N_1225[3]), .B(n687), .Z(n688[3])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(263[4] 267[11])
     defparam i5984_2_lut.init = 16'hbbbb;
     CCU2D add_654_9 (.A0(dirout_m1_N_1189[7]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(dirout_m1_N_1189[8]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n8385), .COUT(n8386), .S0(n1301[7]), .S1(n1301[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(248[20:29])
+          .D1(GND_net), .CIN(n8385), .COUT(n8386), .S0(n1301[7]), .S1(n1301[8]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(250[20:29])
     defparam add_654_9.INIT0 = 16'hf555;
     defparam add_654_9.INIT1 = 16'hf555;
     defparam add_654_9.INJECT1_0 = "NO";
     defparam add_654_9.INJECT1_1 = "NO";
     LUT4 subIn1_21__I_7_i10_4_lut (.A(speed_set_m3[9]), .B(speed_set_m2[9]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[9])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[9])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i10_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i11_4_lut (.A(speed_set_m3[10]), .B(speed_set_m2[10]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[10])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[10])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i11_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i8_4_lut (.A(speed_set_m3[7]), .B(speed_set_m2[7]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[7])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[7])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i8_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i9_4_lut (.A(speed_set_m3[8]), .B(speed_set_m2[8]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[8])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[8])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i9_4_lut.init = 16'hcac0;
     CCU2D addOut_990_add_4_5 (.A0(multOut[3]), .B0(n7262), .C0(addOut[3]), 
           .D0(addIn2_25__N_984[3]), .A1(multOut[4]), .B1(n7262), .C1(addOut[4]), 
           .D1(addIn2_25__N_984[4]), .CIN(n8501), .COUT(n8502), .S0(n109[3]), 
-          .S1(n109[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[4]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_5.INIT0 = 16'h569a;
     defparam addOut_990_add_4_5.INIT1 = 16'h569a;
     defparam addOut_990_add_4_5.INJECT1_0 = "NO";
     defparam addOut_990_add_4_5.INJECT1_1 = "NO";
     LUT4 subIn1_21__I_7_i6_4_lut (.A(speed_set_m3[5]), .B(speed_set_m2[5]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[5])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[5])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i6_4_lut.init = 16'hcac0;
     LUT4 subIn1_21__I_7_i7_4_lut (.A(speed_set_m3[6]), .B(speed_set_m2[6]), 
-         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[6])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(112[18] 114[17])
+         .C(n1912), .D(n9738), .Z(subIn1_21__N_875[6])) /* synthesis lut_function=(A (B (C+(D))+!B !(C+!(D)))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(114[18] 116[17])
     defparam subIn1_21__I_7_i7_4_lut.init = 16'hcac0;
     PFUMX addIn2_25__I_13_i8 (.BLUT(n276[7]), .ALUT(addIn2_25__N_1094[7]), 
           .C0(n9286), .Z(addIn2_25__N_984[7])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
     CCU2D addOut_990_add_4_3 (.A0(multOut[1]), .B0(n7262), .C0(addOut[1]), 
           .D0(addIn2_25__N_984[1]), .A1(multOut[2]), .B1(n7262), .C1(addOut[2]), 
           .D1(addIn2_25__N_984[2]), .CIN(n8500), .COUT(n8501), .S0(n109[1]), 
-          .S1(n109[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .S1(n109[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_3.INIT0 = 16'h569a;
     defparam addOut_990_add_4_3.INIT1 = 16'h569a;
     defparam addOut_990_add_4_3.INJECT1_0 = "NO";
     defparam addOut_990_add_4_3.INJECT1_1 = "NO";
-    LUT4 i5982_2_lut (.A(dirout_m2_N_1207[9]), .B(n673), .Z(n674[9])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(255[4] 259[11])
+    LUT4 i5982_2_lut (.A(dirout_m2_N_1207[9]), .B(n673), .Z(n674[9])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(257[4] 261[11])
     defparam i5982_2_lut.init = 16'hbbbb;
-    LUT4 i5981_2_lut (.A(dirout_m2_N_1207[8]), .B(n673), .Z(n674[8])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(255[4] 259[11])
+    LUT4 i5981_2_lut (.A(dirout_m2_N_1207[8]), .B(n673), .Z(n674[8])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(257[4] 261[11])
     defparam i5981_2_lut.init = 16'hbbbb;
     LUT4 mux_104_i1_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[0]), .C(n630), 
-         .Z(n660[0])) /* synthesis lut_function=(A (B (C))+!A (B+!(C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[0])) /* synthesis lut_function=(A (B (C))+!A (B+!(C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i1_3_lut.init = 16'hc5c5;
-    LUT4 i5980_2_lut (.A(dirout_m2_N_1207[7]), .B(n673), .Z(n674[7])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(255[4] 259[11])
+    LUT4 i5980_2_lut (.A(dirout_m2_N_1207[7]), .B(n673), .Z(n674[7])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(257[4] 261[11])
     defparam i5980_2_lut.init = 16'hbbbb;
-    LUT4 i5979_2_lut (.A(dirout_m2_N_1207[6]), .B(n673), .Z(n674[6])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(255[4] 259[11])
+    LUT4 i5979_2_lut (.A(dirout_m2_N_1207[6]), .B(n673), .Z(n674[6])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(257[4] 261[11])
     defparam i5979_2_lut.init = 16'hbbbb;
-    LUT4 i5978_2_lut (.A(dirout_m2_N_1207[5]), .B(n673), .Z(n674[5])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(255[4] 259[11])
+    LUT4 i5978_2_lut (.A(dirout_m2_N_1207[5]), .B(n673), .Z(n674[5])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(257[4] 261[11])
     defparam i5978_2_lut.init = 16'hbbbb;
-    LUT4 i5977_2_lut (.A(dirout_m2_N_1207[3]), .B(n673), .Z(n674[3])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(255[4] 259[11])
+    LUT4 i5977_2_lut (.A(dirout_m2_N_1207[3]), .B(n673), .Z(n674[3])) /* synthesis lut_function=(A+!(B)) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(257[4] 261[11])
     defparam i5977_2_lut.init = 16'hbbbb;
     LUT4 mux_104_i10_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[9]), .C(n630), 
-         .Z(n660[9])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[9])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i10_3_lut.init = 16'hcaca;
     LUT4 mux_104_i9_3_lut (.A(dirout_m1_N_1189[14]), .B(n1301[8]), .C(n630), 
-         .Z(n660[8])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(247[4] 253[11])
+         .Z(n660[8])) /* synthesis lut_function=(A (B+!(C))+!A (B (C))) */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(249[4] 255[11])
     defparam mux_104_i9_3_lut.init = 16'hcaca;
     CCU2D addOut_990_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(multOut[0]), .B1(n7262), .C1(addOut[0]), 
-          .D1(addIn2_25__N_984[0]), .COUT(n8500), .S1(n109[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+          .D1(addIn2_25__N_984[0]), .COUT(n8500), .S1(n109[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990_add_4_1.INIT0 = 16'hF000;
     defparam addOut_990_add_4_1.INIT1 = 16'h569a;
     defparam addOut_990_add_4_1.INJECT1_0 = "NO";
     defparam addOut_990_add_4_1.INJECT1_1 = "NO";
     FD1P3IX dutyout_m4_i0 (.D(dirout_m4_N_1243[0]), .SP(clk_N_634_enable_252), 
-            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(167[2] 303[9])
+            .CD(n5510), .CK(clk_N_634), .Q(PWMdut_m4[0])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(169[2] 305[9])
     defparam dutyout_m4_i0.GSR = "DISABLED";
     CCU2D add_654_3 (.A0(dirout_m1_N_1189[1]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(dirout_m1_N_1189[2]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n8382), .COUT(n8383), .S0(n1301[1]), .S1(n1301[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(248[20:29])
+          .D1(GND_net), .CIN(n8382), .COUT(n8383), .S0(n1301[1]), .S1(n1301[2]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(250[20:29])
     defparam add_654_3.INIT0 = 16'hf555;
     defparam add_654_3.INIT1 = 16'hf555;
     defparam add_654_3.INJECT1_0 = "NO";
     defparam add_654_3.INJECT1_1 = "NO";
     CCU2D sub_5_add_2_23 (.A0(n6884), .B0(n4_adj_1412), .C0(speed_set_m1[20]), 
           .D0(subIn1_21__N_875[20]), .A1(GND_net), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n8429), .S0(subOut_21__N_920[21]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .D1(GND_net), .CIN(n8429), .S0(subOut_21__N_920[21]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_23.INIT0 = 16'h0d2f;
     defparam sub_5_add_2_23.INIT1 = 16'h0000;
     defparam sub_5_add_2_23.INJECT1_0 = "NO";
@@ -7546,7 +7546,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D sub_5_add_2_21 (.A0(subIn2[19]), .B0(subIn1_21__N_875[19]), .C0(speed_set_m1[19]), 
           .D0(n708), .A1(n6884), .B1(n4_adj_1412), .C1(speed_set_m1[20]), 
           .D1(subIn1_21__N_875[20]), .CIN(n8428), .COUT(n8429), .S0(subOut_21__N_920[19]), 
-          .S1(subOut_21__N_920[20]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[20]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_21.INIT0 = 16'ha599;
     defparam sub_5_add_2_21.INIT1 = 16'h0d2f;
     defparam sub_5_add_2_21.INJECT1_0 = "NO";
@@ -7558,12 +7558,12 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     defparam mux_81_i10_3_lut_3_lut.init = 16'hbaba;
     CCU2D add_85_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), .D0(GND_net), 
           .A1(Out0[11]), .B1(n8590), .C1(n8591), .D1(Out0[25]), .COUT(n8387), 
-          .S1(dirout_m1_N_1189[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(242[17:21])
+          .S1(dirout_m1_N_1189[0]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(244[17:21])
     defparam add_85_1.INIT0 = 16'hF000;
     defparam add_85_1.INIT1 = 16'h56aa;
     defparam add_85_1.INJECT1_0 = "NO";
     defparam add_85_1.INJECT1_1 = "NO";
-    FD1S3AX addOut_990__i1 (.D(n109[1]), .CK(clk_N_634), .Q(addOut[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i1 (.D(n109[1]), .CK(clk_N_634), .Q(addOut[1])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i1.GSR = "DISABLED";
     PFUMX addIn2_25__I_13_i21 (.BLUT(n276[20]), .ALUT(addIn2_25__N_1094[20]), 
           .C0(n9286), .Z(addIn2_25__N_984[20])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
@@ -7603,57 +7603,57 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
           .C0(n9286), .Z(addIn2_25__N_984[22])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
     PFUMX addIn2_25__I_13_i24 (.BLUT(n276[23]), .ALUT(addIn2_25__N_1094[23]), 
           .C0(n9286), .Z(addIn2_25__N_984[23])) /* synthesis LSE_LINE_FILE_ID=25, LSE_LCOL=10, LSE_RCOL=13, LSE_LLINE=260, LSE_RLINE=260 */ ;
-    FD1S3AX addOut_990__i2 (.D(n109[2]), .CK(clk_N_634), .Q(addOut[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i2 (.D(n109[2]), .CK(clk_N_634), .Q(addOut[2])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i2.GSR = "DISABLED";
-    FD1S3AX addOut_990__i3 (.D(n109[3]), .CK(clk_N_634), .Q(addOut[3])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i3 (.D(n109[3]), .CK(clk_N_634), .Q(addOut[3])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i3.GSR = "DISABLED";
-    FD1S3AX addOut_990__i4 (.D(n109[4]), .CK(clk_N_634), .Q(addOut[4])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i4 (.D(n109[4]), .CK(clk_N_634), .Q(addOut[4])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i4.GSR = "DISABLED";
-    FD1S3AX addOut_990__i5 (.D(n109[5]), .CK(clk_N_634), .Q(addOut[5])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i5 (.D(n109[5]), .CK(clk_N_634), .Q(addOut[5])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i5.GSR = "DISABLED";
-    FD1S3AX addOut_990__i6 (.D(n109[6]), .CK(clk_N_634), .Q(addOut[6])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i6 (.D(n109[6]), .CK(clk_N_634), .Q(addOut[6])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i6.GSR = "DISABLED";
-    FD1S3AX addOut_990__i7 (.D(n109[7]), .CK(clk_N_634), .Q(addOut[7])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i7 (.D(n109[7]), .CK(clk_N_634), .Q(addOut[7])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i7.GSR = "DISABLED";
-    FD1S3AX addOut_990__i8 (.D(n109[8]), .CK(clk_N_634), .Q(addOut[8])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i8 (.D(n109[8]), .CK(clk_N_634), .Q(addOut[8])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i8.GSR = "DISABLED";
-    FD1S3AX addOut_990__i9 (.D(n109[9]), .CK(clk_N_634), .Q(addOut[9])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i9 (.D(n109[9]), .CK(clk_N_634), .Q(addOut[9])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i9.GSR = "DISABLED";
-    FD1S3AX addOut_990__i10 (.D(n109[10]), .CK(clk_N_634), .Q(addOut[10])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i10 (.D(n109[10]), .CK(clk_N_634), .Q(addOut[10])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i10.GSR = "DISABLED";
-    FD1S3AX addOut_990__i11 (.D(n109[11]), .CK(clk_N_634), .Q(addOut[11])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i11 (.D(n109[11]), .CK(clk_N_634), .Q(addOut[11])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i11.GSR = "DISABLED";
-    FD1S3AX addOut_990__i12 (.D(n109[12]), .CK(clk_N_634), .Q(addOut[12])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i12 (.D(n109[12]), .CK(clk_N_634), .Q(addOut[12])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i12.GSR = "DISABLED";
-    FD1S3AX addOut_990__i13 (.D(n109[13]), .CK(clk_N_634), .Q(addOut[13])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i13 (.D(n109[13]), .CK(clk_N_634), .Q(addOut[13])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i13.GSR = "DISABLED";
-    FD1S3AX addOut_990__i14 (.D(n109[14]), .CK(clk_N_634), .Q(addOut[14])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i14 (.D(n109[14]), .CK(clk_N_634), .Q(addOut[14])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i14.GSR = "DISABLED";
-    FD1S3AX addOut_990__i15 (.D(n109[15]), .CK(clk_N_634), .Q(addOut[15])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i15 (.D(n109[15]), .CK(clk_N_634), .Q(addOut[15])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i15.GSR = "DISABLED";
-    FD1S3AX addOut_990__i16 (.D(n109[16]), .CK(clk_N_634), .Q(addOut[16])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i16 (.D(n109[16]), .CK(clk_N_634), .Q(addOut[16])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i16.GSR = "DISABLED";
-    FD1S3AX addOut_990__i17 (.D(n109[17]), .CK(clk_N_634), .Q(addOut[17])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i17 (.D(n109[17]), .CK(clk_N_634), .Q(addOut[17])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i17.GSR = "DISABLED";
-    FD1S3AX addOut_990__i18 (.D(n109[18]), .CK(clk_N_634), .Q(addOut[18])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i18 (.D(n109[18]), .CK(clk_N_634), .Q(addOut[18])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i18.GSR = "DISABLED";
-    FD1S3AX addOut_990__i19 (.D(n109[19]), .CK(clk_N_634), .Q(addOut[19])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i19 (.D(n109[19]), .CK(clk_N_634), .Q(addOut[19])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i19.GSR = "DISABLED";
-    FD1S3AX addOut_990__i20 (.D(n109[20]), .CK(clk_N_634), .Q(addOut[20])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i20 (.D(n109[20]), .CK(clk_N_634), .Q(addOut[20])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i20.GSR = "DISABLED";
-    FD1S3AX addOut_990__i21 (.D(n109[21]), .CK(clk_N_634), .Q(addOut[21])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i21 (.D(n109[21]), .CK(clk_N_634), .Q(addOut[21])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i21.GSR = "DISABLED";
-    FD1S3AX addOut_990__i22 (.D(n109[22]), .CK(clk_N_634), .Q(addOut[22])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i22 (.D(n109[22]), .CK(clk_N_634), .Q(addOut[22])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i22.GSR = "DISABLED";
-    FD1S3AX addOut_990__i23 (.D(n109[23]), .CK(clk_N_634), .Q(addOut[23])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i23 (.D(n109[23]), .CK(clk_N_634), .Q(addOut[23])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i23.GSR = "DISABLED";
-    FD1S3AX addOut_990__i24 (.D(n109[24]), .CK(clk_N_634), .Q(addOut[24])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i24 (.D(n109[24]), .CK(clk_N_634), .Q(addOut[24])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i24.GSR = "DISABLED";
-    FD1S3AX addOut_990__i25 (.D(n109[25]), .CK(clk_N_634), .Q(addOut[25])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
+    FD1S3AX addOut_990__i25 (.D(n109[25]), .CK(clk_N_634), .Q(addOut[25])) /* synthesis syn_use_carry_chain=1 */ ;   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(195[13:19])
     defparam addOut_990__i25.GSR = "DISABLED";
     CCU2D add_654_7 (.A0(dirout_m1_N_1189[5]), .B0(GND_net), .C0(GND_net), 
           .D0(GND_net), .A1(dirout_m1_N_1189[6]), .B1(GND_net), .C1(GND_net), 
-          .D1(GND_net), .CIN(n8384), .COUT(n8385), .S0(n1301[5]), .S1(n1301[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(248[20:29])
+          .D1(GND_net), .CIN(n8384), .COUT(n8385), .S0(n1301[5]), .S1(n1301[6]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(250[20:29])
     defparam add_654_7.INIT0 = 16'hf555;
     defparam add_654_7.INIT1 = 16'hf555;
     defparam add_654_7.INJECT1_0 = "NO";
@@ -7661,7 +7661,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D sub_5_add_2_19 (.A0(subIn2[17]), .B0(subIn1_21__N_875[17]), .C0(speed_set_m1[17]), 
           .D0(n708), .A1(subIn2[18]), .B1(subIn1_21__N_875[18]), .C1(speed_set_m1[18]), 
           .D1(n708), .CIN(n8427), .COUT(n8428), .S0(subOut_21__N_920[17]), 
-          .S1(subOut_21__N_920[18]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[18]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_19.INIT0 = 16'ha599;
     defparam sub_5_add_2_19.INIT1 = 16'ha599;
     defparam sub_5_add_2_19.INJECT1_0 = "NO";
@@ -7669,7 +7669,7 @@ module \PID(2000000,20000000,10000000)  (speed_set_m1, clk_N_634, dir_m1,
     CCU2D sub_5_add_2_17 (.A0(subIn2[15]), .B0(subIn1_21__N_875[15]), .C0(speed_set_m1[15]), 
           .D0(n708), .A1(subIn2[16]), .B1(subIn1_21__N_875[16]), .C1(speed_set_m1[16]), 
           .D1(n708), .CIN(n8426), .COUT(n8427), .S0(subOut_21__N_920[15]), 
-          .S1(subOut_21__N_920[16]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(191[13:19])
+          .S1(subOut_21__N_920[16]));   // c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(193[13:19])
     defparam sub_5_add_2_17.INIT0 = 16'ha599;
     defparam sub_5_add_2_17.INIT1 = 16'ha599;
     defparam sub_5_add_2_17.INJECT1_0 = "NO";

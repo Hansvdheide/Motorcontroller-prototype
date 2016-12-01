@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 01 09:45:15 2016
+Thu Dec 01 10:07:08 2016
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -107,8 +107,8 @@ INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/tople
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(74): analyzing architecture arch. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/pid.vhd. VHDL-1481
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): analyzing entity pid. VHDL-1012
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): analyzing architecture pid. VHDL-1010
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(11): analyzing entity pid. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(47): analyzing architecture pid. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(23): executing SPI_loopback_Top(arch)
@@ -127,7 +127,7 @@ Top-level module name = SPI_loopback_Top.
 
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_26s_25s.v. VERI-1482
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(192): input port a[25] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194): input port a[25] is not connected on this instance. VDB-1013
 WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(163): Register \SPI_I/send_buffer_i95 is stuck at Zero. VDB-5013
 Duplicate register/latch removal. \HALL_I_M1/hall2_old_36 is a one-to-one match with \HALL_I_M1/Hall_sns_i1.
 Duplicate register/latch removal. \HALL_I_M1/hall3_old_37 is a one-to-one match with \HALL_I_M1/Hall_sns_i0.
@@ -238,8 +238,8 @@ clk0 [get_nets clkout_c]                |    1.000 MHz|  119.048 MHz|     5
 All constraints were met.
 
 
-Peak Memory Usage: 109.379  MB
+Peak Memory Usage: 110.227  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 9.016  secs
+Elapsed CPU time for LSE flow : 4.469  secs
 --------------------------------------------------------------
