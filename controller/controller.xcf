@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/gebruiker/workspace/lattice/Final code software/controller/Motorcontrollerfinal_controller.jed</File>
-			<FileTime>11/28/16 16:06:02</FileTime>
-			<JedecChecksum>0x4BA9</JedecChecksum>
+			<FileTime>11/30/16 14:30:53</FileTime>
+			<JedecChecksum>0xADCE</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Nov 30 14:30:18 2016
+Thu Dec 01 09:45:15 2016
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -142,27 +142,6 @@ Duplicate register/latch removal. \HALL_I_M4/hall2_old_36 is a one-to-one match 
 Duplicate register/latch removal. \HALL_I_M4/hall3_old_37 is a one-to-one match with \HALL_I_M4/Hall_sns_i0.
 Duplicate register/latch removal. \HALL_I_M4/hall1_old_35 is a one-to-one match with \HALL_I_M4/Hall_sns_i2.
 GSR instance connected to net LED1_c.
-Duplicate register/latch removal. \PID_I/Out0_i0 is a one-to-one match with \PID_I/debug2_i0.
-Duplicate register/latch removal. \PID_I/Out0_i1 is a one-to-one match with \PID_I/debug2_i1.
-Duplicate register/latch removal. \PID_I/Out0_i2 is a one-to-one match with \PID_I/debug2_i2.
-Duplicate register/latch removal. \PID_I/Out0_i3 is a one-to-one match with \PID_I/debug2_i3.
-Duplicate register/latch removal. \PID_I/Out0_i4 is a one-to-one match with \PID_I/debug2_i4.
-Duplicate register/latch removal. \PID_I/Out0_i5 is a one-to-one match with \PID_I/debug2_i5.
-Duplicate register/latch removal. \PID_I/Out0_i6 is a one-to-one match with \PID_I/debug2_i6.
-Duplicate register/latch removal. \PID_I/Out0_i7 is a one-to-one match with \PID_I/debug2_i7.
-Duplicate register/latch removal. \PID_I/Out0_i8 is a one-to-one match with \PID_I/debug2_i8.
-Duplicate register/latch removal. \PID_I/Out0_i9 is a one-to-one match with \PID_I/debug2_i9.
-Duplicate register/latch removal. \PID_I/Out0_i10 is a one-to-one match with \PID_I/debug2_i10.
-Duplicate register/latch removal. \PID_I/Out0_i11 is a one-to-one match with \PID_I/debug2_i11.
-Duplicate register/latch removal. \PID_I/Out0_i12 is a one-to-one match with \PID_I/debug2_i12.
-Duplicate register/latch removal. \PID_I/Out0_i13 is a one-to-one match with \PID_I/debug2_i13.
-Duplicate register/latch removal. \PID_I/Out0_i14 is a one-to-one match with \PID_I/debug2_i14.
-Duplicate register/latch removal. \PID_I/Out0_i15 is a one-to-one match with \PID_I/debug2_i15.
-Duplicate register/latch removal. \PID_I/Out0_i16 is a one-to-one match with \PID_I/debug2_i16.
-Duplicate register/latch removal. \PID_I/Out0_i17 is a one-to-one match with \PID_I/debug2_i17.
-Duplicate register/latch removal. \PID_I/Out0_i18 is a one-to-one match with \PID_I/debug2_i18.
-Duplicate register/latch removal. \PID_I/Out0_i19 is a one-to-one match with \PID_I/debug2_i19.
-Duplicate register/latch removal. \PID_I/Out0_i20 is a one-to-one match with \PID_I/debug2_i20.
 Applying 1.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -175,20 +154,20 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 883 of 7209 (12 % )
+Number of register bits => 862 of 7209 (11 % )
 AND2 => 12
 CCU2D => 188
 FADD2B => 104
-FD1P3AX => 413
-FD1P3IX => 92
-FD1S3AX => 217
+FD1P3AX => 415
+FD1P3IX => 61
+FD1S3AX => 225
 FD1S3AY => 2
 FD1S3DX => 18
 FD1S3IX => 141
 GSR => 1
 IB => 15
 INV => 1
-LUT4 => 664
+LUT4 => 684
 MULT2 => 90
 ND2 => 5
 OB => 29
@@ -204,35 +183,35 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 4
-  Net : clk_N_634, loads : 351
+  Net : clk_N_634, loads : 330
   Net : clkout_c, loads : 305
   Net : clk_1mhz, loads : 184
   Net : pwm_clk, loads : 44
 Clock Enable Nets
-Number of Clock Enables: 17
+Number of Clock Enables: 15
 Top 10 highest fanout Clock Enables:
   Net : SPI_I/clkout_c_enable_88, loads : 88
   Net : SPI_I/enable_m1_N_599, loads : 67
-  Net : PID_I/clk_N_634_enable_273, loads : 50
-  Net : HALL_I_M3/clk_1mhz_enable_65, loads : 40
-  Net : HALL_I_M4/clk_1mhz_enable_64, loads : 40
-  Net : HALL_I_M2/clk_1mhz_enable_66, loads : 34
-  Net : HALL_I_M1/clk_1mhz_enable_63, loads : 32
-  Net : PID_I/clk_N_634_enable_150, loads : 26
-  Net : PID_I/clk_N_634_enable_50, loads : 26
-  Net : PID_I/clk_N_634_enable_252, loads : 26
+  Net : PID_I/clk_N_634_enable_252, loads : 50
+  Net : HALL_I_M3/clk_1mhz_enable_52, loads : 40
+  Net : HALL_I_M4/clk_1mhz_enable_40, loads : 40
+  Net : HALL_I_M1/clk_1mhz_enable_69, loads : 40
+  Net : HALL_I_M2/clk_1mhz_enable_66, loads : 29
+  Net : PID_I/clk_N_634_enable_41, loads : 26
+  Net : PID_I/clk_N_634_enable_141, loads : 26
+  Net : PID_I/clk_N_634_enable_66, loads : 26
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SPI_I/CSlatched, loads : 174
+  Net : SPI_I/CSlatched, loads : 193
   Net : PID_I/multIn2_1, loads : 132
+  Net : SPI_I/n9757, loads : 93
   Net : SPI_I/clkout_c_enable_88, loads : 88
-  Net : SPI_I/n9960, loads : 83
+  Net : SPI_I/n9935, loads : 79
   Net : PID_I/ss_2, loads : 74
-  Net : SPI_I/n10122, loads : 68
   Net : SPI_I/enable_m1_N_599, loads : 67
   Net : PID_I/ss_3, loads : 60
-  Net : PID_I/clk_N_634_enable_100, loads : 52
-  Net : PID_I/clk_N_634_enable_175, loads : 52
+  Net : PID_I/clk_N_634_enable_191, loads : 52
+  Net : PID_I/clk_N_634_enable_251, loads : 52
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -242,16 +221,16 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk3 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
+clk3 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk2 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   33.475 MHz|    19  
+clk2 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets clkout_c]                |    1.000 MHz|  119.048 MHz|     5  
+clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   33.475 MHz|    19  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6  
+clk0 [get_nets clkout_c]                |    1.000 MHz|  119.048 MHz|     5  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -259,8 +238,8 @@ clk0 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 110.078  MB
+Peak Memory Usage: 109.379  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.516  secs
+Elapsed CPU time for LSE flow : 9.016  secs
 --------------------------------------------------------------
