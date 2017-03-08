@@ -57,7 +57,7 @@ ARCHITECTURE SPI OF SPI IS
 signal CSold : std_logic;
 signal SCKold : std_logic;
 signal CSlatched : std_logic;
-signal SCKlatched : std_logic;
+signal SCKlatched : std_logic; 
 
 BEGIN
 
