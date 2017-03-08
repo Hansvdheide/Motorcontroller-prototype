@@ -66,6 +66,8 @@ if (rst = '0') then
 else 
 
 	if (rising_edge(clk_1mhz)) then
+	
+		
 		-- Latch the input signals
 		hall1_old <= hall1_lat;
 		hall2_old <= hall2_lat;

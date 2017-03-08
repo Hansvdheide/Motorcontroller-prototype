@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Dec 01 10:07:08 2016
+Wed Mar 08 09:59:54 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -91,7 +91,7 @@ Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/clo
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd. VHDL-1481
     <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(28): " arg1="commutation" arg2="c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd" arg3="28"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(50): " arg1="commutation" arg2="c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd" arg3="50"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(52): " arg1="commutation" arg2="c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd" arg3="52"  />
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd. VHDL-1481
     <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(22): " arg1="hall" arg2="c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd" arg3="22"  />
@@ -107,16 +107,18 @@ Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/spi
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd. VHDL-1481
     <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(23): " arg1="spi_loopback_top" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="23"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(74): " arg1="arch" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="74"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(79): " arg1="arch" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="79"  />
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/pid.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(11): " arg1="pid" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="11"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(47): " arg1="pid" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="47"  />
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): " arg1="pid" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="9"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): " arg1="pid" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="45"  />
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(23): executing SPI_loopback_Top(arch)
 
-    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(72): " arg1="SPI_loopback_Top" arg2="arch" arg3="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg4="72"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(348): " arg1="pwmdut_m4" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="348"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(355): " arg1="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg2="355"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(77): " arg1="SPI_loopback_Top" arg2="arch" arg3="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg4="77"  />
 Top module name (VHDL): SPI_loopback_Top
 Last elaborated design is SPI_loopback_Top(arch)
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
@@ -126,11 +128,99 @@ Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = SPI_loopback_Top.
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(98): " arg1="speed_set_m1[20]" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="98"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(99): " arg1="speed_set_m2[20]" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="99"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(100): " arg1="speed_set_m3[20]" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="100"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(101): " arg1="speed_set_m4[20]" arg2="c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd" arg3="101"  />
+######## Missing driver on net speed_set_m1[20]. Patching with GND.
+######## Missing driver on net speed_set_m1[19]. Patching with GND.
+######## Missing driver on net speed_set_m1[18]. Patching with GND.
+######## Missing driver on net speed_set_m1[17]. Patching with GND.
+######## Missing driver on net speed_set_m1[16]. Patching with GND.
+######## Missing driver on net speed_set_m1[15]. Patching with GND.
+######## Missing driver on net speed_set_m1[14]. Patching with GND.
+######## Missing driver on net speed_set_m1[13]. Patching with GND.
+######## Missing driver on net speed_set_m1[12]. Patching with GND.
+######## Missing driver on net speed_set_m1[11]. Patching with GND.
+######## Missing driver on net speed_set_m1[10]. Patching with GND.
+######## Missing driver on net speed_set_m1[9]. Patching with GND.
+######## Missing driver on net speed_set_m1[8]. Patching with GND.
+######## Missing driver on net speed_set_m1[7]. Patching with GND.
+######## Missing driver on net speed_set_m1[6]. Patching with GND.
+######## Missing driver on net speed_set_m1[5]. Patching with GND.
+######## Missing driver on net speed_set_m1[4]. Patching with GND.
+######## Missing driver on net speed_set_m1[3]. Patching with GND.
+######## Missing driver on net speed_set_m1[2]. Patching with GND.
+######## Missing driver on net speed_set_m1[1]. Patching with GND.
+######## Missing driver on net speed_set_m1[0]. Patching with GND.
+######## Missing driver on net speed_set_m2[20]. Patching with GND.
+######## Missing driver on net speed_set_m2[19]. Patching with GND.
+######## Missing driver on net speed_set_m2[18]. Patching with GND.
+######## Missing driver on net speed_set_m2[17]. Patching with GND.
+######## Missing driver on net speed_set_m2[16]. Patching with GND.
+######## Missing driver on net speed_set_m2[15]. Patching with GND.
+######## Missing driver on net speed_set_m2[14]. Patching with GND.
+######## Missing driver on net speed_set_m2[13]. Patching with GND.
+######## Missing driver on net speed_set_m2[12]. Patching with GND.
+######## Missing driver on net speed_set_m2[11]. Patching with GND.
+######## Missing driver on net speed_set_m2[10]. Patching with GND.
+######## Missing driver on net speed_set_m2[9]. Patching with GND.
+######## Missing driver on net speed_set_m2[8]. Patching with GND.
+######## Missing driver on net speed_set_m2[7]. Patching with GND.
+######## Missing driver on net speed_set_m2[6]. Patching with GND.
+######## Missing driver on net speed_set_m2[5]. Patching with GND.
+######## Missing driver on net speed_set_m2[4]. Patching with GND.
+######## Missing driver on net speed_set_m2[3]. Patching with GND.
+######## Missing driver on net speed_set_m2[2]. Patching with GND.
+######## Missing driver on net speed_set_m2[1]. Patching with GND.
+######## Missing driver on net speed_set_m2[0]. Patching with GND.
+######## Missing driver on net speed_set_m3[20]. Patching with GND.
+######## Missing driver on net speed_set_m3[19]. Patching with GND.
+######## Missing driver on net speed_set_m3[18]. Patching with GND.
+######## Missing driver on net speed_set_m3[17]. Patching with GND.
+######## Missing driver on net speed_set_m3[16]. Patching with GND.
+######## Missing driver on net speed_set_m3[15]. Patching with GND.
+######## Missing driver on net speed_set_m3[14]. Patching with GND.
+######## Missing driver on net speed_set_m3[13]. Patching with GND.
+######## Missing driver on net speed_set_m3[12]. Patching with GND.
+######## Missing driver on net speed_set_m3[11]. Patching with GND.
+######## Missing driver on net speed_set_m3[10]. Patching with GND.
+######## Missing driver on net speed_set_m3[9]. Patching with GND.
+######## Missing driver on net speed_set_m3[8]. Patching with GND.
+######## Missing driver on net speed_set_m3[7]. Patching with GND.
+######## Missing driver on net speed_set_m3[6]. Patching with GND.
+######## Missing driver on net speed_set_m3[5]. Patching with GND.
+######## Missing driver on net speed_set_m3[4]. Patching with GND.
+######## Missing driver on net speed_set_m3[3]. Patching with GND.
+######## Missing driver on net speed_set_m3[2]. Patching with GND.
+######## Missing driver on net speed_set_m3[1]. Patching with GND.
+######## Missing driver on net speed_set_m3[0]. Patching with GND.
+######## Missing driver on net speed_set_m4[20]. Patching with GND.
+######## Missing driver on net speed_set_m4[19]. Patching with GND.
+######## Missing driver on net speed_set_m4[18]. Patching with GND.
+######## Missing driver on net speed_set_m4[17]. Patching with GND.
+######## Missing driver on net speed_set_m4[16]. Patching with GND.
+######## Missing driver on net speed_set_m4[15]. Patching with GND.
+######## Missing driver on net speed_set_m4[14]. Patching with GND.
+######## Missing driver on net speed_set_m4[13]. Patching with GND.
+######## Missing driver on net speed_set_m4[12]. Patching with GND.
+######## Missing driver on net speed_set_m4[11]. Patching with GND.
+######## Missing driver on net speed_set_m4[10]. Patching with GND.
+######## Missing driver on net speed_set_m4[9]. Patching with GND.
+######## Missing driver on net speed_set_m4[8]. Patching with GND.
+######## Missing driver on net speed_set_m4[7]. Patching with GND.
+######## Missing driver on net speed_set_m4[6]. Patching with GND.
+######## Missing driver on net speed_set_m4[5]. Patching with GND.
+######## Missing driver on net speed_set_m4[4]. Patching with GND.
+######## Missing driver on net speed_set_m4[3]. Patching with GND.
+######## Missing driver on net speed_set_m4[2]. Patching with GND.
+######## Missing driver on net speed_set_m4[1]. Patching with GND.
+######## Missing driver on net speed_set_m4[0]. Patching with GND.
 
 
 
 SCUBA, Version Diamond (64-bit) 3.8.0.115.3
-Thu Dec 01 10:07:09 2016
+Wed Mar 08 09:59:56 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -161,21 +251,9 @@ BEGIN SCUBA Module Synthesis
 END   SCUBA Module Synthesis
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_26s_25s.v. VERI-1482
-    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(194): " arg1="a[25]" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="194"  />
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(163): " arg1="\SPI_I/send_buffer_i95" arg2="c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd" arg3="163"  />
-Duplicate register/latch removal. \HALL_I_M1/hall2_old_36 is a one-to-one match with \HALL_I_M1/Hall_sns_i1.
-Duplicate register/latch removal. \HALL_I_M1/hall3_old_37 is a one-to-one match with \HALL_I_M1/Hall_sns_i0.
-Duplicate register/latch removal. \HALL_I_M1/hall1_old_35 is a one-to-one match with \HALL_I_M1/Hall_sns_i2.
-Duplicate register/latch removal. \HALL_I_M2/hall2_old_36 is a one-to-one match with \HALL_I_M2/Hall_sns_i1.
-Duplicate register/latch removal. \HALL_I_M2/hall3_old_37 is a one-to-one match with \HALL_I_M2/Hall_sns_i0.
-Duplicate register/latch removal. \HALL_I_M2/hall1_old_35 is a one-to-one match with \HALL_I_M2/Hall_sns_i2.
-Duplicate register/latch removal. \HALL_I_M3/hall2_old_36 is a one-to-one match with \HALL_I_M3/Hall_sns_i1.
-Duplicate register/latch removal. \HALL_I_M3/hall3_old_37 is a one-to-one match with \HALL_I_M3/Hall_sns_i0.
-Duplicate register/latch removal. \HALL_I_M3/hall1_old_35 is a one-to-one match with \HALL_I_M3/Hall_sns_i2.
-Duplicate register/latch removal. \HALL_I_M4/hall2_old_36 is a one-to-one match with \HALL_I_M4/Hall_sns_i1.
-Duplicate register/latch removal. \HALL_I_M4/hall3_old_37 is a one-to-one match with \HALL_I_M4/Hall_sns_i0.
-Duplicate register/latch removal. \HALL_I_M4/hall1_old_35 is a one-to-one match with \HALL_I_M4/Hall_sns_i2.
-GSR instance connected to net LED1_c.
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(203): " arg1="a[25]" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="203"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(351): " arg1="\PID_I/dirout_m2_252" arg2="c:/users/gebruiker/workspace/lattice/final code software/pid.vhd" arg3="351"  />
+GSR instance connected to net rst.
 Applying 1.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -191,32 +269,31 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-   2049 blocks expanded
+   2311 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 862 of 7209 (11 % )
+Number of register bits => 932 of 7209 (12 % )
 AND2 => 12
-CCU2D => 188
+CCU2D => 299
 FADD2B => 104
-FD1P3AX => 415
-FD1P3IX => 61
-FD1S3AX => 225
-FD1S3AY => 2
-FD1S3DX => 18
-FD1S3IX => 141
+FD1P3AX => 557
+FD1P3IX => 82
+FD1S3AX => 131
+FD1S3AY => 14
+FD1S3IX => 148
 GSR => 1
 IB => 15
 INV => 1
-LUT4 => 684
+LUT4 => 767
 MULT2 => 90
 ND2 => 5
-OB => 29
+OB => 32
 OBZ => 1
 OSCH => 1
-PFUMX => 53
+PFUMX => 48
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -226,35 +303,35 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 4
-  Net : clk_N_634, loads : 330
-  Net : clkout_c, loads : 305
-  Net : clk_1mhz, loads : 184
+  Net : clkout_c, loads : 367
+  Net : clk_N_707, loads : 326
+  Net : clk_1mhz, loads : 196
   Net : pwm_clk, loads : 44
 Clock Enable Nets
-Number of Clock Enables: 15
+Number of Clock Enables: 21
 Top 10 highest fanout Clock Enables:
-  Net : SPI_I/clkout_c_enable_88, loads : 88
-  Net : SPI_I/enable_m1_N_599, loads : 67
-  Net : PID_I/clk_N_634_enable_252, loads : 50
-  Net : HALL_I_M3/clk_1mhz_enable_52, loads : 40
-  Net : HALL_I_M4/clk_1mhz_enable_40, loads : 40
-  Net : HALL_I_M1/clk_1mhz_enable_69, loads : 40
-  Net : HALL_I_M2/clk_1mhz_enable_66, loads : 29
-  Net : PID_I/clk_N_634_enable_41, loads : 26
-  Net : PID_I/clk_N_634_enable_141, loads : 26
-  Net : PID_I/clk_N_634_enable_66, loads : 26
+  Net : SPI_I/clkout_c_enable_199, loads : 96
+  Net : SPI_I/clkout_c_enable_58, loads : 50
+  Net : SPI_I/clkout_c_enable_104, loads : 46
+  Net : PID_I/clk_N_707_enable_248, loads : 44
+  Net : HALL_I_M1/clk_1mhz_enable_79, loads : 40
+  Net : HALL_I_M4/clk_1mhz_enable_58, loads : 39
+  Net : HALL_I_M3/clk_1mhz_enable_69, loads : 32
+  Net : PID_I/clk_N_707_enable_211, loads : 26
+  Net : PID_I/clk_N_707_enable_118, loads : 26
+  Net : PID_I/clk_N_707_enable_43, loads : 26
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SPI_I/CSlatched, loads : 193
-  Net : PID_I/multIn2_1, loads : 132
-  Net : SPI_I/n9757, loads : 93
-  Net : SPI_I/clkout_c_enable_88, loads : 88
-  Net : SPI_I/n9935, loads : 79
-  Net : PID_I/ss_2, loads : 74
-  Net : SPI_I/enable_m1_N_599, loads : 67
-  Net : PID_I/ss_3, loads : 60
-  Net : PID_I/clk_N_634_enable_191, loads : 52
-  Net : PID_I/clk_N_634_enable_251, loads : 52
+  Net : SPI_I/CSlatched, loads : 125
+  Net : PID_I/ss_2, loads : 125
+  Net : SPI_I/clkout_c_enable_199, loads : 96
+  Net : SPI_I/n10789, loads : 95
+  Net : PID_I/multIn2_2, loads : 90
+  Net : PID_I/n2227, loads : 78
+  Net : SPI_I/n11099, loads : 75
+  Net : SPI_I/n11100, loads : 73
+  Net : PID_I/n711, loads : 72
+  Net : PID_I/ss_3, loads : 64
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -264,16 +341,16 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk3 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6  
+clk3 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk2 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
+clk2 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   33.475 MHz|    19  
+clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   33.039 MHz|    19  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clkout_c]                |    1.000 MHz|  119.048 MHz|     5  
+clk0 [get_nets clkout_c]                |    1.000 MHz|  103.778 MHz|     6  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -281,13 +358,13 @@ clk0 [get_nets clkout_c]                |    1.000 MHz|  119.048 MHz|     5
 All constraints were met.
 
 
-Peak Memory Usage: 110.227  MB
+Peak Memory Usage: 109.219  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.469  secs
+Elapsed CPU time for LSE flow : 4.625  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "Motorcontrollerfinal_controller.ngd" -o "Motorcontrollerfinal_controller_map.ncd" -pr "Motorcontrollerfinal_controller.prf" -mp "Motorcontrollerfinal_controller.mrp" -lpf "C:/Users/gebruiker/workspace/lattice/Final code software/controller/Motorcontrollerfinal_controller.lpf" -lpf "C:/Users/gebruiker/workspace/lattice/Final code software/Motorcontrollerfinal.lpf" -c 0            
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "Motorcontrollerfinal_controller.ngd" -o "Motorcontrollerfinal_controller_map.ncd" -pr "Motorcontrollerfinal_controller.prf" -mp "Motorcontrollerfinal_controller.mrp" -lpf "C:/Users/gebruiker/workspace/lattice/Final code software/controller/Motorcontrollerfinal_controller.lpf" -lpf "C:/Users/gebruiker/workspace/lattice/Final code software/groen.lpf" -c 0            
 map:  version Diamond (64-bit) 3.8.0.115.3
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -321,19 +398,19 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    862 out of  7209 (12%)
-      PFU registers:          862 out of  6864 (13%)
+   Number of registers:    932 out of  7209 (13%)
+      PFU registers:          932 out of  6864 (14%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:       728 out of  3432 (21%)
-      SLICEs as Logic/ROM:    728 out of  3432 (21%)
+   Number of SLICEs:       895 out of  3432 (26%)
+      SLICEs as Logic/ROM:    895 out of  3432 (26%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:        382 out of  3432 (11%)
-   Number of LUT4s:        1451 out of  6864 (21%)
-      Number used as logic LUTs:        687
+      SLICEs as Carry:        493 out of  3432 (14%)
+   Number of LUT4s:        1757 out of  6864 (26%)
+      Number used as logic LUTs:        771
       Number used as distributed RAM:     0
-      Number used as ripple logic:      764
+      Number used as ripple logic:      986
       Number used as shift registers:     0
-   Number of PIO sites used: 45 + 4(JTAG) out of 115 (43%)
+   Number of PIO sites used: 48 + 4(JTAG) out of 115 (45%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  1 out of 1 (100%)
    EFB used :       No
@@ -357,61 +434,68 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  4
-     Net clkout_c: 158 loads, 158 rising, 0 falling (Driver: OSCInst0 )
-     Net clk_1mhz: 97 loads, 97 rising, 0 falling (Driver: CLKDIV_I/clk_1mhz_33 )
+     Net clkout_c: 205 loads, 205 rising, 0 falling (Driver: OSCInst0 )
+     Net clk_1mhz: 106 loads, 106 rising, 0 falling (Driver: CLKDIV_I/clk_1mhz_33 )
      Net pwm_clk: 26 loads, 26 rising, 0 falling (Driver: CLKDIV_I/pwm_clk_34 )
-     Net CLKDIV_I/pi_clk: 179 loads, 0 rising, 179 falling (Driver: CLKDIV_I/pi_clk_35 )
-   Number of Clock Enables:  15
-     Net SPI_I/enable_m1_N_599: 34 loads, 34 LSLICEs
-     Net SPI_I/clkout_c_enable_88: 44 loads, 44 LSLICEs
-     Net HALL_I_M2/clk_1mhz_enable_66: 5 loads, 5 LSLICEs
-     Net HALL_I_M3/clk_1mhz_enable_52: 10 loads, 10 LSLICEs
-     Net HALL_I_M1/clk_1mhz_enable_69: 10 loads, 10 LSLICEs
-     Net HALL_I_M4/clk_1mhz_enable_40: 10 loads, 10 LSLICEs
-     Net PID_I/clk_N_634_enable_191: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_251: 14 loads, 14 LSLICEs
-     Net PID_I/clk_N_634_enable_41: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_66: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_91: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_116: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_141: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_166: 13 loads, 13 LSLICEs
-     Net PID_I/clk_N_634_enable_252: 28 loads, 28 LSLICEs
-   Number of LSRs:  22
-     Net LED2_c: 3 loads, 3 LSLICEs
-     Net LED4_c: 3 loads, 3 LSLICEs
-     Net LED3_c: 3 loads, 3 LSLICEs
-     Net SPI_I/n9744: 1 loads, 1 LSLICEs
-     Net n9743: 1 loads, 1 LSLICEs
-     Net HALL_I_M2/clk_1mhz_enable_66: 11 loads, 11 LSLICEs
-     Net CLKDIV_I/n5457: 3 loads, 3 LSLICEs
-     Net CLKDIV_I/n5456: 7 loads, 7 LSLICEs
-     Net HALL_I_M3/clk_1mhz_enable_52: 11 loads, 11 LSLICEs
-     Net PWM_I_M1/n5455: 6 loads, 6 LSLICEs
-     Net PWM_I_M4/n5458: 6 loads, 6 LSLICEs
-     Net HALL_I_M1/clk_1mhz_enable_69: 11 loads, 11 LSLICEs
-     Net HALL_I_M4/clk_1mhz_enable_40: 11 loads, 11 LSLICEs
-     Net PWM_I_M3/n5459: 6 loads, 6 LSLICEs
-     Net PWM_I_M2/n5454: 6 loads, 6 LSLICEs
-     Net PID_I/clk_N_634_enable_252: 1 loads, 1 LSLICEs
-     Net PID_I/n5486: 13 loads, 13 LSLICEs
-     Net PID_I/n5510: 3 loads, 3 LSLICEs
-     Net PID_I/n5503: 3 loads, 3 LSLICEs
-     Net PID_I/n5494: 3 loads, 3 LSLICEs
-     Net PID_I/n5482: 2 loads, 2 LSLICEs
-     Net PID_I/n5462: 11 loads, 11 LSLICEs
+     Net CLKDIV_I/pi_clk: 177 loads, 0 rising, 177 falling (Driver: CLKDIV_I/pi_clk_35 )
+   Number of Clock Enables:  21
+     Net clkout_c_enable_281: 7 loads, 7 LSLICEs
+     Net rst: 14 loads, 14 LSLICEs
+     Net clkout_c_enable_257: 27 loads, 27 LSLICEs
+     Net clkout_c_enable_269: 26 loads, 26 LSLICEs
+     Net HALL_I_M3/clk_1mhz_enable_69: 7 loads, 7 LSLICEs
+     Net HALL_I_M1/clk_1mhz_enable_79: 10 loads, 10 LSLICEs
+     Net SPI_I/clkout_c_enable_199: 48 loads, 48 LSLICEs
+     Net SPI_I/clkout_c_enable_58: 25 loads, 25 LSLICEs
+     Net SPI_I/enable_m1_N_657: 2 loads, 2 LSLICEs
+     Net SPI_I/clkout_c_enable_104: 23 loads, 23 LSLICEs
+     Net HALL_I_M2/clk_1mhz_enable_72: 2 loads, 2 LSLICEs
+     Net PID_I/clk_N_707_enable_232: 14 loads, 14 LSLICEs
+     Net PID_I/clk_N_707_enable_211: 14 loads, 14 LSLICEs
+     Net PID_I/clk_N_707_enable_43: 13 loads, 13 LSLICEs
+     Net PID_I/clk_N_707_enable_68: 13 loads, 13 LSLICEs
+     Net PID_I/clk_N_707_enable_93: 13 loads, 13 LSLICEs
+     Net PID_I/clk_N_707_enable_118: 13 loads, 13 LSLICEs
+     Net PID_I/clk_N_707_enable_143: 13 loads, 13 LSLICEs
+     Net PID_I/clk_N_707_enable_168: 13 loads, 13 LSLICEs
+     Net PID_I/clk_N_707_enable_248: 24 loads, 24 LSLICEs
+     Net HALL_I_M4/clk_1mhz_enable_58: 10 loads, 10 LSLICEs
+   Number of LSRs:  23
+     Net enable_m1: 3 loads, 3 LSLICEs
+     Net enable_m3: 3 loads, 3 LSLICEs
+     Net enable_m2: 3 loads, 3 LSLICEs
+     Net enable_m4: 3 loads, 3 LSLICEs
+     Net CLKDIV_I/n6582: 3 loads, 3 LSLICEs
+     Net CLKDIV_I/n6581: 5 loads, 5 LSLICEs
+     Net HALL_I_M3/clk_1mhz_enable_69: 11 loads, 11 LSLICEs
+     Net HALL_I_M1/clk_1mhz_enable_79: 11 loads, 11 LSLICEs
+     Net PWM_I_M3/n6578: 6 loads, 6 LSLICEs
+     Net PWM_I_M2/n6579: 6 loads, 6 LSLICEs
+     Net PWM_I_M1/n6580: 6 loads, 6 LSLICEs
+     Net HALL_I_M2/clk_1mhz_enable_72: 11 loads, 11 LSLICEs
+     Net PWM_I_M4/n6577: 6 loads, 6 LSLICEs
+     Net PID_I/n10792: 1 loads, 1 LSLICEs
+     Net PID_I/ss_0: 1 loads, 1 LSLICEs
+     Net PID_I/n6615: 11 loads, 11 LSLICEs
+     Net PID_I/n6594: 11 loads, 11 LSLICEs
+     Net PID_I/n6570: 12 loads, 12 LSLICEs
+     Net PID_I/n6644: 3 loads, 3 LSLICEs
+     Net PID_I/n6635: 3 loads, 3 LSLICEs
+     Net PID_I/n6575: 3 loads, 3 LSLICEs
+     Net PID_I/n6590: 3 loads, 3 LSLICEs
+     Net HALL_I_M4/clk_1mhz_enable_58: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net SPI_I/CSlatched: 193 loads
-     Net PID_I/multIn2_1: 132 loads
-     Net SPI_I/n9757: 93 loads
-     Net SPI_I/n9935: 79 loads
-     Net PID_I/ss_2: 74 loads
-     Net PID_I/ss_3: 60 loads
-     Net PID_I/n9747: 50 loads
-     Net SPI_I/clkout_c_enable_88: 44 loads
-     Net PID_I/n9738: 41 loads
-     Net SPI_I/enable_m1_N_599: 34 loads
+     Net SPI_I/CSlatched: 125 loads
+     Net PID_I/ss_2: 124 loads
+     Net SPI_I/n10789: 95 loads
+     Net PID_I/multIn2_2: 90 loads
+     Net PID_I/n2227: 78 loads
+     Net SPI_I/n11099: 75 loads
+     Net SPI_I/n11100: 73 loads
+     Net PID_I/n711: 72 loads
+     Net PID_I/ss_3: 64 loads
+     Net SPI_I/clkout_c_enable_199: 48 loads
  
 
    Number of warnings:  0
@@ -421,7 +505,7 @@ Design Summary:
 
 Total CPU Time: 1 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 68 MB
+Peak Memory Usage: 70 MB
 
 Dumping design to file Motorcontrollerfinal_controller_map.ncd.
 
@@ -452,7 +536,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.8.0.115.3
-Thu Dec 01 10:07:15 2016
+Wed Mar 08 10:00:02 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -482,11 +566,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1695 paths, 1 nets, and 5880 connections (99.75% coverage)
+Constraints cover 2400 paths, 1 nets, and 6631 connections (99.71% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.8.0.115.3
-Thu Dec 01 10:07:15 2016
+Wed Mar 08 10:00:03 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -516,7 +600,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1695 paths, 1 nets, and 5880 connections (99.75% coverage)
+Constraints cover 2400 paths, 1 nets, and 6631 connections (99.71% coverage)
 
 
 
@@ -539,7 +623,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Motorcontrollerfinal_controller_map.ncd"
-Thu Dec 01 10:07:16 2016
+Wed Mar 08 10:00:03 2017
 
 PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Motorcontrollerfinal_controller_map.ncd Motorcontrollerfinal_controller.dir/5_1.ncd Motorcontrollerfinal_controller.prf
@@ -563,53 +647,53 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)   45+4(JTAG)/336     15% used
-                  45+4(JTAG)/115     43% bonded
+   PIO (prelim)   48+4(JTAG)/336     15% used
+                  48+4(JTAG)/115     45% bonded
 
-   SLICE            728/3432         21% used
+   SLICE            895/3432         26% used
 
    GSR                1/1           100% used
    OSC                1/1           100% used
 
 
-Number of Signals: 2453
-Number of Connections: 5895
+Number of Signals: 2761
+Number of Connections: 6650
 
 Pin Constraint Summary:
-   13 out of 45 pins locked (28% locked).
+   47 out of 48 pins locked (97% locked).
 
 The following 4 signals are selected to use the primary clock routing resources:
-    CLKDIV_I/pi_clk (driver: CLKDIV_I/SLICE_388, clk load #: 179)
-    clkout_c (driver: OSCInst0, clk load #: 158)
-    clk_1mhz (driver: CLKDIV_I/SLICE_385, clk load #: 97)
-    pwm_clk (driver: SLICE_364, clk load #: 26)
+    clkout_c (driver: OSCInst0, clk load #: 205)
+    CLKDIV_I/pi_clk (driver: CLKDIV_I/SLICE_499, clk load #: 177)
+    clk_1mhz (driver: CLKDIV_I/SLICE_496, clk load #: 106)
+    pwm_clk (driver: SLICE_845, clk load #: 26)
 
 
 The following 8 signals are selected to use the secondary clock routing resources:
-    SPI_I/clkout_c_enable_88 (driver: SPI_I/SLICE_824, clk load #: 0, sr load #: 0, ce load #: 44)
-    SPI_I/enable_m1_N_599 (driver: SPI_I/SLICE_827, clk load #: 0, sr load #: 0, ce load #: 34)
-    PID_I/clk_N_634_enable_252 (driver: PID_I/SLICE_815, clk load #: 0, sr load #: 1, ce load #: 28)
-    HALL_I_M3/clk_1mhz_enable_52 (driver: HALL_I_M3/SLICE_785, clk load #: 0, sr load #: 11, ce load #: 10)
-    HALL_I_M1/clk_1mhz_enable_69 (driver: SLICE_405, clk load #: 0, sr load #: 11, ce load #: 10)
-    HALL_I_M4/clk_1mhz_enable_40 (driver: SLICE_794, clk load #: 0, sr load #: 11, ce load #: 10)
-    HALL_I_M2/clk_1mhz_enable_66 (driver: HALL_I_M2/SLICE_781, clk load #: 0, sr load #: 11, ce load #: 5)
-    PID_I/clk_N_634_enable_251 (driver: PID_I/SLICE_821, clk load #: 0, sr load #: 0, ce load #: 14)
+    SPI_I/clkout_c_enable_199 (driver: SPI_I/SLICE_1001, clk load #: 0, sr load #: 0, ce load #: 48)
+    clkout_c_enable_257 (driver: SLICE_833, clk load #: 0, sr load #: 0, ce load #: 27)
+    clkout_c_enable_269 (driver: SLICE_833, clk load #: 0, sr load #: 0, ce load #: 26)
+    SPI_I/clkout_c_enable_58 (driver: SPI_I/SLICE_990, clk load #: 0, sr load #: 0, ce load #: 25)
+    PID_I/clk_N_707_enable_248 (driver: PID_I/SLICE_979, clk load #: 0, sr load #: 0, ce load #: 24)
+    SPI_I/clkout_c_enable_104 (driver: SPI_I/SLICE_990, clk load #: 0, sr load #: 0, ce load #: 23)
+    HALL_I_M1/clk_1mhz_enable_79 (driver: SLICE_845, clk load #: 0, sr load #: 11, ce load #: 10)
+    HALL_I_M4/clk_1mhz_enable_58 (driver: HALL_I_M4/SLICE_987, clk load #: 0, sr load #: 11, ce load #: 10)
 
-Signal LED1_c is selected as Global Set/Reset.
+Signal n11101 is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
-.................
+...........
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-.....................
-Placer score = 420245.
+......................
+Placer score = 474759.
 Finished Placer Phase 1.  REAL time: 9 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  415435
-Finished Placer Phase 2.  REAL time: 9 secs 
+Placer score =  470202
+Finished Placer Phase 2.  REAL time: 10 secs 
 
 
 ------------------ Clock Report ------------------
@@ -621,18 +705,18 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "CLKDIV_I/pi_clk" from Q1 on comp "CLKDIV_I/SLICE_388" on site "R2C19C", clk load = 179
-  PRIMARY "clkout_c" from OSC on comp "OSCInst0" on site "OSC", clk load = 158
-  PRIMARY "clk_1mhz" from Q1 on comp "CLKDIV_I/SLICE_385" on site "R21C2D", clk load = 97
-  PRIMARY "pwm_clk" from Q0 on comp "SLICE_364" on site "R3C19B", clk load = 26
-  SECONDARY "SPI_I/clkout_c_enable_88" from F1 on comp "SPI_I/SLICE_824" on site "R14C18A", clk load = 0, ce load = 44, sr load = 0
-  SECONDARY "SPI_I/enable_m1_N_599" from F0 on comp "SPI_I/SLICE_827" on site "R14C18B", clk load = 0, ce load = 34, sr load = 0
-  SECONDARY "PID_I/clk_N_634_enable_252" from F1 on comp "PID_I/SLICE_815" on site "R14C20A", clk load = 0, ce load = 28, sr load = 1
-  SECONDARY "HALL_I_M3/clk_1mhz_enable_52" from F1 on comp "HALL_I_M3/SLICE_785" on site "R14C17B", clk load = 0, ce load = 10, sr load = 11
-  SECONDARY "HALL_I_M1/clk_1mhz_enable_69" from F1 on comp "SLICE_405" on site "R14C20B", clk load = 0, ce load = 10, sr load = 11
-  SECONDARY "HALL_I_M4/clk_1mhz_enable_40" from F0 on comp "SLICE_794" on site "R14C18D", clk load = 0, ce load = 10, sr load = 11
-  SECONDARY "HALL_I_M2/clk_1mhz_enable_66" from F1 on comp "HALL_I_M2/SLICE_781" on site "R14C18C", clk load = 0, ce load = 5, sr load = 11
-  SECONDARY "PID_I/clk_N_634_enable_251" from F1 on comp "PID_I/SLICE_821" on site "R14C20D", clk load = 0, ce load = 14, sr load = 0
+  PRIMARY "clkout_c" from OSC on comp "OSCInst0" on site "OSC", clk load = 205
+  PRIMARY "CLKDIV_I/pi_clk" from Q1 on comp "CLKDIV_I/SLICE_499" on site "R2C19D", clk load = 177
+  PRIMARY "clk_1mhz" from Q1 on comp "CLKDIV_I/SLICE_496" on site "R21C2A", clk load = 106
+  PRIMARY "pwm_clk" from Q0 on comp "SLICE_845" on site "R2C16D", clk load = 26
+  SECONDARY "SPI_I/clkout_c_enable_199" from F0 on comp "SPI_I/SLICE_1001" on site "R14C18D", clk load = 0, ce load = 48, sr load = 0
+  SECONDARY "clkout_c_enable_257" from Q0 on comp "SLICE_833" on site "R14C18C", clk load = 0, ce load = 27, sr load = 0
+  SECONDARY "clkout_c_enable_269" from Q1 on comp "SLICE_833" on site "R14C18C", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "SPI_I/clkout_c_enable_58" from F1 on comp "SPI_I/SLICE_990" on site "R14C18B", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "PID_I/clk_N_707_enable_248" from F1 on comp "PID_I/SLICE_979" on site "R14C18A", clk load = 0, ce load = 24, sr load = 0
+  SECONDARY "SPI_I/clkout_c_enable_104" from F0 on comp "SPI_I/SLICE_990" on site "R14C18B", clk load = 0, ce load = 23, sr load = 0
+  SECONDARY "HALL_I_M1/clk_1mhz_enable_79" from F0 on comp "SLICE_845" on site "R2C16D", clk load = 0, ce load = 10, sr load = 11
+  SECONDARY "HALL_I_M4/clk_1mhz_enable_58" from F0 on comp "HALL_I_M4/SLICE_987" on site "R21C18A", clk load = 0, ce load = 10, sr load = 11
 
   PRIMARY  : 4 out of 8 (50%)
   SECONDARY: 8 out of 8 (100%)
@@ -644,33 +728,33 @@ Edge Clocks:
 
 
 I/O Usage Summary (final):
-   45 + 4(JTAG) out of 336 (14.6%) PIO sites used.
-   45 + 4(JTAG) out of 115 (42.6%) bonded PIO sites used.
-   Number of PIO comps: 45; differential: 0.
+   48 + 4(JTAG) out of 336 (15.5%) PIO sites used.
+   48 + 4(JTAG) out of 115 (45.2%) bonded PIO sites used.
+   Number of PIO comps: 48; differential: 0.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
 +----------+----------------+------------+-----------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
-| 0        | 18 / 28 ( 64%) | 2.5V       | -         |
-| 1        | 1 / 29 (  3%)  | 2.5V       | -         |
-| 2        | 17 / 29 ( 58%) | 2.5V       | -         |
-| 3        | 0 / 9 (  0%)   | -          | -         |
-| 4        | 9 / 10 ( 90%)  | 2.5V       | -         |
-| 5        | 0 / 10 (  0%)  | -          | -         |
+| 0        | 8 / 28 ( 28%)  | 2.5V       | -         |
+| 1        | 17 / 29 ( 58%) | 2.5V       | -         |
+| 2        | 10 / 29 ( 34%) | 2.5V       | -         |
+| 3        | 5 / 9 ( 55%)   | 2.5V       | -         |
+| 4        | 3 / 10 ( 30%)  | 2.5V       | -         |
+| 5        | 5 / 10 ( 50%)  | 2.5V       | -         |
 +----------+----------------+------------+-----------+
 
 Total placer CPU time: 9 secs 
 
 Dumping design to file Motorcontrollerfinal_controller.dir/5_1.ncd.
 
-0 connections routed; 5895 unrouted.
+0 connections routed; 6650 unrouted.
 Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 12 secs 
 
-Start NBR router at 10:07:28 12/01/16
+Start NBR router at 10:00:15 03/08/17
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -685,53 +769,44 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 10:07:28 12/01/16
+Start NBR special constraint process at 10:00:15 03/08/17
 
-Start NBR section for initial routing at 10:07:28 12/01/16
+Start NBR section for initial routing at 10:00:15 03/08/17
 Level 4, iteration 1
-286(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 18.910ns/0.000ns; real time: 13 secs 
+276(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 17.089ns/0.000ns; real time: 13 secs 
 
 Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 5 (0.50%)
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 10:07:29 12/01/16
+Start NBR section for normal routing at 10:00:16 03/08/17
 Level 4, iteration 1
-130(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 13 secs 
+124(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.407ns/0.000ns; real time: 13 secs 
 Level 4, iteration 2
-57(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 13 secs 
+60(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.113ns/0.000ns; real time: 14 secs 
 Level 4, iteration 3
-21(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
+18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.113ns/0.000ns; real time: 14 secs 
 Level 4, iteration 4
-9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.113ns/0.000ns; real time: 14 secs 
 Level 4, iteration 5
-7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 16.113ns/0.000ns; real time: 14 secs 
 Level 4, iteration 6
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
-Level 4, iteration 7
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
-Level 4, iteration 8
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
-Level 4, iteration 9
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
+Estimated worst slack/total negative slack<setup>: 16.113ns/0.000ns; real time: 14 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 10:07:30 12/01/16
+Start NBR section for setup/hold timing optimization with effort level 3 at 10:00:17 03/08/17
 
-Start NBR section for re-routing at 10:07:30 12/01/16
+Start NBR section for re-routing at 10:00:17 03/08/17
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 16.000ns/0.000ns; real time: 14 secs 
+Estimated worst slack/total negative slack<setup>: 16.113ns/0.000ns; real time: 14 secs 
 
-Start NBR section for post-routing at 10:07:30 12/01/16
+Start NBR section for post-routing at 10:00:17 03/08/17
 
 End NBR router with 0 unrouted connection
 
@@ -739,7 +814,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 16.000ns
+  Estimated worst slack<setup> : 16.113ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -747,9 +822,9 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 Total CPU time 15 secs 
-Total REAL time: 15 secs 
+Total REAL time: 16 secs 
 Completely routed.
-End of route.  5895 routed (100.00%); 0 unrouted.
+End of route.  6650 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -760,9 +835,9 @@ Dumping design to file Motorcontrollerfinal_controller.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 16.000
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 16.113
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.304
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.306
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
@@ -802,7 +877,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.8.0.115.3
-Thu Dec 01 10:07:33 2016
+Wed Mar 08 10:00:20 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -832,11 +907,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1695 paths, 1 nets, and 5880 connections (99.75% coverage)
+Constraints cover 2400 paths, 1 nets, and 6631 connections (99.71% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.8.0.115.3
-Thu Dec 01 10:07:33 2016
+Wed Mar 08 10:00:20 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -866,7 +941,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1695 paths, 1 nets, and 5880 connections (99.75% coverage)
+Constraints cover 2400 paths, 1 nets, and 6631 connections (99.71% coverage)
 
 
 

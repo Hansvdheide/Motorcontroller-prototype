@@ -67,33 +67,45 @@ PROCESS(rst, MOSI, CS, SCK, clk, speed_m1, speed_m2, speed_m3, speed_m4)
 variable send_buffer : std_logic_vector(95 downto 0); -- Room for 3*32bits, each speed is 21bits, so only the first 84 are used
 variable recv_buffer : std_logic_vector(95 downto 0); -- Room for 3*32bits, each speed is 21bits, so only the first 84 are used
 
---variable temp_buffer : std_logic_vector(95 downto 0);
+variable temp_buffer : std_logic_vector(95 downto 0);
 
 -- Buffer for MISO output
 variable MISOb : std_logic;
 
-variable en_m1_buf : std_logic;
-variable en_m2_buf : std_logic;
-variable en_m3_buf : std_logic;
-variable en_m4_buf : std_logic;
+variable en_buf_m1 : std_logic;
+variable en_buf_m2 : std_logic;
+variable en_buf_m3 : std_logic;
+variable en_buf_m4 : std_logic;
+
+VARIABLE speed_set_temp_m1 : integer range -1000000 to 1000000;
+VARIABLE speed_set_temp_m2 : integer range -1000000 to 1000000;
+VARIABLE speed_set_temp_m3 : integer range -1000000 to 1000000;
+VARIABLE speed_set_temp_m4 : integer range -1000000 to 1000000;
 
 
 
 BEGIN
 
-if rst = '0' then
-	-- On reset disable the output drivers, this also charges the bootstrap caps on bootup
-	en_m1_buf := '0';
-	en_m2_buf := '0';
-	en_m3_buf := '0';
-	en_m4_buf := '0';
+	if rst = '0' then
+		-- On reset disable the output drivers, this also charges the bootstrap caps on bootup
+		en_buf_m1 := '0';
+		en_buf_m2 := '0';
+		en_buf_m3 := '0';
+		en_buf_m4 := '0';
+		
+
+		enable_m1 <= en_buf_m1;
+		enable_m2 <= en_buf_m2;
+		enable_m3 <= en_buf_m3;
+		enable_m4 <= en_buf_m4;
+		
+		
+		-- Dont reset speeds, otherwise a reset would require new speeds to be put on the bus when reset is off
 	
-	-- Dont reset speeds, otherwise a reset would require new speeds to be put on the bus when reset is off
-else 
 
 
 	-- SYNCHRONOUS PART
-	if(rising_edge(clk)) then
+	ELSIF(rising_edge(clk)) then
 		
 		-- Latch everything
 		CSold <= CSlatched; 
@@ -111,30 +123,61 @@ else
 			send_buffer(53 downto 33) := std_logic_vector(to_signed(speed_m3,21));
 			send_buffer(32 downto 12) := std_logic_vector(to_signed(speed_m4,21));
 			
-			send_buffer(11) := en_m1_buf;
-			send_buffer(10) := en_m2_buf;
-			send_buffer(9) := en_m3_buf;
-			send_buffer(8) := en_m4_buf;
+			send_buffer(11) := en_buf_m1;
+			send_buffer(10) := en_buf_m2;
+			send_buffer(9) := en_buf_m3;
+			send_buffer(8) := en_buf_m4;
 			
 			send_buffer(7 downto 0) := x"AA"; -- Bogus bits, toggle to give synchronization
 			
-			--send_buffer := temp_buffer;
+			--DEGUB LINE
+			send_buffer := temp_buffer;
 			
 			--send_buffer := x"AAAAAAAAAAAAAAAAAAAAAABA"; --"AAAAAAAAAAAAAAAAAAAAAAAA"   "FFFFFFFFFFFFFFFFFFFFFFFF"  "000000000000000000000000"
 			MISOb := send_buffer(0);
 		end if;
 		if ((CSold = '1') AND (CSlatched = '1')) then -- Rising edge, save data from received buffer
-			speed_set_m1 <= to_integer(signed(recv_buffer(95 downto 75)));
-			speed_set_m2 <= to_integer(signed(recv_buffer(74 downto 54)));
-			speed_set_m3 <= to_integer(signed(recv_buffer(53 downto 33)));
-			speed_set_m4 <= to_integer(signed(recv_buffer(32 downto 12)));
+			speed_set_temp_m1 := to_integer(signed(recv_buffer(95 downto 75)));
+			speed_set_temp_m2 := to_integer(signed(recv_buffer(74 downto 54)));
+			speed_set_temp_m3 := to_integer(signed(recv_buffer(53 downto 33)));
+			speed_set_temp_m4 := to_integer(signed(recv_buffer(32 downto 12)));
 			
-			en_m1_buf := recv_buffer(11);
-			en_m2_buf := recv_buffer(10);
-			en_m3_buf := recv_buffer(9);
-			en_m4_buf := recv_buffer(8);
 			
-			--temp_buffer := recv_buffer;
+			IF(speed_set_temp_m1 = 0 OR speed_set_temp_m1 > 20000 OR speed_set_temp_m1 < -20000) THEN
+				en_buf_m1 := '0';
+			ELSE
+				en_buf_m1 := '1';
+			END IF;
+						
+			IF(speed_set_temp_m2 = 0 OR speed_set_temp_m2 > 20000 OR speed_set_temp_m2 < -20000) THEN
+				en_buf_m2 := '0';
+			ELSE
+				en_buf_m2 := '1';
+			END IF;
+			
+			
+			IF(speed_set_temp_m3 = 0 OR speed_set_temp_m3 > 20000 OR speed_set_temp_m3 < -20000) THEN
+				en_buf_m3 := '0';
+			ELSE
+				en_buf_m3 := '1';
+			END IF;
+			
+			
+			IF(speed_set_temp_m4 = 0 OR speed_set_temp_m4 > 20000 OR speed_set_temp_m4 < -20000) THEN
+				en_buf_m4 := '0';
+			ELSE
+				en_buf_m4 := '1';
+			END IF;
+				
+			
+			
+			--debug: put to 1
+			--en_m1_buf := recv_buffer(11);
+			--en_m2_buf := recv_buffer(10);
+			--en_m3_buf := recv_buffer(9);
+			--en_m4_buf := recv_buffer(8);
+			
+			temp_buffer := recv_buffer;
 			
 		end if;
 		
@@ -156,12 +199,12 @@ else
 		end if;
 		
 		-- Update motor enables
-		enable_m1 <= en_m1_buf;
-		enable_m2 <= en_m2_buf;
-		enable_m3 <= en_m3_buf;
-		enable_m4 <= en_m4_buf;
+		enable_m1 <= en_buf_m1;
+		enable_m2 <= en_buf_m2;
+		enable_m3 <= en_buf_m3;
+		enable_m4 <= en_buf_m4;
 	end if;
-end if;
+
 
 END PROCESS;
 END;

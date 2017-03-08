@@ -14,7 +14,7 @@ set ::bali::simulation::Para(SIMULATIONINSTANCE) {}
 set ::bali::simulation::Para(LANGUAGE) {VHDL}
 set ::bali::simulation::Para(SDFPATH)  {}
 set ::bali::simulation::Para(ADDTOPLEVELSIGNALSTOWAVEFORM)  {1}
-set ::bali::simulation::Para(RUNSIMULATION)  {0}
+set ::bali::simulation::Para(RUNSIMULATION)  {1}
 set ::bali::simulation::Para(HDLPARAMETERS) {}
 set ::bali::simulation::Para(POJO2LIBREFRESH)    {}
 set ::bali::simulation::Para(POJO2MODELSIMLIB)   {}

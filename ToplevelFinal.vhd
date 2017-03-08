@@ -28,6 +28,11 @@ entity SPI_loopback_Top is
 	MOSI : IN std_logic; 
 	MISO : OUT std_logic;
 	
+	--loop inputs
+	HALL_A_OUT : OUT std_logic;
+	HALL_B_OUT : OUT std_logic;
+	HALL_C_OUT : OUT std_logic;
+	
 	-- Enable LEDs of the motors
 	LED1 : OUT std_logic;
 	LED2 : OUT std_logic;
@@ -124,6 +129,15 @@ architecture arch of SPI_loopback_Top is
 	signal debug1 : integer RANGE -1000000 to 1000000;
 	signal debug2 : integer RANGE -1000000 to 1000000;
 	
+	SIGNAL start_cnt : INTEGER RANGE 0 TO 10001;
+	
+
+	
+	--debug
+	--SIGNAL HALL_A : std_logic;
+	--SIGNAL HALL_B : std_logic;
+	--SIGNAL HALL_C : std_logic;
+	
 	--internal oscillator
    component OSCH
       Generic(
@@ -198,9 +212,9 @@ architecture arch of SPI_loopback_Top is
 			dirout_m1 : OUT std_logic;
 			dirout_m2 : OUT std_logic;
 			dirout_m3 : OUT std_logic;
-			dirout_m4 : OUT std_logic
+			dirout_m4 : OUT std_logic;
 			
-			--debug1 : OUT integer RANGE -1000000 to 1000000;
+			debug1 : OUT integer RANGE -1000000 to 1000000
 			--debug2 : OUT integer RANGE -1000000 to 1000000
 		);
 	end component;
@@ -221,6 +235,7 @@ architecture arch of SPI_loopback_Top is
 			hall1 : IN std_logic; 
 			hall2 : IN std_logic;
 			hall3 : IN std_logic;
+
 			clk_1mhz : IN std_logic; 
 			speed : OUT integer range 0 to 1000000; 
 			Hall_sns : OUT std_logic_vector(2 downto 0);
@@ -238,11 +253,18 @@ architecture arch of SPI_loopback_Top is
 			Hall_sns : IN std_logic_vector(2 downto 0); 
 			enable : IN std_logic;
 			dir : IN std_logic;
+			led1 : OUT std_logic;
 			clk : IN std_logic
 		);
 	end component;
 		
 begin
+
+	HALL_A_OUT <= CS;
+	HALL_B_OUT <= SCK; 
+	HALL_C_OUT <= MOSI;
+	
+
 	
 	-- Clocks
 	OSCInst0: OSCH
@@ -255,10 +277,10 @@ begin
 	-- SPI instances
 	SPI_I : SPI
 		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => speed_m1, speed_m2 => speed_m2, speed_m3 => speed_m3, speed_m4 => speed_m4);
-		
+		----
 	-- PID instances TODO PLACEHOLDER
 	PID_I : PID
-		Port Map (clk => pi_clk, rst => rst, speedset_m1 => speed_set_m1, speedset_m2 => speed_set_m2, speedset_m3 => speed_set_m3, speedset_m4 => speed_set_m4, speedin_m1 => speed_m1,  speedin_m2 => speed_m2, speedin_m3 => speed_m3, speedin_m4 => speed_m4, dutyout_m1 => PWMdut_m1, dutyout_m2 => PWMdut_m2, dutyout_m3 => PWMdut_m3, dutyout_m4 => PWMdut_m4, dirout_m1 => dir_m1, dirout_m2 => dir_m2, dirout_m3 => dir_m3, dirout_m4 => dir_m4);
+		Port Map (clk => pi_clk, rst => rst, speedset_m1 => speed_set_m1, speedset_m2 => speed_set_m2, speedset_m3 => speed_set_m3, speedset_m4 => speed_set_m4, speedin_m1 => speed_m1,  speedin_m2 => speed_m2, speedin_m3 => speed_m3, speedin_m4 => speed_m4, dutyout_m1 => PWMdut_m1, dutyout_m2 => PWMdut_m2, dutyout_m3 => PWMdut_m3, dutyout_m4 => PWMdut_m4, dirout_m1 => dir_m1, dirout_m2 => dir_m2, dirout_m3 => dir_m3, dirout_m4 => dir_m4, debug1 => debug1);
 		
 		
 	-- Motor 1 Instances
@@ -266,7 +288,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m1, speed => speed_m1, hall1 => H_A_m1, hall2 => H_B_m1, hall3 => H_C_m1);
 		
 	COM_I_M1 : COMMUTATION
-		Port Map (clk => clk, dir => dir_m1, enable => enable_m1, PWM_in => PWM_m1, Hall_sns => hallsense_m1, MospairA => MA_m1, MospairB => MB_m1, MospairC => MC_m1);  
+		Port Map (clk => clk, led1 => LED1, dir => dir_m1, enable => enable_m1, PWM_in => PWM_m1, Hall_sns => hallsense_m1, MospairA => MA_m1, MospairB => MB_m1, MospairC => MC_m1);  
 		
 	PWM_I_M1 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m1, DutyCycle => PWMdut_m1);
@@ -276,7 +298,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m2, speed => speed_m2, hall1 => H_A_m2, hall2 => H_B_m2, hall3 => H_C_m2);
 		
 	COM_I_M2 : COMMUTATION
-		Port Map (clk => clk, dir => dir_m2, enable => enable_m2, PWM_in => PWM_m2, Hall_sns => hallsense_m2, MospairA => MA_m2, MospairB => MB_m2, MospairC => MC_m2);  
+		Port Map (clk => clk, led1 => LED2, dir => dir_m2, enable => enable_m2, PWM_in => PWM_m2, Hall_sns => hallsense_m2, MospairA => MA_m2, MospairB => MB_m2, MospairC => MC_m2);  
 		
 	PWM_I_M2 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m2, DutyCycle => PWMdut_m2);
@@ -286,7 +308,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m3, speed => speed_m3, hall1 => H_A_m3, hall2 => H_B_m3, hall3 => H_C_m3);
 		
 	COM_I_M3 : COMMUTATION
-		Port Map (clk => clk, dir => dir_m3, enable => enable_m3, PWM_in => PWM_m3, Hall_sns => hallsense_m3, MospairA => MA_m3, MospairB => MB_m3, MospairC => MC_m3);  
+		Port Map (clk => clk, led1 => LED3, dir => dir_m3, enable => enable_m3, PWM_in => PWM_m3, Hall_sns => hallsense_m3, MospairA => MA_m3, MospairB => MB_m3, MospairC => MC_m3);  
 		
 	PWM_I_M3 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m3, DutyCycle => PWMdut_m3);
@@ -296,7 +318,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m4, speed => speed_m4, hall1 => H_A_m4, hall2 => H_B_m4, hall3 => H_C_m4);
 		
 	COM_I_M4 : COMMUTATION
-		Port Map (clk => clk, dir => dir_m4, enable => enable_m4, PWM_in => PWM_m4, Hall_sns => hallsense_m4, MospairA => MA_m4, MospairB => MB_m4, MospairC => MC_m4);  
+		Port Map (clk => clk, led1 => LED4, dir => dir_m4, enable => enable_m4, PWM_in => PWM_m4, Hall_sns => hallsense_m4, MospairA => MA_m4, MospairB => MB_m4, MospairC => MC_m4);  
 		
 	PWM_I_M4 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m4, DutyCycle => PWMdut_m4);
@@ -305,12 +327,33 @@ begin
 	clkout <= clk;
 	
 	-- Enable LEDs
-	LED1 <= enable_m1;
-	LED2 <= enable_m2;
-	LED3 <= enable_m3;
-	LED4 <= enable_m4;
+	--LED1 <= enable_m1;
+	--LED2 <= enable_m2;
+	--LED3 <= enable_m3;
+	--LED4 <= enable_m4;
 	
-	rst <= '1';
+	PROCESS(clk)
+
+	
+	BEGIN
+		IF(rising_edge(clk)) THEN
+			IF(start_cnt > 10000) THEN
+				rst <= '1';
+			ELSE
+				rst <= '0';
+				start_cnt <= start_cnt + 1;
+			END IF;
+		END IF;
+		
+	IF(pwmDut_m4 = 0) THEN
+		--HALL_C_OUT <= '0';
+	ELSE 
+		--HALL_C_OUT <= '1';
+	END IF;
+	
+		
+	END PROCESS;
+
 	
 end arch;
 

@@ -37,3 +37,4 @@ vcom -dbg -work work "C:/Users/gebruiker/workspace/lattice/Final code software/t
 entity TestBench
 vsim  +access +r TestBench   -PL pmi_work -L ovi_machxo2
 add wave *
+run 1000ns

@@ -55,6 +55,6 @@ Global=
 [SpecTracer]
 WindowVisible=0
 [HierarchyViewer]
-HierarchyInformation=testbench|arch|0                                 
+HierarchyInformation=testbench|arch|0                                             
 ShowHide=ShowTopLevel
 Selected=

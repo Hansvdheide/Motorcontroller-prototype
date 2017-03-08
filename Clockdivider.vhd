@@ -63,13 +63,13 @@ if (rising_edge(clk)) then
 		count <= 0;
 	end if;
 	
-	IF cntpi = 3799 THEN
+	IF cntpi = 379 THEN
 		pi_buf <= NOT pi_buf;
 		cntpi <= 0;
 	END IF;
 	
 	cnttemp <= std_logic_vector(to_unsigned(count,5));
-	-- Toggle the output clock to create a 25ish mhz clock -- with 38mhz clock around 19khz output for pwm
+	-- Toggle the output clock to create a 25ish mhz clock -- with 38mhz clock around 19mhz output for pwm
 		pwm_buf <= NOT pwm_buf;
 	
 	clk_1mhz <= mhz_buf;

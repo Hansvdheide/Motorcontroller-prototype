@@ -6,8 +6,6 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.NUMERIC_STD.ALL;
 
 
--- baanbrekende entity
-
 ENTITY PID IS
 		GENERIC( 	
 			INPUT_RANGE: integer := 2000000;
@@ -37,17 +35,17 @@ ENTITY PID IS
 			dirout_m1 : OUT std_logic;
 			dirout_m2 : OUT std_logic;
 			dirout_m3 : OUT std_logic;
-			dirout_m4 : OUT std_logic
+			dirout_m4 : OUT std_logic;
 			
-			--debug1 : OUT integer RANGE -1000000 to 1000000;
+			debug1 : OUT integer RANGE -1000000 to 1000000
 			--debug2 : OUT integer RANGE -1000000 to 1000000
 		);
 end PID;
 
 ARCHITECTURE PID OF PID IS
 
-	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 750;
-	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 25;
+	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 300; --750
+	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 1; --25
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 2048;
 
 
@@ -110,17 +108,28 @@ BEGIN
 	--system still synchronous because these signals are only procesed during clock edges
 	--implementing it here instead of using variables tells the compiler it should use resource sharing
 	
-	subIn1 <= 	speedset_m1 WHEN ss = S0 OR -- error = setpoint - correntSpeed
-									ss = S1 ELSE
-				speedset_m2 WHEN ss = S2 OR
-									ss = S3 ELSE
-				speedset_m3 WHEN ss = S4 OR 
-									ss = S5 ELSE
-				speedset_m1 WHEN ss = S6 OR
-									ss = S7 ELSE
+
+	subIn1 <= 	speedset_m1 WHEN (ss = S0 OR -- error = setpoint - currentSpeed
+									ss = S1) AND speedset_m1 > 0 ELSE
+				speedset_m2 WHEN (ss = S2 OR
+									ss = S3) AND speedset_m2 > 0 ELSE
+				speedset_m3 WHEN (ss = S4 OR 
+									ss = S5) AND speedset_m3 > 0 ELSE
+				speedset_m4 WHEN (ss = S6 OR
+									ss = S7) AND speedset_m4 > 0 ELSE
+				-speedset_m1 WHEN (ss = S0 OR -- error = setpoint - currentSpeed
+									ss = S1) AND speedset_m1 <= 0 ELSE
+				-speedset_m2 WHEN (ss = S2 OR
+									ss = S3) AND speedset_m2 <= 0 ELSE
+				-speedset_m3 WHEN (ss = S4 OR 
+									ss = S5) AND speedset_m3 <= 0 ELSE
+				-speedset_m4 WHEN (ss = S6 OR
+									ss = S7) AND speedset_m4 <= 0 ELSE
 				0;
+
+	
 				
-	subIn2 <= 	speedin_m1 WHEN 	ss = S0 OR -- error = setpoint - correntSpeed
+	subIn2 <= 	speedin_m1 WHEN 	ss = S0 OR -- error = setpoint - currentSpeed
 									ss = S1 ELSE
 				speedin_m2 WHEN 	ss = S2 OR
 									ss = S3 ELSE
@@ -157,7 +166,7 @@ BEGIN
 				intgOut3 WHEN	ss = S8 ELSE
 				0;
 
-PROCESS(speedset_m1) 
+PROCESS(clk) 
 
 VARIABLE outguard0 : INTEGER RANGE -INPUT_RANGE TO INPUT_RANGE;
 VARIABLE outguard1 : INTEGER RANGE -INPUT_RANGE TO INPUT_RANGE;
@@ -203,17 +212,19 @@ BEGIN
 		WHEN S0 =>		
 			ss <= S1;
 		WHEN S1 =>	
-			--debug1 <= subOut;
+			debug1 <= subOut;
 			ss <= S2;
 		WHEN S2 =>	
+			
 			ss <= S3;
 		WHEN S3 =>
-			IF addOut < 1500000 AND addOut > -1500000 THEN
+			--debug1 <= subOut;
+			IF addOut < 900000 AND addOut > -900000 THEN
 				intgOut0 <= addOut;
-			ELSIF addout >= 1500000 THEN
-				intgOut0 <= 1500000;
+			ELSIF addout >= 900000 THEN
+				intgOut0 <= 900000;
 			ELSE
-				intgOut0 <= -1500000;
+				intgOut0 <= -900000;
 			END IF;
 			
 			ss <= S4;
@@ -222,19 +233,37 @@ BEGIN
 			--debug2 <= addOut;
 			ss <= S5;
 		WHEN S5 =>
-			intgOut1 <= addOut;
+			IF addOut < 90000 AND addOut > -900000 THEN
+				intgOut1 <= addOut;
+			ELSIF addout >= 900000 THEN
+				intgOut1 <= 900000;
+			ELSE
+				intgOut1 <= -900000;
+			END IF;
 			ss <= S6;
 		WHEN S6 =>
 			out1 <= addOut;
 			ss <= S7;
 		WHEN S7 =>
-			intgOut2 <= addOut;
+			IF addOut < 900000 AND addOut > -900000 THEN
+				intgOut2 <= addOut;
+			ELSIF addout >= 900000 THEN
+				intgOut2 <= 900000;
+			ELSE
+				intgOut2 <= -900000;
+			END IF;
 			ss <= S8;
 		WHEN S8 =>
 			out2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
-			intgOut3 <= addOut;
+			IF addOut < 900000 AND addOut > -900000 THEN
+				intgOut3 <= addOut;
+			ELSIF addout >= 900000 THEN
+				intgOut3 <= 900000;
+			ELSE
+				intgOut3 <= -900000;
+			END IF;
 			ss <= Sdone;
 		WHEN Sdone =>
 			out3 <= addOut;
@@ -246,55 +275,72 @@ BEGIN
 			outguard2 := out2 / SHIFT;
 			outguard3 := out3 / SHIFT;
 			
-			IF outguard0 < 1 AND outguard0 > -1000 THEN
+			--degub lines
+			--outguard0 := -2000;
+			--outguard1 := -2000;
+			--outguard2 := -2000;
+			--outguard3 := -2000;
+			
+			
+			IF outguard0 < 0 AND outguard0 > -1000 THEN
 				dutyout_m1 <= -outguard0; -- put all outputs to the next modules at the same time
-			ELSIF outguard0 < 0 THEN
+			ELSIF outguard0 <= -1000 THEN
 				dutyout_m1 <= 1000;
 			ELSE
-				dutyout_m1 <= 1;
+				dutyout_m1 <= 0;
 			END IF;
 			
-			IF outguard1 < 1000 AND outguard1 > - 1000 THEN
-				dutyout_m2 <= outguard1; -- put all outputs to the next modules at the same time
-			ELSE
+			IF outguard1 < 0 AND outguard1 > -1000 THEN
+				dutyout_m2 <= -outguard1; -- put all outputs to the next modules at the same time
+			ELSIF outguard1 <= -1000 THEN
 				dutyout_m2 <= 1000;
+			ELSE 
+				dutyout_m2 <= 0;
 			END IF;
-			
-			IF outguard2 < 1000 AND outguard2 > - 1000 THEN
-				dutyout_m3 <= outguard2; -- put all outputs to the next modules at the same time
-			ELSE
+		
+			IF outguard2 < 0 AND outguard2 > -1000 THEN
+				dutyout_m3 <= -outguard2; -- put all outputs to the next modules at the same time
+			ELSIF outguard2 <= -1000 THEN
 				dutyout_m3 <= 1000;
+			ELSE 
+				dutyout_m3 <= 0;
 			END IF;
-			
-			IF outguard3 < 1000 AND outguard3 > - 1000 THEN
-				dutyout_m4 <= outguard3; -- put all outputs to the next modules at the same time
-			ELSE
+		
+			IF outguard3 < 0 AND outguard3 > -1000 THEN
+				dutyout_m4 <= -outguard3;
+			ELSIF outguard3 <= -1000 THEN
 				dutyout_m4 <= 1000;
+			ELSE 
+				dutyout_m4 <= 0;
 			END IF;
+		
+		
 			
-			IF outguard0 < 0 THEN
+			IF speedset_m1 > 0 THEN
 				dirout_m1 <= '1';
 			ELSE
 				dirout_m1 <= '0';
-			END IF;
+		    END IF;
 			
-			IF outguard1 < 0 THEN
+			IF speedset_m2 > 0 THEN
 				dirout_m2 <= '1';
 			ELSE
 				dirout_m2 <= '0';
 			END IF;
 			
-			IF outguard2 < 0 THEN
+			IF speedset_m3 > 0 THEN
 				dirout_m3 <= '1';
 			ELSE
 				dirout_m3 <= '0';
 			END IF;
 			
-			IF outguard3 < 0 THEN
+			IF speedset_m4 > 0 THEN
 				dirout_m4 <= '1';
 			ELSE
 				dirout_m4 <= '0';
 			END IF;
+			
+
 			
 			-- TO DO make sure clkCtrlSpeed is correctly defined
 			--IF(clkCtrlSpeed = '1') THEN -- the calculation should be done every 100-300 Hz.

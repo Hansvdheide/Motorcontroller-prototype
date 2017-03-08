@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="Motorcontrollerfinal" device="LCMXO2-7000HE-4TG144C" default_implementation="controller">
     <Options/>
     <Implementation title="controller" dir="controller" description="controller" synthesis="lse" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="SPI_loopback_Top"/>
         <Source name="Clockdivider.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
