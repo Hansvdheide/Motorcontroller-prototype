@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 08 09:59:54 2017
+Thu Mar 16 10:42:18 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -88,7 +88,7 @@ INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/clock
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(28): analyzing entity commutation. VHDL-1012
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(52): analyzing architecture commutation. VHDL-1010
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(53): analyzing architecture commutation. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(22): analyzing entity hall. VHDL-1012
@@ -96,26 +96,26 @@ INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/halli
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(25): analyzing entity pwmgenerator. VHDL-1012
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(35): analyzing architecture pwmgenerator. VHDL-1010
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(36): analyzing architecture pwmgenerator. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(21): analyzing entity spi. VHDL-1012
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(54): analyzing architecture spi. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd. VHDL-1481
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(23): analyzing entity spi_loopback_top. VHDL-1012
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(79): analyzing architecture arch. VHDL-1010
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(24): analyzing entity spi_loopback_top. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80): analyzing architecture arch. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/pid.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): analyzing entity pid. VHDL-1012
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): analyzing architecture pid. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
-c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(23): executing SPI_loopback_Top(arch)
+c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(24): executing SPI_loopback_Top(arch)
 
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(348): pwmdut_m4 should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(355): incomplete sensitivity list specified, assuming completeness. VHDL-1613
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(77): replacing existing netlist SPI_loopback_Top(arch). VHDL-1205
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(359): pwmdut_m4 should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(366): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(78): replacing existing netlist SPI_loopback_Top(arch). VHDL-1205
 Top module name (VHDL): SPI_loopback_Top
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -124,102 +124,83 @@ Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = SPI_loopback_Top.
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(98): net speed_set_m1[20] does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(99): net speed_set_m2[20] does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(100): net speed_set_m3[20] does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(101): net speed_set_m4[20] does not have a driver. VDB-1002
-######## Missing driver on net speed_set_m1[20]. Patching with GND.
-######## Missing driver on net speed_set_m1[19]. Patching with GND.
-######## Missing driver on net speed_set_m1[18]. Patching with GND.
-######## Missing driver on net speed_set_m1[17]. Patching with GND.
-######## Missing driver on net speed_set_m1[16]. Patching with GND.
-######## Missing driver on net speed_set_m1[15]. Patching with GND.
-######## Missing driver on net speed_set_m1[14]. Patching with GND.
-######## Missing driver on net speed_set_m1[13]. Patching with GND.
-######## Missing driver on net speed_set_m1[12]. Patching with GND.
-######## Missing driver on net speed_set_m1[11]. Patching with GND.
-######## Missing driver on net speed_set_m1[10]. Patching with GND.
-######## Missing driver on net speed_set_m1[9]. Patching with GND.
-######## Missing driver on net speed_set_m1[8]. Patching with GND.
-######## Missing driver on net speed_set_m1[7]. Patching with GND.
-######## Missing driver on net speed_set_m1[6]. Patching with GND.
-######## Missing driver on net speed_set_m1[5]. Patching with GND.
-######## Missing driver on net speed_set_m1[4]. Patching with GND.
-######## Missing driver on net speed_set_m1[3]. Patching with GND.
-######## Missing driver on net speed_set_m1[2]. Patching with GND.
-######## Missing driver on net speed_set_m1[1]. Patching with GND.
-######## Missing driver on net speed_set_m1[0]. Patching with GND.
-######## Missing driver on net speed_set_m2[20]. Patching with GND.
-######## Missing driver on net speed_set_m2[19]. Patching with GND.
-######## Missing driver on net speed_set_m2[18]. Patching with GND.
-######## Missing driver on net speed_set_m2[17]. Patching with GND.
-######## Missing driver on net speed_set_m2[16]. Patching with GND.
-######## Missing driver on net speed_set_m2[15]. Patching with GND.
-######## Missing driver on net speed_set_m2[14]. Patching with GND.
-######## Missing driver on net speed_set_m2[13]. Patching with GND.
-######## Missing driver on net speed_set_m2[12]. Patching with GND.
-######## Missing driver on net speed_set_m2[11]. Patching with GND.
-######## Missing driver on net speed_set_m2[10]. Patching with GND.
-######## Missing driver on net speed_set_m2[9]. Patching with GND.
-######## Missing driver on net speed_set_m2[8]. Patching with GND.
-######## Missing driver on net speed_set_m2[7]. Patching with GND.
-######## Missing driver on net speed_set_m2[6]. Patching with GND.
-######## Missing driver on net speed_set_m2[5]. Patching with GND.
-######## Missing driver on net speed_set_m2[4]. Patching with GND.
-######## Missing driver on net speed_set_m2[3]. Patching with GND.
-######## Missing driver on net speed_set_m2[2]. Patching with GND.
-######## Missing driver on net speed_set_m2[1]. Patching with GND.
-######## Missing driver on net speed_set_m2[0]. Patching with GND.
-######## Missing driver on net speed_set_m3[20]. Patching with GND.
-######## Missing driver on net speed_set_m3[19]. Patching with GND.
-######## Missing driver on net speed_set_m3[18]. Patching with GND.
-######## Missing driver on net speed_set_m3[17]. Patching with GND.
-######## Missing driver on net speed_set_m3[16]. Patching with GND.
-######## Missing driver on net speed_set_m3[15]. Patching with GND.
-######## Missing driver on net speed_set_m3[14]. Patching with GND.
-######## Missing driver on net speed_set_m3[13]. Patching with GND.
-######## Missing driver on net speed_set_m3[12]. Patching with GND.
-######## Missing driver on net speed_set_m3[11]. Patching with GND.
-######## Missing driver on net speed_set_m3[10]. Patching with GND.
-######## Missing driver on net speed_set_m3[9]. Patching with GND.
-######## Missing driver on net speed_set_m3[8]. Patching with GND.
-######## Missing driver on net speed_set_m3[7]. Patching with GND.
-######## Missing driver on net speed_set_m3[6]. Patching with GND.
-######## Missing driver on net speed_set_m3[5]. Patching with GND.
-######## Missing driver on net speed_set_m3[4]. Patching with GND.
-######## Missing driver on net speed_set_m3[3]. Patching with GND.
-######## Missing driver on net speed_set_m3[2]. Patching with GND.
-######## Missing driver on net speed_set_m3[1]. Patching with GND.
-######## Missing driver on net speed_set_m3[0]. Patching with GND.
-######## Missing driver on net speed_set_m4[20]. Patching with GND.
-######## Missing driver on net speed_set_m4[19]. Patching with GND.
-######## Missing driver on net speed_set_m4[18]. Patching with GND.
-######## Missing driver on net speed_set_m4[17]. Patching with GND.
-######## Missing driver on net speed_set_m4[16]. Patching with GND.
-######## Missing driver on net speed_set_m4[15]. Patching with GND.
-######## Missing driver on net speed_set_m4[14]. Patching with GND.
-######## Missing driver on net speed_set_m4[13]. Patching with GND.
-######## Missing driver on net speed_set_m4[12]. Patching with GND.
-######## Missing driver on net speed_set_m4[11]. Patching with GND.
-######## Missing driver on net speed_set_m4[10]. Patching with GND.
-######## Missing driver on net speed_set_m4[9]. Patching with GND.
-######## Missing driver on net speed_set_m4[8]. Patching with GND.
-######## Missing driver on net speed_set_m4[7]. Patching with GND.
-######## Missing driver on net speed_set_m4[6]. Patching with GND.
-######## Missing driver on net speed_set_m4[5]. Patching with GND.
-######## Missing driver on net speed_set_m4[4]. Patching with GND.
-######## Missing driver on net speed_set_m4[3]. Patching with GND.
-######## Missing driver on net speed_set_m4[2]. Patching with GND.
-######## Missing driver on net speed_set_m4[1]. Patching with GND.
-######## Missing driver on net speed_set_m4[0]. Patching with GND.
 
 
 
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
-Analyzing Verilog file mult_26s_25s.v. VERI-1482
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(203): input port a[25] is not connected on this instance. VDB-1013
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(351): Register \PID_I/dirout_m2_252 is stuck at Zero. VDB-5013
+Analyzing Verilog file mult_28s_25s.v. VERI-1482
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(204): input port a[27] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(213): Register \SPI_I/send_buffer_i0_i95 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \PID_I/subOut_i22 is a one-to-one match with \PID_I/subOut_i23.
 GSR instance connected to net rst.
+Duplicate register/latch removal. \SPI__7_rep_4__i83 is a one-to-one match with \SPI__7__i83.
+Duplicate register/latch removal. \SPI__7_rep_4__i82 is a one-to-one match with \SPI__7__i82.
+Duplicate register/latch removal. \SPI__7_rep_4__i81 is a one-to-one match with \SPI__7__i81.
+Duplicate register/latch removal. \SPI__7_rep_4__i80 is a one-to-one match with \SPI__7__i80.
+Duplicate register/latch removal. \SPI__7_rep_4__i79 is a one-to-one match with \SPI__7__i79.
+Duplicate register/latch removal. \SPI__7_rep_4__i78 is a one-to-one match with \SPI__7__i78.
+Duplicate register/latch removal. \SPI__7_rep_4__i77 is a one-to-one match with \SPI__7__i77.
+Duplicate register/latch removal. \SPI__7_rep_4__i76 is a one-to-one match with \SPI__7__i76.
+Duplicate register/latch removal. \SPI__7_rep_4__i75 is a one-to-one match with \SPI__7__i75.
+Duplicate register/latch removal. \SPI__7_rep_4__i74 is a one-to-one match with \SPI__7__i74.
+Duplicate register/latch removal. \SPI__7_rep_4__i73 is a one-to-one match with \SPI__7__i73.
+Duplicate register/latch removal. \SPI__7_rep_4__i72 is a one-to-one match with \SPI__7__i72.
+Duplicate register/latch removal. \SPI__7_rep_4__i71 is a one-to-one match with \SPI__7__i71.
+Duplicate register/latch removal. \SPI__7_rep_4__i70 is a one-to-one match with \SPI__7__i70.
+Duplicate register/latch removal. \SPI__7_rep_4__i69 is a one-to-one match with \SPI__7__i69.
+Duplicate register/latch removal. \SPI__7_rep_4__i68 is a one-to-one match with \SPI__7__i68.
+Duplicate register/latch removal. \SPI__7_rep_4__i67 is a one-to-one match with \SPI__7__i67.
+Duplicate register/latch removal. \SPI__7_rep_4__i66 is a one-to-one match with \SPI__7__i66.
+Duplicate register/latch removal. \SPI__7_rep_4__i65 is a one-to-one match with \SPI__7__i65.
+Duplicate register/latch removal. \SPI__7_rep_4__i64 is a one-to-one match with \SPI__7__i64.
+Duplicate register/latch removal. \SPI__7_rep_4__i63 is a one-to-one match with \SPI__7__i63.
+Duplicate register/latch removal. \SPI__7_rep_4__i62 is a one-to-one match with \SPI__7__i62.
+Duplicate register/latch removal. \SPI__7_rep_4__i61 is a one-to-one match with \SPI__7__i61.
+Duplicate register/latch removal. \SPI__7_rep_4__i60 is a one-to-one match with \SPI__7__i60.
+Duplicate register/latch removal. \SPI__7_rep_4__i59 is a one-to-one match with \SPI__7__i59.
+Duplicate register/latch removal. \SPI__7_rep_4__i58 is a one-to-one match with \SPI__7__i58.
+Duplicate register/latch removal. \SPI__7_rep_4__i57 is a one-to-one match with \SPI__7__i57.
+Duplicate register/latch removal. \SPI__7_rep_4__i56 is a one-to-one match with \SPI__7__i56.
+Duplicate register/latch removal. \SPI__7_rep_4__i55 is a one-to-one match with \SPI__7__i55.
+Duplicate register/latch removal. \SPI__7_rep_4__i54 is a one-to-one match with \SPI__7__i54.
+Duplicate register/latch removal. \SPI__7_rep_4__i53 is a one-to-one match with \SPI__7__i53.
+Duplicate register/latch removal. \SPI__7_rep_4__i52 is a one-to-one match with \SPI__7__i52.
+Duplicate register/latch removal. \SPI__7_rep_4__i51 is a one-to-one match with \SPI__7__i51.
+Duplicate register/latch removal. \SPI__7_rep_4__i50 is a one-to-one match with \SPI__7__i50.
+Duplicate register/latch removal. \SPI__7_rep_4__i49 is a one-to-one match with \SPI__7__i49.
+Duplicate register/latch removal. \SPI__7_rep_4__i48 is a one-to-one match with \SPI__7__i48.
+Duplicate register/latch removal. \SPI__7_rep_4__i47 is a one-to-one match with \SPI__7__i47.
+Duplicate register/latch removal. \SPI__7_rep_4__i46 is a one-to-one match with \SPI__7__i46.
+Duplicate register/latch removal. \SPI__7_rep_4__i45 is a one-to-one match with \SPI__7__i45.
+Duplicate register/latch removal. \SPI__7_rep_4__i44 is a one-to-one match with \SPI__7__i44.
+Duplicate register/latch removal. \SPI__7_rep_4__i43 is a one-to-one match with \SPI__7__i43.
+Duplicate register/latch removal. \SPI__7_rep_4__i42 is a one-to-one match with \SPI__7__i42.
+Duplicate register/latch removal. \SPI__7_rep_4__i20 is a one-to-one match with \SPI__7__i20.
+Duplicate register/latch removal. \SPI__7_rep_4__i19 is a one-to-one match with \SPI__7__i19.
+Duplicate register/latch removal. \SPI__7_rep_4__i18 is a one-to-one match with \SPI__7__i18.
+Duplicate register/latch removal. \SPI__7_rep_4__i17 is a one-to-one match with \SPI__7__i17.
+Duplicate register/latch removal. \SPI__7_rep_4__i16 is a one-to-one match with \SPI__7__i16.
+Duplicate register/latch removal. \SPI__7_rep_4__i15 is a one-to-one match with \SPI__7__i15.
+Duplicate register/latch removal. \SPI__7_rep_4__i14 is a one-to-one match with \SPI__7__i14.
+Duplicate register/latch removal. \SPI__7_rep_4__i13 is a one-to-one match with \SPI__7__i13.
+Duplicate register/latch removal. \SPI__7_rep_4__i12 is a one-to-one match with \SPI__7__i12.
+Duplicate register/latch removal. \SPI__7_rep_4__i11 is a one-to-one match with \SPI__7__i11.
+Duplicate register/latch removal. \SPI__7_rep_4__i10 is a one-to-one match with \SPI__7__i10.
+Duplicate register/latch removal. \SPI__7_rep_4__i9 is a one-to-one match with \SPI__7__i9.
+Duplicate register/latch removal. \SPI__7_rep_4__i8 is a one-to-one match with \SPI__7__i8.
+Duplicate register/latch removal. \SPI__7_rep_4__i7 is a one-to-one match with \SPI__7__i7.
+Duplicate register/latch removal. \SPI__7_rep_4__i6 is a one-to-one match with \SPI__7__i6.
+Duplicate register/latch removal. \SPI__7_rep_4__i5 is a one-to-one match with \SPI__7__i5.
+Duplicate register/latch removal. \SPI__7_rep_4__i4 is a one-to-one match with \SPI__7__i4.
+Duplicate register/latch removal. \SPI__7_rep_4__i3 is a one-to-one match with \SPI__7__i3.
+Duplicate register/latch removal. \SPI__7_rep_4__i2 is a one-to-one match with \SPI__7__i2.
+Duplicate register/latch removal. \SPI__7_rep_4__i1 is a one-to-one match with \SPI__7__i1.
+Duplicate register/latch removal. \PID_I/debug1_i0_i14 is a one-to-one match with \PID_I/debug1_i0_i15.
+Duplicate register/latch removal. \PID_I/debug1_i0_i16 is a one-to-one match with \PID_I/debug1_i0_i14.
+Duplicate register/latch removal. \PID_I/debug1_i0_i17 is a one-to-one match with \PID_I/debug1_i0_i16.
+Duplicate register/latch removal. \PID_I/debug1_i0_i18 is a one-to-one match with \PID_I/debug1_i0_i17.
+Duplicate register/latch removal. \PID_I/debug1_i0_i19 is a one-to-one match with \PID_I/debug1_i0_i18.
+Duplicate register/latch removal. \PID_I/debug1_i0_i20 is a one-to-one match with \PID_I/debug1_i0_i19.
 Applying 1.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -232,25 +213,26 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 932 of 7209 (12 % )
+Number of register bits => 962 of 7209 (13 % )
 AND2 => 12
-CCU2D => 299
-FADD2B => 104
-FD1P3AX => 557
-FD1P3IX => 82
-FD1S3AX => 131
+CCU2D => 357
+FADD2B => 117
+FD1P3AX => 513
+FD1P3IX => 111
+FD1P3JX => 48
+FD1S3AX => 116
 FD1S3AY => 14
-FD1S3IX => 148
+FD1S3IX => 160
 GSR => 1
 IB => 15
 INV => 1
-LUT4 => 767
-MULT2 => 90
-ND2 => 5
+LUT4 => 904
+MULT2 => 102
+ND2 => 7
 OB => 32
 OBZ => 1
 OSCH => 1
-PFUMX => 48
+PFUMX => 92
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -260,35 +242,35 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 4
-  Net : clkout_c, loads : 367
-  Net : clk_N_707, loads : 326
+  Net : clk_N_683, loads : 387
+  Net : clkout_c, loads : 332
   Net : clk_1mhz, loads : 196
-  Net : pwm_clk, loads : 44
+  Net : pwm_clk, loads : 48
 Clock Enable Nets
-Number of Clock Enables: 21
+Number of Clock Enables: 26
 Top 10 highest fanout Clock Enables:
-  Net : SPI_I/clkout_c_enable_199, loads : 96
-  Net : SPI_I/clkout_c_enable_58, loads : 50
-  Net : SPI_I/clkout_c_enable_104, loads : 46
-  Net : PID_I/clk_N_707_enable_248, loads : 44
-  Net : HALL_I_M1/clk_1mhz_enable_79, loads : 40
-  Net : HALL_I_M4/clk_1mhz_enable_58, loads : 39
-  Net : HALL_I_M3/clk_1mhz_enable_69, loads : 32
-  Net : PID_I/clk_N_707_enable_211, loads : 26
-  Net : PID_I/clk_N_707_enable_118, loads : 26
-  Net : PID_I/clk_N_707_enable_43, loads : 26
+  Net : SPI_I/clkout_c_enable_245, loads : 84
+  Net : PID_I/clk_N_683_enable_300, loads : 63
+  Net : SPI_I/clkout_c_enable_65, loads : 50
+  Net : HALL_I_M2/clk_1mhz_enable_82, loads : 40
+  Net : HALL_I_M1/clk_1mhz_enable_83, loads : 40
+  Net : HALL_I_M3/clk_1mhz_enable_81, loads : 38
+  Net : SPI_I/clkout_c_enable_108, loads : 34
+  Net : PID_I/clk_N_683_enable_40, loads : 28
+  Net : PID_I/clk_N_683_enable_67, loads : 28
+  Net : PID_I/clk_N_683_enable_94, loads : 28
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SPI_I/CSlatched, loads : 125
-  Net : PID_I/ss_2, loads : 125
-  Net : SPI_I/clkout_c_enable_199, loads : 96
-  Net : SPI_I/n10789, loads : 95
-  Net : PID_I/multIn2_2, loads : 90
-  Net : PID_I/n2227, loads : 78
-  Net : SPI_I/n11099, loads : 75
-  Net : SPI_I/n11100, loads : 73
-  Net : PID_I/n711, loads : 72
-  Net : PID_I/ss_3, loads : 64
+  Net : PID_I/ss_2, loads : 108
+  Net : SPI_I/CSlatched, loads : 94
+  Net : PID_I/ss_3, loads : 91
+  Net : PID_I/multIn2_5, loads : 90
+  Net : SPI_I/clkout_c_enable_245, loads : 84
+  Net : SPI_I/n13704, loads : 75
+  Net : SPI_I/n14061, loads : 70
+  Net : SPI_I/n14062, loads : 68
+  Net : PID_I/clk_N_683_enable_300, loads : 63
+  Net : clkout_c_enable_183, loads : 58
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -304,10 +286,10 @@ create_clock -period 1000.000000 -name  |             |             |
 clk2 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   33.039 MHz|    19  
+clk1 [get_nets clkout_c]                |    1.000 MHz|   96.843 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clkout_c]                |    1.000 MHz|  103.778 MHz|     6  
+clk0 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   34.446 MHz|    18  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -315,8 +297,8 @@ clk0 [get_nets clkout_c]                |    1.000 MHz|  103.778 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 109.219  MB
+Peak Memory Usage: 116.582  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 4.625  secs
+Elapsed CPU time for LSE flow : 6.141  secs
 --------------------------------------------------------------

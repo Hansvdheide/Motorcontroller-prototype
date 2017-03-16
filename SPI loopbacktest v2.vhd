@@ -131,7 +131,7 @@ BEGIN
 			send_buffer(7 downto 0) := x"AA"; -- Bogus bits, toggle to give synchronization
 			
 			--DEGUB LINE
-			send_buffer := temp_buffer;
+			--send_buffer := temp_buffer;
 			
 			--send_buffer := x"AAAAAAAAAAAAAAAAAAAAAABA"; --"AAAAAAAAAAAAAAAAAAAAAAAA"   "FFFFFFFFFFFFFFFFFFFFFFFF"  "000000000000000000000000"
 			MISOb := send_buffer(0);
@@ -145,12 +145,14 @@ BEGIN
 			
 			IF(speed_set_temp_m1 = 0 OR speed_set_temp_m1 > 20000 OR speed_set_temp_m1 < -20000) THEN
 				en_buf_m1 := '0';
+				speed_set_temp_m1 := 999999;
 			ELSE
 				en_buf_m1 := '1';
 			END IF;
 						
 			IF(speed_set_temp_m2 = 0 OR speed_set_temp_m2 > 20000 OR speed_set_temp_m2 < -20000) THEN
 				en_buf_m2 := '0';
+				speed_set_temp_m2 := 999999;
 			ELSE
 				en_buf_m2 := '1';
 			END IF;
@@ -158,6 +160,7 @@ BEGIN
 			
 			IF(speed_set_temp_m3 = 0 OR speed_set_temp_m3 > 20000 OR speed_set_temp_m3 < -20000) THEN
 				en_buf_m3 := '0';
+				speed_set_temp_m3 := 999999;
 			ELSE
 				en_buf_m3 := '1';
 			END IF;
@@ -165,11 +168,15 @@ BEGIN
 			
 			IF(speed_set_temp_m4 = 0 OR speed_set_temp_m4 > 20000 OR speed_set_temp_m4 < -20000) THEN
 				en_buf_m4 := '0';
+				speed_set_temp_m4 := 999999;
 			ELSE
 				en_buf_m4 := '1';
 			END IF;
 				
-			
+			speed_set_m1 <= speed_set_temp_m1;
+			speed_set_m2 <= speed_set_temp_m2;
+			speed_set_m3 <= speed_set_temp_m3;
+			speed_set_m4 <= speed_set_temp_m4;
 			
 			--debug: put to 1
 			--en_m1_buf := recv_buffer(11);

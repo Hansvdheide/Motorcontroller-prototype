@@ -28,7 +28,8 @@ PORT(
 DutyCycle : IN integer range 0 to 1001;
 PWM : OUT std_logic;
 pwm_clk : IN std_logic; -- This clock is 1000x the actual PWM clock that you whish to attain i.e. for a 40khz pwm, a 40mhz clock is expected here.
-rst : IN std_logic
+rst : IN std_logic;
+free : OUT std_logic
 );
 END PWMGENERATOR;
 
@@ -49,8 +50,15 @@ if rst = '0' then -- reset is active
 else
 	
 	if rising_edge(pwm_clk) then
-		IF (DutyCycle > 500) THEN
-			limited_dutycycle := 500;
+	
+		IF(DutyCycle = 0) THEN
+			free <= '1';
+		ELSE
+			free <= '0';
+		END IF;
+	
+		IF (DutyCycle > 1000) THEN
+			limited_dutycycle := 1000;
 		ELSE
 			limited_dutycycle := dutycycle;
 		END IF;

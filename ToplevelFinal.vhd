@@ -17,6 +17,7 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all;
+USE IEEE.numeric_std.all;
 library MACHXO2;
 use MACHXO2.components.all;
 
@@ -131,6 +132,13 @@ architecture arch of SPI_loopback_Top is
 	
 	SIGNAL start_cnt : INTEGER RANGE 0 TO 10001;
 	
+	SIGNAL free_m1 : std_logic;
+	SIGNAL free_m2 : std_logic;
+	SIGNAL free_m3 : std_logic;
+	SIGNAL free_m4 : std_logic;
+	
+	SIGNAL freeDebug : std_logic_vector(0 TO 0);
+	
 
 	
 	--debug
@@ -214,8 +222,8 @@ architecture arch of SPI_loopback_Top is
 			dirout_m3 : OUT std_logic;
 			dirout_m4 : OUT std_logic;
 			
-			debug1 : OUT integer RANGE -1000000 to 1000000
-			--debug2 : OUT integer RANGE -1000000 to 1000000
+			debug1 : OUT integer RANGE -1000000 to 1000000;
+			debug2 : OUT integer RANGE -1000000 to 1000000
 		);
 	end component;
 	
@@ -225,7 +233,8 @@ architecture arch of SPI_loopback_Top is
 			DutyCycle : IN integer range 0 to 1001;
 			PWM : OUT std_logic;
 			pwm_clk : IN std_logic; 
-			rst : IN std_logic
+			rst : IN std_logic;
+			free : OUT std_logic
 		);
 	end component;
 		
@@ -254,7 +263,8 @@ architecture arch of SPI_loopback_Top is
 			enable : IN std_logic;
 			dir : IN std_logic;
 			led1 : OUT std_logic;
-			clk : IN std_logic
+			clk : IN std_logic;
+			free : IN std_logic
 		);
 	end component;
 		
@@ -274,13 +284,14 @@ begin
 	 CLKDIV_I : CLKDIV
 		Port Map (clk => clk, pi_clk => pi_clk, clk_1mhz => clk_1mhz, pwm_clk => pwm_clk);
 		
+	freeDebug(0) <= free_m4;
 	-- SPI instances
 	SPI_I : SPI
-		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => speed_m1, speed_m2 => speed_m2, speed_m3 => speed_m3, speed_m4 => speed_m4);
+		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => PWMdut_m4, speed_m2 => debug2, speed_m3 => debug1, speed_m4 => speed_m4);
 		----
 	-- PID instances TODO PLACEHOLDER
 	PID_I : PID
-		Port Map (clk => pi_clk, rst => rst, speedset_m1 => speed_set_m1, speedset_m2 => speed_set_m2, speedset_m3 => speed_set_m3, speedset_m4 => speed_set_m4, speedin_m1 => speed_m1,  speedin_m2 => speed_m2, speedin_m3 => speed_m3, speedin_m4 => speed_m4, dutyout_m1 => PWMdut_m1, dutyout_m2 => PWMdut_m2, dutyout_m3 => PWMdut_m3, dutyout_m4 => PWMdut_m4, dirout_m1 => dir_m1, dirout_m2 => dir_m2, dirout_m3 => dir_m3, dirout_m4 => dir_m4, debug1 => debug1);
+		Port Map (clk => pi_clk, rst => rst, speedset_m1 => speed_set_m1, speedset_m2 => speed_set_m2, speedset_m3 => speed_set_m3, speedset_m4 => speed_set_m4, speedin_m1 => speed_m1,  speedin_m2 => speed_m2, speedin_m3 => speed_m3, speedin_m4 => speed_m4, dutyout_m1 => PWMdut_m1, dutyout_m2 => PWMdut_m2, dutyout_m3 => PWMdut_m3, dutyout_m4 => PWMdut_m4, dirout_m1 => dir_m1, dirout_m2 => dir_m2, dirout_m3 => dir_m3, dirout_m4 => dir_m4, debug1 => debug1, debug2 => debug2);
 		
 		
 	-- Motor 1 Instances
@@ -288,40 +299,40 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m1, speed => speed_m1, hall1 => H_A_m1, hall2 => H_B_m1, hall3 => H_C_m1);
 		
 	COM_I_M1 : COMMUTATION
-		Port Map (clk => clk, led1 => LED1, dir => dir_m1, enable => enable_m1, PWM_in => PWM_m1, Hall_sns => hallsense_m1, MospairA => MA_m1, MospairB => MB_m1, MospairC => MC_m1);  
+		Port Map (clk => clk, led1 => LED1, dir => dir_m1, enable => enable_m1, PWM_in => PWM_m1, Hall_sns => hallsense_m1, MospairA => MA_m1, MospairB => MB_m1, MospairC => MC_m1, free => free_m1);  
 		
 	PWM_I_M1 : PWMGENERATOR
-		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m1, DutyCycle => PWMdut_m1);
+		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m1, DutyCycle => PWMdut_m1, free => free_m1);
 		
 		-- Motor 2 Instances
 	HALL_I_M2 : HALL
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m2, speed => speed_m2, hall1 => H_A_m2, hall2 => H_B_m2, hall3 => H_C_m2);
 		
 	COM_I_M2 : COMMUTATION
-		Port Map (clk => clk, led1 => LED2, dir => dir_m2, enable => enable_m2, PWM_in => PWM_m2, Hall_sns => hallsense_m2, MospairA => MA_m2, MospairB => MB_m2, MospairC => MC_m2);  
+		Port Map (clk => clk, led1 => LED2, dir => dir_m2, enable => enable_m2, PWM_in => PWM_m2, Hall_sns => hallsense_m2, MospairA => MA_m2, MospairB => MB_m2, MospairC => MC_m2, free => free_m2);  
 		
 	PWM_I_M2 : PWMGENERATOR
-		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m2, DutyCycle => PWMdut_m2);
+		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m2, DutyCycle => PWMdut_m2, free => free_m2);
 		
 		-- Motor 3 Instances
 	HALL_I_M3 : HALL
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m3, speed => speed_m3, hall1 => H_A_m3, hall2 => H_B_m3, hall3 => H_C_m3);
 		
 	COM_I_M3 : COMMUTATION
-		Port Map (clk => clk, led1 => LED3, dir => dir_m3, enable => enable_m3, PWM_in => PWM_m3, Hall_sns => hallsense_m3, MospairA => MA_m3, MospairB => MB_m3, MospairC => MC_m3);  
+		Port Map (clk => clk, led1 => LED3, dir => dir_m3, enable => enable_m3, PWM_in => PWM_m3, Hall_sns => hallsense_m3, MospairA => MA_m3, MospairB => MB_m3, MospairC => MC_m3, free => free_m3);  
 		
 	PWM_I_M3 : PWMGENERATOR
-		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m3, DutyCycle => PWMdut_m3);
+		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m3, DutyCycle => PWMdut_m3, free => free_m3);
 		
 		-- Motor 4 Instances
 	HALL_I_M4 : HALL
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m4, speed => speed_m4, hall1 => H_A_m4, hall2 => H_B_m4, hall3 => H_C_m4);
 		
 	COM_I_M4 : COMMUTATION
-		Port Map (clk => clk, led1 => LED4, dir => dir_m4, enable => enable_m4, PWM_in => PWM_m4, Hall_sns => hallsense_m4, MospairA => MA_m4, MospairB => MB_m4, MospairC => MC_m4);  
+		Port Map (clk => clk, led1 => LED4, dir => dir_m4, enable => enable_m4, PWM_in => PWM_m4, Hall_sns => hallsense_m4, MospairA => MA_m4, MospairB => MB_m4, MospairC => MC_m4, free => free_m4);  
 		
 	PWM_I_M4 : PWMGENERATOR
-		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m4, DutyCycle => PWMdut_m4);
+		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m4, DutyCycle => PWMdut_m4, free => free_m4);
 		
 	-- Test clock output
 	clkout <= clk;

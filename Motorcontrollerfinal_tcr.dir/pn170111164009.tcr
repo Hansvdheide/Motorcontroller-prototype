@@ -1,0 +1,21 @@
+#Start recording tcl command: 1/11/2017 16:21:23
+#Project Location: C:/Users/gebruiker/workspace/lattice/Final code software; Project name: Motorcontrollerfinal
+prj_project open "C:/Users/gebruiker/workspace/lattice/Final code software/Motorcontrollerfinal.ldf"
+pgr_project open "C:/Users/gebruiker/workspace/lattice/Final code software/controller/controller.xcf"
+pgr_program run
+prj_run Export -impl controller -task Jedecgen -forceAll
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/gebruiker/workspace/lattice/Final code software/controller/controller.xcf"
+prj_run Export -impl controller -task Jedecgen -forceAll
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/gebruiker/workspace/lattice/Final code software/controller/controller.xcf"
+pgr_project close
+pgr_project open "C:/Users/gebruiker/workspace/lattice/Final code software/controller/controller.xcf"
+pgr_program run
+pgr_project close
+#Stop recording: 1/11/2017 16:40:09

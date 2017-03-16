@@ -37,6 +37,7 @@ PWM_in : IN std_logic;
 Hall_sns : IN std_logic_vector(2 downto 0); -- The hall effect input signals
 enable : IN std_logic;
 dir : IN std_logic; -- Indicates the direction of the motor, 1 for positive, 0 for negative
+free : IN std_logic;
 
 led1: OUT std_logic;
 
@@ -73,133 +74,120 @@ BEGIN
 			MospairC <= "00";
 		    led1 <= '1';
 			Hall_prev <= "000";
-			Hall_count <=0;
-			Hall_tryagain <=0;
+			
+		ELSIF free /= '0' THEN
+			
+			MospairA <= "01";
+			MospairB <= "01";
+			MospairC <= "01";
+			
 		ELSE
 			led1 <= '0';
-			if (Hall_sns = Hall_prev) THEN
-				Hall_count<=Hall_count+1;
-		    ELSE
-				Hall_prev<=Hall_sns;
-				Hall_count<=0;
-			END IF;
-			
-			IF (Hall_tryagain > 125000) THEN
-				Hall_count <= 0;
-				Hall_tryagain <= 0;
-			END IF;
-			
-			IF (Hall_count>38000000) THEN
-				MospairA <= "00";
-				MospairB <= "00";
-				MospairC <= "00";
-				Hall_tryagain <= Hall_tryagain +1;
-			ELSE
-				if (dir = '1') then -- Clockwise (positive direction)
-					case Hall_sns is -- NOTE: Gate driver low input is inverted, so invert all lowside here NOTE: PWM is only applied to the lowside, to prevent repeated charging/discharging of bootstrap cap
-					when "011" => -- A:ls B:hs C:-
-						MospairA(0) <= NOT PWM_in;
-						MospairA(1) <= '0'; 
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '1';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '0';
-					when "010" => -- A:- B:hs C:ls
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '1';
-						MospairC(0) <= NOT PWM_in;
-						MospairC(1) <= '0';
-					when "110" => -- A:hs B:- C:ls
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '1';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT PWM_in;
-						MospairC(1) <= '0';
-					when "100" => -- A:hs B:ls C:-
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '1';
-						MospairB(0) <= NOT PWM_in;
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '0';
-					when "101" => -- A:- B:ls C:hs
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT PWM_in;
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '1';
-					when "001" => -- A:ls B:- C:hs
-						MospairA(0) <= NOT PWM_in;
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '1';
-					when others => -- These should not happen, so probably an error situation, disable outputs just to be sure
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '0';
-					end case;
-				else -- Counter Clockwise (negative direction), reverse the currents
-					commut: case Hall_sns is
-					when "011" => -- A:hs B:ls C:-
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '1';
-						MospairB(0) <= NOT PWM_in;
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '0';
-					when "010" => -- A:- B:ls C:hs
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT PWM_in;
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '1';
-					when "110" => -- A:ls B:- C:hs
-						MospairA(0) <= NOT PWM_in;
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '1';
-					when "100" => -- A:ls B:hs C:-
-						MospairA(0) <= NOT PWM_in;
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '1';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '0';
-					when "101" => -- A:- B:hs C:ls
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '1';
-						MospairC(0) <= NOT PWM_in;
-						MospairC(1) <= '0';
-					when "001" => -- A:hs B:- C:ls
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '1';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT PWM_in;
-						MospairC(1) <= '0';
-					when others => -- These should not happen, so probably an error situation, disable the outputs just to be sure
-						MospairA(0) <= NOT '0';
-						MospairA(1) <= '0';
-						MospairB(0) <= NOT '0';
-						MospairB(1) <= '0';
-						MospairC(0) <= NOT '0';
-						MospairC(1) <= '0';
-					end case commut;
-				end if;
+
+			if (dir = '1') then -- Clockwise (positive direction)
+				case Hall_sns is -- NOTE: Gate driver low input is inverted, so invert all lowside here NOTE: PWM is only applied to the lowside, to prevent repeated charging/discharging of bootstrap cap
+				when "011" => -- A:ls B:hs C:-
+					MospairA(0) <= NOT PWM_in;
+					MospairA(1) <= '0'; 
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '1';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '0';
+				when "010" => -- A:- B:hs C:ls
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '1';
+					MospairC(0) <= NOT PWM_in;
+					MospairC(1) <= '0';
+				when "110" => -- A:hs B:- C:ls
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '1';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT PWM_in;
+					MospairC(1) <= '0';
+				when "100" => -- A:hs B:ls C:-
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '1';
+					MospairB(0) <= NOT PWM_in;
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '0';
+				when "101" => -- A:- B:ls C:hs
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT PWM_in;
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '1';
+				when "001" => -- A:ls B:- C:hs
+					MospairA(0) <= NOT PWM_in;
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '1';
+				when others => -- These should not happen, so probably an error situation, disable outputs just to be sure
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '0';
+				end case;
+			else -- Counter Clockwise (negative direction), reverse the currents
+				commut: case Hall_sns is
+				when "011" => -- A:hs B:ls C:-
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '1';
+					MospairB(0) <= NOT PWM_in;
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '0';
+				when "010" => -- A:- B:ls C:hs
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT PWM_in;
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '1';
+				when "110" => -- A:ls B:- C:hs
+					MospairA(0) <= NOT PWM_in;
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '1';
+				when "100" => -- A:ls B:hs C:-
+					MospairA(0) <= NOT PWM_in;
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '1';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '0';
+				when "101" => -- A:- B:hs C:ls
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '1';
+					MospairC(0) <= NOT PWM_in;
+					MospairC(1) <= '0';
+				when "001" => -- A:hs B:- C:ls
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '1';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT PWM_in;
+					MospairC(1) <= '0';
+				when others => -- These should not happen, so probably an error situation, disable the outputs just to be sure
+					MospairA(0) <= NOT '0';
+					MospairA(1) <= '0';
+					MospairB(0) <= NOT '0';
+					MospairB(1) <= '0';
+					MospairC(0) <= NOT '0';
+					MospairC(1) <= '0';
+				end case commut;
 			end if;
 		end if;
 	end if;

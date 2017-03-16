@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Wed Mar 08 09:59:59 2017
+Thu Mar 16 10:42:24 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -36,28 +36,28 @@ Passed:  The following path meets requirements by 993.116ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \PWM_I_M3/cnt_1237__i5  (from pwm_clk +)
-   Destination:    FD1S3IX    CD             \PWM_I_M3/cnt_1237__i0  (to pwm_clk +)
+   Source:         FD1S3IX    CK             \PWM_I_M2/cnt_1683__i3  (from pwm_clk +)
+   Destination:    FD1S3IX    CD             \PWM_I_M2/cnt_1683__i0  (to pwm_clk +)
 
    Delay:                   6.724ns  (28.6% logic, 71.4% route), 4 logic levels.
 
  Constraint Details:
 
-      6.724ns data_path \PWM_I_M3/cnt_1237__i5 to \PWM_I_M3/cnt_1237__i0 meets
+      6.724ns data_path \PWM_I_M2/cnt_1683__i3 to \PWM_I_M2/cnt_1683__i0 meets
     1000.000ns delay constraint less
       0.160ns L_S requirement (totaling 999.840ns) by 993.116ns
 
- Path Details: \PWM_I_M3/cnt_1237__i5 to \PWM_I_M3/cnt_1237__i0
+ Path Details: \PWM_I_M2/cnt_1683__i3 to \PWM_I_M2/cnt_1683__i0
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \PWM_I_M3/cnt_1237__i5 (from pwm_clk)
-Route         3   e 1.315                                  \PWM_I_M3/cnt[5]
-LUT4        ---     0.493              C to Z              \PWM_I_M3/i8219_4_lut
-Route         1   e 0.941                                  \PWM_I_M3/n10046
-LUT4        ---     0.493              B to Z              \PWM_I_M3/i8225_3_lut
-Route         1   e 0.941                                  \PWM_I_M3/n10052
-LUT4        ---     0.493              B to Z              \PWM_I_M3/i8391_4_lut
-Route        10   e 1.604                                  \PWM_I_M3/n6578
+L_CO        ---     0.444             CK to Q              \PWM_I_M2/cnt_1683__i3 (from pwm_clk)
+Route         3   e 1.315                                  \PWM_I_M2/cnt[3]
+LUT4        ---     0.493              D to Z              \PWM_I_M2/i10314_4_lut
+Route         1   e 0.941                                  \PWM_I_M2/n12832
+LUT4        ---     0.493              B to Z              \PWM_I_M2/i10322_3_lut
+Route         1   e 0.941                                  \PWM_I_M2/n12840
+LUT4        ---     0.493              B to Z              \PWM_I_M2/i10600_4_lut
+Route        10   e 1.604                                  \PWM_I_M2/n8459
                   --------
                     6.724  (28.6% logic, 71.4% route), 4 logic levels.
 
@@ -66,28 +66,28 @@ Passed:  The following path meets requirements by 993.116ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \PWM_I_M3/cnt_1237__i5  (from pwm_clk +)
-   Destination:    FD1S3IX    CD             \PWM_I_M3/cnt_1237__i1  (to pwm_clk +)
+   Source:         FD1S3IX    CK             \PWM_I_M2/cnt_1683__i3  (from pwm_clk +)
+   Destination:    FD1S3IX    CD             \PWM_I_M2/cnt_1683__i1  (to pwm_clk +)
 
    Delay:                   6.724ns  (28.6% logic, 71.4% route), 4 logic levels.
 
  Constraint Details:
 
-      6.724ns data_path \PWM_I_M3/cnt_1237__i5 to \PWM_I_M3/cnt_1237__i1 meets
+      6.724ns data_path \PWM_I_M2/cnt_1683__i3 to \PWM_I_M2/cnt_1683__i1 meets
     1000.000ns delay constraint less
       0.160ns L_S requirement (totaling 999.840ns) by 993.116ns
 
- Path Details: \PWM_I_M3/cnt_1237__i5 to \PWM_I_M3/cnt_1237__i1
+ Path Details: \PWM_I_M2/cnt_1683__i3 to \PWM_I_M2/cnt_1683__i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \PWM_I_M3/cnt_1237__i5 (from pwm_clk)
-Route         3   e 1.315                                  \PWM_I_M3/cnt[5]
-LUT4        ---     0.493              C to Z              \PWM_I_M3/i8219_4_lut
-Route         1   e 0.941                                  \PWM_I_M3/n10046
-LUT4        ---     0.493              B to Z              \PWM_I_M3/i8225_3_lut
-Route         1   e 0.941                                  \PWM_I_M3/n10052
-LUT4        ---     0.493              B to Z              \PWM_I_M3/i8391_4_lut
-Route        10   e 1.604                                  \PWM_I_M3/n6578
+L_CO        ---     0.444             CK to Q              \PWM_I_M2/cnt_1683__i3 (from pwm_clk)
+Route         3   e 1.315                                  \PWM_I_M2/cnt[3]
+LUT4        ---     0.493              D to Z              \PWM_I_M2/i10314_4_lut
+Route         1   e 0.941                                  \PWM_I_M2/n12832
+LUT4        ---     0.493              B to Z              \PWM_I_M2/i10322_3_lut
+Route         1   e 0.941                                  \PWM_I_M2/n12840
+LUT4        ---     0.493              B to Z              \PWM_I_M2/i10600_4_lut
+Route        10   e 1.604                                  \PWM_I_M2/n8459
                   --------
                     6.724  (28.6% logic, 71.4% route), 4 logic levels.
 
@@ -96,28 +96,28 @@ Passed:  The following path meets requirements by 993.116ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3IX    CK             \PWM_I_M3/cnt_1237__i5  (from pwm_clk +)
-   Destination:    FD1S3IX    CD             \PWM_I_M3/cnt_1237__i2  (to pwm_clk +)
+   Source:         FD1S3IX    CK             \PWM_I_M2/cnt_1683__i3  (from pwm_clk +)
+   Destination:    FD1S3IX    CD             \PWM_I_M2/cnt_1683__i2  (to pwm_clk +)
 
    Delay:                   6.724ns  (28.6% logic, 71.4% route), 4 logic levels.
 
  Constraint Details:
 
-      6.724ns data_path \PWM_I_M3/cnt_1237__i5 to \PWM_I_M3/cnt_1237__i2 meets
+      6.724ns data_path \PWM_I_M2/cnt_1683__i3 to \PWM_I_M2/cnt_1683__i2 meets
     1000.000ns delay constraint less
       0.160ns L_S requirement (totaling 999.840ns) by 993.116ns
 
- Path Details: \PWM_I_M3/cnt_1237__i5 to \PWM_I_M3/cnt_1237__i2
+ Path Details: \PWM_I_M2/cnt_1683__i3 to \PWM_I_M2/cnt_1683__i2
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \PWM_I_M3/cnt_1237__i5 (from pwm_clk)
-Route         3   e 1.315                                  \PWM_I_M3/cnt[5]
-LUT4        ---     0.493              C to Z              \PWM_I_M3/i8219_4_lut
-Route         1   e 0.941                                  \PWM_I_M3/n10046
-LUT4        ---     0.493              B to Z              \PWM_I_M3/i8225_3_lut
-Route         1   e 0.941                                  \PWM_I_M3/n10052
-LUT4        ---     0.493              B to Z              \PWM_I_M3/i8391_4_lut
-Route        10   e 1.604                                  \PWM_I_M3/n6578
+L_CO        ---     0.444             CK to Q              \PWM_I_M2/cnt_1683__i3 (from pwm_clk)
+Route         3   e 1.315                                  \PWM_I_M2/cnt[3]
+LUT4        ---     0.493              D to Z              \PWM_I_M2/i10314_4_lut
+Route         1   e 0.941                                  \PWM_I_M2/n12832
+LUT4        ---     0.493              B to Z              \PWM_I_M2/i10322_3_lut
+Route         1   e 0.941                                  \PWM_I_M2/n12840
+LUT4        ---     0.493              B to Z              \PWM_I_M2/i10600_4_lut
+Route        10   e 1.604                                  \PWM_I_M2/n8459
                   --------
                     6.724  (28.6% logic, 71.4% route), 4 logic levels.
 
@@ -127,7 +127,7 @@ Report: 6.884 ns is the maximum delay for this constraint.
 
 ================================================================================
 Constraint: create_clock -period 1000.000000 -name clk2 [get_nets clk_1mhz]
-            2593 items scored, 0 timing errors detected.
+            2617 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -136,17 +136,17 @@ Passed:  The following path meets requirements by 988.902ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3IX    CK             \HALL_I_M1/count__i1  (from clk_1mhz +)
-   Destination:    FD1P3AX    SP             \HALL_I_M1/speed_i13  (to clk_1mhz +)
+   Destination:    FD1P3AX    SP             \HALL_I_M1/speed_i20  (to clk_1mhz +)
 
    Delay:                  10.813ns  (26.9% logic, 73.1% route), 6 logic levels.
 
  Constraint Details:
 
-     10.813ns data_path \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i13 meets
+     10.813ns data_path \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i20 meets
     1000.000ns delay constraint less
       0.285ns LCE_S requirement (totaling 999.715ns) by 988.902ns
 
- Path Details: \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i13
+ Path Details: \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i20
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \HALL_I_M1/count__i1 (from clk_1mhz)
@@ -156,11 +156,11 @@ Route         1   e 0.941                                  \HALL_I_M1/n18
 LUT4        ---     0.493              B to Z              \HALL_I_M1/i9_4_lut
 Route         1   e 0.941                                  \HALL_I_M1/n20
 LUT4        ---     0.493              B to Z              \HALL_I_M1/i10_4_lut
-Route         1   e 0.941                                  \HALL_I_M1/n9329
-LUT4        ---     0.493              B to Z              \HALL_I_M1/i1_4_lut_rep_256
-Route        21   e 1.831                                  \HALL_I_M1/n10772
-LUT4        ---     0.493              D to Z              \HALL_I_M1/i8380_2_lut_2_lut_4_lut
-Route        40   e 2.052                                  \HALL_I_M1/clk_1mhz_enable_79
+Route         1   e 0.941                                  \HALL_I_M1/n11935
+LUT4        ---     0.493              B to Z              \HALL_I_M1/i1_4_lut_rep_271
+Route        21   e 1.831                                  \HALL_I_M1/n13673
+LUT4        ---     0.493              D to Z              \HALL_I_M1/i10577_2_lut_2_lut_4_lut
+Route        40   e 2.052                                  \HALL_I_M1/clk_1mhz_enable_83
                   --------
                    10.813  (26.9% logic, 73.1% route), 6 logic levels.
 
@@ -170,17 +170,17 @@ Passed:  The following path meets requirements by 988.902ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3IX    CK             \HALL_I_M1/count__i1  (from clk_1mhz +)
-   Destination:    FD1P3AX    SP             \HALL_I_M1/speed_i7  (to clk_1mhz +)
+   Destination:    FD1P3AX    SP             \HALL_I_M1/speed_i19  (to clk_1mhz +)
 
    Delay:                  10.813ns  (26.9% logic, 73.1% route), 6 logic levels.
 
  Constraint Details:
 
-     10.813ns data_path \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i7 meets
+     10.813ns data_path \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i19 meets
     1000.000ns delay constraint less
       0.285ns LCE_S requirement (totaling 999.715ns) by 988.902ns
 
- Path Details: \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i7
+ Path Details: \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i19
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \HALL_I_M1/count__i1 (from clk_1mhz)
@@ -190,11 +190,11 @@ Route         1   e 0.941                                  \HALL_I_M1/n18
 LUT4        ---     0.493              B to Z              \HALL_I_M1/i9_4_lut
 Route         1   e 0.941                                  \HALL_I_M1/n20
 LUT4        ---     0.493              B to Z              \HALL_I_M1/i10_4_lut
-Route         1   e 0.941                                  \HALL_I_M1/n9329
-LUT4        ---     0.493              B to Z              \HALL_I_M1/i1_4_lut_rep_256
-Route        21   e 1.831                                  \HALL_I_M1/n10772
-LUT4        ---     0.493              D to Z              \HALL_I_M1/i8380_2_lut_2_lut_4_lut
-Route        40   e 2.052                                  \HALL_I_M1/clk_1mhz_enable_79
+Route         1   e 0.941                                  \HALL_I_M1/n11935
+LUT4        ---     0.493              B to Z              \HALL_I_M1/i1_4_lut_rep_271
+Route        21   e 1.831                                  \HALL_I_M1/n13673
+LUT4        ---     0.493              D to Z              \HALL_I_M1/i10577_2_lut_2_lut_4_lut
+Route        40   e 2.052                                  \HALL_I_M1/clk_1mhz_enable_83
                   --------
                    10.813  (26.9% logic, 73.1% route), 6 logic levels.
 
@@ -204,17 +204,17 @@ Passed:  The following path meets requirements by 988.902ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3IX    CK             \HALL_I_M1/count__i1  (from clk_1mhz +)
-   Destination:    FD1P3AX    SP             \HALL_I_M1/speed_i6  (to clk_1mhz +)
+   Destination:    FD1P3AX    SP             \HALL_I_M1/speed_i18  (to clk_1mhz +)
 
    Delay:                  10.813ns  (26.9% logic, 73.1% route), 6 logic levels.
 
  Constraint Details:
 
-     10.813ns data_path \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i6 meets
+     10.813ns data_path \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i18 meets
     1000.000ns delay constraint less
       0.285ns LCE_S requirement (totaling 999.715ns) by 988.902ns
 
- Path Details: \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i6
+ Path Details: \HALL_I_M1/count__i1 to \HALL_I_M1/speed_i18
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \HALL_I_M1/count__i1 (from clk_1mhz)
@@ -224,11 +224,11 @@ Route         1   e 0.941                                  \HALL_I_M1/n18
 LUT4        ---     0.493              B to Z              \HALL_I_M1/i9_4_lut
 Route         1   e 0.941                                  \HALL_I_M1/n20
 LUT4        ---     0.493              B to Z              \HALL_I_M1/i10_4_lut
-Route         1   e 0.941                                  \HALL_I_M1/n9329
-LUT4        ---     0.493              B to Z              \HALL_I_M1/i1_4_lut_rep_256
-Route        21   e 1.831                                  \HALL_I_M1/n10772
-LUT4        ---     0.493              D to Z              \HALL_I_M1/i8380_2_lut_2_lut_4_lut
-Route        40   e 2.052                                  \HALL_I_M1/clk_1mhz_enable_79
+Route         1   e 0.941                                  \HALL_I_M1/n11935
+LUT4        ---     0.493              B to Z              \HALL_I_M1/i1_4_lut_rep_271
+Route        21   e 1.831                                  \HALL_I_M1/n13673
+LUT4        ---     0.493              D to Z              \HALL_I_M1/i10577_2_lut_2_lut_4_lut
+Route        40   e 2.052                                  \HALL_I_M1/clk_1mhz_enable_83
                   --------
                    10.813  (26.9% logic, 73.1% route), 6 logic levels.
 
@@ -237,302 +237,296 @@ Report: 11.098 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 1000.000000 -name clk1 [get_nets \CLKDIV_I/pi_clk]
-            4096 items scored, 0 timing errors detected.
+Constraint: create_clock -period 1000.000000 -name clk1 [get_nets clkout_c]
+            1266 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 969.733ns
+Passed:  The following path meets requirements by 989.674ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AY    CK             \PID_I/ss_i3  (from \CLKDIV_I/pi_clk +)
-   Destination:    FD1S3AX    D              \PID_I/multOut_i25  (to \CLKDIV_I/pi_clk -)
+   Source:         FD1P3AX    CK             \SPI_I/\SPI__7_rep_4__i51  (from clkout_c +)
+   Destination:    FD1P3JX    PD             \SPI_I/speed_set_m2_i0_i0  (to clkout_c +)
 
-   Delay:                  30.107ns  (30.9% logic, 69.1% route), 19 logic levels.
+   Delay:                  10.166ns  (28.6% logic, 71.4% route), 6 logic levels.
 
  Constraint Details:
 
-     30.107ns data_path \PID_I/ss_i3 to \PID_I/multOut_i25 meets
+     10.166ns data_path \SPI_I/\SPI__7_rep_4__i51 to \SPI_I/speed_set_m2_i0_i0 meets
     1000.000ns delay constraint less
-      0.160ns L_S requirement (totaling 999.840ns) by 969.733ns
+      0.160ns L_S requirement (totaling 999.840ns) by 989.674ns
 
- Path Details: \PID_I/ss_i3 to \PID_I/multOut_i25
+ Path Details: \SPI_I/\SPI__7_rep_4__i51 to \SPI_I/speed_set_m2_i0_i0
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \PID_I/ss_i3 (from \CLKDIV_I/pi_clk)
-Route        64   e 2.326                                  \PID_I/ss[3]
-LUT4        ---     0.493              C to Z              \PID_I/ss[0]_bdd_4_lut
-Route        90   e 2.466                                  \PID_I/multIn2[2]
-LUT4        ---     0.493              B to Z              \PID_I/AND2_t58
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_0_2
-LUT4        ---     0.493                to                \PID_I/Cadd_mult_26s_25s_0_0_1
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_0_4
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_2
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_2
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_3
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_3
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_4
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_4
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_9
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_4
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_11
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_1_14
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_6
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_15
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_7
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_17
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_8
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_10_5
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_6
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_8_20
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_7
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_10_7
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_8
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_8_24
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_9
-Route         1   e 0.941                                  \PID_I/co_t_mult_26s_25s_0_12_4
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_10_26
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_6
-Route         1   e 0.941                                  \PID_I/multOut_25__N_1054[25]
+L_CO        ---     0.444             CK to Q              \SPI_I/\SPI__7_rep_4__i51 (from clkout_c)
+Route         5   e 1.462                                  \SPI_I/recv_buffer[63]
+LUT4        ---     0.493              C to Z              \SPI_I/i13_4_lut_adj_130
+Route         1   e 0.941                                  \SPI_I/n34_adj_1607
+LUT4        ---     0.493              B to Z              \SPI_I/i17_4_lut_adj_128
+Route         1   e 0.941                                  \SPI_I/n38_adj_1605
+LUT4        ---     0.493              B to Z              \SPI_I/i19_4_lut_adj_125
+Route         1   e 0.941                                  \SPI_I/n40_adj_1602
+LUT4        ---     0.493              D to Z              \SPI_I/i2_4_lut_adj_123
+Route         2   e 1.141                                  \SPI_I/enable_m2_N_635
+LUT4        ---     0.493              D to Z              \SPI_I/i6535_2_lut_4_lut
+Route        21   e 1.831                                  \SPI_I/n8505
                   --------
-                   30.107  (30.9% logic, 69.1% route), 19 logic levels.
+                   10.166  (28.6% logic, 71.4% route), 6 logic levels.
 
 
-Passed:  The following path meets requirements by 969.733ns
+Passed:  The following path meets requirements by 989.674ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AY    CK             \PID_I/ss_i3  (from \CLKDIV_I/pi_clk +)
-   Destination:    FD1S3AX    D              \PID_I/multOut_i25  (to \CLKDIV_I/pi_clk -)
+   Source:         FD1P3AX    CK             \SPI_I/\SPI__7_rep_4__i51  (from clkout_c +)
+   Destination:    FD1P3JX    PD             \SPI_I/speed_set_m2_i0_i1  (to clkout_c +)
 
-   Delay:                  30.107ns  (30.9% logic, 69.1% route), 19 logic levels.
+   Delay:                  10.166ns  (28.6% logic, 71.4% route), 6 logic levels.
 
  Constraint Details:
 
-     30.107ns data_path \PID_I/ss_i3 to \PID_I/multOut_i25 meets
+     10.166ns data_path \SPI_I/\SPI__7_rep_4__i51 to \SPI_I/speed_set_m2_i0_i1 meets
     1000.000ns delay constraint less
-      0.160ns L_S requirement (totaling 999.840ns) by 969.733ns
+      0.160ns L_S requirement (totaling 999.840ns) by 989.674ns
 
- Path Details: \PID_I/ss_i3 to \PID_I/multOut_i25
+ Path Details: \SPI_I/\SPI__7_rep_4__i51 to \SPI_I/speed_set_m2_i0_i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \PID_I/ss_i3 (from \CLKDIV_I/pi_clk)
-Route        64   e 2.326                                  \PID_I/ss[3]
-LUT4        ---     0.493              C to Z              \PID_I/ss[0]_bdd_4_lut
-Route        90   e 2.466                                  \PID_I/multIn2[2]
-LUT4        ---     0.493              B to Z              \PID_I/AND2_t58
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_0_2
-LUT4        ---     0.493                to                \PID_I/Cadd_mult_26s_25s_0_0_1
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_0_4
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_2
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_2
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_3
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_3
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_4
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_4
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_5
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_5
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_6
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_11
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_1_14
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_6
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_15
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_7
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_7_15
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_5
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_8_16
-LUT4        ---     0.493                to                \PID_I/Cadd_t_mult_26s_25s_0_12_1
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_8_17
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_2
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_4_19
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_3
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_9_21
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_4
-Route         1   e 0.941                                  \PID_I/co_t_mult_26s_25s_0_12_4
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_10_26
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_6
-Route         1   e 0.941                                  \PID_I/multOut_25__N_1054[25]
+L_CO        ---     0.444             CK to Q              \SPI_I/\SPI__7_rep_4__i51 (from clkout_c)
+Route         5   e 1.462                                  \SPI_I/recv_buffer[63]
+LUT4        ---     0.493              C to Z              \SPI_I/i13_4_lut_adj_130
+Route         1   e 0.941                                  \SPI_I/n34_adj_1607
+LUT4        ---     0.493              B to Z              \SPI_I/i17_4_lut_adj_128
+Route         1   e 0.941                                  \SPI_I/n38_adj_1605
+LUT4        ---     0.493              B to Z              \SPI_I/i19_4_lut_adj_125
+Route         1   e 0.941                                  \SPI_I/n40_adj_1602
+LUT4        ---     0.493              D to Z              \SPI_I/i2_4_lut_adj_123
+Route         2   e 1.141                                  \SPI_I/enable_m2_N_635
+LUT4        ---     0.493              D to Z              \SPI_I/i6535_2_lut_4_lut
+Route        21   e 1.831                                  \SPI_I/n8505
                   --------
-                   30.107  (30.9% logic, 69.1% route), 19 logic levels.
+                   10.166  (28.6% logic, 71.4% route), 6 logic levels.
 
 
-Passed:  The following path meets requirements by 969.733ns
+Passed:  The following path meets requirements by 989.674ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AY    CK             \PID_I/ss_i3  (from \CLKDIV_I/pi_clk +)
-   Destination:    FD1S3AX    D              \PID_I/multOut_i25  (to \CLKDIV_I/pi_clk -)
+   Source:         FD1P3AX    CK             \SPI_I/\SPI__7_rep_4__i51  (from clkout_c +)
+   Destination:    FD1P3JX    PD             \SPI_I/speed_set_m2_i0_i2  (to clkout_c +)
 
-   Delay:                  30.107ns  (30.9% logic, 69.1% route), 19 logic levels.
+   Delay:                  10.166ns  (28.6% logic, 71.4% route), 6 logic levels.
 
  Constraint Details:
 
-     30.107ns data_path \PID_I/ss_i3 to \PID_I/multOut_i25 meets
+     10.166ns data_path \SPI_I/\SPI__7_rep_4__i51 to \SPI_I/speed_set_m2_i0_i2 meets
     1000.000ns delay constraint less
-      0.160ns L_S requirement (totaling 999.840ns) by 969.733ns
+      0.160ns L_S requirement (totaling 999.840ns) by 989.674ns
 
- Path Details: \PID_I/ss_i3 to \PID_I/multOut_i25
+ Path Details: \SPI_I/\SPI__7_rep_4__i51 to \SPI_I/speed_set_m2_i0_i2
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \PID_I/ss_i3 (from \CLKDIV_I/pi_clk)
-Route        64   e 2.326                                  \PID_I/ss[3]
-LUT4        ---     0.493              C to Z              \PID_I/ss[0]_bdd_4_lut
-Route        90   e 2.466                                  \PID_I/multIn2[2]
-LUT4        ---     0.493              B to Z              \PID_I/AND2_t58
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_0_2
-LUT4        ---     0.493                to                \PID_I/Cadd_mult_26s_25s_0_0_1
-Route         1   e 0.941                                  \PID_I/mult_26s_25s_0_pp_0_4
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_2
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_0_2
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_0_3
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_7_1
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_2
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_7
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_3
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_9
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_4
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_0_11
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_7_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_7_11
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_3
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_10_3
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_4
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_7_15
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_5
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_10_5
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_6
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_8_20
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_7
-Route         1   e 0.941                                  \PID_I/co_mult_26s_25s_0_10_7
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_8
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_8_24
-LUT4        ---     0.493                to                \PID_I/mult_26s_25s_0_add_10_9
-Route         1   e 0.941                                  \PID_I/co_t_mult_26s_25s_0_12_4
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_5
-Route         1   e 0.941                                  \PID_I/s_mult_26s_25s_0_10_26
-LUT4        ---     0.493                to                \PID_I/t_mult_26s_25s_0_add_12_6
-Route         1   e 0.941                                  \PID_I/multOut_25__N_1054[25]
+L_CO        ---     0.444             CK to Q              \SPI_I/\SPI__7_rep_4__i51 (from clkout_c)
+Route         5   e 1.462                                  \SPI_I/recv_buffer[63]
+LUT4        ---     0.493              C to Z              \SPI_I/i13_4_lut_adj_130
+Route         1   e 0.941                                  \SPI_I/n34_adj_1607
+LUT4        ---     0.493              B to Z              \SPI_I/i17_4_lut_adj_128
+Route         1   e 0.941                                  \SPI_I/n38_adj_1605
+LUT4        ---     0.493              B to Z              \SPI_I/i19_4_lut_adj_125
+Route         1   e 0.941                                  \SPI_I/n40_adj_1602
+LUT4        ---     0.493              D to Z              \SPI_I/i2_4_lut_adj_123
+Route         2   e 1.141                                  \SPI_I/enable_m2_N_635
+LUT4        ---     0.493              D to Z              \SPI_I/i6535_2_lut_4_lut
+Route        21   e 1.831                                  \SPI_I/n8505
                   --------
-                   30.107  (30.9% logic, 69.1% route), 19 logic levels.
+                   10.166  (28.6% logic, 71.4% route), 6 logic levels.
 
-Report: 30.267 ns is the maximum delay for this constraint.
+Report: 10.326 ns is the maximum delay for this constraint.
 
 
 
 ================================================================================
-Constraint: create_clock -period 1000.000000 -name clk0 [get_nets clkout_c]
-            192 items scored, 0 timing errors detected.
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets \CLKDIV_I/pi_clk]
+            4096 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 990.364ns
+Passed:  The following path meets requirements by 970.969ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             start_cnt_1229__i7  (from clkout_c +)
-   Destination:    FD1S3AX    D              start_cnt_1229__i13  (to clkout_c +)
+   Source:         FD1S3AY    CK             \PID_I/ss_i3  (from \CLKDIV_I/pi_clk +)
+   Destination:    FD1S3AX    D              \PID_I/multOut_i27  (to \CLKDIV_I/pi_clk -)
 
-   Delay:                   9.476ns  (30.7% logic, 69.3% route), 6 logic levels.
+   Delay:                  28.871ns  (30.6% logic, 69.4% route), 18 logic levels.
 
  Constraint Details:
 
-      9.476ns data_path start_cnt_1229__i7 to start_cnt_1229__i13 meets
+     28.871ns data_path \PID_I/ss_i3 to \PID_I/multOut_i27 meets
     1000.000ns delay constraint less
-      0.160ns L_S requirement (totaling 999.840ns) by 990.364ns
+      0.160ns L_S requirement (totaling 999.840ns) by 970.969ns
 
- Path Details: start_cnt_1229__i7 to start_cnt_1229__i13
+ Path Details: \PID_I/ss_i3 to \PID_I/multOut_i27
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              start_cnt_1229__i7 (from clkout_c)
-Route         2   e 1.198                                  start_cnt[7]
-LUT4        ---     0.493              A to Z              i2_2_lut
-Route         1   e 0.941                                  n6
-LUT4        ---     0.493              B to Z              i3_4_lut_adj_151
-Route         1   e 0.941                                  n9383
-LUT4        ---     0.493              A to Z              i3_4_lut
-Route         2   e 1.141                                  n9324
-LUT4        ---     0.493              D to Z              i1473_4_lut_rep_257
-Route         5   e 1.405                                  n10773
-LUT4        ---     0.493              A to Z              i3561_2_lut
-Route         1   e 0.941                                  n4945
+L_CO        ---     0.444             CK to Q              \PID_I/ss_i3 (from \CLKDIV_I/pi_clk)
+Route        91   e 2.524                                  \PID_I/ss[3]
+LUT4        ---     0.493              B to Z              \PID_I/ss[0]_bdd_4_lut
+Route        90   e 2.466                                  \PID_I/mult_28s_25s_0_cin_lr_4
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_mult_4_0
+Route         1   e 0.941                                  \PID_I/mult_28s_25s_0_pp_3_6
+LUT4        ---     0.493                to                \PID_I/Cadd_mult_28s_25s_0_1_1
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_1
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_2
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_2
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_3
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_3
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_4
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_4
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_5
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_5
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_6
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_6
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_7
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_7
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_8
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_8
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_9
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_9
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_10
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_10
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_11
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_0_25
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_7_12
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_7_12
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_7_13
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_8_27
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_11
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_11_28
+LUT4        ---     0.493                to                \PID_I/t_mult_28s_25s_0_add_12_7
+Route         1   e 0.941                                  \PID_I/multOut_27__N_1071[27]
                   --------
-                    9.476  (30.7% logic, 69.3% route), 6 logic levels.
+                   28.871  (30.6% logic, 69.4% route), 18 logic levels.
 
 
-Passed:  The following path meets requirements by 990.364ns
+Passed:  The following path meets requirements by 970.969ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             start_cnt_1229__i5  (from clkout_c +)
-   Destination:    FD1S3AX    D              start_cnt_1229__i13  (to clkout_c +)
+   Source:         FD1S3AY    CK             \PID_I/ss_i3  (from \CLKDIV_I/pi_clk +)
+   Destination:    FD1S3AX    D              \PID_I/multOut_i27  (to \CLKDIV_I/pi_clk -)
 
-   Delay:                   9.476ns  (30.7% logic, 69.3% route), 6 logic levels.
+   Delay:                  28.871ns  (30.6% logic, 69.4% route), 18 logic levels.
 
  Constraint Details:
 
-      9.476ns data_path start_cnt_1229__i5 to start_cnt_1229__i13 meets
+     28.871ns data_path \PID_I/ss_i3 to \PID_I/multOut_i27 meets
     1000.000ns delay constraint less
-      0.160ns L_S requirement (totaling 999.840ns) by 990.364ns
+      0.160ns L_S requirement (totaling 999.840ns) by 970.969ns
 
- Path Details: start_cnt_1229__i5 to start_cnt_1229__i13
+ Path Details: \PID_I/ss_i3 to \PID_I/multOut_i27
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              start_cnt_1229__i5 (from clkout_c)
-Route         2   e 1.198                                  start_cnt[5]
-LUT4        ---     0.493              B to Z              i2_2_lut
-Route         1   e 0.941                                  n6
-LUT4        ---     0.493              B to Z              i3_4_lut_adj_151
-Route         1   e 0.941                                  n9383
-LUT4        ---     0.493              A to Z              i3_4_lut
-Route         2   e 1.141                                  n9324
-LUT4        ---     0.493              D to Z              i1473_4_lut_rep_257
-Route         5   e 1.405                                  n10773
-LUT4        ---     0.493              A to Z              i3561_2_lut
-Route         1   e 0.941                                  n4945
+L_CO        ---     0.444             CK to Q              \PID_I/ss_i3 (from \CLKDIV_I/pi_clk)
+Route        91   e 2.524                                  \PID_I/ss[3]
+LUT4        ---     0.493              B to Z              \PID_I/ss[0]_bdd_4_lut
+Route        90   e 2.466                                  \PID_I/mult_28s_25s_0_cin_lr_4
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_mult_4_0
+Route         1   e 0.941                                  \PID_I/mult_28s_25s_0_pp_3_6
+LUT4        ---     0.493                to                \PID_I/Cadd_mult_28s_25s_0_1_1
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_1
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_2
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_2
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_3
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_3
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_4
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_4
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_5
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_5
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_6
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_6
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_7
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_7
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_8
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_8
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_9
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_9
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_10
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_1_10
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_1_11
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_0_25
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_7_12
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_7_12
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_7_13
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_8_27
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_11
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_11_28
+LUT4        ---     0.493                to                \PID_I/t_mult_28s_25s_0_add_12_7
+Route         1   e 0.941                                  \PID_I/multOut_27__N_1071[27]
                   --------
-                    9.476  (30.7% logic, 69.3% route), 6 logic levels.
+                   28.871  (30.6% logic, 69.4% route), 18 logic levels.
 
 
-Passed:  The following path meets requirements by 990.364ns
+Passed:  The following path meets requirements by 970.969ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1P3AX    CK             start_cnt_1229__i3  (from clkout_c +)
-   Destination:    FD1S3AX    D              start_cnt_1229__i13  (to clkout_c +)
+   Source:         FD1S3AY    CK             \PID_I/ss_i3  (from \CLKDIV_I/pi_clk +)
+   Destination:    FD1S3AX    D              \PID_I/multOut_i27  (to \CLKDIV_I/pi_clk -)
 
-   Delay:                   9.476ns  (30.7% logic, 69.3% route), 6 logic levels.
+   Delay:                  28.871ns  (30.6% logic, 69.4% route), 18 logic levels.
 
  Constraint Details:
 
-      9.476ns data_path start_cnt_1229__i3 to start_cnt_1229__i13 meets
+     28.871ns data_path \PID_I/ss_i3 to \PID_I/multOut_i27 meets
     1000.000ns delay constraint less
-      0.160ns L_S requirement (totaling 999.840ns) by 990.364ns
+      0.160ns L_S requirement (totaling 999.840ns) by 970.969ns
 
- Path Details: start_cnt_1229__i3 to start_cnt_1229__i13
+ Path Details: \PID_I/ss_i3 to \PID_I/multOut_i27
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              start_cnt_1229__i3 (from clkout_c)
-Route         2   e 1.198                                  start_cnt[3]
-LUT4        ---     0.493              B to Z              i3_4_lut_adj_152
-Route         1   e 0.941                                  n9403
-LUT4        ---     0.493              A to Z              i3_4_lut_adj_151
-Route         1   e 0.941                                  n9383
-LUT4        ---     0.493              A to Z              i3_4_lut
-Route         2   e 1.141                                  n9324
-LUT4        ---     0.493              D to Z              i1473_4_lut_rep_257
-Route         5   e 1.405                                  n10773
-LUT4        ---     0.493              A to Z              i3561_2_lut
-Route         1   e 0.941                                  n4945
+L_CO        ---     0.444             CK to Q              \PID_I/ss_i3 (from \CLKDIV_I/pi_clk)
+Route        91   e 2.524                                  \PID_I/ss[3]
+LUT4        ---     0.493              B to Z              \PID_I/ss[0]_bdd_4_lut
+Route        90   e 2.466                                  \PID_I/multIn2[5]
+LUT4        ---     0.493              B to Z              \PID_I/AND2_t57
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_0_4
+LUT4        ---     0.493                to                \PID_I/Cadd_mult_28s_25s_0_7_1
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_7_1
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_7_2
+Route         1   e 0.941                                  \PID_I/co_mult_28s_25s_0_7_2
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_7_3
+Route         1   e 0.941                                  \PID_I/mult_28s_25s_0_pp_4_8
+LUT4        ---     0.493                to                \PID_I/Cadd_mult_28s_25s_0_10_1
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_7_9
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_2
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_8_12
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_3
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_8_13
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_4
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_7_15
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_5
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_8_17
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_6
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_7_19
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_7
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_8_22
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_8
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_7_23
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_9
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_7_25
+LUT4        ---     0.493                to                \PID_I/mult_28s_25s_0_add_10_10
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_10_25
+LUT4        ---     0.493                to                \PID_I/t_mult_28s_25s_0_add_12_6
+Route         1   e 0.941                                  \PID_I/s_mult_28s_25s_0_11_28
+LUT4        ---     0.493                to                \PID_I/t_mult_28s_25s_0_add_12_7
+Route         1   e 0.941                                  \PID_I/multOut_27__N_1071[27]
                   --------
-                    9.476  (30.7% logic, 69.3% route), 6 logic levels.
+                   28.871  (30.6% logic, 69.4% route), 18 logic levels.
 
-Report: 9.636 ns is the maximum delay for this constraint.
+Report: 29.031 ns is the maximum delay for this constraint.
 
 
 <A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -548,10 +542,10 @@ create_clock -period 1000.000000 -name  |             |             |
 clk2 [get_nets clk_1mhz]                |  1000.000 ns|    11.098 ns|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets \CLKDIV_I/pi_clk]        |  1000.000 ns|    30.267 ns|    19  
+clk1 [get_nets clkout_c]                |  1000.000 ns|    10.326 ns|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clkout_c]                |  1000.000 ns|     9.636 ns|     6  
+clk0 [get_nets \CLKDIV_I/pi_clk]        |  1000.000 ns|    29.031 ns|    18  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -565,10 +559,10 @@ All constraints were met.
 
 Timing errors: 0  Score: 0
 
-Constraints cover  12341745 paths, 2400 nets, and 7205 connections (94.9% coverage)
+Constraints cover  13044801 paths, 2539 nets, and 7712 connections (88.8% coverage)
 
 
-Peak memory: 114036736 bytes, TRCE: 13299712 bytes, DLYMAN: 655360 bytes
+Peak memory: 121548800 bytes, TRCE: 7208960 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 
 
 

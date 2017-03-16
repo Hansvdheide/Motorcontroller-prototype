@@ -8,8 +8,8 @@ USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY PID IS
 		GENERIC( 	
-			INPUT_RANGE: integer := 2000000;
-			OUTPUT_RANGE: integer := 20000000;
+			INPUT_RANGE: integer := 8000000;
+			OUTPUT_RANGE: integer := 80000000;
 			GAIN_RANGE: integer := 10000000
 		);
 		
@@ -37,16 +37,19 @@ ENTITY PID IS
 			dirout_m3 : OUT std_logic;
 			dirout_m4 : OUT std_logic;
 			
-			debug1 : OUT integer RANGE -1000000 to 1000000
-			--debug2 : OUT integer RANGE -1000000 to 1000000
+			debug1 : OUT integer RANGE -1000000 to 1000000;
+			debug2 : OUT integer RANGE -1000000 to 1000000
 		);
 end PID;
 
 ARCHITECTURE PID OF PID IS
 
-	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 300; --750
-	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 1; --25
-	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 2048;
+	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 1200;
+	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 0;
+	CONSTANT MAX_INTG_GAIN : integer := 8000000;
+	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
+	CONSTANT FORW_MINUS : integer := 5000;
+	CONSTANT FORW_MULT : integer := 800;
 
 
 	
@@ -212,60 +215,60 @@ BEGIN
 		WHEN S0 =>		
 			ss <= S1;
 		WHEN S1 =>	
-			debug1 <= subOut;
 			ss <= S2;
 		WHEN S2 =>	
 			
 			ss <= S3;
 		WHEN S3 =>
-			--debug1 <= subOut;
-			IF addOut < 900000 AND addOut > -900000 THEN
+			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut0 <= addOut;
-			ELSIF addout >= 900000 THEN
-				intgOut0 <= 900000;
+			ELSIF addout >= MAX_INTG_GAIN THEN
+				intgOut0 <= MAX_INTG_GAIN;
 			ELSE
-				intgOut0 <= -900000;
+				intgOut0 <= -MAX_INTG_GAIN;
 			END IF;
 			
 			ss <= S4;
 		WHEN S4 =>
 			out0 <= addOut;
-			--debug2 <= addOut;
 			ss <= S5;
 		WHEN S5 =>
-			IF addOut < 90000 AND addOut > -900000 THEN
+			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut1 <= addOut;
-			ELSIF addout >= 900000 THEN
-				intgOut1 <= 900000;
+			ELSIF addout >= MAX_INTG_GAIN THEN
+				intgOut1 <= MAX_INTG_GAIN;
 			ELSE
-				intgOut1 <= -900000;
+				intgOut1 <= -MAX_INTG_GAIN;
 			END IF;
 			ss <= S6;
 		WHEN S6 =>
 			out1 <= addOut;
 			ss <= S7;
 		WHEN S7 =>
-			IF addOut < 900000 AND addOut > -900000 THEN
+			debug2 <= subOut; 
+			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut2 <= addOut;
-			ELSIF addout >= 900000 THEN
-				intgOut2 <= 900000;
+			ELSIF addout >= MAX_INTG_GAIN THEN
+				intgOut2 <= MAX_INTG_GAIN;
 			ELSE
-				intgOut2 <= -900000;
+				intgOut2 <= -MAX_INTG_GAIN;
 			END IF;
 			ss <= S8;
 		WHEN S8 =>
 			out2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
-			IF addOut < 900000 AND addOut > -900000 THEN
+			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut3 <= addOut;
-			ELSIF addout >= 900000 THEN
-				intgOut3 <= 900000;
+			ELSIF addout >= MAX_INTG_GAIN THEN
+				intgOut3 <= MAX_INTG_GAIN;
 			ELSE
-				intgOut3 <= -900000;
+				intgOut3 <= -MAX_INTG_GAIN;
 			END IF;
+			
 			ss <= Sdone;
 		WHEN Sdone =>
+			--debug1 <= addOut;
 			out3 <= addOut;
 			ss <= Swait;
 		WHEN Swait =>
@@ -274,6 +277,7 @@ BEGIN
 			outguard1 := out1 / SHIFT;
 			outguard2 := out2 / SHIFT;
 			outguard3 := out3 / SHIFT;
+			debug1 <= outguard3;
 			
 			--degub lines
 			--outguard0 := -2000;
