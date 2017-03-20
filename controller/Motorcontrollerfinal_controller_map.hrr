@@ -16,6 +16,7 @@ SUB MODULES
                           PWMGENERATOR	          1         2.0
                        PWMGENERATOR_U0	          1         2.0
         PID(8000000,80000000,10000000)	          1        56.9
+                               HALL_U4	          1         2.5
                                HALL_U5	          1         2.5
                                HALL_U3	          1         2.6
                                   HALL	          1         2.6
@@ -24,7 +25,6 @@ SUB MODULES
                         COMMUTATION_U7	          1         0.4
                            COMMUTATION	          1         0.4
                                 CLKDIV	          1         1.2
-                               HALL_U4	          1         2.5
 ---------------------------------------------------
 Report for cell COMMUTATION_U7
    Instance path: SPI_loopback_Top/COM_I_M2

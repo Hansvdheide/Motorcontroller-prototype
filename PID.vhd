@@ -49,7 +49,7 @@ ARCHITECTURE PID OF PID IS
 	CONSTANT MAX_INTG_GAIN : integer := 8000000;
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
 	CONSTANT FORW_MINUS : integer := 5000;
-	CONSTANT FORW_MULT : integer := 800;
+	CONSTANT FORW_MULT : integer := 400;
 
 
 	
@@ -72,6 +72,11 @@ ARCHITECTURE PID OF PID IS
 	SIGNAL Out2 : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE;
 	SIGNAL Out3 : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE;
 	
+	SIGNAL backOut0 : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE; -- output of the controller formula
+	SIGNAL backOut1 : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE;
+	SIGNAL backOut2 : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE;
+	SIGNAL backOut3 : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE;
+	
 	SIGNAL subIn1 : integer RANGE -INPUT_RANGE TO INPUT_RANGE; -- input and ouptput of the subtractor
 	SIGNAL subIn2 : integer RANGE -INPUT_RANGE TO INPUT_RANGE;
 	SIGNAL subOut : integer RANGE -INPUT_RANGE TO INPUT_RANGE;
@@ -85,7 +90,7 @@ ARCHITECTURE PID OF PID IS
 	SIGNAL addOut : integer RANGE -OUTPUT_RANGE TO OUTPUT_RANGE;
 	
 	-- state machine: when to connent what arithmatic unit
-	TYPE states IS(Sstart, S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, Sdone, Swait);
+	TYPE states IS(Sstart, S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, Sdone, Swait);
 	SIGNAL ss : states := Swait;
 	
 	--------------------------------------------------------------------------------
@@ -101,8 +106,12 @@ ARCHITECTURE PID OF PID IS
 	-- S5 ||             -             | error2 * intg_gain | intgOut1 + propOut1 --
 	-- S6 || setpoint3 - currentspeed3 | error2 * prop_gain | intgOut2 + intgAdd2 --
 	-- S7 ||             -             | error3 * intg_gain | intgOut2 + propOut2 --
-	-- S8 ||             -             | error3 * prop_gain | intgOut3 + intgAdd3 --
-	-- S9 ||             -             |          -         | intgOut3 + propOut3 --
+	-- S8 ||  setpoint0  - forwMinus   | error3 * prop_gain | intgOut3 + intgAdd3 --
+	-- S9 ||  setpoint1  - forwMinus   |forwVal0 * forwMult | intgOut3 + propOut3 --
+	-- S10||  setpoint2  - forwMinus   |forwVal1 * forwMult | backOut0 + forwOut0 --
+	-- S11||  setpoint3  - forwMinus   |forwVal2 * forwMult | backOut1 + forwOut1 --
+	-- S12||              -            |forwVal3 * forwMult | backOut2 + forwOut2 --
+	-- S13||              -            |          -         | backOut3 + forwOut3 --
 	--------------------------------------------------------------------------------
 
 BEGIN
@@ -113,21 +122,21 @@ BEGIN
 	
 
 	subIn1 <= 	speedset_m1 WHEN (ss = S0 OR -- error = setpoint - currentSpeed
-									ss = S1) AND speedset_m1 > 0 ELSE
+									ss = S1 OR ss = S8) AND speedset_m1 > 0 ELSE
 				speedset_m2 WHEN (ss = S2 OR
-									ss = S3) AND speedset_m2 > 0 ELSE
+									ss = S3 OR ss = S9) AND speedset_m2 > 0 ELSE
 				speedset_m3 WHEN (ss = S4 OR 
-									ss = S5) AND speedset_m3 > 0 ELSE
+									ss = S5 OR ss = S10) AND speedset_m3 > 0 ELSE
 				speedset_m4 WHEN (ss = S6 OR
-									ss = S7) AND speedset_m4 > 0 ELSE
+									ss = S7 OR ss = S11) AND speedset_m4 > 0 ELSE
 				-speedset_m1 WHEN (ss = S0 OR -- error = setpoint - currentSpeed
-									ss = S1) AND speedset_m1 <= 0 ELSE
+									ss = S1 OR ss = S8) AND speedset_m1 <= 0 ELSE
 				-speedset_m2 WHEN (ss = S2 OR
-									ss = S3) AND speedset_m2 <= 0 ELSE
+									ss = S3 OR ss = S9) AND speedset_m2 <= 0 ELSE
 				-speedset_m3 WHEN (ss = S4 OR 
-									ss = S5) AND speedset_m3 <= 0 ELSE
+									ss = S5 OR ss = S10) AND speedset_m3 <= 0 ELSE
 				-speedset_m4 WHEN (ss = S6 OR
-									ss = S7) AND speedset_m4 <= 0 ELSE
+									ss = S7 OR ss = S11) AND speedset_m4 <= 0 ELSE
 				0;
 
 	
@@ -140,6 +149,10 @@ BEGIN
 									ss = S5 ELSE
 				speedin_m4 WHEN 	ss = S6 OR
 									ss = S7 ELSE
+				FORW_MINUS WHEN		ss = S8 OR
+									ss = S9 OR
+									ss = S10 OR
+									ss = S11 ELSE
 				0;
 				
 	multIn1 <= 	subOut; --propOut = error * propGain (in S1, S3, S5, S7) 
@@ -154,8 +167,12 @@ BEGIN
 								ss = S4 OR
 								ss = S6 OR
 								ss = S8 ELSE
+				FORW_MULT WHEN	ss = S9 OR
+								ss = S10 OR
+								ss = S11 OR
+								ss = S12 ELSE
 				0;
-	
+				
 	addIn1 <=	multOut; -- intgOut = intgOut0 + intgAdd0 (in S2, S4, S6, S8)
 	                     -- out = propOut + intgOut
 				
@@ -167,6 +184,10 @@ BEGIN
 				intgOut1 WHEN	ss = S4 ELSE
 				intgOut2 WHEN	ss = S6 ELSE
 				intgOut3 WHEN	ss = S8 ELSE
+				backOut0 WHEN	ss = S10 ELSE
+				backOut1 WHEN	ss = S11 ELSE
+				backOut2 WHEN	ss = S12 ELSE
+				backOut3 WHEN	ss = S13 ELSE
 				0;
 
 PROCESS(clk) 
@@ -230,7 +251,7 @@ BEGIN
 			
 			ss <= S4;
 		WHEN S4 =>
-			out0 <= addOut;
+			backOut0 <= addOut;
 			ss <= S5;
 		WHEN S5 =>
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
@@ -242,7 +263,7 @@ BEGIN
 			END IF;
 			ss <= S6;
 		WHEN S6 =>
-			out1 <= addOut;
+			backOut1 <= addOut;
 			ss <= S7;
 		WHEN S7 =>
 			debug2 <= subOut; 
@@ -255,7 +276,7 @@ BEGIN
 			END IF;
 			ss <= S8;
 		WHEN S8 =>
-			out2 <= addOut;
+			backOut2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
@@ -266,10 +287,22 @@ BEGIN
 				intgOut3 <= -MAX_INTG_GAIN;
 			END IF;
 			
+			ss <= S10;
+		WHEN S10 =>
+			backOut3 <= addOut;
+			ss <= S11;
+		WHEN S11 =>
+			out0 <= multOut;
+			ss <= S12;
+		WHEN S12 =>
+			out1 <= multOut;
+			ss <= S13;
+		WHEN S13 =>
+			out2 <= multOut;
 			ss <= Sdone;
 		WHEN Sdone =>
 			--debug1 <= addOut;
-			out3 <= addOut;
+			out3 <= multOut;
 			ss <= Swait;
 		WHEN Swait =>
 			--TO DO change to appropriate input for PWM

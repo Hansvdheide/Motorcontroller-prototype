@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Mar 16 10:42:18 2017
+Mon Mar 20 15:00:15 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -129,7 +129,7 @@ Top-level module name = SPI_loopback_Top.
 
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Analyzing Verilog file mult_28s_25s.v. VERI-1482
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(204): input port a[27] is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(206): input port a[27] is not connected on this instance. VDB-1013
 WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(213): Register \SPI_I/send_buffer_i0_i95 is stuck at Zero. VDB-5013
 Duplicate register/latch removal. \PID_I/subOut_i22 is a one-to-one match with \PID_I/subOut_i23.
 GSR instance connected to net rst.
@@ -297,8 +297,8 @@ clk0 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   34.446 MHz|    18
 All constraints were met.
 
 
-Peak Memory Usage: 116.582  MB
+Peak Memory Usage: 117.355  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 6.141  secs
+Elapsed CPU time for LSE flow : 6.156  secs
 --------------------------------------------------------------
