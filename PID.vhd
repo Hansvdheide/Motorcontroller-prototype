@@ -8,8 +8,8 @@ USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY PID IS
 		GENERIC( 	
-			INPUT_RANGE: integer := 8000000;
-			OUTPUT_RANGE: integer := 80000000;
+			INPUT_RANGE: integer := 16000000;
+			OUTPUT_RANGE: integer := 160000000;
 			GAIN_RANGE: integer := 10000000
 		);
 		
@@ -49,7 +49,7 @@ ARCHITECTURE PID OF PID IS
 	CONSTANT MAX_INTG_GAIN : integer := 8000000;
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
 	CONSTANT FORW_MINUS : integer := 5000;
-	CONSTANT FORW_MULT : integer := 400;
+	CONSTANT FORW_MULT : integer := 0;
 
 
 	
@@ -266,7 +266,6 @@ BEGIN
 			backOut1 <= addOut;
 			ss <= S7;
 		WHEN S7 =>
-			debug2 <= subOut; 
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut2 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -279,6 +278,7 @@ BEGIN
 			backOut2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
+			debug2 <= multOut;
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut3 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -292,17 +292,17 @@ BEGIN
 			backOut3 <= addOut;
 			ss <= S11;
 		WHEN S11 =>
-			out0 <= multOut;
+			debug1 <= addOut;
+			out0 <= addOut;
 			ss <= S12;
 		WHEN S12 =>
-			out1 <= multOut;
+			out1 <= addOut;
 			ss <= S13;
 		WHEN S13 =>
-			out2 <= multOut;
+			out2 <= addOut;
 			ss <= Sdone;
 		WHEN Sdone =>
-			--debug1 <= addOut;
-			out3 <= multOut;
+			out3 <= addOut;
 			ss <= Swait;
 		WHEN Swait =>
 			--TO DO change to appropriate input for PWM
@@ -310,7 +310,6 @@ BEGIN
 			outguard1 := out1 / SHIFT;
 			outguard2 := out2 / SHIFT;
 			outguard3 := out3 / SHIFT;
-			debug1 <= outguard3;
 			
 			--degub lines
 			--outguard0 := -2000;

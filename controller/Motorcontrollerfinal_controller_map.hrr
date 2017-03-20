@@ -3,156 +3,156 @@ Report for cell SPI_loopback_Top
    Instance path: SPI_loopback_Top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	    1033.00        100.0
-                                  LUT4	     908.00        100.0
+                                  SLIC	    1078.00        100.0
+                                  LUT4	     987.00        100.0
                                  IOBUF	         48        100.0
-                                PFUREG	        962        100.0
-                                RIPPLE	        576        100.0
+                                PFUREG	       1106        100.0
+                                RIPPLE	        580        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                   SPI	          1        20.2
-                       PWMGENERATOR_U1	          1         2.0
-                       PWMGENERATOR_U2	          1         2.0
-                          PWMGENERATOR	          1         2.0
-                       PWMGENERATOR_U0	          1         2.0
-        PID(8000000,80000000,10000000)	          1        56.9
-                               HALL_U4	          1         2.5
-                               HALL_U5	          1         2.5
-                               HALL_U3	          1         2.6
-                                  HALL	          1         2.6
-                        COMMUTATION_U6	          1         0.4
-                        COMMUTATION_U8	          1         0.4
+                                   SPI	          1        20.0
+                       PWMGENERATOR_U1	          1         1.9
+                       PWMGENERATOR_U2	          1         1.9
+                       PWMGENERATOR_U0	          1         1.9
+                          PWMGENERATOR	          1         1.8
+      PID(16000000,160000000,10000000)	          1        58.4
+                               HALL_U4	          1         2.4
+                               HALL_U5	          1         2.4
+                               HALL_U3	          1         2.4
+                                  HALL	          1         2.4
                         COMMUTATION_U7	          1         0.4
+                        COMMUTATION_U8	          1         0.4
                            COMMUTATION	          1         0.4
-                                CLKDIV	          1         1.2
----------------------------------------------------
-Report for cell COMMUTATION_U7
-   Instance path: SPI_loopback_Top/COM_I_M2
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	       4.17         0.4
-                                  LUT4	       5.00         0.6
-                                PFUREG	          7         0.7
+                        COMMUTATION_U6	          1         0.4
+                                CLKDIV	          1         1.1
 ---------------------------------------------------
 Report for cell COMMUTATION_U6
    Instance path: SPI_loopback_Top/COM_I_M3
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       4.17         0.4
-                                  LUT4	       5.00         0.6
-                                PFUREG	          7         0.7
+                                  LUT4	       5.00         0.5
+                                PFUREG	          7         0.6
 ---------------------------------------------------
-Report for cell SPI
-   Instance path: SPI_loopback_Top/SPI_I
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	     208.83        20.2
-                                  LUT4	     220.00        24.2
-                                PFUREG	        265        27.5
-                                RIPPLE	         76        13.2
----------------------------------------------------
-Report for cell HALL_U3
-   Instance path: SPI_loopback_Top/HALL_I_M3
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      26.75         2.6
-                                  LUT4	      31.00         3.4
-                                PFUREG	         49         5.1
-                                RIPPLE	         11         1.9
----------------------------------------------------
-Report for cell COMMUTATION
-   Instance path: SPI_loopback_Top/COM_I_M4
+Report for cell COMMUTATION_U7
+   Instance path: SPI_loopback_Top/COM_I_M2
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       4.17         0.4
-                                  LUT4	       5.00         0.6
-                                PFUREG	          7         0.7
----------------------------------------------------
-Report for cell CLKDIV
-   Instance path: SPI_loopback_Top/CLKDIV_I
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      12.00         1.2
-                                  LUT4	      14.00         1.5
-                                PFUREG	         20         2.1
-                                RIPPLE	          5         0.9
----------------------------------------------------
-Report for cell HALL_U4
-   Instance path: SPI_loopback_Top/HALL_I_M2
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      26.00         2.5
-                                  LUT4	      30.00         3.3
-                                PFUREG	         49         5.1
-                                RIPPLE	         11         1.9
+                                  LUT4	       5.00         0.5
+                                PFUREG	          7         0.6
 ---------------------------------------------------
 Report for cell COMMUTATION_U8
    Instance path: SPI_loopback_Top/COM_I_M1
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       4.17         0.4
-                                  LUT4	       5.00         0.6
-                                PFUREG	          7         0.7
+                                  LUT4	       5.00         0.5
+                                PFUREG	          7         0.6
 ---------------------------------------------------
-Report for cell PWMGENERATOR_U1
-   Instance path: SPI_loopback_Top/PWM_I_M2
+Report for cell CLKDIV
+   Instance path: SPI_loopback_Top/CLKDIV_I
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      20.83         2.0
-                                  LUT4	      19.00         2.1
-                                PFUREG	         12         1.2
+                                  SLIC	      12.08         1.1
+                                  LUT4	      14.00         1.4
+                                PFUREG	         20         1.8
+                                RIPPLE	          5         0.9
+---------------------------------------------------
+Report for cell COMMUTATION
+   Instance path: SPI_loopback_Top/COM_I_M4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.17         0.4
+                                  LUT4	       5.00         0.5
+                                PFUREG	          7         0.6
+---------------------------------------------------
+Report for cell HALL_U4
+   Instance path: SPI_loopback_Top/HALL_I_M2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.25         2.4
+                                  LUT4	      30.00         3.0
+                                PFUREG	         49         4.4
+                                RIPPLE	         11         1.9
+---------------------------------------------------
+Report for cell SPI
+   Instance path: SPI_loopback_Top/SPI_I
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     215.17        20.0
+                                  LUT4	     223.00        22.6
+                                PFUREG	        275        24.9
+                                RIPPLE	         76        13.1
+---------------------------------------------------
+Report for cell PWMGENERATOR_U0
+   Instance path: SPI_loopback_Top/PWM_I_M3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.08         1.9
+                                  LUT4	      18.00         1.8
+                                PFUREG	         12         1.1
                                 RIPPLE	         12         2.1
 ---------------------------------------------------
 Report for cell PWMGENERATOR_U2
    Instance path: SPI_loopback_Top/PWM_I_M1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      20.83         2.0
-                                  LUT4	      19.00         2.1
-                                PFUREG	         12         1.2
+                                  SLIC	      20.58         1.9
+                                  LUT4	      19.00         1.9
+                                PFUREG	         12         1.1
+                                RIPPLE	         12         2.1
+---------------------------------------------------
+Report for cell PID(16000000,160000000,10000000)
+   Instance path: SPI_loopback_Top/PID_I
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     629.33        58.4
+                                  LUT4	     498.00        50.5
+                                PFUREG	        521        47.1
+                                RIPPLE	        399        68.8
+---------------------------------------------------
+Report for cell HALL_U5
+   Instance path: SPI_loopback_Top/HALL_I_M1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.25         2.4
+                                  LUT4	      31.00         3.1
+                                PFUREG	         49         4.4
+                                RIPPLE	         11         1.9
+---------------------------------------------------
+Report for cell PWMGENERATOR_U1
+   Instance path: SPI_loopback_Top/PWM_I_M2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.58         1.9
+                                  LUT4	      19.00         1.9
+                                PFUREG	         12         1.1
                                 RIPPLE	         12         2.1
 ---------------------------------------------------
 Report for cell PWMGENERATOR
    Instance path: SPI_loopback_Top/PWM_I_M4
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      20.58         2.0
-                                  LUT4	      19.00         2.1
-                                PFUREG	         12         1.2
+                                  SLIC	      19.42         1.8
+                                  LUT4	      16.00         1.6
+                                PFUREG	         12         1.1
                                 RIPPLE	         12         2.1
----------------------------------------------------
-Report for cell PWMGENERATOR_U0
-   Instance path: SPI_loopback_Top/PWM_I_M3
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      20.58         2.0
-                                  LUT4	      19.00         2.1
-                                PFUREG	         12         1.2
-                                RIPPLE	         12         2.1
----------------------------------------------------
-Report for cell HALL_U5
-   Instance path: SPI_loopback_Top/HALL_I_M1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      26.17         2.5
-                                  LUT4	      31.00         3.4
-                                PFUREG	         49         5.1
-                                RIPPLE	         11         1.9
----------------------------------------------------
-Report for cell PID(8000000,80000000,10000000)
-   Instance path: SPI_loopback_Top/PID_I
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	     588.00        56.9
-                                  LUT4	     417.00        45.9
-                                PFUREG	        387        40.2
-                                RIPPLE	        395        68.6
 ---------------------------------------------------
 Report for cell HALL
    Instance path: SPI_loopback_Top/HALL_I_M4
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      26.42         2.6
-                                  LUT4	      30.00         3.3
-                                PFUREG	         49         5.1
+                                  SLIC	      26.25         2.4
+                                  LUT4	      30.00         3.0
+                                PFUREG	         49         4.4
+                                RIPPLE	         11         1.9
+---------------------------------------------------
+Report for cell HALL_U3
+   Instance path: SPI_loopback_Top/HALL_I_M3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.25         2.4
+                                  LUT4	      31.00         3.1
+                                PFUREG	         49         4.4
                                 RIPPLE	         11         1.9

@@ -14,7 +14,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Mon Mar 20 15:00:39 2017
+Mon Mar 20 17:28:30 2017
 
 Pinout by Port Name:
 +------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -67,7 +67,7 @@ Pinout by Port Name:
 | MISO       | 56/2     | LVCMOS25_OUT | PB23B |           |           | DRIVE:8mA SLEW:SLOW                  |
 | MOSI       | 81/1     | LVCMOS25_IN  | PR18B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | SCK        | 82/1     | LVCMOS25_IN  | PR18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| clkout     | 39/2     | LVCMOS25_OUT | PB4B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| clkout     | 83/1     | LVCMOS25_OUT | PR17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 +------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
@@ -123,7 +123,7 @@ Vccio by Bank:
 | 34/3     | H_C_m4                | LOCATED    | LVCMOS25_IN  | PL25A |                |           |           |
 | 35/3     | H_B_m4                | LOCATED    | LVCMOS25_IN  | PL25B |                |           |           |
 | 38/2     | H_C_m1                | LOCATED    | LVCMOS25_IN  | PB4A  |                |           |           |
-| 39/2     | clkout                |            | LVCMOS25_OUT | PB4B  |                |           |           |
+| 39/2     |     unused, PULL:DOWN |            |              | PB4B  |                |           |           |
 | 40/2     |     unused, PULL:DOWN |            |              | PB6A  | CSSPIN         |           |           |
 | 41/2     |     unused, PULL:DOWN |            |              | PB6B  |                |           |           |
 | 42/2     |     unused, PULL:DOWN |            |              | PB9A  |                |           |           |
@@ -159,7 +159,7 @@ Vccio by Bank:
 | 78/1     |     unused, PULL:DOWN |            |              | PR21A | DQ1            |           |           |
 | 81/1     | MOSI                  | LOCATED    | LVCMOS25_IN  | PR18B | DQ1            |           |           |
 | 82/1     | SCK                   | LOCATED    | LVCMOS25_IN  | PR18A | DQ1            |           |           |
-| 83/1     |     unused, PULL:DOWN |            |              | PR17B | DQ1            |           |           |
+| 83/1     | clkout                |            | LVCMOS25_OUT | PR17B | DQ1            |           |           |
 | 84/1     |     unused, PULL:DOWN |            |              | PR17A | DQ1            |           |           |
 | 85/1     |     unused, PULL:DOWN |            |              | PR16B | DQS1N          |           |           |
 | 86/1     | CS                    | LOCATED    | LVCMOS25_IN  | PR16A | DQS1           |           |           |
@@ -494,7 +494,7 @@ LOCATE  COMP  "MC_m4[1]"  SITE  "25";
 LOCATE  COMP  "MISO"  SITE  "56";
 LOCATE  COMP  "MOSI"  SITE  "81";
 LOCATE  COMP  "SCK"  SITE  "82";
-LOCATE  COMP  "clkout"  SITE  "39";
+LOCATE  COMP  "clkout"  SITE  "83";
 
 
 
@@ -506,7 +506,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 20 15:00:39 2017
+Mon Mar 20 17:28:30 2017
 
 
 

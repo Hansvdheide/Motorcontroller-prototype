@@ -287,7 +287,7 @@ begin
 	freeDebug(0) <= free_m4;
 	-- SPI instances
 	SPI_I : SPI
-		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => PWMdut_m4, speed_m2 => debug2, speed_m3 => debug1, speed_m4 => speed_m4);
+		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => speed_m1, speed_m2 => PWMdut_m1, speed_m3 => debug1, speed_m4 => debug2);
 		----
 	-- PID instances TODO PLACEHOLDER
 	PID_I : PID

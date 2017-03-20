@@ -150,10 +150,10 @@
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(206): </Dynamic>
-            <Dynamic>a[27]</Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(227): </Dynamic>
+            <Dynamic>a[28]</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>206</Navigation>
+            <Navigation>227</Navigation>
         </Message>
         <Message>
             <ID>35935013</ID>

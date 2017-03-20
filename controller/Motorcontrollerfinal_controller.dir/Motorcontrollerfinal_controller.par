@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 20 15:00:26 2017
+Mon Mar 20 17:28:16 2017
 
 C:/lscc/diamond/3.8_x64/ispfpga\bin\nt64\par -f
 Motorcontrollerfinal_controller.p2t Motorcontrollerfinal_controller_map.ncd
@@ -17,11 +17,11 @@ Preference file: Motorcontrollerfinal_controller.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            11.151       0            0.306        0            20           Complete
+5_1   *      0            12.142       0            0.304        0            22           Complete
 
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 20 secs 
+Total (real) run time for 1-seed: 22 secs 
 
 par done!
