@@ -59,6 +59,7 @@ ARCHITECTURE PID OF PID IS
 	-- formula PI contorller : out(n) = error(n)*PropGain + sum(N = 0 to n)(error(N)*intgGain) = propOut(n) + intgOut(n)  --
 	-- intgOut(n) = sum(N = 0 to n - 1)(error(N)*intgGain) + error(n)*intgGain                                            --
 	-- intgOut(n) = intgOut(n - 1) + error(n)*intgOut = intgOut(n - 1) + intgAdd(n)                                       --
+	-- iets met feedforward                                                                                               --
 	------------------------------------------------------------------------------------------------------------------------
 	
 	
