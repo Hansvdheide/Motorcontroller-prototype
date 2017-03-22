@@ -44,12 +44,12 @@ end PID;
 
 ARCHITECTURE PID OF PID IS
 
-	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 1200;
-	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 0;
-	CONSTANT MAX_INTG_GAIN : integer := 8000000;
+	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 1200; --1200
+	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 8;--8;
+	CONSTANT MAX_INTG_GAIN : integer := 5000000;
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
 	CONSTANT FORW_MINUS : integer := 5000;
-	CONSTANT FORW_MULT : integer := 0;
+	CONSTANT FORW_MULT : integer := 400;--400;
 
 
 	
@@ -190,7 +190,7 @@ BEGIN
 				backOut3 WHEN	ss = S13 ELSE
 				0;
 
-PROCESS(clk) 
+PROCESS(clk, rst) 
 
 VARIABLE outguard0 : INTEGER RANGE -INPUT_RANGE TO INPUT_RANGE;
 VARIABLE outguard1 : INTEGER RANGE -INPUT_RANGE TO INPUT_RANGE;
@@ -236,6 +236,7 @@ BEGIN
 		WHEN S0 =>		
 			ss <= S1;
 		WHEN S1 =>	
+			debug1 <= subOut;
 			ss <= S2;
 		WHEN S2 =>	
 			
@@ -278,7 +279,6 @@ BEGIN
 			backOut2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
-			debug2 <= multOut;
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut3 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -292,7 +292,7 @@ BEGIN
 			backOut3 <= addOut;
 			ss <= S11;
 		WHEN S11 =>
-			debug1 <= addOut;
+
 			out0 <= addOut;
 			ss <= S12;
 		WHEN S12 =>

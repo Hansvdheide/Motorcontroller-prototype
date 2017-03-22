@@ -1,1 +1,1 @@
-SPI_loopback_Top_rtl.vdb
+Motorcontrollerfinal_controller_rtl.vdb

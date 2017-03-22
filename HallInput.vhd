@@ -83,7 +83,9 @@ else
 		end if;
 		
 		if( (hall1_old /= hall1_lat) OR (hall2_old /= hall2_lat) OR (hall3_old /= hall3_lat) ) then -- Trigger on any edge of the hall effect sensors, update the speed count
-			speedt := count;
+			IF(count /= 1) THEN
+				speedt := count;
+			END IF;
 			count := 0;
 		end if;
 		

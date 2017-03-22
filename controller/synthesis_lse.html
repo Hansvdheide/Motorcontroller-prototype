@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 20 17:28:05 2017
+Tue Mar 21 14:00:48 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -43,7 +43,7 @@ Using performance grade 4.
                                                           
 
 Optimization goal = Balanced
-Top-level module name = SPI_loopback_Top.
+The -top option is not used.
 Target frequency = 1.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -90,7 +90,37 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
+WARNING - synthesis: Setting SPI_loopback_Top as the top-level module. To specify the top-level module explicitly, use the -top option.
 INFO - synthesis: The default VHDL library search path is now "C:/Users/gebruiker/workspace/lattice/Final code software/controller". VHDL-1504
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd(20): analyzing entity clkdiv. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd(34): analyzing architecture clkdiv. VHDL-1010
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(28): analyzing entity commutation. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(53): analyzing architecture commutation. VHDL-1010
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(22): analyzing entity hall. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(41): analyzing architecture hall. VHDL-1010
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(25): analyzing entity pwmgenerator. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(36): analyzing architecture pwmgenerator. VHDL-1010
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(21): analyzing entity spi. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(54): analyzing architecture spi. VHDL-1010
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(24): analyzing entity spi_loopback_top. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80): analyzing architecture arch. VHDL-1010
+WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80): overwriting existing secondary unit arch. VHDL-1178
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/pid.vhd. VHDL-1481
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): analyzing entity pid. VHDL-1012
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): analyzing architecture pid. VHDL-1010
+unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd(20): analyzing entity clkdiv. VHDL-1012
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd(34): analyzing architecture clkdiv. VHDL-1010
@@ -217,12 +247,12 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 1106 of 7209 (15 % )
+Number of register bits => 1064 of 7209 (14 % )
 AND2 => 12
-CCU2D => 361
+CCU2D => 363
 FADD2B => 117
-FD1P3AX => 678
-FD1P3IX => 107
+FD1P3AX => 667
+FD1P3IX => 76
 FD1P3JX => 48
 FD1S3AX => 97
 FD1S3AY => 14
@@ -231,13 +261,13 @@ GSR => 1
 IB => 15
 INV => 1
 L6MUX21 => 29
-LUT4 => 957
+LUT4 => 1011
 MULT2 => 102
 ND2 => 5
 OB => 32
 OBZ => 1
 OSCH => 1
-PFUMX => 125
+PFUMX => 126
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -247,35 +277,35 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 4
-  Net : clk_N_683, loads : 521
+  Net : clk_N_683, loads : 479
   Net : clkout_c, loads : 342
   Net : clk_1mhz, loads : 196
   Net : pwm_clk, loads : 48
 Clock Enable Nets
-Number of Clock Enables: 32
+Number of Clock Enables: 29
 Top 10 highest fanout Clock Enables:
-  Net : SPI_I/clkout_c_enable_256, loads : 84
-  Net : SPI_I/clkout_c_enable_73, loads : 50
-  Net : PID_I/clk_N_683_enable_426, loads : 49
-  Net : HALL_I_M2/clk_1mhz_enable_100, loads : 40
-  Net : HALL_I_M3/clk_1mhz_enable_81, loads : 40
-  Net : HALL_I_M4/clk_1mhz_enable_62, loads : 40
-  Net : HALL_I_M1/clk_1mhz_enable_104, loads : 40
-  Net : SPI_I/clkout_c_enable_108, loads : 34
-  Net : PID_I/clk_N_683_enable_45, loads : 29
-  Net : PID_I/clk_N_683_enable_213, loads : 29
+  Net : SPI_I/clkout_c_enable_245, loads : 84
+  Net : SPI_I/clkout_c_enable_68, loads : 50
+  Net : PID_I/clk_N_683_enable_392, loads : 49
+  Net : SPI_I/clkout_c_enable_103, loads : 34
+  Net : PID_I/clk_N_683_enable_128, loads : 29
+  Net : PID_I/clk_N_683_enable_212, loads : 29
+  Net : PID_I/clk_N_683_enable_44, loads : 29
+  Net : PID_I/clk_N_683_enable_240, loads : 29
+  Net : PID_I/clk_N_683_enable_72, loads : 29
+  Net : PID_I/clk_N_683_enable_268, loads : 29
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : PID_I/n19439, loads : 97
-  Net : SPI_I/CSlatched, loads : 91
-  Net : PID_I/multIn2_5, loads : 90
-  Net : SPI_I/clkout_c_enable_256, loads : 84
-  Net : SPI_I/n19036, loads : 76
-  Net : SPI_I/n19432, loads : 74
-  Net : SPI_I/n19433, loads : 73
-  Net : clkout_c_enable_237, loads : 58
-  Net : PID_I/clk_N_683_enable_73, loads : 58
-  Net : PID_I/clk_N_683_enable_101, loads : 58
+  Net : SPI_I/CSlatched, loads : 114
+  Net : PID_I/n19542, loads : 93
+  Net : SPI_I/clkout_c_enable_245, loads : 84
+  Net : SPI_I/n19064, loads : 81
+  Net : SPI_I/n19535, loads : 63
+  Net : SPI_I/n19536, loads : 60
+  Net : PID_I/ss_2, loads : 60
+  Net : clkout_c_enable_239, loads : 58
+  Net : PID_I/clk_N_683_enable_184, loads : 58
+  Net : PID_I/clk_N_683_enable_100, loads : 58
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -285,13 +315,13 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk3 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
+clk3 [get_nets clk_1mhz]                |    1.000 MHz|   65.552 MHz|     9  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk2 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   34.145 MHz|    19  
+clk2 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets clk_1mhz]                |    1.000 MHz|   90.106 MHz|     6  
+clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   29.698 MHz|    21  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
 clk0 [get_nets clkout_c]                |    1.000 MHz|   96.843 MHz|     6  
@@ -302,10 +332,10 @@ clk0 [get_nets clkout_c]                |    1.000 MHz|   96.843 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 125.922  MB
+Peak Memory Usage: 126.141  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 6.875  secs
+Elapsed CPU time for LSE flow : 6.703  secs
 --------------------------------------------------------------
 
 
