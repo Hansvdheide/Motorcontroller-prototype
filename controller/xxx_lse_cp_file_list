@@ -3,6 +3,8 @@
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
@@ -53,9 +55,40 @@
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
@@ -90,6 +123,101 @@
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
@@ -101,16 +229,6 @@
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 21	 c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
@@ -205,541 +323,6 @@
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
@@ -890,164 +473,9 @@
 23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
 23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
 23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
@@ -1121,10 +549,70 @@
 29	 mult_29s_25s.v
 29	 mult_29s_25s.v
 29	 mult_29s_25s.v
-26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
-29	 mult_29s_25s.v
 29	 mult_29s_25s.v
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+29	 mult_29s_25s.v
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
+26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
@@ -2107,10 +1595,553 @@
 26	 c:/users/gebruiker/workspace/lattice/final code software/pid.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
-22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+24	 c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
+25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
 22	 c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd
@@ -2214,31 +2245,3 @@
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
 25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-25	 c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd
-23	 c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd

@@ -42,12 +42,16 @@ ARCHITECTURE HALL OF HALL IS
 
 signal hall1_lat : std_logic;
 signal hall1_old : std_logic;
+
  
 signal hall2_lat : std_logic;
 signal hall2_old : std_logic;
 
+
 signal hall3_lat : std_logic;
 signal hall3_old : std_logic;
+
+signal stable_counting : std_logic;
 
 BEGIN
 
@@ -55,6 +59,7 @@ PROCESS(rst, clk_1mhz, hall1, hall2, hall3)
 
 variable count : integer range 0 to 1000000 := 0;
 variable speedt : integer range 0 to 1000000 := 0;
+VARIABLE stable_count : integer RANGE 0 TO 100;
 
 BEGIN
 
@@ -62,6 +67,8 @@ if (rst = '0') then
 	count := 0;
 	speedt := 0;
 	speed <= 0;
+	stable_counting <= '0';
+	stable_count := 0;
 	Hall_sns <= "111"; -- Outputting this into the commutation dissables the outputs
 else 
 
@@ -83,13 +90,27 @@ else
 		end if;
 		
 		if( (hall1_old /= hall1_lat) OR (hall2_old /= hall2_lat) OR (hall3_old /= hall3_lat) ) then -- Trigger on any edge of the hall effect sensors, update the speed count
-			IF(count /= 1) THEN
-				speedt := count;
-			END IF;
-			count := 0;
+
+			stable_counting <= '1';
 		end if;
 		
-		speed <= speedt; -- Update speed output
+		IF(stable_counting = '1') THEN
+			IF(hall1_old = hall1_lat AND hall2_old = hall2_lat AND hall3_old = hall3_lat)THEN
+				stable_count := stable_count + 1;
+			ELSE
+				stable_count := 0;
+				stable_counting <= '0';
+			END IF;
+			
+			IF(stable_count = 2) THEN
+				stable_count := 0;
+				stable_counting <= '0';
+				speedt := count;
+				count := 0;
+				speed <= speedt; -- Update speed output
+			END IF;
+
+		END IF;
 		
 		-- Update the hall position sensors for use with commutation IN THE FORMAT HALLA - HALLB - HALLC HALLA = msb
 		Hall_sns(2) <= hall1_lat;

@@ -6,40 +6,40 @@
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1490101284"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1491291926"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1490101258">
-            <Task name="Map" build_result="2" update_result="0" update_time="1490101258"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1490101259"/>
+        <Milestone name="Map" build_result="2" build_time="1491291900">
+            <Task name="Map" build_result="2" update_result="0" update_time="1491291900"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1491291901"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1490101279">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1490101279"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1490101280"/>
+        <Milestone name="PAR" build_result="2" build_time="1491291921">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1491291921"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1491291922"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1490101255">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1490101255"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1490101284"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1491291897">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1491291897"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1491291927"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1490093234"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1491232484"/>
             <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/Motorcontrollerfinal_controller_map.vdb" last_build_time="1490101258" last_build_size="554406"/>
-        <Report name="Motorcontrollerfinal_controller.bgn" last_build_time="1490101284" last_build_size="4231"/>
+        <Report name=".vdbs/Motorcontrollerfinal_controller_map.vdb" last_build_time="1491291900" last_build_size="553380"/>
+        <Report name="Motorcontrollerfinal_controller.bgn" last_build_time="1491291926" last_build_size="4231"/>
         <Report name="Motorcontrollerfinal_controller.bit" last_build_time="1482147152" last_build_size="31200"/>
-        <Report name="Motorcontrollerfinal_controller.jed" last_build_time="1490101284" last_build_size="1465903"/>
-        <Report name="Motorcontrollerfinal_controller.lsedata" last_build_time="1490101249" last_build_size="2464645"/>
-        <Report name="Motorcontrollerfinal_controller.ncd" last_build_time="1490101279" last_build_size="2220362"/>
-        <Report name="Motorcontrollerfinal_controller.ngd" last_build_time="1490101255" last_build_size="1721923"/>
-        <Report name="Motorcontrollerfinal_controller.tw1" last_build_time="1490101259" last_build_size="10826"/>
-        <Report name="Motorcontrollerfinal_controller.twr" last_build_time="1490101280" last_build_size="51568"/>
-        <Report name="Motorcontrollerfinal_controller_map.ncd" last_build_time="1490101257" last_build_size="1475928"/>
+        <Report name="Motorcontrollerfinal_controller.jed" last_build_time="1491291926" last_build_size="1465903"/>
+        <Report name="Motorcontrollerfinal_controller.lsedata" last_build_time="1491291890" last_build_size="2528456"/>
+        <Report name="Motorcontrollerfinal_controller.ncd" last_build_time="1491291921" last_build_size="2222155"/>
+        <Report name="Motorcontrollerfinal_controller.ngd" last_build_time="1491291897" last_build_size="1731325"/>
+        <Report name="Motorcontrollerfinal_controller.tw1" last_build_time="1491291901" last_build_size="10802"/>
+        <Report name="Motorcontrollerfinal_controller.twr" last_build_time="1491291922" last_build_size="52081"/>
+        <Report name="Motorcontrollerfinal_controller_map.ncd" last_build_time="1491291899" last_build_size="1472308"/>
         <Report name="Motorcontrollerfinal_controller_vho.sdf" last_build_time="1479988698" last_build_size="874190"/>
         <Report name="Motorcontrollerfinal_controller_vho.vho" last_build_time="1479988697" last_build_size="5565828"/>
         <Report name="Motorcontrollerfinal_controller_vo.sdf" last_build_time="1479475038" last_build_size="475596"/>
