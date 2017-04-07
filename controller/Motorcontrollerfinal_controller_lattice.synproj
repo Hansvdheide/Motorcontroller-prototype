@@ -37,6 +37,7 @@
 "C:/Users/gebruiker/workspace/lattice/Final code software/SPI loopbacktest v2.vhd"
 "C:/Users/gebruiker/workspace/lattice/Final code software/ToplevelFinal.vhd"
 "C:/Users/gebruiker/workspace/lattice/Final code software/PID.vhd"
+-top SPI_loopback_Top
 
 
 -p "C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data" "C:/Users/gebruiker/workspace/lattice/Final code software/controller" "C:/Users/gebruiker/workspace/lattice/Final code software"

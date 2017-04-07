@@ -129,6 +129,8 @@ architecture arch of SPI_loopback_Top is
 	
 	signal debug1 : integer RANGE -1000000 to 1000000;
 	signal debug2 : integer RANGE -1000000 to 1000000;
+	signal debug3 : integer RANGE -1000000 to 1000000;
+	signal debug4 : integer RANGE -1000000 to 1000000;
 	
 	SIGNAL start_cnt : INTEGER RANGE 0 TO 10001;
 	
@@ -223,7 +225,9 @@ architecture arch of SPI_loopback_Top is
 			dirout_m4 : OUT std_logic;
 			
 			debug1 : OUT integer RANGE -1000000 to 1000000;
-			debug2 : OUT integer RANGE -1000000 to 1000000
+			debug2 : OUT integer RANGE -1000000 to 1000000;
+			debug3 : OUT integer RANGE -1000000 to 1000000;
+			debug4 : OUT integer RANGE -1000000 to 1000000
 		);
 	end component;
 	
@@ -287,11 +291,11 @@ begin
 	freeDebug(0) <= free_m4;
 	-- SPI instances
 	SPI_I : SPI
-		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => speed_m1, speed_m2 => speed_m2, speed_m3 => speed_m3, speed_m4 => speed_m4);
+		Port Map (clk=>clk, rst => rst, MOSI => MOSI, MISO => MISO, enable_m1 => enable_m1, enable_m2 => enable_m2, enable_m3 => enable_m3, enable_m4 => enable_m4, SCK => SCK, CS => CS, speed_set_m1 => speed_set_m1, speed_set_m2 => speed_set_m2, speed_set_m3 => speed_set_m3, speed_set_m4 => speed_set_m4, speed_m1 => speed_m1, speed_m2=> speed_m2, speed_m3 => speed_m3, speed_m4 => speed_m4);
 		----
 	-- PID instances TODO PLACEHOLDER
 	PID_I : PID
-		Port Map (clk => pi_clk, rst => rst, speedset_m1 => speed_set_m1, speedset_m2 => speed_set_m2, speedset_m3 => speed_set_m3, speedset_m4 => speed_set_m4, speedin_m1 => speed_m1,  speedin_m2 => speed_m2, speedin_m3 => speed_m3, speedin_m4 => speed_m4, dutyout_m1 => PWMdut_m1, dutyout_m2 => PWMdut_m2, dutyout_m3 => PWMdut_m3, dutyout_m4 => PWMdut_m4, dirout_m1 => dir_m1, dirout_m2 => dir_m2, dirout_m3 => dir_m3, dirout_m4 => dir_m4, debug1 => debug1, debug2 => debug2);
+		Port Map (clk => pi_clk, rst => rst, speedset_m1 => speed_set_m1, speedset_m2 => speed_set_m2, speedset_m3 => speed_set_m3, speedset_m4 => speed_set_m4, speedin_m1 => speed_m1,  speedin_m2 => speed_m2, speedin_m3 => speed_m3, speedin_m4 => speed_m4, dutyout_m1 => PWMdut_m1, dutyout_m2 => PWMdut_m2, dutyout_m3 => PWMdut_m3, dutyout_m4 => PWMdut_m4, dirout_m1 => dir_m1, dirout_m2 => dir_m2, dirout_m3 => dir_m3, dirout_m4 => dir_m4, debug1 => debug1, debug2 => debug2, debug3 => debug3, debug4 => debug4);
 		
 		
 	-- Motor 1 Instances

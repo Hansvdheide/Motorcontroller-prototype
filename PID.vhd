@@ -38,19 +38,20 @@ ENTITY PID IS
 			dirout_m4 : OUT std_logic;
 			
 			debug1 : OUT integer RANGE -1000000 to 1000000;
-			debug2 : OUT integer RANGE -1000000 to 1000000
+			debug2 : OUT integer RANGE -1000000 to 1000000;
+			debug3 : OUT integer RANGE -1000000 to 1000000;
+			debug4 : OUT integer RANGE -1000000 to 1000000
 		);
 end PID;
 
 ARCHITECTURE PID OF PID IS
 
-	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 1200; --1200
+	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 2400; --1200
 	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 8;
-	CONSTANT MAX_INTG_GAIN : integer := 1000000;
+	CONSTANT MAX_INTG_GAIN : integer := 1000000;--3000000;
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
-	CONSTANT FORW_MINUS : integer := 5000;
-	CONSTANT FORW_MULT : integer := 400;--400;
-
+	CONSTANT FORW_MINUS : integer := 5000; --5000
+	CONSTANT FORW_MULT : integer := 700;--400;
 
 	
 	------------------------------------------------------------------------------------------------------------------------
@@ -237,12 +238,12 @@ BEGIN
 		WHEN S0 =>		
 			ss <= S1;
 		WHEN S1 =>	
-			debug1 <= subOut;
 			ss <= S2;
 		WHEN S2 =>	
-			
 			ss <= S3;
 		WHEN S3 =>
+			debug1 <= addOut;
+
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut0 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -256,6 +257,7 @@ BEGIN
 			backOut0 <= addOut;
 			ss <= S5;
 		WHEN S5 =>
+			debug1 <= addOut;
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut1 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -268,6 +270,7 @@ BEGIN
 			backOut1 <= addOut;
 			ss <= S7;
 		WHEN S7 =>
+			debug1 <= addOut;
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut2 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -280,6 +283,7 @@ BEGIN
 			backOut2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
+			debug1 <= addOut;
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut3 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN

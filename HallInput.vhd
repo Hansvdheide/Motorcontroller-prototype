@@ -107,9 +107,9 @@ else
 				stable_counting <= '0';
 				speedt := count;
 				count := 0;
-				speed <= speedt; -- Update speed output
+				
 			END IF;
-
+		speed <= speedt; -- Update speed output
 		END IF;
 		
 		-- Update the hall position sensors for use with commutation IN THE FORMAT HALLA - HALLB - HALLC HALLA = msb

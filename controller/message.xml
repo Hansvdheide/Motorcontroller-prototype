@@ -6,11 +6,6 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>35001200</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>SPI_loopback_Top</Dynamic>
-        </Message>
-        <Message>
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
@@ -113,14 +108,6 @@
             <Navigation>80</Navigation>
         </Message>
         <Message>
-            <ID>35921178</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80): </Dynamic>
-            <Dynamic>arch</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd</Navigation>
-            <Navigation>80</Navigation>
-        </Message>
-        <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
             <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): </Dynamic>
@@ -131,137 +118,25 @@
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(47): </Dynamic>
             <Dynamic>pid</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>45</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd(20): </Dynamic>
-            <Dynamic>clkdiv</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd</Navigation>
-            <Navigation>20</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd(34): </Dynamic>
-            <Dynamic>clkdiv</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/clockdivider.vhd</Navigation>
-            <Navigation>34</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(28): </Dynamic>
-            <Dynamic>commutation</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd</Navigation>
-            <Navigation>28</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd(53): </Dynamic>
-            <Dynamic>commutation</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/commutation.vhd</Navigation>
-            <Navigation>53</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(22): </Dynamic>
-            <Dynamic>hall</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(41): </Dynamic>
-            <Dynamic>hall</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd</Navigation>
-            <Navigation>41</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(25): </Dynamic>
-            <Dynamic>pwmgenerator</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd</Navigation>
-            <Navigation>25</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd(36): </Dynamic>
-            <Dynamic>pwmgenerator</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pwm_gen.vhd</Navigation>
-            <Navigation>36</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(21): </Dynamic>
-            <Dynamic>spi</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd</Navigation>
-            <Navigation>21</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd(54): </Dynamic>
-            <Dynamic>spi</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/spi loopbacktest v2.vhd</Navigation>
-            <Navigation>54</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(24): </Dynamic>
-            <Dynamic>spi_loopback_top</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd</Navigation>
-            <Navigation>24</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(80): </Dynamic>
-            <Dynamic>arch</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd</Navigation>
-            <Navigation>80</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(9): </Dynamic>
-            <Dynamic>pid</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>9</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(45): </Dynamic>
-            <Dynamic>pid</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>47</Navigation>
         </Message>
         <Message>
             <ID>35921251</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(359): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(363): </Dynamic>
             <Dynamic>pwmdut_m4</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd</Navigation>
-            <Navigation>359</Navigation>
+            <Navigation>363</Navigation>
         </Message>
         <Message>
             <ID>35921613</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(366): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd(370): </Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/toplevelfinal.vhd</Navigation>
-            <Navigation>366</Navigation>
+            <Navigation>370</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
@@ -275,10 +150,10 @@
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(228): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(229): </Dynamic>
             <Dynamic>a[28]</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd</Navigation>
-            <Navigation>228</Navigation>
+            <Navigation>229</Navigation>
         </Message>
         <Message>
             <ID>35935013</ID>
