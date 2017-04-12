@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.8.0.115.3
-Thu Apr 06 15:21:57 2017
+Wed Apr 12 10:37:53 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -47,35 +47,35 @@ Passed: The following path meets requirements by 15.711ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              SPI_I/\SPI__7__i20  (from clkout_c +)
-   Destination:    FF         Data in        SPI_I/speed_set_m4_i0_i1  (to clkout_c +)
-                   FF                        SPI_I/speed_set_m4_i0_i0
+   Source:         FF         Q              SPI_I/\SPI__7_rep_4__i46  (from clkout_c +)
+   Destination:    FF         Data in        SPI_I/speed_set_m2_i0_i17  (to clkout_c +)
+                   FF                        SPI_I/speed_set_m2_i0_i16
 
    Delay:              10.331ns  (28.3% logic, 71.7% route), 6 logic levels.
 
  Constraint Details:
 
-     10.331ns physical path delay SPI_I/SLICE_140 to SLICE_1125 meets
+     10.331ns physical path delay SPI_I/SLICE_18 to SLICE_535 meets
      26.316ns delay constraint less
       0.274ns LSR_SET requirement (totaling 26.042ns) by 15.711ns
 
  Physical Path Details:
 
-      Data path SPI_I/SLICE_140 to SLICE_1125:
+      Data path SPI_I/SLICE_18 to SLICE_535:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452 *SLICE_140.CLK to */SLICE_140.Q0 SPI_I/SLICE_140 (from clkout_c)
-ROUTE         5   e 1.234 */SLICE_140.Q0 to *SLICE_1129.A1 SPI_I/recv_buffer_32
-CTOF_DEL    ---     0.495 *SLICE_1129.A1 to *SLICE_1129.F1 SPI_I/SLICE_1129
-ROUTE         1   e 1.234 *SLICE_1129.F1 to *SLICE_1321.B0 SPI_I/n34
-CTOF_DEL    ---     0.495 *SLICE_1321.B0 to *SLICE_1321.F0 SPI_I/SLICE_1321
-ROUTE         1   e 1.234 *SLICE_1321.F0 to *SLICE_1320.B0 SPI_I/n38
-CTOF_DEL    ---     0.495 *SLICE_1320.B0 to *SLICE_1320.F0 SPI_I/SLICE_1320
-ROUTE         1   e 1.234 *SLICE_1320.F0 to *SLICE_1033.D1 SPI_I/n40
-CTOF_DEL    ---     0.495 *SLICE_1033.D1 to *SLICE_1033.F1 SPI_I/SLICE_1033
-ROUTE         2   e 1.234 *SLICE_1033.F1 to *SLICE_1399.D1 SPI_I/enable_m4_N_649
-CTOF_DEL    ---     0.495 *SLICE_1399.D1 to *SLICE_1399.F1 SPI_I/SLICE_1399
-ROUTE        11   e 1.234 *SLICE_1399.F1 to SLICE_1125.LSR SPI_I/n12992 (to clkout_c)
+REG_DEL     ---     0.452 */SLICE_18.CLK to *I/SLICE_18.Q0 SPI_I/SLICE_18 (from clkout_c)
+ROUTE         4   e 1.234 *I/SLICE_18.Q0 to *SLICE_1063.D1 SPI_I/recv_buffer_58
+CTOF_DEL    ---     0.495 *SLICE_1063.D1 to *SLICE_1063.F1 SPI_I/SLICE_1063
+ROUTE         1   e 1.234 *SLICE_1063.F1 to *SLICE_1206.B0 SPI_I/n34_adj_1914
+CTOF_DEL    ---     0.495 *SLICE_1206.B0 to *SLICE_1206.F0 SPI_I/SLICE_1206
+ROUTE         1   e 1.234 *SLICE_1206.F0 to *SLICE_1205.B0 SPI_I/n38_adj_1912
+CTOF_DEL    ---     0.495 *SLICE_1205.B0 to *SLICE_1205.F0 SPI_I/SLICE_1205
+ROUTE         1   e 1.234 *SLICE_1205.F0 to */SLICE_959.D1 SPI_I/n40_adj_1909
+CTOF_DEL    ---     0.495 */SLICE_959.D1 to */SLICE_959.F1 SPI_I/SLICE_959
+ROUTE         2   e 1.234 */SLICE_959.F1 to *SLICE_1285.D0 SPI_I/enable_m2_N_635
+CTOF_DEL    ---     0.495 *SLICE_1285.D0 to *SLICE_1285.F0 SPI_I/SLICE_1285
+ROUTE        11   e 1.234 *SLICE_1285.F0 to  SLICE_535.LSR SPI_I/n12035 (to clkout_c)
                   --------
                    10.331   (28.3% logic, 71.7% route), 6 logic levels.
 
@@ -104,27 +104,24 @@ Found 4 clocks:
 Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_588.Q1   Loads: 255
    No transfer within this clock domain is found
 
-Clock Domain: pwm_clk   Source: SLICE_486.Q0   Loads: 29
+Clock Domain: clk_1mhz   Source: CLKDIV_I/SLICE_585.Q1   Loads: 104
    No transfer within this clock domain is found
 
-Clock Domain: clk_1mhz   Source: CLKDIV_I/SLICE_585.Q1   Loads: 166
+Clock Domain: pwm_clk   Source: SLICE_436.Q0   Loads: 29
    No transfer within this clock domain is found
 
-Clock Domain: clkout_c   Source: OSCInst0.OSC   Loads: 208
+Clock Domain: clkout_c   Source: OSCInst0.OSC   Loads: 199
    Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;
 
    Data transfers from:
    Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_588.Q1
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
-
-   Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_588.Q1
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
-
-   Clock Domain: pwm_clk   Source: SLICE_486.Q0
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 4
 
    Clock Domain: clk_1mhz   Source: CLKDIV_I/SLICE_585.Q1
       Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 92
+
+   Clock Domain: pwm_clk   Source: SLICE_436.Q0
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8
 
 
 Timing summary (Setup):
@@ -133,11 +130,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5120 paths, 1 nets, and 9119 connections (98.39% coverage)
+Constraints cover 5111 paths, 1 nets, and 8297 connections (98.24% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.8.0.115.3
-Thu Apr 06 15:21:57 2017
+Wed Apr 12 10:37:53 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -215,24 +212,24 @@ Found 4 clocks:
 Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_588.Q1   Loads: 255
    No transfer within this clock domain is found
 
-Clock Domain: pwm_clk   Source: SLICE_486.Q0   Loads: 29
+Clock Domain: clk_1mhz   Source: CLKDIV_I/SLICE_585.Q1   Loads: 104
    No transfer within this clock domain is found
 
-Clock Domain: clk_1mhz   Source: CLKDIV_I/SLICE_585.Q1   Loads: 166
+Clock Domain: pwm_clk   Source: SLICE_436.Q0   Loads: 29
    No transfer within this clock domain is found
 
-Clock Domain: clkout_c   Source: OSCInst0.OSC   Loads: 208
+Clock Domain: clkout_c   Source: OSCInst0.OSC   Loads: 199
    Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;
 
    Data transfers from:
    Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_588.Q1
       Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 4
 
-   Clock Domain: pwm_clk   Source: SLICE_486.Q0
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8
-
    Clock Domain: clk_1mhz   Source: CLKDIV_I/SLICE_585.Q1
       Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 92
+
+   Clock Domain: pwm_clk   Source: SLICE_436.Q0
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8
 
 
 Timing summary (Hold):
@@ -241,7 +238,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5120 paths, 1 nets, and 9119 connections (98.39% coverage)
+Constraints cover 5111 paths, 1 nets, and 8297 connections (98.24% coverage)
 
 
 

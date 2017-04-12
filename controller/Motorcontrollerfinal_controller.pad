@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Thu Apr 06 15:22:13 2017
+Wed Apr 12 10:38:11 2017
 
 Pinout by Port Name:
 +------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -51,7 +51,7 @@ Pinout by Port Name:
 | MC_m1[0]   | 107/1    | LVCMOS25_OUT | PR2A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MC_m1[1]   | 105/1    | LVCMOS25_OUT | PR3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MC_m2[0]   | 62/2     | LVCMOS25_OUT | PB31B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| MC_m2[1]   | 69/2     | LVCMOS25_OUT | PB37B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| MC_m2[1]   | 52/2     | LVCMOS25_OUT | PB18A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MC_m3[0]   | 4/5      | LVCMOS25_OUT | PL4B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MC_m3[1]   | 2/5      | LVCMOS25_OUT | PL3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | MC_m4[0]   | 132/0    | LVCMOS25_OUT | PT15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
@@ -59,7 +59,7 @@ Pinout by Port Name:
 | MISO       | 56/2     | LVCMOS25_OUT | PB23B |           |           | DRIVE:8mA SLEW:SLOW                  |
 | MOSI       | 81/1     | LVCMOS25_IN  | PR18B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | SCK        | 82/1     | LVCMOS25_IN  | PR18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| clkout     | 19/4     | LVCMOS25_OUT | PL12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| clkout     | 49/2     | LVCMOS25_OUT | PB16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 +------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
@@ -98,7 +98,7 @@ Pinout by Pin Number:
 | 14/4     | MA_m3[0]              | LOCATED    | LVCMOS25_OUT | PL10B |                |           |           |
 | 15/4     |     unused, PULL:DOWN |            |              | PL11A |                |           |           |
 | 17/4     |     unused, PULL:DOWN |            |              | PL11B |                |           |           |
-| 19/4     | clkout                |            | LVCMOS25_OUT | PL12A | PCLKT4_0       |           |           |
+| 19/4     |     unused, PULL:DOWN |            |              | PL12A | PCLKT4_0       |           |           |
 | 20/4     | HALL_C_OUT            | LOCATED    | LVCMOS25_OUT | PL12B | PCLKC4_0       |           |           |
 | 21/4     |     unused, PULL:DOWN |            |              | PL15A |                |           |           |
 | 22/4     |     unused, PULL:DOWN |            |              | PL15B |                |           |           |
@@ -123,9 +123,9 @@ Pinout by Pin Number:
 | 45/2     |     unused, PULL:DOWN |            |              | PB12B | SO/SPISO       |           |           |
 | 47/2     | H_A_m1                | LOCATED    | LVCMOS25_IN  | PB13A |                |           |           |
 | 48/2     |     unused, PULL:DOWN |            |              | PB13B |                |           |           |
-| 49/2     |     unused, PULL:DOWN |            |              | PB16A | PCLKT2_0       |           |           |
+| 49/2     | clkout                |            | LVCMOS25_OUT | PB16A | PCLKT2_0       |           |           |
 | 50/2     |     unused, PULL:DOWN |            |              | PB16B | PCLKC2_0       |           |           |
-| 52/2     |     unused, PULL:DOWN |            |              | PB18A |                |           |           |
+| 52/2     | MC_m2[1]              | LOCATED    | LVCMOS25_OUT | PB18A |                |           |           |
 | 54/2     |     unused, PULL:DOWN |            |              | PB18B |                |           |           |
 | 55/2     |     unused, PULL:DOWN |            |              | PB23A | PCLKT2_1       |           |           |
 | 56/2     | MISO                  | LOCATED    | LVCMOS25_OUT | PB23B | PCLKC2_1       |           |           |
@@ -139,7 +139,7 @@ Pinout by Pin Number:
 | 65/2     |     unused, PULL:DOWN |            |              | PB35A |                |           |           |
 | 67/2     | MB_m2[0]              | LOCATED    | LVCMOS25_OUT | PB35B |                |           |           |
 | 68/2     |     unused, PULL:DOWN |            |              | PB37A |                |           |           |
-| 69/2     | MC_m2[1]              | LOCATED    | LVCMOS25_OUT | PB37B |                |           |           |
+| 69/2     |     unused, PULL:DOWN |            |              | PB37B |                |           |           |
 | 70/2     | MB_m2[1]              | LOCATED    | LVCMOS25_OUT | PB38A | SN             |           |           |
 | 71/2     | H_B_m2                | LOCATED    | LVCMOS25_IN  | PB38B | SI/SISPI       |           |           |
 | 73/1     | H_A_m2                | LOCATED    | LVCMOS25_IN  | PR24B | DQ1            |           |           |
@@ -477,7 +477,7 @@ LOCATE  COMP  "MB_m4[1]"  SITE  "139";
 LOCATE  COMP  "MC_m1[0]"  SITE  "107";
 LOCATE  COMP  "MC_m1[1]"  SITE  "105";
 LOCATE  COMP  "MC_m2[0]"  SITE  "62";
-LOCATE  COMP  "MC_m2[1]"  SITE  "69";
+LOCATE  COMP  "MC_m2[1]"  SITE  "52";
 LOCATE  COMP  "MC_m3[0]"  SITE  "4";
 LOCATE  COMP  "MC_m3[1]"  SITE  "2";
 LOCATE  COMP  "MC_m4[0]"  SITE  "132";
@@ -485,7 +485,7 @@ LOCATE  COMP  "MC_m4[1]"  SITE  "25";
 LOCATE  COMP  "MISO"  SITE  "56";
 LOCATE  COMP  "MOSI"  SITE  "81";
 LOCATE  COMP  "SCK"  SITE  "82";
-LOCATE  COMP  "clkout"  SITE  "19";
+LOCATE  COMP  "clkout"  SITE  "49";
 
 
 
@@ -497,5 +497,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Apr 06 15:22:13 2017
+Wed Apr 12 10:38:11 2017
 

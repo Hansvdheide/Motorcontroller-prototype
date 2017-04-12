@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Thu Apr 06 15:22:28 2017 *
+NOTE DATE CREATED: Wed Apr 12 10:38:27 2017 *
 NOTE DESIGN NAME: SPI_loopback_Top *
 NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
@@ -32,7 +32,7 @@ NOTE PINS H_B_m4 : 35 : in *
 NOTE PINS MA_m1[1] : 94 : out *
 NOTE PINS MB_m3[0] : 6 : out *
 NOTE PINS H_A_m4 : 33 : in *
-NOTE PINS clkout : 19 : out *
+NOTE PINS clkout : 49 : out *
 NOTE PINS MB_m3[1] : 1 : out *
 NOTE PINS H_C_m3 : 110 : in *
 NOTE PINS LED4 : 106 : out *
@@ -45,7 +45,7 @@ NOTE PINS LED2 : 99 : out *
 NOTE PINS MC_m2[0] : 62 : out *
 NOTE PINS H_C_m2 : 58 : in *
 NOTE PINS LED1 : 97 : out *
-NOTE PINS MC_m2[1] : 69 : out *
+NOTE PINS MC_m2[1] : 52 : out *
 NOTE PINS H_B_m2 : 71 : in *
 NOTE PINS HALL_C_OUT : 20 : out *
 NOTE PINS MB_m2[0] : 67 : out *
