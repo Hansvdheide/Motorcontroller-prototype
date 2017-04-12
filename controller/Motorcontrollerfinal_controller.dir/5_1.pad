@@ -6,7 +6,7 @@ Performance Grade:      4
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Wed Apr 12 10:38:11 2017
+Wed Apr 12 14:03:11 2017
 
 Pinout by Port Name:
 +------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -59,7 +59,7 @@ Pinout by Port Name:
 | MISO       | 56/2     | LVCMOS25_OUT | PB23B |           |           | DRIVE:8mA SLEW:SLOW                  |
 | MOSI       | 81/1     | LVCMOS25_IN  | PR18B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | SCK        | 82/1     | LVCMOS25_IN  | PR18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| clkout     | 49/2     | LVCMOS25_OUT | PB16A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| clkout     | 59/2     | LVCMOS25_OUT | PB29A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 +------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
@@ -123,7 +123,7 @@ Pinout by Pin Number:
 | 45/2     |     unused, PULL:DOWN |            |              | PB12B | SO/SPISO       |           |           |
 | 47/2     | H_A_m1                | LOCATED    | LVCMOS25_IN  | PB13A |                |           |           |
 | 48/2     |     unused, PULL:DOWN |            |              | PB13B |                |           |           |
-| 49/2     | clkout                |            | LVCMOS25_OUT | PB16A | PCLKT2_0       |           |           |
+| 49/2     |     unused, PULL:DOWN |            |              | PB16A | PCLKT2_0       |           |           |
 | 50/2     |     unused, PULL:DOWN |            |              | PB16B | PCLKC2_0       |           |           |
 | 52/2     | MC_m2[1]              | LOCATED    | LVCMOS25_OUT | PB18A |                |           |           |
 | 54/2     |     unused, PULL:DOWN |            |              | PB18B |                |           |           |
@@ -131,7 +131,7 @@ Pinout by Pin Number:
 | 56/2     | MISO                  | LOCATED    | LVCMOS25_OUT | PB23B | PCLKC2_1       |           |           |
 | 57/2     |     unused, PULL:DOWN |            |              | PB26A |                |           |           |
 | 58/2     | H_C_m2                | LOCATED    | LVCMOS25_IN  | PB26B |                |           |           |
-| 59/2     |     unused, PULL:DOWN |            |              | PB29A |                |           |           |
+| 59/2     | clkout                |            | LVCMOS25_OUT | PB29A |                |           |           |
 | 60/2     |     unused, PULL:DOWN |            |              | PB29B |                |           |           |
 | 61/2     |     unused, PULL:DOWN |            |              | PB31A |                |           |           |
 | 62/2     | MC_m2[0]              | LOCATED    | LVCMOS25_OUT | PB31B |                |           |           |
@@ -485,7 +485,7 @@ LOCATE  COMP  "MC_m4[1]"  SITE  "25";
 LOCATE  COMP  "MISO"  SITE  "56";
 LOCATE  COMP  "MOSI"  SITE  "81";
 LOCATE  COMP  "SCK"  SITE  "82";
-LOCATE  COMP  "clkout"  SITE  "49";
+LOCATE  COMP  "clkout"  SITE  "59";
 
 
 
@@ -497,5 +497,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 12 10:38:11 2017
+Wed Apr 12 14:03:11 2017
 

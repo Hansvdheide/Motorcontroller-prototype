@@ -148,14 +148,6 @@
             <Navigation>78</Navigation>
         </Message>
         <Message>
-            <ID>35935013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(120): </Dynamic>
-            <Dynamic>\HALL_I_M1/stable_counting_62</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd</Navigation>
-            <Navigation>120</Navigation>
-        </Message>
-        <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/gebruiker/workspace/lattice/final code software/pid.vhd(229): </Dynamic>

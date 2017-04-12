@@ -90,8 +90,8 @@ else
 		end if;
 		
 		if( (hall1_old /= hall1_lat) OR (hall2_old /= hall2_lat) OR (hall3_old /= hall3_lat) ) then -- Trigger on any edge of the hall effect sensors, update the speed count
-			speedt := count;
-			--stable_counting <= '1';
+			--speedt := count;
+			stable_counting <= '1';
 		end if;
 		
 		IF(stable_counting = '1') THEN
@@ -109,9 +109,9 @@ else
 				count := 0;
 				
 			END IF;
-		
-		END IF;
 		speed <= speedt; -- Update speed output
+		END IF;
+		
 		-- Update the hall position sensors for use with commutation IN THE FORMAT HALLA - HALLB - HALLC HALLA = msb
 		Hall_sns(2) <= hall1_lat;
 		Hall_sns(1) <= hall2_lat;

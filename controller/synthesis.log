@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 12 10:37:40 2017
+Wed Apr 12 14:02:43 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Final code software/promote.xml 
@@ -124,7 +124,6 @@ Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = SPI_loopback_Top.
-WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/hallinput.vhd(120): Register \HALL_I_M1/stable_counting_62 is stuck at Zero. VDB-5013
 
 
 
@@ -135,68 +134,68 @@ WARNING - synthesis: c:/users/gebruiker/workspace/lattice/final code software/sp
 Duplicate register/latch removal. \PID_I/subOut_i22 is a one-to-one match with \PID_I/subOut_i24.
 Duplicate register/latch removal. \PID_I/subOut_i23 is a one-to-one match with \PID_I/subOut_i22.
 GSR instance connected to net rst.
-Duplicate register/latch removal. \SPI__7_rep_4__i83 is a one-to-one match with \SPI__7__i83.
-Duplicate register/latch removal. \SPI__7_rep_4__i82 is a one-to-one match with \SPI__7__i82.
-Duplicate register/latch removal. \SPI__7_rep_4__i81 is a one-to-one match with \SPI__7__i81.
-Duplicate register/latch removal. \SPI__7_rep_4__i80 is a one-to-one match with \SPI__7__i80.
-Duplicate register/latch removal. \SPI__7_rep_4__i79 is a one-to-one match with \SPI__7__i79.
-Duplicate register/latch removal. \SPI__7_rep_4__i78 is a one-to-one match with \SPI__7__i78.
-Duplicate register/latch removal. \SPI__7_rep_4__i77 is a one-to-one match with \SPI__7__i77.
-Duplicate register/latch removal. \SPI__7_rep_4__i76 is a one-to-one match with \SPI__7__i76.
-Duplicate register/latch removal. \SPI__7_rep_4__i75 is a one-to-one match with \SPI__7__i75.
-Duplicate register/latch removal. \SPI__7_rep_4__i74 is a one-to-one match with \SPI__7__i74.
-Duplicate register/latch removal. \SPI__7_rep_4__i73 is a one-to-one match with \SPI__7__i73.
-Duplicate register/latch removal. \SPI__7_rep_4__i72 is a one-to-one match with \SPI__7__i72.
-Duplicate register/latch removal. \SPI__7_rep_4__i71 is a one-to-one match with \SPI__7__i71.
-Duplicate register/latch removal. \SPI__7_rep_4__i70 is a one-to-one match with \SPI__7__i70.
-Duplicate register/latch removal. \SPI__7_rep_4__i69 is a one-to-one match with \SPI__7__i69.
-Duplicate register/latch removal. \SPI__7_rep_4__i68 is a one-to-one match with \SPI__7__i68.
-Duplicate register/latch removal. \SPI__7_rep_4__i67 is a one-to-one match with \SPI__7__i67.
-Duplicate register/latch removal. \SPI__7_rep_4__i66 is a one-to-one match with \SPI__7__i66.
-Duplicate register/latch removal. \SPI__7_rep_4__i65 is a one-to-one match with \SPI__7__i65.
-Duplicate register/latch removal. \SPI__7_rep_4__i64 is a one-to-one match with \SPI__7__i64.
-Duplicate register/latch removal. \SPI__7_rep_4__i63 is a one-to-one match with \SPI__7__i63.
-Duplicate register/latch removal. \SPI__7_rep_4__i62 is a one-to-one match with \SPI__7__i62.
-Duplicate register/latch removal. \SPI__7_rep_4__i61 is a one-to-one match with \SPI__7__i61.
-Duplicate register/latch removal. \SPI__7_rep_4__i60 is a one-to-one match with \SPI__7__i60.
-Duplicate register/latch removal. \SPI__7_rep_4__i59 is a one-to-one match with \SPI__7__i59.
-Duplicate register/latch removal. \SPI__7_rep_4__i58 is a one-to-one match with \SPI__7__i58.
-Duplicate register/latch removal. \SPI__7_rep_4__i57 is a one-to-one match with \SPI__7__i57.
-Duplicate register/latch removal. \SPI__7_rep_4__i56 is a one-to-one match with \SPI__7__i56.
-Duplicate register/latch removal. \SPI__7_rep_4__i55 is a one-to-one match with \SPI__7__i55.
-Duplicate register/latch removal. \SPI__7_rep_4__i54 is a one-to-one match with \SPI__7__i54.
-Duplicate register/latch removal. \SPI__7_rep_4__i53 is a one-to-one match with \SPI__7__i53.
-Duplicate register/latch removal. \SPI__7_rep_4__i52 is a one-to-one match with \SPI__7__i52.
-Duplicate register/latch removal. \SPI__7_rep_4__i51 is a one-to-one match with \SPI__7__i51.
-Duplicate register/latch removal. \SPI__7_rep_4__i50 is a one-to-one match with \SPI__7__i50.
-Duplicate register/latch removal. \SPI__7_rep_4__i49 is a one-to-one match with \SPI__7__i49.
-Duplicate register/latch removal. \SPI__7_rep_4__i48 is a one-to-one match with \SPI__7__i48.
-Duplicate register/latch removal. \SPI__7_rep_4__i47 is a one-to-one match with \SPI__7__i47.
-Duplicate register/latch removal. \SPI__7_rep_4__i46 is a one-to-one match with \SPI__7__i46.
-Duplicate register/latch removal. \SPI__7_rep_4__i45 is a one-to-one match with \SPI__7__i45.
-Duplicate register/latch removal. \SPI__7_rep_4__i44 is a one-to-one match with \SPI__7__i44.
-Duplicate register/latch removal. \SPI__7_rep_4__i43 is a one-to-one match with \SPI__7__i43.
-Duplicate register/latch removal. \SPI__7_rep_4__i42 is a one-to-one match with \SPI__7__i42.
-Duplicate register/latch removal. \SPI__7_rep_4__i20 is a one-to-one match with \SPI__7__i20.
-Duplicate register/latch removal. \SPI__7_rep_4__i19 is a one-to-one match with \SPI__7__i19.
-Duplicate register/latch removal. \SPI__7_rep_4__i18 is a one-to-one match with \SPI__7__i18.
-Duplicate register/latch removal. \SPI__7_rep_4__i17 is a one-to-one match with \SPI__7__i17.
-Duplicate register/latch removal. \SPI__7_rep_4__i16 is a one-to-one match with \SPI__7__i16.
-Duplicate register/latch removal. \SPI__7_rep_4__i15 is a one-to-one match with \SPI__7__i15.
-Duplicate register/latch removal. \SPI__7_rep_4__i14 is a one-to-one match with \SPI__7__i14.
-Duplicate register/latch removal. \SPI__7_rep_4__i13 is a one-to-one match with \SPI__7__i13.
-Duplicate register/latch removal. \SPI__7_rep_4__i12 is a one-to-one match with \SPI__7__i12.
-Duplicate register/latch removal. \SPI__7_rep_4__i11 is a one-to-one match with \SPI__7__i11.
-Duplicate register/latch removal. \SPI__7_rep_4__i10 is a one-to-one match with \SPI__7__i10.
-Duplicate register/latch removal. \SPI__7_rep_4__i9 is a one-to-one match with \SPI__7__i9.
-Duplicate register/latch removal. \SPI__7_rep_4__i8 is a one-to-one match with \SPI__7__i8.
-Duplicate register/latch removal. \SPI__7_rep_4__i7 is a one-to-one match with \SPI__7__i7.
-Duplicate register/latch removal. \SPI__7_rep_4__i6 is a one-to-one match with \SPI__7__i6.
-Duplicate register/latch removal. \SPI__7_rep_4__i5 is a one-to-one match with \SPI__7__i5.
-Duplicate register/latch removal. \SPI__7_rep_4__i4 is a one-to-one match with \SPI__7__i4.
-Duplicate register/latch removal. \SPI__7_rep_4__i3 is a one-to-one match with \SPI__7__i3.
-Duplicate register/latch removal. \SPI__7_rep_4__i2 is a one-to-one match with \SPI__7__i2.
-Duplicate register/latch removal. \SPI__7_rep_4__i1 is a one-to-one match with \SPI__7__i1.
+Duplicate register/latch removal. \SPI__7__i83 is a one-to-one match with \SPI__7_rep_4__i83.
+Duplicate register/latch removal. \SPI__7__i82 is a one-to-one match with \SPI__7_rep_4__i82.
+Duplicate register/latch removal. \SPI__7__i81 is a one-to-one match with \SPI__7_rep_4__i81.
+Duplicate register/latch removal. \SPI__7__i80 is a one-to-one match with \SPI__7_rep_4__i80.
+Duplicate register/latch removal. \SPI__7__i79 is a one-to-one match with \SPI__7_rep_4__i79.
+Duplicate register/latch removal. \SPI__7__i78 is a one-to-one match with \SPI__7_rep_4__i78.
+Duplicate register/latch removal. \SPI__7__i77 is a one-to-one match with \SPI__7_rep_4__i77.
+Duplicate register/latch removal. \SPI__7__i76 is a one-to-one match with \SPI__7_rep_4__i76.
+Duplicate register/latch removal. \SPI__7__i75 is a one-to-one match with \SPI__7_rep_4__i75.
+Duplicate register/latch removal. \SPI__7__i74 is a one-to-one match with \SPI__7_rep_4__i74.
+Duplicate register/latch removal. \SPI__7__i73 is a one-to-one match with \SPI__7_rep_4__i73.
+Duplicate register/latch removal. \SPI__7__i72 is a one-to-one match with \SPI__7_rep_4__i72.
+Duplicate register/latch removal. \SPI__7__i71 is a one-to-one match with \SPI__7_rep_4__i71.
+Duplicate register/latch removal. \SPI__7__i70 is a one-to-one match with \SPI__7_rep_4__i70.
+Duplicate register/latch removal. \SPI__7__i69 is a one-to-one match with \SPI__7_rep_4__i69.
+Duplicate register/latch removal. \SPI__7__i68 is a one-to-one match with \SPI__7_rep_4__i68.
+Duplicate register/latch removal. \SPI__7__i67 is a one-to-one match with \SPI__7_rep_4__i67.
+Duplicate register/latch removal. \SPI__7__i66 is a one-to-one match with \SPI__7_rep_4__i66.
+Duplicate register/latch removal. \SPI__7__i65 is a one-to-one match with \SPI__7_rep_4__i65.
+Duplicate register/latch removal. \SPI__7__i64 is a one-to-one match with \SPI__7_rep_4__i64.
+Duplicate register/latch removal. \SPI__7__i63 is a one-to-one match with \SPI__7_rep_4__i63.
+Duplicate register/latch removal. \SPI__7__i62 is a one-to-one match with \SPI__7_rep_4__i62.
+Duplicate register/latch removal. \SPI__7__i61 is a one-to-one match with \SPI__7_rep_4__i61.
+Duplicate register/latch removal. \SPI__7__i60 is a one-to-one match with \SPI__7_rep_4__i60.
+Duplicate register/latch removal. \SPI__7__i59 is a one-to-one match with \SPI__7_rep_4__i59.
+Duplicate register/latch removal. \SPI__7__i58 is a one-to-one match with \SPI__7_rep_4__i58.
+Duplicate register/latch removal. \SPI__7__i57 is a one-to-one match with \SPI__7_rep_4__i57.
+Duplicate register/latch removal. \SPI__7__i56 is a one-to-one match with \SPI__7_rep_4__i56.
+Duplicate register/latch removal. \SPI__7__i55 is a one-to-one match with \SPI__7_rep_4__i55.
+Duplicate register/latch removal. \SPI__7__i54 is a one-to-one match with \SPI__7_rep_4__i54.
+Duplicate register/latch removal. \SPI__7__i53 is a one-to-one match with \SPI__7_rep_4__i53.
+Duplicate register/latch removal. \SPI__7__i52 is a one-to-one match with \SPI__7_rep_4__i52.
+Duplicate register/latch removal. \SPI__7__i51 is a one-to-one match with \SPI__7_rep_4__i51.
+Duplicate register/latch removal. \SPI__7__i50 is a one-to-one match with \SPI__7_rep_4__i50.
+Duplicate register/latch removal. \SPI__7__i49 is a one-to-one match with \SPI__7_rep_4__i49.
+Duplicate register/latch removal. \SPI__7__i48 is a one-to-one match with \SPI__7_rep_4__i48.
+Duplicate register/latch removal. \SPI__7__i47 is a one-to-one match with \SPI__7_rep_4__i47.
+Duplicate register/latch removal. \SPI__7__i46 is a one-to-one match with \SPI__7_rep_4__i46.
+Duplicate register/latch removal. \SPI__7__i45 is a one-to-one match with \SPI__7_rep_4__i45.
+Duplicate register/latch removal. \SPI__7__i44 is a one-to-one match with \SPI__7_rep_4__i44.
+Duplicate register/latch removal. \SPI__7__i43 is a one-to-one match with \SPI__7_rep_4__i43.
+Duplicate register/latch removal. \SPI__7__i42 is a one-to-one match with \SPI__7_rep_4__i42.
+Duplicate register/latch removal. \SPI__7__i20 is a one-to-one match with \SPI__7_rep_4__i20.
+Duplicate register/latch removal. \SPI__7__i19 is a one-to-one match with \SPI__7_rep_4__i19.
+Duplicate register/latch removal. \SPI__7__i18 is a one-to-one match with \SPI__7_rep_4__i18.
+Duplicate register/latch removal. \SPI__7__i17 is a one-to-one match with \SPI__7_rep_4__i17.
+Duplicate register/latch removal. \SPI__7__i16 is a one-to-one match with \SPI__7_rep_4__i16.
+Duplicate register/latch removal. \SPI__7__i15 is a one-to-one match with \SPI__7_rep_4__i15.
+Duplicate register/latch removal. \SPI__7__i14 is a one-to-one match with \SPI__7_rep_4__i14.
+Duplicate register/latch removal. \SPI__7__i13 is a one-to-one match with \SPI__7_rep_4__i13.
+Duplicate register/latch removal. \SPI__7__i12 is a one-to-one match with \SPI__7_rep_4__i12.
+Duplicate register/latch removal. \SPI__7__i11 is a one-to-one match with \SPI__7_rep_4__i11.
+Duplicate register/latch removal. \SPI__7__i10 is a one-to-one match with \SPI__7_rep_4__i10.
+Duplicate register/latch removal. \SPI__7__i9 is a one-to-one match with \SPI__7_rep_4__i9.
+Duplicate register/latch removal. \SPI__7__i8 is a one-to-one match with \SPI__7_rep_4__i8.
+Duplicate register/latch removal. \SPI__7__i7 is a one-to-one match with \SPI__7_rep_4__i7.
+Duplicate register/latch removal. \SPI__7__i6 is a one-to-one match with \SPI__7_rep_4__i6.
+Duplicate register/latch removal. \SPI__7__i5 is a one-to-one match with \SPI__7_rep_4__i5.
+Duplicate register/latch removal. \SPI__7__i4 is a one-to-one match with \SPI__7_rep_4__i4.
+Duplicate register/latch removal. \SPI__7__i3 is a one-to-one match with \SPI__7_rep_4__i3.
+Duplicate register/latch removal. \SPI__7__i2 is a one-to-one match with \SPI__7_rep_4__i2.
+Duplicate register/latch removal. \SPI__7__i1 is a one-to-one match with \SPI__7_rep_4__i1.
 Applying 1.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -209,12 +208,12 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 1065 of 7209 (14 % )
+Number of register bits => 1177 of 7209 (16 % )
 AND2 => 12
 CCU2D => 363
 FADD2B => 117
-FD1P3AX => 667
-FD1P3IX => 76
+FD1P3AX => 695
+FD1P3IX => 160
 FD1P3JX => 48
 FD1S3AX => 97
 FD1S3AY => 14
@@ -223,13 +222,13 @@ GSR => 1
 IB => 15
 INV => 1
 L6MUX21 => 29
-LUT4 => 973
+LUT4 => 1098
 MULT2 => 102
 ND2 => 5
 OB => 32
 OBZ => 1
 OSCH => 1
-PFUMX => 129
+PFUMX => 124
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -241,33 +240,33 @@ Clock Nets
 Number of Clocks: 4
   Net : clk_N_683, loads : 480
   Net : clkout_c, loads : 342
-  Net : clk_1mhz, loads : 196
+  Net : clk_1mhz, loads : 308
   Net : pwm_clk, loads : 48
 Clock Enable Nets
-Number of Clock Enables: 29
+Number of Clock Enables: 37
 Top 10 highest fanout Clock Enables:
-  Net : SPI_I/clkout_c_enable_257, loads : 84
-  Net : SPI_I/clkout_c_enable_66, loads : 50
-  Net : PID_I/clk_N_683_enable_392, loads : 49
-  Net : SPI_I/clkout_c_enable_101, loads : 34
-  Net : PID_I/clk_N_683_enable_44, loads : 29
-  Net : PID_I/clk_N_683_enable_100, loads : 29
-  Net : PID_I/clk_N_683_enable_128, loads : 29
-  Net : PID_I/clk_N_683_enable_184, loads : 29
-  Net : PID_I/clk_N_683_enable_212, loads : 29
-  Net : PID_I/clk_N_683_enable_240, loads : 29
+  Net : SPI_I/clkout_c_enable_245, loads : 84
+  Net : SPI_I/clkout_c_enable_64, loads : 50
+  Net : PID_I/clk_N_683_enable_392, loads : 48
+  Net : HALL_I_M1/clk_1mhz_enable_104, loads : 41
+  Net : HALL_I_M2/clk_1mhz_enable_83, loads : 41
+  Net : HALL_I_M4/clk_1mhz_enable_52, loads : 41
+  Net : HALL_I_M3/stable_counting, loads : 38
+  Net : HALL_I_M2/stable_counting, loads : 37
+  Net : HALL_I_M4/stable_counting, loads : 37
+  Net : HALL_I_M1/stable_counting, loads : 35
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : PID_I/n19057, loads : 97
-  Net : PID_I/multIn2_9, loads : 94
-  Net : SPI_I/CSlatched, loads : 93
-  Net : SPI_I/clkout_c_enable_257, loads : 84
-  Net : SPI_I/n19050, loads : 84
-  Net : SPI_I/n19051, loads : 83
-  Net : SPI_I/n18641, loads : 81
-  Net : PID_I/multIn2_8, loads : 64
-  Net : PID_I/n18636, loads : 59
-  Net : PID_I/clk_N_683_enable_72, loads : 58
+  Net : SPI_I/CSlatched, loads : 95
+  Net : PID_I/multIn2_4, loads : 94
+  Net : PID_I/n22388, loads : 92
+  Net : SPI_I/clkout_c_enable_245, loads : 84
+  Net : SPI_I/n22382, loads : 82
+  Net : SPI_I/n22381, loads : 82
+  Net : SPI_I/n21887, loads : 81
+  Net : SPI_I/clkout_c_enable_99, loads : 68
+  Net : PID_I/multIn2_6, loads : 64
+  Net : PID_I/n21892, loads : 61
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -277,16 +276,16 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk3 [get_nets clk_1mhz]                |    1.000 MHz|  103.488 MHz|     5  
+clk3 [get_nets clk_1mhz]                |    1.000 MHz|   54.552 MHz|    10  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk2 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   28.320 MHz|    22  
+clk2 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets pwm_clk]                 |    1.000 MHz|  145.264 MHz|     4  
+clk1 [get_nets clkout_c]                |    1.000 MHz|   96.843 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clkout_c]                |    1.000 MHz|   96.843 MHz|     6  
+clk0 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   26.467 MHz|    23  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -294,8 +293,8 @@ clk0 [get_nets clkout_c]                |    1.000 MHz|   96.843 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 125.156  MB
+Peak Memory Usage: 128.031  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 7.953  secs
+Elapsed CPU time for LSE flow : 7.828  secs
 --------------------------------------------------------------
