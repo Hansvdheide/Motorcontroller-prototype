@@ -1,7 +1,7 @@
 -a "MachXO2"
--d LCMXO2-7000HE
+-d LCMXO2-4000ZE
 -t TQFP144
--s 4
+-s 1
 
 -optimization_goal Balanced
 -bram_utilization 100
@@ -30,17 +30,17 @@
 
 
 -lpf 1
--lib "work" -vhd "C:/Users/gebruiker/workspace/lattice/Final code software/Clockdivider.vhd"
-"C:/Users/gebruiker/workspace/lattice/Final code software/COMMUTATION.vhd"
-"C:/Users/gebruiker/workspace/lattice/Final code software/HallInput.vhd"
-"C:/Users/gebruiker/workspace/lattice/Final code software/PWM_GEN.vhd"
-"C:/Users/gebruiker/workspace/lattice/Final code software/SPI loopbacktest v2.vhd"
-"C:/Users/gebruiker/workspace/lattice/Final code software/ToplevelFinal.vhd"
-"C:/Users/gebruiker/workspace/lattice/Final code software/PID.vhd"
+-lib "work" -vhd "D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/Clockdivider.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/COMMUTATION.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/HallInput.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/PWM_GEN.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/SPI loopbacktest v2.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/ToplevelFinal.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/PID.vhd"
 -top SPI_loopback_Top
 
 
--p "C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data" "C:/Users/gebruiker/workspace/lattice/Final code software/controller" "C:/Users/gebruiker/workspace/lattice/Final code software"
+-p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/controller" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE"
 
 -ngd "Motorcontrollerfinal_controller.ngd"
 

@@ -1,0 +1,5 @@
+#Start recording tcl command: 3/20/2017 14:47:00
+#Project Location: C:/Users/gebruiker/workspace/lattice/Final code software; Project name: Motorcontrollerfinal
+prj_project open "C:/Users/gebruiker/workspace/lattice/Final code software/Motorcontrollerfinal.ldf"
+prj_project close
+#Stop recording: 3/20/2017 14:47:13

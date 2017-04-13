@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliProject version="3.2" title="Motorcontrollerfinal" device="LCMXO2-7000HE-4TG144C" default_implementation="controller">
+<BaliProject version="3.2" title="Motorcontrollerfinal" device="LCMXO2-4000ZE-1TG144C" default_implementation="controller">
     <Options>
         <Option name="HDL type" value="VHDL"/>
     </Options>

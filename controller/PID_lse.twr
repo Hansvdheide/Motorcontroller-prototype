@@ -1,0 +1,245 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu Apr 06 11:40:30 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     PID
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 1000.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 965.595ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             ss_i4_rep_331  (from clk_c +)
+   Destination:    FD1S3AX    D              multOut_i28  (to clk_c -)
+
+   Delay:                  34.245ns  (30.1% logic, 69.9% route), 21 logic levels.
+
+ Constraint Details:
+
+     34.245ns data_path ss_i4_rep_331 to multOut_i28 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 965.595ns
+
+ Path Details: ss_i4_rep_331 to multOut_i28
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              ss_i4_rep_331 (from clk_c)
+Route        91   e 2.524                                  n15847
+LUT4        ---     0.493              A to Z              i1_2_lut_rep_328
+Route         8   e 1.540                                  n15713
+LUT4        ---     0.493              C to Z              equal_110_i9_2_lut_rep_309_3_lut_4_lut
+Route         3   e 1.258                                  n15694
+LUT4        ---     0.493              D to Z              i2_3_lut_rep_294_4_lut
+Route         7   e 1.502                                  n15679
+LUT4        ---     0.493              B to Z              i9840_3_lut_4_lut
+Route        47   e 2.061                                  mult_29s_25s_0_cin_lr_4
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_0
+Route         1   e 0.941                                  mco_28
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_1
+Route         1   e 0.941                                  mult_29s_25s_0_pp_3_7
+LUT4        ---     0.493                to                mult_29s_25s_0_add_1_2
+Route         1   e 0.941                                  mult_29s_25s_0_pp_3_9
+LUT4        ---     0.493                to                mult_29s_25s_0_add_1_3
+Route         1   e 0.941                                  mult_29s_25s_0_pp_3_11
+LUT4        ---     0.493                to                mult_29s_25s_0_add_1_4
+Route         1   e 0.941                                  s_mult_29s_25s_0_0_12
+LUT4        ---     0.493                to                mult_29s_25s_0_add_7_5
+Route         1   e 0.941                                  s_mult_29s_25s_0_7_12
+LUT4        ---     0.493                to                mult_29s_25s_0_add_10_3
+Route         1   e 0.941                                  s_mult_29s_25s_0_7_14
+LUT4        ---     0.493                to                mult_29s_25s_0_add_10_4
+Route         1   e 0.941                                  s_mult_29s_25s_0_7_16
+LUT4        ---     0.493                to                mult_29s_25s_0_add_10_5
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_16
+LUT4        ---     0.493                to                Cadd_t_mult_29s_25s_0_12_1
+Route         1   e 0.941                                  mult_29s_25s_0_pp_8_17
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_2
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_20
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_3
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_22
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_4
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_24
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_5
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_26
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_6
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_28
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_7
+Route         1   e 0.941                                  multOut_28__N_506[28]
+                  --------
+                   34.245  (30.1% logic, 69.9% route), 21 logic levels.
+
+
+Passed:  The following path meets requirements by 965.595ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             ss_i4_rep_331  (from clk_c +)
+   Destination:    FD1S3AX    D              multOut_i28  (to clk_c -)
+
+   Delay:                  34.245ns  (30.1% logic, 69.9% route), 21 logic levels.
+
+ Constraint Details:
+
+     34.245ns data_path ss_i4_rep_331 to multOut_i28 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 965.595ns
+
+ Path Details: ss_i4_rep_331 to multOut_i28
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              ss_i4_rep_331 (from clk_c)
+Route        91   e 2.524                                  n15847
+LUT4        ---     0.493              A to Z              i1_2_lut_rep_328
+Route         8   e 1.540                                  n15713
+LUT4        ---     0.493              C to Z              equal_110_i9_2_lut_rep_309_3_lut_4_lut
+Route         3   e 1.258                                  n15694
+LUT4        ---     0.493              D to Z              i2_3_lut_rep_294_4_lut
+Route         7   e 1.502                                  n15679
+LUT4        ---     0.493              B to Z              i9840_3_lut_4_lut
+Route        47   e 2.061                                  mult_29s_25s_0_cin_lr_4
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_0
+Route         1   e 0.941                                  mco_28
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_1
+Route         1   e 0.941                                  mco_29
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_2
+Route         1   e 0.941                                  mco_30
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_3
+Route         1   e 0.941                                  mco_31
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_4
+Route         1   e 0.941                                  mco_32
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_5
+Route         1   e 0.941                                  mco_33
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_6
+Route         1   e 0.941                                  mco_34
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_7
+Route         1   e 0.941                                  mco_35
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_8
+Route         1   e 0.941                                  mult_29s_25s_0_pp_3_21
+LUT4        ---     0.493                to                mult_29s_25s_0_add_1_9
+Route         1   e 0.941                                  s_mult_29s_25s_0_0_22
+LUT4        ---     0.493                to                mult_29s_25s_0_add_7_10
+Route         1   e 0.941                                  s_mult_29s_25s_0_0_24
+LUT4        ---     0.493                to                mult_29s_25s_0_add_7_11
+Route         1   e 0.941                                  s_mult_29s_25s_0_7_24
+LUT4        ---     0.493                to                mult_29s_25s_0_add_10_9
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_24
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_5
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_26
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_6
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_28
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_7
+Route         1   e 0.941                                  multOut_28__N_506[28]
+                  --------
+                   34.245  (30.1% logic, 69.9% route), 21 logic levels.
+
+
+Passed:  The following path meets requirements by 965.595ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             ss_i4_rep_331  (from clk_c +)
+   Destination:    FD1S3AX    D              multOut_i28  (to clk_c -)
+
+   Delay:                  34.245ns  (30.1% logic, 69.9% route), 21 logic levels.
+
+ Constraint Details:
+
+     34.245ns data_path ss_i4_rep_331 to multOut_i28 meets
+    1000.000ns delay constraint less
+      0.160ns L_S requirement (totaling 999.840ns) by 965.595ns
+
+ Path Details: ss_i4_rep_331 to multOut_i28
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              ss_i4_rep_331 (from clk_c)
+Route        91   e 2.524                                  n15847
+LUT4        ---     0.493              A to Z              i1_2_lut_rep_328
+Route         8   e 1.540                                  n15713
+LUT4        ---     0.493              C to Z              equal_110_i9_2_lut_rep_309_3_lut_4_lut
+Route         3   e 1.258                                  n15694
+LUT4        ---     0.493              D to Z              i2_3_lut_rep_294_4_lut
+Route         7   e 1.502                                  n15679
+LUT4        ---     0.493              B to Z              i9840_3_lut_4_lut
+Route        47   e 2.061                                  mult_29s_25s_0_cin_lr_4
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_0
+Route         1   e 0.941                                  mco_28
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_1
+Route         1   e 0.941                                  mco_29
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_2
+Route         1   e 0.941                                  mco_30
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_3
+Route         1   e 0.941                                  mco_31
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_4
+Route         1   e 0.941                                  mco_32
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_5
+Route         1   e 0.941                                  mco_33
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_6
+Route         1   e 0.941                                  mco_34
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_7
+Route         1   e 0.941                                  mco_35
+LUT4        ---     0.493                to                mult_29s_25s_0_mult_4_8
+Route         1   e 0.941                                  mult_29s_25s_0_pp_3_21
+LUT4        ---     0.493                to                mult_29s_25s_0_add_1_9
+Route         1   e 0.941                                  s_mult_29s_25s_0_0_22
+LUT4        ---     0.493                to                mult_29s_25s_0_add_7_10
+Route         1   e 0.941                                  s_mult_29s_25s_0_7_22
+LUT4        ---     0.493                to                mult_29s_25s_0_add_10_8
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_22
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_4
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_24
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_5
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_26
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_6
+Route         1   e 0.941                                  s_mult_29s_25s_0_10_28
+LUT4        ---     0.493                to                t_mult_29s_25s_0_add_12_7
+Route         1   e 0.941                                  multOut_28__N_506[28]
+                  --------
+                   34.245  (30.1% logic, 69.9% route), 21 logic levels.
+
+Report: 34.405 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 1000.000000 -name  |             |             |
+clk0 [get_nets clk_c]                   |  1000.000 ns|    34.405 ns|    21  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  58032448 paths, 1728 nets, and 5060 connections (90.0% coverage)
+
+
+Peak memory: 116002816 bytes, TRCE: 9912320 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
