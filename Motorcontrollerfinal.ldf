@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliProject version="3.2" title="Motorcontrollerfinal" device="LCMXO2-7000HE-4TG144C" default_implementation="controller">
+<BaliProject version="3.2" title="Motorcontrollerfinal" device="LCMXO2-4000ZE-1TG144C" default_implementation="controller">
     <Options>
         <Option name="HDL type" value="VHDL"/>
     </Options>
@@ -29,7 +29,7 @@
         <Source name="testBench.vhd" type="VHDL" type_short="VHDL" excluded="TRUE" syn_sim="SimOnly">
             <Options/>
         </Source>
-        <Source name="blauw.lpf" type="Logic Preference" type_short="LPF">
+        <Source name="blauw.lpf" type="Logic Preference" type_short="LPF" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="controller/controller.xcf" type="Programming Project File" type_short="Programming">
@@ -42,6 +42,9 @@
             <Options/>
         </Source>
         <Source name="Motorcontrollerfinal.lpf" type="Logic Preference" type_short="LPF" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="OnBoard4000ZE.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
         <Source name="testBench/testBench.spf" type="Simulation Project File" type_short="SPF">
