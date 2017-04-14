@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.0.99.2
-Fri Apr 14 11:25:53 2017
+Fri Apr 14 12:08:27 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -137,7 +137,7 @@ Constraints cover 5113 paths, 1 nets, and 9263 connections (99.80% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.9.0.99.2
-Fri Apr 14 11:25:53 2017
+Fri Apr 14 12:08:27 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -226,7 +226,10 @@ Clock Domain: clkout_c   Source: OSCInst0.OSC   Loads: 201
 
    Data transfers from:
    Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_589.Q1
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 4
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
+
+   Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_589.Q1
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
 
    Clock Domain: pwm_clk   Source: SLICE_451.Q0
       Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8

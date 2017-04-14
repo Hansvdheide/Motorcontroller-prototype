@@ -1,10 +1,10 @@
 <top name = "SPI_loopback_Top"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "pwm_clk"  type = "net" />
-    <clockitem name = "pi_clk"  type = "net" />
-    <clockitem name = "clkout"  type = "net" />
     <clockitem name = "clk_1mhz"  type = "net" />
+    <clockitem name = "pwm_clk"  type = "net" />
+    <clockitem name = "clkout"  type = "net" />
+    <clockitem name = "pi_clk"  type = "net" />
 </clocks>
 
 <!--
