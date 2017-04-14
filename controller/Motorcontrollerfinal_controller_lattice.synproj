@@ -30,17 +30,17 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/Clockdivider.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/COMMUTATION.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/HallInput.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/PWM_GEN.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/SPI loopbacktest v2.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/ToplevelFinal.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/PID.vhd"
+-lib "work" -vhd "D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/Clockdivider.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/COMMUTATION.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/HallInput.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/PWM_GEN.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/SPI loopbacktest v2.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/ToplevelFinal.vhd"
+"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/PID.vhd"
 -top SPI_loopback_Top
 
 
--p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/controller" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE"
+-p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/controller" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController"
 
 -ngd "Motorcontrollerfinal_controller.ngd"
 

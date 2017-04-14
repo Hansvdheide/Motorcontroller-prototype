@@ -360,11 +360,11 @@ begin
 			END IF;
 		END IF;
 		
-	IF(pwmDut_m4 = 0) THEN
+	--IF(pwmDut_m4 = 0) THEN
 		--HALL_C_OUT <= '0';
-	ELSE 
+	--ELSE 
 		--HALL_C_OUT <= '1';
-	END IF;
+	--END IF;
 	
 		
 	END PROCESS;

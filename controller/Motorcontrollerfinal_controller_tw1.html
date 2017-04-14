@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.0.99.2</big></U></B>
-Thu Apr 13 13:04:44 2017
+Fri Apr 14 11:25:53 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -32,7 +32,7 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 <A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
 ------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Motorcontrollerfinal_controller.tw1 -gui -msgset D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/promote.xml Motorcontrollerfinal_controller_map.ncd Motorcontrollerfinal_controller.prf 
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Motorcontrollerfinal_controller.tw1 -gui -msgset D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/promote.xml Motorcontrollerfinal_controller_map.ncd Motorcontrollerfinal_controller.prf 
 Design file:     motorcontrollerfinal_controller_map.ncd
 Preference file: motorcontrollerfinal_controller.prf
 Device,speed:    LCMXO2-4000ZE,1
@@ -89,7 +89,7 @@ ROUTE         1   e 1.905 *SLICE_1223.F0 to *SLICE_1019.D1 SPI_I/n40_adj_1887
 CTOF_DEL    ---     0.923 *SLICE_1019.D1 to *SLICE_1019.F1 SPI_I/SLICE_1019
 ROUTE         2   e 1.905 *SLICE_1019.F1 to *SLICE_1369.D1 SPI_I/enable_m4_N_649
 CTOF_DEL    ---     0.923 *SLICE_1369.D1 to *SLICE_1369.F1 SPI_I/SLICE_1369
-ROUTE        11   e 1.905 *SLICE_1369.F1 to SLICE_1111.LSR SPI_I/n12558 (to clkout_c)
+ROUTE        11   e 1.905 *SLICE_1369.F1 to SLICE_1111.LSR SPI_I/n12557 (to clkout_c)
                   --------
                    17.000   (32.8% logic, 67.2% route), 6 logic levels.
 
@@ -151,7 +151,7 @@ Constraints cover 5113 paths, 1 nets, and 9263 connections (99.80% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.9.0.99.2</big></U></B>
-Thu Apr 13 13:04:44 2017
+Fri Apr 14 11:25:53 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -161,7 +161,7 @@ Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 <A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
 ------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Motorcontrollerfinal_controller.tw1 -gui -msgset D:/WybeData/Projects/RoboTeamTwente/Electronics/Backups/Final code software 20170412 4000ZE/promote.xml Motorcontrollerfinal_controller_map.ncd Motorcontrollerfinal_controller.prf 
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Motorcontrollerfinal_controller.tw1 -gui -msgset D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/promote.xml Motorcontrollerfinal_controller_map.ncd Motorcontrollerfinal_controller.prf 
 Design file:     motorcontrollerfinal_controller_map.ncd
 Preference file: motorcontrollerfinal_controller.prf
 Device,speed:    LCMXO2-4000ZE,M
@@ -189,7 +189,7 @@ Passed: The following path meets requirements by 0.309ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              rst_13_rep_407  (from clkout_c +)
+   Source:         FF         Q              rst_12_rep_407  (from clkout_c +)
    Destination:    FF         Data in        SPI_I/send_buffer_i0_i78  (to clkout_c +)
 
    Delay:               0.257ns  (100.0% logic, 0.0% route), 1 logic levels.
@@ -244,10 +244,7 @@ Clock Domain: clkout_c   Source: OSCInst0.OSC   Loads: 201
 
    Data transfers from:
    Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_589.Q1
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
-
-   Clock Domain: CLKDIV_I/pi_clk   Source: CLKDIV_I/SLICE_589.Q1
-      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 4
 
    Clock Domain: pwm_clk   Source: SLICE_451.Q0
       Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8

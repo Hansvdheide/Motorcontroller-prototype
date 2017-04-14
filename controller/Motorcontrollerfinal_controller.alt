@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Thu Apr 13 13:05:12 2017 *
+NOTE DATE CREATED: Fri Apr 14 11:26:23 2017 *
 NOTE DESIGN NAME: SPI_loopback_Top *
 NOTE DEVICE NAME: LCMXO2-4000ZE-1TQFP144 *
 NOTE PIN ASSIGNMENTS *
@@ -8,48 +8,48 @@ NOTE PINS MA_m2[0] : 76 : out *
 NOTE PINS HALL_B_OUT : 24 : out *
 NOTE PINS HALL_A_OUT : 28 : out *
 NOTE PINS MA_m2[1] : 74 : out *
-NOTE PINS H_B_m1 : 43 : in *
-NOTE PINS MISO : 82 : out *
-NOTE PINS H_A_m1 : 40 : in *
-NOTE PINS MOSI : 86 : in *
-NOTE PINS SCK : 78 : in *
-NOTE PINS CS : 84 : in *
+NOTE PINS H_B_m1 : 40 : in *
+NOTE PINS MISO : 21 : out *
+NOTE PINS H_A_m1 : 39 : in *
+NOTE PINS MOSI : 20 : in *
+NOTE PINS SCK : 22 : in *
+NOTE PINS CS : 19 : in *
 NOTE PINS MC_m4[0] : 132 : out *
 NOTE PINS MC_m4[1] : 25 : out *
 NOTE PINS MB_m4[0] : 140 : out *
 NOTE PINS MB_m4[1] : 127 : out *
 NOTE PINS MC_m1[0] : 107 : out *
 NOTE PINS MC_m1[1] : 105 : out *
-NOTE PINS MA_m4[0] : 143 : out *
+NOTE PINS MA_m4[0] : 109 : out *
 NOTE PINS MB_m1[0] : 98 : out *
-NOTE PINS MA_m4[1] : 141 : out *
+NOTE PINS MA_m4[1] : 13 : out *
 NOTE PINS MB_m1[1] : 92 : out *
 NOTE PINS MC_m3[0] : 4 : out *
-NOTE PINS H_C_m4 : 34 : in *
+NOTE PINS H_C_m4 : 143 : in *
 NOTE PINS MA_m1[0] : 96 : out *
 NOTE PINS MC_m3[1] : 2 : out *
-NOTE PINS H_B_m4 : 35 : in *
+NOTE PINS H_B_m4 : 141 : in *
 NOTE PINS MA_m1[1] : 94 : out *
 NOTE PINS MB_m3[0] : 6 : out *
-NOTE PINS H_A_m4 : 33 : in *
-NOTE PINS clkout : 115 : out *
+NOTE PINS H_A_m4 : 142 : in *
+NOTE PINS clkout : 44 : out *
 NOTE PINS MB_m3[1] : 1 : out *
 NOTE PINS H_C_m3 : 110 : in *
-NOTE PINS LED4 : 106 : out *
+NOTE PINS LED4 : 69 : out *
 NOTE PINS MA_m3[0] : 14 : out *
-NOTE PINS H_B_m3 : 111 : in *
-NOTE PINS LED3 : 104 : out *
+NOTE PINS H_B_m3 : 112 : in *
+NOTE PINS LED3 : 68 : out *
 NOTE PINS MA_m3[1] : 12 : out *
-NOTE PINS H_A_m3 : 109 : in *
-NOTE PINS LED2 : 99 : out *
-NOTE PINS MC_m2[0] : 62 : out *
-NOTE PINS H_C_m2 : 81 : in *
-NOTE PINS LED1 : 97 : out *
-NOTE PINS MC_m2[1] : 69 : out *
-NOTE PINS H_B_m2 : 71 : in *
-NOTE PINS HALL_C_OUT : 20 : out *
-NOTE PINS MB_m2[0] : 67 : out *
-NOTE PINS H_A_m2 : 54 : in *
+NOTE PINS H_A_m3 : 111 : in *
+NOTE PINS LED2 : 67 : out *
+NOTE PINS MC_m2[0] : 97 : out *
+NOTE PINS H_C_m2 : 60 : in *
+NOTE PINS LED1 : 63 : out *
+NOTE PINS MC_m2[1] : 106 : out *
+NOTE PINS H_B_m2 : 62 : in *
+NOTE PINS HALL_C_OUT : 23 : out *
+NOTE PINS MB_m2[0] : 99 : out *
+NOTE PINS H_A_m2 : 61 : in *
 NOTE PINS MB_m2[1] : 70 : out *
 NOTE PINS H_C_m1 : 38 : in *
 NOTE CONFIGURATION MODE: NONE *

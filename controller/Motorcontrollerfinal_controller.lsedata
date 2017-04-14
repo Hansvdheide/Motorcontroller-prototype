@@ -1,10 +1,10 @@
 <top name = "SPI_loopback_Top"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
-    <clockitem name = "clk_1mhz"  type = "net" />
     <clockitem name = "pwm_clk"  type = "net" />
-    <clockitem name = "clkout"  type = "net" />
     <clockitem name = "pi_clk"  type = "net" />
+    <clockitem name = "clkout"  type = "net" />
+    <clockitem name = "clk_1mhz"  type = "net" />
 </clocks>
 
 <!--
@@ -80,33 +80,6 @@
         Instances in netlist: 642
     -->
 
-    <instance  name = "CLKDIV_I/count_4__I_0"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "CLKDIV_I/gnd"  />
-        <nitem  name = "CLKDIV_I/pwr"  />
-        <nitem  name = "CLKDIV_I/count[4]"  />
-        <nitem  name = "CLKDIV_I/count[3]"  />
-        <nitem  name = "CLKDIV_I/count[2]"  />
-        <nitem  name = "CLKDIV_I/count[1]"  />
-        <nitem  name = "CLKDIV_I/count[0]"  />
-        <nitem  name = "CLKDIV_I/count_4__N_52"  />
-        </nets>
-    </instance>
-
     <instance  name = "CLKDIV_I/add_7"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
@@ -175,6 +148,42 @@
         <nitem  name = "CLKDIV_I/cntpi_11__N_53[2]"  />
         <nitem  name = "CLKDIV_I/cntpi_11__N_53[1]"  />
         <nitem  name = "CLKDIV_I/cntpi_11__N_53[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "CLKDIV_I/add_6"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CLKDIV_I/gnd"  />
+        <nitem  name = "CLKDIV_I/pwr"  />
+        <nitem  name = "CLKDIV_I/count[4]"  />
+        <nitem  name = "CLKDIV_I/count[3]"  />
+        <nitem  name = "CLKDIV_I/count[2]"  />
+        <nitem  name = "CLKDIV_I/count[1]"  />
+        <nitem  name = "CLKDIV_I/count[0]"  />
+        <nitem  name = "CLKDIV_I/count_4__N_47[4]"  />
+        <nitem  name = "CLKDIV_I/count_4__N_47[3]"  />
+        <nitem  name = "CLKDIV_I/count_4__N_47[2]"  />
+        <nitem  name = "CLKDIV_I/count_4__N_47[1]"  />
+        <nitem  name = "CLKDIV_I/count_4__N_47[0]"  />
         </nets>
     </instance>
 
@@ -340,7 +349,7 @@
         </nets>
     </instance>
 
-    <instance  name = "start_cnt_13__I_0_15"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "start_cnt_13__I_0_14"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "d0[13]"  direction = "in"  />
         <pitem  name = "d0[12]"  direction = "in"  />
@@ -529,38 +538,19 @@
         </nets>
     </instance>
 
-    <instance  name = "CLKDIV_I/pi_buf_I_0"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "CLKDIV_I/count_4__I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "CLKDIV_I/pi_buf"  />
-        <nitem  name = "CLKDIV_I/cntpi_11__N_65"  />
-        <nitem  name = "CLKDIV_I/pi_buf_N_69"  />
-        </nets>
-    </instance>
-
-    <instance  name = "CLKDIV_I/add_6"  library = "work"  arch = "RTL"  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
@@ -571,15 +561,11 @@
         <nitem  name = "CLKDIV_I/count[2]"  />
         <nitem  name = "CLKDIV_I/count[1]"  />
         <nitem  name = "CLKDIV_I/count[0]"  />
-        <nitem  name = "CLKDIV_I/count_4__N_47[4]"  />
-        <nitem  name = "CLKDIV_I/count_4__N_47[3]"  />
-        <nitem  name = "CLKDIV_I/count_4__N_47[2]"  />
-        <nitem  name = "CLKDIV_I/count_4__N_47[1]"  />
-        <nitem  name = "CLKDIV_I/count_4__N_47[0]"  />
+        <nitem  name = "CLKDIV_I/count_4__N_52"  />
         </nets>
     </instance>
 
-    <instance  name = "rst_13"  library = "work"  arch = "RTL"  type = "reg">
+    <instance  name = "rst_12"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
         <pitem  name = "d"  direction = "in"  />
         <pitem  name = "clk"  direction = "in"  />
@@ -593,6 +579,20 @@
         <nitem  name = "clkout"  />
         <nitem  name = "gnd"  />
         <nitem  name = "rst"  />
+        </nets>
+    </instance>
+
+    <instance  name = "CLKDIV_I/pi_buf_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "CLKDIV_I/pi_buf"  />
+        <nitem  name = "CLKDIV_I/cntpi_11__N_65"  />
+        <nitem  name = "CLKDIV_I/pi_buf_N_69"  />
         </nets>
     </instance>
 
@@ -51106,7 +51106,7 @@
 
     <regs>
         <reg  name = "start_cnt"  />
-        <reg  name = "rst_13"  />
+        <reg  name = "rst_12"  />
         <reg  name = "CLKDIV_I/cntpi"  />
         <reg  name = "CLKDIV_I/mhz_buf_29"  />
         <reg  name = "CLKDIV_I/pi_buf_30"  />
