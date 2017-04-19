@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.9.0.99.2
-// Netlist written on Fri Apr 14 12:08:24 2017
+// Netlist written on Wed Apr 19 12:27:56 2017
 //
 // Verilog Description of module SPI_loopback_Top
 //

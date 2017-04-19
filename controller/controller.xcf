@@ -20,15 +20,15 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/controller/Motorcontrollerfinal_controller.jed</File>
-			<FileTime>04/14/17 11:26:23</FileTime>
-			<JedecChecksum>0x3D1A</JedecChecksum>
+			<FileTime>04/17/17 13:16:48</FileTime>
+			<JedecChecksum>0x1146</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>552</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
-				<SVFProcessor>SVF Processor</SVFProcessor>
+				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>

@@ -5,7 +5,7 @@
 Design Information
 ------------------
 
-Command line:   map -a MachXO2 -p LCMXO2-4000ZE -t TQFP144 -s 1 -oc Commercial
+Command line:   map -a MachXO2 -p LCMXO2-4000ZE -t TQFP144 -s 1 -oc Industrial
      Motorcontrollerfinal_controller.ngd -o
      Motorcontrollerfinal_controller_map.ncd -pr
      Motorcontrollerfinal_controller.prf -mp Motorcontrollerfinal_controller.mrp
@@ -18,7 +18,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000ZETQFP144
 Target Performance:   1
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
-Mapped on:  04/14/17  12:08:25
+Mapped on:  04/19/17  12:27:57
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ Design Summary (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
  (cont)
 -------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic
 -------------
@@ -396,7 +396,7 @@ Signal PWM_I_M4/sub_1795_add_2_5/S0 undriven or does not drive anything -
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal PID_I/add_15802_1/CI undriven or does not drive anything - clipped.
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal PID_I/add_15801_21/S0 undriven or does not drive anything - clipped.
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal PID_I/add_15799_9/S1 undriven or does not drive anything - clipped.
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -660,7 +660,7 @@ Signal PID_I/mult_29s_25s_0_mult_16_5/CO undriven or does not drive anything -
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -726,7 +726,7 @@ Signal PID_I/Cadd_mult_29s_25s_0_3_1/S0 undriven or does not drive anything -
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -792,7 +792,7 @@ Signal PID_I/mult_29s_25s_0_cin_lr_add_2/S0 undriven or does not drive anything
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -858,7 +858,7 @@ Signal PWM_I_M2/sub_1791_add_2_1/CI undriven or does not drive anything -
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -924,7 +924,7 @@ Signal CLKDIV_I/cntpi_2060_2061_add_4_1/S0 undriven or does not drive anything -
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -990,7 +990,7 @@ Signal SPI_I/add_15804_15/S0 undriven or does not drive anything - clipped.
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -1056,7 +1056,7 @@ Signal SPI_I/add_15808_10/S1 undriven or does not drive anything - clipped.
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -1122,7 +1122,7 @@ Signal SPI_I/add_15805_8/S0 undriven or does not drive anything - clipped.
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 Removed logic (cont)
 --------------------
@@ -1188,7 +1188,7 @@ Instance Name: OSCInst0
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage
 ---------
@@ -1254,7 +1254,7 @@ GSR Component:
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1320,7 +1320,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1386,7 +1386,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1452,7 +1452,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1518,7 +1518,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1584,7 +1584,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1650,7 +1650,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1716,7 +1716,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1782,7 +1782,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1848,7 +1848,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1914,7 +1914,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -1980,7 +1980,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -2046,7 +2046,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -2112,7 +2112,7 @@ GSR Usage (cont)
 
 
 
-Design:  SPI_loopback_Top                              Date:  04/14/17  12:08:25
+Design:  SPI_loopback_Top                              Date:  04/19/17  12:27:57
 
 GSR Usage (cont)
 ----------------
@@ -2135,7 +2135,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 1 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 65 MB
+   Peak Memory Usage: 64 MB
         
 
 

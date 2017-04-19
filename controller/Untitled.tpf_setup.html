@@ -1,0 +1,739 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.0.99.2
+Mon Apr 17 16:54:16 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     SPI_loopback_Top
+Device,speed:    LCMXO2-4000ZE,1
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+</A><A name="FREQUENCY NET 'clkout_c' 38.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "clkout_c" 38.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.250ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:PWM_I_M4/SLICE_1022">PWM_I_M4/free_19</A>  (from <A href="#@net:pwm_clk">pwm_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_695">COM_I_M4/MospairB_i1</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+
+   Delay:              17.202ns  (21.6% logic, 78.4% route), 4 logic levels.
+
+ Constraint Details:
+
+     17.202ns physical path delay PWM_I_M4/SLICE_1022 to SLICE_695 meets
+     26.316ns delay constraint less
+      7.434ns skew and
+      0.430ns DIN_SET requirement (totaling 18.452ns) by 1.250ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R18C23B.CLK,R18C23B.Q0,PWM_I_M4/SLICE_1022:ROUTE, 9.707,R18C23B.Q0,R4C8C.D1,free_m4:CTOF_DEL, 0.920,R4C8C.D1,R4C8C.F1,SLICE_704:ROUTE, 1.534,R4C8C.F1,R4C8D.A0,SPI_I/n21588:CTOF_DEL, 0.920,R4C8D.A0,R4C8D.F0,SLICE_696:ROUTE, 2.249,R4C8D.F0,R4C8B.A0,n3175:CTOF_DEL, 0.920,R4C8B.A0,R4C8B.F0,SLICE_695:ROUTE, 0.000,R4C8B.F0,R4C8B.DI0,COM_I_M4/n18871">Data path</A> PWM_I_M4/SLICE_1022 to SLICE_695:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R18C23B.CLK to     R18C23B.Q0 <A href="#@comp:PWM_I_M4/SLICE_1022">PWM_I_M4/SLICE_1022</A> (from <A href="#@net:pwm_clk">pwm_clk</A>)
+ROUTE         8     9.707<A href="#@net:free_m4:R18C23B.Q0:R4C8C.D1:9.707">     R18C23B.Q0 to R4C8C.D1      </A> <A href="#@net:free_m4">free_m4</A>
+CTOF_DEL    ---     0.920       R4C8C.D1 to       R4C8C.F1 <A href="#@comp:SLICE_704">SLICE_704</A>
+ROUTE         2     1.534<A href="#@net:SPI_I/n21588:R4C8C.F1:R4C8D.A0:1.534">       R4C8C.F1 to R4C8D.A0      </A> <A href="#@net:SPI_I/n21588">SPI_I/n21588</A>
+CTOF_DEL    ---     0.920       R4C8D.A0 to       R4C8D.F0 <A href="#@comp:SLICE_696">SLICE_696</A>
+ROUTE         2     2.249<A href="#@net:n3175:R4C8D.F0:R4C8B.A0:2.249">       R4C8D.F0 to R4C8B.A0      </A> <A href="#@net:n3175">n3175</A>
+CTOF_DEL    ---     0.920       R4C8B.A0 to       R4C8B.F0 <A href="#@comp:SLICE_695">SLICE_695</A>
+ROUTE         1     0.000<A href="#@net:COM_I_M4/n18871:R4C8B.F0:R4C8B.DI0:0.000">       R4C8B.F0 to R4C8B.DI0     </A> <A href="#@net:COM_I_M4/n18871">COM_I_M4/n18871</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   17.202   (21.6% logic, 78.4% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R3C16C.CLK,clkout_c:REG_DEL, 0.952,R3C16C.CLK,R3C16C.Q0,SLICE_451:ROUTE, 6.482,R3C16C.Q0,R18C23B.CLK,pwm_clk">Source Clock Path</A> OSCInst0 to PWM_I_M4/SLICE_1022:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R3C16C.CLK:8.950">        OSC.OSC to R3C16C.CLK    </A> <A href="#@net:clkout_c">clkout_c</A>
+REG_DEL     ---     0.952     R3C16C.CLK to      R3C16C.Q0 <A href="#@comp:SLICE_451">SLICE_451</A>
+ROUTE        29     6.482<A href="#@net:pwm_clk:R3C16C.Q0:R18C23B.CLK:6.482">      R3C16C.Q0 to R18C23B.CLK   </A> <A href="#@net:pwm_clk">pwm_clk</A>
+                  --------
+                   16.384   (5.8% logic, 94.2% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R4C8B.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_695:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R4C8B.CLK:8.950">        OSC.OSC to R4C8B.CLK     </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.353ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_14">SPI_I/\SPI__7_rep_4__i0</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1109">SPI_I/speed_set_m4_i0_i3</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i2">SPI_I/speed_set_m4_i0_i2</A>
+
+   Delay:              23.261ns  (37.5% logic, 62.5% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.261ns physical path delay SPI_I/SLICE_14 to SLICE_1109 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.353ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R19C15D.CLK,R19C15D.Q1,SPI_I/SLICE_14:ROUTE, 4.059,R19C15D.Q1,R18C14A.B1,SPI_I/n4796:C1TOFCO_DEL, 1.789,R18C14A.B1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.795,R12C15D.F1,R15C19D.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_14 to SLICE_1109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R19C15D.CLK to     R19C15D.Q1 <A href="#@comp:SPI_I/SLICE_14">SPI_I/SLICE_14</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         3     4.059<A href="#@net:SPI_I/n4796:R19C15D.Q1:R18C14A.B1:4.059">     R19C15D.Q1 to R18C14A.B1    </A> <A href="#@net:SPI_I/n4796">SPI_I/n4796</A>
+C1TOFCO_DE  ---     1.789     R18C14A.B1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.795<A href="#@net:SPI_I/n12557:R12C15D.F1:R15C19D.LSR:3.795">     R12C15D.F1 to R15C19D.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.261   (37.5% logic, 62.5% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R19C15D.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R19C15D.CLK:8.950">        OSC.OSC to R19C15D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R15C19D.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R15C19D.CLK:8.950">        OSC.OSC to R15C19D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_14">SPI_I/\SPI__7_rep_4__i0</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SPI_I/SLICE_1118">SPI_I/speed_set_m4_i0_i20</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+
+   Delay:              23.237ns  (37.5% logic, 62.5% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.237ns physical path delay SPI_I/SLICE_14 to SPI_I/SLICE_1118 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R19C15D.CLK,R19C15D.Q1,SPI_I/SLICE_14:ROUTE, 4.059,R19C15D.Q1,R18C14A.B1,SPI_I/n4796:C1TOFCO_DEL, 1.789,R18C14A.B1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.771,R12C15D.F1,R17C13B.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_14 to SPI_I/SLICE_1118:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R19C15D.CLK to     R19C15D.Q1 <A href="#@comp:SPI_I/SLICE_14">SPI_I/SLICE_14</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         3     4.059<A href="#@net:SPI_I/n4796:R19C15D.Q1:R18C14A.B1:4.059">     R19C15D.Q1 to R18C14A.B1    </A> <A href="#@net:SPI_I/n4796">SPI_I/n4796</A>
+C1TOFCO_DE  ---     1.789     R18C14A.B1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.771<A href="#@net:SPI_I/n12557:R12C15D.F1:R17C13B.LSR:3.771">     R12C15D.F1 to R17C13B.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.237   (37.5% logic, 62.5% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R19C15D.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R19C15D.CLK:8.950">        OSC.OSC to R19C15D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R17C13B.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SPI_I/SLICE_1118:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R17C13B.CLK:8.950">        OSC.OSC to R17C13B.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.377ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_14">SPI_I/\SPI__7_rep_4__i0</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1115">SPI_I/speed_set_m4_i0_i15</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i14">SPI_I/speed_set_m4_i0_i14</A>
+
+   Delay:              23.237ns  (37.5% logic, 62.5% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.237ns physical path delay SPI_I/SLICE_14 to SLICE_1115 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.377ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R19C15D.CLK,R19C15D.Q1,SPI_I/SLICE_14:ROUTE, 4.059,R19C15D.Q1,R18C14A.B1,SPI_I/n4796:C1TOFCO_DEL, 1.789,R18C14A.B1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.771,R12C15D.F1,R17C13C.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_14 to SLICE_1115:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R19C15D.CLK to     R19C15D.Q1 <A href="#@comp:SPI_I/SLICE_14">SPI_I/SLICE_14</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         3     4.059<A href="#@net:SPI_I/n4796:R19C15D.Q1:R18C14A.B1:4.059">     R19C15D.Q1 to R18C14A.B1    </A> <A href="#@net:SPI_I/n4796">SPI_I/n4796</A>
+C1TOFCO_DE  ---     1.789     R18C14A.B1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.771<A href="#@net:SPI_I/n12557:R12C15D.F1:R17C13C.LSR:3.771">     R12C15D.F1 to R17C13C.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.237   (37.5% logic, 62.5% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R19C15D.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R19C15D.CLK:8.950">        OSC.OSC to R19C15D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R17C13C.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1115:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R17C13C.CLK:8.950">        OSC.OSC to R17C13C.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.398ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:PWM_I_M4/SLICE_1022">PWM_I_M4/free_19</A>  (from <A href="#@net:pwm_clk">pwm_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_703">COM_I_M4/MospairC_i1</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+
+   Delay:              16.054ns  (23.1% logic, 76.9% route), 4 logic levels.
+
+ Constraint Details:
+
+     16.054ns physical path delay PWM_I_M4/SLICE_1022 to SLICE_703 meets
+     26.316ns delay constraint less
+      7.434ns skew and
+      0.430ns DIN_SET requirement (totaling 18.452ns) by 2.398ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R18C23B.CLK,R18C23B.Q0,PWM_I_M4/SLICE_1022:ROUTE, 9.707,R18C23B.Q0,R4C8C.D1,free_m4:CTOF_DEL, 0.920,R4C8C.D1,R4C8C.F1,SLICE_704:ROUTE, 1.040,R4C8C.F1,R4C8C.C0,SPI_I/n21588:CTOF_DEL, 0.920,R4C8C.C0,R4C8C.F0,SLICE_704:ROUTE, 1.595,R4C8C.F0,R5C8B.D0,n3211:CTOF_DEL, 0.920,R5C8B.D0,R5C8B.F0,SLICE_703:ROUTE, 0.000,R5C8B.F0,R5C8B.DI0,COM_I_M4/n18870">Data path</A> PWM_I_M4/SLICE_1022 to SLICE_703:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R18C23B.CLK to     R18C23B.Q0 <A href="#@comp:PWM_I_M4/SLICE_1022">PWM_I_M4/SLICE_1022</A> (from <A href="#@net:pwm_clk">pwm_clk</A>)
+ROUTE         8     9.707<A href="#@net:free_m4:R18C23B.Q0:R4C8C.D1:9.707">     R18C23B.Q0 to R4C8C.D1      </A> <A href="#@net:free_m4">free_m4</A>
+CTOF_DEL    ---     0.920       R4C8C.D1 to       R4C8C.F1 <A href="#@comp:SLICE_704">SLICE_704</A>
+ROUTE         2     1.040<A href="#@net:SPI_I/n21588:R4C8C.F1:R4C8C.C0:1.040">       R4C8C.F1 to R4C8C.C0      </A> <A href="#@net:SPI_I/n21588">SPI_I/n21588</A>
+CTOF_DEL    ---     0.920       R4C8C.C0 to       R4C8C.F0 <A href="#@comp:SLICE_704">SLICE_704</A>
+ROUTE         2     1.595<A href="#@net:n3211:R4C8C.F0:R5C8B.D0:1.595">       R4C8C.F0 to R5C8B.D0      </A> <A href="#@net:n3211">n3211</A>
+CTOF_DEL    ---     0.920       R5C8B.D0 to       R5C8B.F0 <A href="#@comp:SLICE_703">SLICE_703</A>
+ROUTE         1     0.000<A href="#@net:COM_I_M4/n18870:R5C8B.F0:R5C8B.DI0:0.000">       R5C8B.F0 to R5C8B.DI0     </A> <A href="#@net:COM_I_M4/n18870">COM_I_M4/n18870</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   16.054   (23.1% logic, 76.9% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R3C16C.CLK,clkout_c:REG_DEL, 0.952,R3C16C.CLK,R3C16C.Q0,SLICE_451:ROUTE, 6.482,R3C16C.Q0,R18C23B.CLK,pwm_clk">Source Clock Path</A> OSCInst0 to PWM_I_M4/SLICE_1022:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R3C16C.CLK:8.950">        OSC.OSC to R3C16C.CLK    </A> <A href="#@net:clkout_c">clkout_c</A>
+REG_DEL     ---     0.952     R3C16C.CLK to      R3C16C.Q0 <A href="#@comp:SLICE_451">SLICE_451</A>
+ROUTE        29     6.482<A href="#@net:pwm_clk:R3C16C.Q0:R18C23B.CLK:6.482">      R3C16C.Q0 to R18C23B.CLK   </A> <A href="#@net:pwm_clk">pwm_clk</A>
+                  --------
+                   16.384   (5.8% logic, 94.2% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R5C8B.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_703:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R5C8B.CLK:8.950">        OSC.OSC to R5C8B.CLK     </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.406ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_81">SPI_I/\SPI__7__i1</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1109">SPI_I/speed_set_m4_i0_i3</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i2">SPI_I/speed_set_m4_i0_i2</A>
+
+   Delay:              23.208ns  (37.6% logic, 62.4% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.208ns physical path delay SPI_I/SLICE_81 to SLICE_1109 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.406ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R16C12A.CLK,R16C12A.Q0,SPI_I/SLICE_81:ROUTE, 4.006,R16C12A.Q0,R18C14A.A1,SPI_I/recv_buffer_13:C1TOFCO_DEL, 1.789,R18C14A.A1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.795,R12C15D.F1,R15C19D.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_81 to SLICE_1109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R16C12A.CLK to     R16C12A.Q0 <A href="#@comp:SPI_I/SLICE_81">SPI_I/SLICE_81</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         4     4.006<A href="#@net:SPI_I/recv_buffer_13:R16C12A.Q0:R18C14A.A1:4.006">     R16C12A.Q0 to R18C14A.A1    </A> <A href="#@net:SPI_I/recv_buffer_13">SPI_I/recv_buffer_13</A>
+C1TOFCO_DE  ---     1.789     R18C14A.A1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.795<A href="#@net:SPI_I/n12557:R12C15D.F1:R15C19D.LSR:3.795">     R12C15D.F1 to R15C19D.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.208   (37.6% logic, 62.4% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R16C12A.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_81:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R16C12A.CLK:8.950">        OSC.OSC to R16C12A.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R15C19D.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R15C19D.CLK:8.950">        OSC.OSC to R15C19D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.411ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_14">SPI_I/\SPI__7_rep_4__i0</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1111">SPI_I/speed_set_m4_i0_i7</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i6">SPI_I/speed_set_m4_i0_i6</A>
+
+   Delay:              23.203ns  (37.6% logic, 62.4% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.203ns physical path delay SPI_I/SLICE_14 to SLICE_1111 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.411ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R19C15D.CLK,R19C15D.Q1,SPI_I/SLICE_14:ROUTE, 4.059,R19C15D.Q1,R18C14A.B1,SPI_I/n4796:C1TOFCO_DEL, 1.789,R18C14A.B1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.737,R12C15D.F1,R16C9D.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_14 to SLICE_1111:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R19C15D.CLK to     R19C15D.Q1 <A href="#@comp:SPI_I/SLICE_14">SPI_I/SLICE_14</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         3     4.059<A href="#@net:SPI_I/n4796:R19C15D.Q1:R18C14A.B1:4.059">     R19C15D.Q1 to R18C14A.B1    </A> <A href="#@net:SPI_I/n4796">SPI_I/n4796</A>
+C1TOFCO_DE  ---     1.789     R18C14A.B1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.737<A href="#@net:SPI_I/n12557:R12C15D.F1:R16C9D.LSR:3.737">     R12C15D.F1 to R16C9D.LSR    </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.203   (37.6% logic, 62.4% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R19C15D.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R19C15D.CLK:8.950">        OSC.OSC to R19C15D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R16C9D.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1111:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R16C9D.CLK:8.950">        OSC.OSC to R16C9D.CLK    </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.420ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_14">SPI_I/\SPI__7_rep_4__i0</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1110">SPI_I/speed_set_m4_i0_i5</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i4">SPI_I/speed_set_m4_i0_i4</A>
+
+   Delay:              23.194ns  (37.6% logic, 62.4% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.194ns physical path delay SPI_I/SLICE_14 to SLICE_1110 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.420ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R19C15D.CLK,R19C15D.Q1,SPI_I/SLICE_14:ROUTE, 4.059,R19C15D.Q1,R18C14A.B1,SPI_I/n4796:C1TOFCO_DEL, 1.789,R18C14A.B1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.728,R12C15D.F1,R16C17C.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_14 to SLICE_1110:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R19C15D.CLK to     R19C15D.Q1 <A href="#@comp:SPI_I/SLICE_14">SPI_I/SLICE_14</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         3     4.059<A href="#@net:SPI_I/n4796:R19C15D.Q1:R18C14A.B1:4.059">     R19C15D.Q1 to R18C14A.B1    </A> <A href="#@net:SPI_I/n4796">SPI_I/n4796</A>
+C1TOFCO_DE  ---     1.789     R18C14A.B1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.728<A href="#@net:SPI_I/n12557:R12C15D.F1:R16C17C.LSR:3.728">     R12C15D.F1 to R16C17C.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.194   (37.6% logic, 62.4% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R19C15D.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R19C15D.CLK:8.950">        OSC.OSC to R19C15D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R16C17C.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1110:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R16C17C.CLK:8.950">        OSC.OSC to R16C17C.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.425ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_16">SPI_I/\SPI__7__i9</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1109">SPI_I/speed_set_m4_i0_i3</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i2">SPI_I/speed_set_m4_i0_i2</A>
+
+   Delay:              23.189ns  (23.9% logic, 76.1% route), 6 logic levels.
+
+ Constraint Details:
+
+     23.189ns physical path delay SPI_I/SLICE_16 to SLICE_1109 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.425ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R19C15B.CLK,R19C15B.Q1,SPI_I/SLICE_16:ROUTE, 4.108,R19C15B.Q1,R17C13B.B0,SPI_I/recv_buffer_21:CTOF_DEL, 0.920,R17C13B.B0,R17C13B.F0,SPI_I/SLICE_1118:ROUTE, 0.999,R17C13B.F0,R17C13A.C0,SPI_I/n34_adj_1892:CTOF_DEL, 0.920,R17C13A.C0,R17C13A.F0,SPI_I/SLICE_1224:ROUTE, 2.288,R17C13A.F0,R17C13D.B0,SPI_I/n38_adj_1890:CTOF_DEL, 0.920,R17C13D.B0,R17C13D.F0,SPI_I/SLICE_1223:ROUTE, 2.761,R17C13D.F0,R15C16D.C1,SPI_I/n40_adj_1887:CTOF_DEL, 0.920,R15C16D.C1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.795,R12C15D.F1,R15C19D.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_16 to SLICE_1109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R19C15B.CLK to     R19C15B.Q1 <A href="#@comp:SPI_I/SLICE_16">SPI_I/SLICE_16</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         5     4.108<A href="#@net:SPI_I/recv_buffer_21:R19C15B.Q1:R17C13B.B0:4.108">     R19C15B.Q1 to R17C13B.B0    </A> <A href="#@net:SPI_I/recv_buffer_21">SPI_I/recv_buffer_21</A>
+CTOF_DEL    ---     0.920     R17C13B.B0 to     R17C13B.F0 <A href="#@comp:SPI_I/SLICE_1118">SPI_I/SLICE_1118</A>
+ROUTE         1     0.999<A href="#@net:SPI_I/n34_adj_1892:R17C13B.F0:R17C13A.C0:0.999">     R17C13B.F0 to R17C13A.C0    </A> <A href="#@net:SPI_I/n34_adj_1892">SPI_I/n34_adj_1892</A>
+CTOF_DEL    ---     0.920     R17C13A.C0 to     R17C13A.F0 <A href="#@comp:SPI_I/SLICE_1224">SPI_I/SLICE_1224</A>
+ROUTE         1     2.288<A href="#@net:SPI_I/n38_adj_1890:R17C13A.F0:R17C13D.B0:2.288">     R17C13A.F0 to R17C13D.B0    </A> <A href="#@net:SPI_I/n38_adj_1890">SPI_I/n38_adj_1890</A>
+CTOF_DEL    ---     0.920     R17C13D.B0 to     R17C13D.F0 <A href="#@comp:SPI_I/SLICE_1223">SPI_I/SLICE_1223</A>
+ROUTE         1     2.761<A href="#@net:SPI_I/n40_adj_1887:R17C13D.F0:R15C16D.C1:2.761">     R17C13D.F0 to R15C16D.C1    </A> <A href="#@net:SPI_I/n40_adj_1887">SPI_I/n40_adj_1887</A>
+CTOF_DEL    ---     0.920     R15C16D.C1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.795<A href="#@net:SPI_I/n12557:R12C15D.F1:R15C19D.LSR:3.795">     R12C15D.F1 to R15C19D.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.189   (23.9% logic, 76.1% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R19C15B.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R19C15B.CLK:8.950">        OSC.OSC to R19C15B.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R15C19D.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R15C19D.CLK:8.950">        OSC.OSC to R15C19D.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 2.430ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SPI_I/SLICE_81">SPI_I/\SPI__7__i1</A>  (from <A href="#@net:clkout_c">clkout_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_1115">SPI_I/speed_set_m4_i0_i15</A>  (to <A href="#@net:clkout_c">clkout_c</A> +)
+                   FF                        <A href="#@net:SPI_I/speed_set_m4_i0_i14">SPI_I/speed_set_m4_i0_i14</A>
+
+   Delay:              23.184ns  (37.6% logic, 62.4% route), 14 logic levels.
+
+ Constraint Details:
+
+     23.184ns physical path delay SPI_I/SLICE_81 to SLICE_1115 meets
+     26.316ns delay constraint less
+      0.000ns skew and
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 2.430ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:REG_DEL, 0.952,R16C12A.CLK,R16C12A.Q0,SPI_I/SLICE_81:ROUTE, 4.006,R16C12A.Q0,R18C14A.A1,SPI_I/recv_buffer_13:C1TOFCO_DEL, 1.789,R18C14A.A1,R18C14A.FCO,SPI_I/SLICE_70:ROUTE, 0.000,R18C14A.FCO,R18C14B.FCI,SPI_I/n18646:FCITOFCO_DEL, 0.316,R18C14B.FCI,R18C14B.FCO,SPI_I/SLICE_69:ROUTE, 0.000,R18C14B.FCO,R18C14C.FCI,SPI_I/n18647:FCITOFCO_DEL, 0.316,R18C14C.FCI,R18C14C.FCO,SPI_I/SLICE_68:ROUTE, 0.000,R18C14C.FCO,R18C14D.FCI,SPI_I/n18648:FCITOFCO_DEL, 0.316,R18C14D.FCI,R18C14D.FCO,SPI_I/SLICE_67:ROUTE, 0.000,R18C14D.FCO,R18C15A.FCI,SPI_I/n18649:FCITOFCO_DEL, 0.316,R18C15A.FCI,R18C15A.FCO,SPI_I/SLICE_66:ROUTE, 0.000,R18C15A.FCO,R18C15B.FCI,SPI_I/n18650:FCITOFCO_DEL, 0.316,R18C15B.FCI,R18C15B.FCO,SPI_I/SLICE_65:ROUTE, 0.000,R18C15B.FCO,R18C15C.FCI,SPI_I/n18651:FCITOFCO_DEL, 0.316,R18C15C.FCI,R18C15C.FCO,SPI_I/SLICE_64:ROUTE, 0.000,R18C15C.FCO,R18C15D.FCI,SPI_I/n18652:FCITOFCO_DEL, 0.316,R18C15D.FCI,R18C15D.FCO,SPI_I/SLICE_63:ROUTE, 0.000,R18C15D.FCO,R18C16A.FCI,SPI_I/n18653:FCITOFCO_DEL, 0.316,R18C16A.FCI,R18C16A.FCO,SPI_I/SLICE_62:ROUTE, 0.000,R18C16A.FCO,R18C16B.FCI,SPI_I/n18654:FCITOFCO_DEL, 0.316,R18C16B.FCI,R18C16B.FCO,SPI_I/SLICE_61:ROUTE, 0.000,R18C16B.FCO,R18C16C.FCI,SPI_I/n18655:FCITOF1_DEL, 1.294,R18C16C.FCI,R18C16C.F1,SPI_I/SLICE_60:ROUTE, 3.002,R18C16C.F1,R15C16D.B1,SPI_I/n3455:CTOF_DEL, 0.920,R15C16D.B1,R15C16D.F1,SPI_I/SLICE_1019:ROUTE, 3.686,R15C16D.F1,R12C15D.D1,SPI_I/enable_m4_N_649:CTOF_DEL, 0.920,R12C15D.D1,R12C15D.F1,SPI_I/SLICE_1369:ROUTE, 3.771,R12C15D.F1,R17C13C.LSR,SPI_I/n12557">Data path</A> SPI_I/SLICE_81 to SLICE_1115:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.952    R16C12A.CLK to     R16C12A.Q0 <A href="#@comp:SPI_I/SLICE_81">SPI_I/SLICE_81</A> (from <A href="#@net:clkout_c">clkout_c</A>)
+ROUTE         4     4.006<A href="#@net:SPI_I/recv_buffer_13:R16C12A.Q0:R18C14A.A1:4.006">     R16C12A.Q0 to R18C14A.A1    </A> <A href="#@net:SPI_I/recv_buffer_13">SPI_I/recv_buffer_13</A>
+C1TOFCO_DE  ---     1.789     R18C14A.A1 to    R18C14A.FCO <A href="#@comp:SPI_I/SLICE_70">SPI_I/SLICE_70</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18646:R18C14A.FCO:R18C14B.FCI:0.000">    R18C14A.FCO to R18C14B.FCI   </A> <A href="#@net:SPI_I/n18646">SPI_I/n18646</A>
+FCITOFCO_D  ---     0.316    R18C14B.FCI to    R18C14B.FCO <A href="#@comp:SPI_I/SLICE_69">SPI_I/SLICE_69</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18647:R18C14B.FCO:R18C14C.FCI:0.000">    R18C14B.FCO to R18C14C.FCI   </A> <A href="#@net:SPI_I/n18647">SPI_I/n18647</A>
+FCITOFCO_D  ---     0.316    R18C14C.FCI to    R18C14C.FCO <A href="#@comp:SPI_I/SLICE_68">SPI_I/SLICE_68</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18648:R18C14C.FCO:R18C14D.FCI:0.000">    R18C14C.FCO to R18C14D.FCI   </A> <A href="#@net:SPI_I/n18648">SPI_I/n18648</A>
+FCITOFCO_D  ---     0.316    R18C14D.FCI to    R18C14D.FCO <A href="#@comp:SPI_I/SLICE_67">SPI_I/SLICE_67</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18649:R18C14D.FCO:R18C15A.FCI:0.000">    R18C14D.FCO to R18C15A.FCI   </A> <A href="#@net:SPI_I/n18649">SPI_I/n18649</A>
+FCITOFCO_D  ---     0.316    R18C15A.FCI to    R18C15A.FCO <A href="#@comp:SPI_I/SLICE_66">SPI_I/SLICE_66</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18650:R18C15A.FCO:R18C15B.FCI:0.000">    R18C15A.FCO to R18C15B.FCI   </A> <A href="#@net:SPI_I/n18650">SPI_I/n18650</A>
+FCITOFCO_D  ---     0.316    R18C15B.FCI to    R18C15B.FCO <A href="#@comp:SPI_I/SLICE_65">SPI_I/SLICE_65</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18651:R18C15B.FCO:R18C15C.FCI:0.000">    R18C15B.FCO to R18C15C.FCI   </A> <A href="#@net:SPI_I/n18651">SPI_I/n18651</A>
+FCITOFCO_D  ---     0.316    R18C15C.FCI to    R18C15C.FCO <A href="#@comp:SPI_I/SLICE_64">SPI_I/SLICE_64</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18652:R18C15C.FCO:R18C15D.FCI:0.000">    R18C15C.FCO to R18C15D.FCI   </A> <A href="#@net:SPI_I/n18652">SPI_I/n18652</A>
+FCITOFCO_D  ---     0.316    R18C15D.FCI to    R18C15D.FCO <A href="#@comp:SPI_I/SLICE_63">SPI_I/SLICE_63</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18653:R18C15D.FCO:R18C16A.FCI:0.000">    R18C15D.FCO to R18C16A.FCI   </A> <A href="#@net:SPI_I/n18653">SPI_I/n18653</A>
+FCITOFCO_D  ---     0.316    R18C16A.FCI to    R18C16A.FCO <A href="#@comp:SPI_I/SLICE_62">SPI_I/SLICE_62</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18654:R18C16A.FCO:R18C16B.FCI:0.000">    R18C16A.FCO to R18C16B.FCI   </A> <A href="#@net:SPI_I/n18654">SPI_I/n18654</A>
+FCITOFCO_D  ---     0.316    R18C16B.FCI to    R18C16B.FCO <A href="#@comp:SPI_I/SLICE_61">SPI_I/SLICE_61</A>
+ROUTE         1     0.000<A href="#@net:SPI_I/n18655:R18C16B.FCO:R18C16C.FCI:0.000">    R18C16B.FCO to R18C16C.FCI   </A> <A href="#@net:SPI_I/n18655">SPI_I/n18655</A>
+FCITOF1_DE  ---     1.294    R18C16C.FCI to     R18C16C.F1 <A href="#@comp:SPI_I/SLICE_60">SPI_I/SLICE_60</A>
+ROUTE         1     3.002<A href="#@net:SPI_I/n3455:R18C16C.F1:R15C16D.B1:3.002">     R18C16C.F1 to R15C16D.B1    </A> <A href="#@net:SPI_I/n3455">SPI_I/n3455</A>
+CTOF_DEL    ---     0.920     R15C16D.B1 to     R15C16D.F1 <A href="#@comp:SPI_I/SLICE_1019">SPI_I/SLICE_1019</A>
+ROUTE         2     3.686<A href="#@net:SPI_I/enable_m4_N_649:R15C16D.F1:R12C15D.D1:3.686">     R15C16D.F1 to R12C15D.D1    </A> <A href="#@net:SPI_I/enable_m4_N_649">SPI_I/enable_m4_N_649</A>
+CTOF_DEL    ---     0.920     R12C15D.D1 to     R12C15D.F1 <A href="#@comp:SPI_I/SLICE_1369">SPI_I/SLICE_1369</A>
+ROUTE        11     3.771<A href="#@net:SPI_I/n12557:R12C15D.F1:R17C13C.LSR:3.771">     R12C15D.F1 to R17C13C.LSR   </A> <A href="#@net:SPI_I/n12557">SPI_I/n12557</A> (to <A href="#@net:clkout_c">clkout_c</A>)
+                  --------
+                   23.184   (37.6% logic, 62.4% route), 14 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R16C12A.CLK,clkout_c">Source Clock Path</A> OSCInst0 to SPI_I/SLICE_81:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R16C12A.CLK:8.950">        OSC.OSC to R16C12A.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clkout_c' 38.000000 MHz ;:ROUTE, 8.950,OSC.OSC,R17C13C.CLK,clkout_c">Destination Clock Path</A> OSCInst0 to SLICE_1115:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       201     8.950<A href="#@net:clkout_c:OSC.OSC:R17C13C.CLK:8.950">        OSC.OSC to R17C13C.CLK   </A> <A href="#@net:clkout_c">clkout_c</A>
+                  --------
+                    8.950   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:   39.895MHz is the maximum frequency for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clkout_c" 38.000000 MHz  |             |             |
+;                                       |   38.000 MHz|   39.895 MHz|   4  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: <A href="#@net:pwm_clk">pwm_clk</A>   Source: SLICE_451.Q0   Loads: 29
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:clk_1mhz">clk_1mhz</A>   Source: CLKDIV_I/SLICE_586.Q1   Loads: 166
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:clkout_c">clkout_c</A>   Source: OSCInst0.OSC   Loads: 201
+   Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:pwm_clk">pwm_clk</A>   Source: SLICE_451.Q0
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 8
+
+   Clock Domain: <A href="#@net:clk_1mhz">clk_1mhz</A>   Source: CLKDIV_I/SLICE_586.Q1
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 92
+
+   Clock Domain: <A href="#@net:CLKDIV_I/pi_clk">CLKDIV_I/pi_clk</A>   Source: CLKDIV_I/SLICE_589.Q1
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
+
+   Clock Domain: <A href="#@net:CLKDIV_I/pi_clk">CLKDIV_I/pi_clk</A>   Source: CLKDIV_I/SLICE_589.Q1
+      Covered under: FREQUENCY NET "clkout_c" 38.000000 MHz ;   Transfers: 2
+
+Clock Domain: <A href="#@net:CLKDIV_I/pi_clk">CLKDIV_I/pi_clk</A>   Source: CLKDIV_I/SLICE_589.Q1   Loads: 255
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 5113 paths, 1 nets, and 9263 connections (99.80% coverage)
+

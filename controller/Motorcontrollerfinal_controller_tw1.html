@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.9.0.99.2</big></U></B>
-Fri Apr 14 12:08:27 2017
+Wed Apr 19 12:27:59 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -42,7 +42,7 @@ Report level:    verbose report, limited to 1 item per preference
 <A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
 
 <LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "clkout_c" 38.000000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
-Report:   56.481MHz is the maximum frequency for this preference.
+Report:   56.548MHz is the maximum frequency for this preference.
 
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
@@ -57,7 +57,7 @@ BLOCK JTAG PATHS
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 8.611ns
+Passed: The following path meets requirements by 8.632ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -65,35 +65,35 @@ Passed: The following path meets requirements by 8.611ns
    Destination:    FF         Data in        SPI_I/speed_set_m4_i0_i7  (to clkout_c +)
                    FF                        SPI_I/speed_set_m4_i0_i6
 
-   Delay:              17.000ns  (32.8% logic, 67.2% route), 6 logic levels.
+   Delay:              16.982ns  (32.7% logic, 67.3% route), 6 logic levels.
 
  Constraint Details:
 
-     17.000ns physical path delay SPI_I/SLICE_16 to SLICE_1111 meets
+     16.982ns physical path delay SPI_I/SLICE_16 to SLICE_1111 meets
      26.316ns delay constraint less
-      0.705ns LSR_SET requirement (totaling 25.611ns) by 8.611ns
+      0.702ns LSR_SET requirement (totaling 25.614ns) by 8.632ns
 
  Physical Path Details:
 
       Data path SPI_I/SLICE_16 to SLICE_1111:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.955 */SLICE_16.CLK to *I/SLICE_16.Q1 SPI_I/SLICE_16 (from clkout_c)
+REG_DEL     ---     0.952 */SLICE_16.CLK to *I/SLICE_16.Q1 SPI_I/SLICE_16 (from clkout_c)
 ROUTE         5   e 1.905 *I/SLICE_16.Q1 to *SLICE_1118.C0 SPI_I/recv_buffer_21
-CTOF_DEL    ---     0.923 *SLICE_1118.C0 to *SLICE_1118.F0 SPI_I/SLICE_1118
+CTOF_DEL    ---     0.920 *SLICE_1118.C0 to *SLICE_1118.F0 SPI_I/SLICE_1118
 ROUTE         1   e 1.905 *SLICE_1118.F0 to *SLICE_1224.B0 SPI_I/n34_adj_1892
-CTOF_DEL    ---     0.923 *SLICE_1224.B0 to *SLICE_1224.F0 SPI_I/SLICE_1224
+CTOF_DEL    ---     0.920 *SLICE_1224.B0 to *SLICE_1224.F0 SPI_I/SLICE_1224
 ROUTE         1   e 1.905 *SLICE_1224.F0 to *SLICE_1223.B0 SPI_I/n38_adj_1890
-CTOF_DEL    ---     0.923 *SLICE_1223.B0 to *SLICE_1223.F0 SPI_I/SLICE_1223
+CTOF_DEL    ---     0.920 *SLICE_1223.B0 to *SLICE_1223.F0 SPI_I/SLICE_1223
 ROUTE         1   e 1.905 *SLICE_1223.F0 to *SLICE_1019.D1 SPI_I/n40_adj_1887
-CTOF_DEL    ---     0.923 *SLICE_1019.D1 to *SLICE_1019.F1 SPI_I/SLICE_1019
+CTOF_DEL    ---     0.920 *SLICE_1019.D1 to *SLICE_1019.F1 SPI_I/SLICE_1019
 ROUTE         2   e 1.905 *SLICE_1019.F1 to *SLICE_1369.D1 SPI_I/enable_m4_N_649
-CTOF_DEL    ---     0.923 *SLICE_1369.D1 to *SLICE_1369.F1 SPI_I/SLICE_1369
+CTOF_DEL    ---     0.920 *SLICE_1369.D1 to *SLICE_1369.F1 SPI_I/SLICE_1369
 ROUTE        11   e 1.905 *SLICE_1369.F1 to SLICE_1111.LSR SPI_I/n12557 (to clkout_c)
                   --------
-                   17.000   (32.8% logic, 67.2% route), 6 logic levels.
+                   16.982   (32.7% logic, 67.3% route), 6 logic levels.
 
-Report:   56.481MHz is the maximum frequency for this preference.
+Report:   56.548MHz is the maximum frequency for this preference.
 
 <A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
 --------------
@@ -102,7 +102,7 @@ Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
 FREQUENCY NET "clkout_c" 38.000000 MHz  |             |             |
-;                                       |   38.000 MHz|   56.481 MHz|   6  
+;                                       |   38.000 MHz|   56.548 MHz|   6  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -151,7 +151,7 @@ Constraints cover 5113 paths, 1 nets, and 9263 connections (99.80% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.9.0.99.2</big></U></B>
-Fri Apr 14 12:08:27 2017
+Wed Apr 19 12:28:00 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
