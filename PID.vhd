@@ -46,12 +46,12 @@ end PID;
 
 ARCHITECTURE PID OF PID IS
 
-	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 2400; --1200
-	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 8;
-	CONSTANT MAX_INTG_GAIN : integer := 1000000;--3000000;
+	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 0;--2000;--3000; 
+	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 0;--1; --8
+	CONSTANT MAX_INTG_GAIN : integer := 1000000;
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
 	CONSTANT FORW_MINUS : integer := 5000; --5000
-	CONSTANT FORW_MULT : integer := 700;--400;
+	CONSTANT FORW_MULT : integer := 500;--500;--700;
 
 	
 	------------------------------------------------------------------------------------------------------------------------
@@ -161,11 +161,11 @@ BEGIN
 	                    --intgAdd = error*intgGain (in S2, S4, S6, S8)
 
 				
-	multIn2 <=	INTG_GAIN WHEN 	ss = S1 OR --propOut = error * intgGain;
+	multIn2 <=	INTG_GAIN WHEN 	ss = S1 OR --intgOut = error * intgGain;
 								ss = S3 OR
 								ss = S5 OR
 								ss = S7 ELSE
-				PROP_GAIN WHEN	ss = S2 OR --intgAdd = error*propGain
+				PROP_GAIN WHEN	ss = S2 OR --propAdd = error*propGain
 								ss = S4 OR
 								ss = S6 OR
 								ss = S8 ELSE
@@ -229,6 +229,25 @@ BEGIN
 		multOut <= multIn1 * multIn2;
 		addOut <= addIn1 + addIn2;
 		
+		debug3 <= speedset_m1;
+		
+		IF((speedset_m1 = 0 OR speedset_m1 > 9999 OR speedset_m1 < -9999) AND ss = S0) THEN
+			intgOut0 <= 0;
+		END IF;
+		
+		IF((speedset_m2 = 0 OR speedset_m2 > 9999 OR speedset_m2 < -9999) AND SS = S0) THEN
+			intgOut1 <= 0;
+		END IF;
+		
+		IF((speedset_m3 = 0 OR speedset_m3 > 9999 OR speedset_m3 < -9999)  AND ss = S0) THEN
+			intgOut2 <= 0;
+		END IF;
+		
+		IF((speedset_m4 = 0 OR speedset_m4 > 9999 OR speedset_m4 < -9999) AND ss = S0) THEN
+			intgOut3 <= 0;
+		END IF;
+			
+		
 		
 
 		--state machine definition and save outputs
@@ -240,6 +259,7 @@ BEGIN
 		WHEN S1 =>	
 			ss <= S2;
 		WHEN S2 =>	
+			debug2 <= multOut;
 			ss <= S3;
 		WHEN S3 =>
 			debug1 <= addOut;
@@ -257,7 +277,7 @@ BEGIN
 			backOut0 <= addOut;
 			ss <= S5;
 		WHEN S5 =>
-			debug1 <= addOut;
+
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut1 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -270,7 +290,7 @@ BEGIN
 			backOut1 <= addOut;
 			ss <= S7;
 		WHEN S7 =>
-			debug1 <= addOut;
+
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut2 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN
@@ -283,7 +303,7 @@ BEGIN
 			backOut2 <= addOut;
 			ss <= S9;
 		WHEN S9 =>
-			debug1 <= addOut;
+
 			IF addOut < MAX_INTG_GAIN AND addOut > -MAX_INTG_GAIN THEN
 				intgOut3 <= addOut;
 			ELSIF addout >= MAX_INTG_GAIN THEN

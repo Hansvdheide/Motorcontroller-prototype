@@ -143,32 +143,32 @@ BEGIN
 			speed_set_temp_m4 := to_integer(signed(recv_buffer(32 downto 12)));
 			
 			
-			IF(speed_set_temp_m1 = 0 OR speed_set_temp_m1 > 20000 OR speed_set_temp_m1 < -20000) THEN
+			IF(speed_set_temp_m1 = 0 OR speed_set_temp_m1 > 10000 OR speed_set_temp_m1 < -10000) THEN
 				en_buf_m1 := '0';
-				speed_set_temp_m1 := 999999;
+				speed_set_temp_m1 := 10000;
 			ELSE
 				en_buf_m1 := '1';
 			END IF;
 						
-			IF(speed_set_temp_m2 = 0 OR speed_set_temp_m2 > 20000 OR speed_set_temp_m2 < -20000) THEN
+			IF(speed_set_temp_m2 = 0 OR speed_set_temp_m2 > 10000 OR speed_set_temp_m2 < -10000) THEN
 				en_buf_m2 := '0';
-				speed_set_temp_m2 := 999999;
+				speed_set_temp_m2 := 10000;
 			ELSE
 				en_buf_m2 := '1';
 			END IF;
 			
 			
-			IF(speed_set_temp_m3 = 0 OR speed_set_temp_m3 > 20000 OR speed_set_temp_m3 < -20000) THEN
+			IF(speed_set_temp_m3 = 0 OR speed_set_temp_m3 > 10000 OR speed_set_temp_m3 < -10000) THEN
 				en_buf_m3 := '0';
-				speed_set_temp_m3 := 999999;
+				speed_set_temp_m3 := 10000;
 			ELSE
 				en_buf_m3 := '1';
 			END IF;
 			
 			
-			IF(speed_set_temp_m4 = 0 OR speed_set_temp_m4 > 20000 OR speed_set_temp_m4 < -20000) THEN
+			IF(speed_set_temp_m4 = 0 OR speed_set_temp_m4 > 10000 OR speed_set_temp_m4 < -10000) THEN
 				en_buf_m4 := '0';
-				speed_set_temp_m4 := 999999;
+				speed_set_temp_m4 := 10000;
 			ELSE
 				en_buf_m4 := '1';
 			END IF;

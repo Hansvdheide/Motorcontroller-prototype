@@ -17,30 +17,30 @@ Command line:   map -a MachXO2 -p LCMXO2-4000ZE -t TQFP144 -s 1 -oc Industrial
      Motorcontrollerfinal_controller.ngd -o
      Motorcontrollerfinal_controller_map.ncd -pr
      Motorcontrollerfinal_controller.prf -mp Motorcontrollerfinal_controller.mrp
-     -lpf D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorControlle
-     r/controller/Motorcontrollerfinal_controller.lpf -lpf D:/WybeData/Projects/
-     RoboTeamTwente/Electronics/Lattice/MotorController/OnBoard4000ZE.lpf -c 0
-     -gui -msgset D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorC
-     ontroller/promote.xml 
+     -lpf C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/control
+     ler/Motorcontrollerfinal_controller.lpf -lpf C:/Users/gebruiker/workspace/l
+     attice/Motorcontroller-prototype/OnBoard4000ZE.lpf -c 0 -gui -msgset
+     C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/promote.xml
+     
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-4000ZETQFP144
 Target Performance:   1
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.9.0.99.2
-Mapped on:  04/19/17  12:27:57
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.8.0.115.3
+Mapped on:  05/22/17  15:05:14
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:   1177 out of  4665 (25%)
-      PFU registers:         1177 out of  4320 (27%)
+   Number of registers:   1284 out of  4665 (28%)
+      PFU registers:         1284 out of  4320 (30%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:      1160 out of  2160 (54%)
-      SLICEs as Logic/ROM:   1160 out of  2160 (54%)
+   Number of SLICEs:      1277 out of  2160 (59%)
+      SLICEs as Logic/ROM:   1277 out of  2160 (59%)
       SLICEs as RAM:            0 out of  1620 (0%)
-      SLICEs as Carry:        583 out of  2160 (27%)
-   Number of LUT4s:        2306 out of  4320 (53%)
-      Number used as logic LUTs:        1140
+      SLICEs as Carry:        682 out of  2160 (32%)
+   Number of LUT4s:        2540 out of  4320 (59%)
+      Number used as logic LUTs:        1176
       Number used as distributed RAM:     0
-      Number used as ripple logic:      1166
+      Number used as ripple logic:      1364
       Number used as shift registers:     0
    Number of PIO sites used: 48 + 4(JTAG) out of 115 (45%)
    Number of block RAMs:  0 out of 10 (0%)
@@ -69,121 +69,126 @@ Mapped on:  04/19/17  12:27:57
      ripple logic.
 
    Number of clocks:  4
-     Net clkout_c: 200 loads, 200 rising, 0 falling (Driver: OSCInst0 )
-     Net clk_1mhz: 166 loads, 166 rising, 0 falling (Driver:
+     Net clkout_c: 195 loads, 195 rising, 0 falling (Driver: OSCInst0 )
+     Net clk_1mhz: 219 loads, 219 rising, 0 falling (Driver:
      CLKDIV_I/clk_1mhz_33 )
-     Net pwm_clk: 29 loads, 29 rising, 0 falling (Driver: CLKDIV_I/pwm_clk_34 )
+     Net pwm_clk: 28 loads, 28 rising, 0 falling (Driver: CLKDIV_I/pwm_clk_34 )
      Net CLKDIV_I/pi_clk: 255 loads, 0 rising, 255 falling (Driver:
      CLKDIV_I/pi_clk_35 )
    Number of Clock Enables:  37
-     Net clkout_c_enable_257: 7 loads, 7 LSLICEs
-     Net rst: 19 loads, 19 LSLICEs
-     Net clkout_c_enable_176: 31 loads, 31 LSLICEs
-     Net clkout_c_enable_164: 29 loads, 29 LSLICEs
-     Net COM_I_M3/clkout_c_enable_8: 1 loads, 1 LSLICEs
-     Net COM_I_M2/clkout_c_enable_5: 1 loads, 1 LSLICEs
-     Net COM_I_M1/clkout_c_enable_4: 1 loads, 1 LSLICEs
-     Net SPI_I/enable_m1_N_633: 2 loads, 2 LSLICEs
-     Net SPI_I/clkout_c_enable_245: 44 loads, 44 LSLICEs
-     Net SPI_I/clkout_c_enable_61: 25 loads, 25 LSLICEs
-     Net SPI_I/clkout_c_enable_96: 17 loads, 17 LSLICEs
+     Net clkout_c_enable_266: 7 loads, 7 LSLICEs
+     Net clkout_c_enable_173: 28 loads, 28 LSLICEs
+     Net clkout_c_enable_172: 28 loads, 28 LSLICEs
+     Net rst: 16 loads, 16 LSLICEs
+     Net HALL_I_M2/clk_1mhz_enable_4: 1 loads, 1 LSLICEs
      Net HALL_I_M2/stable_counting: 14 loads, 14 LSLICEs
-     Net HALL_I_M2/clk_1mhz_enable_85: 11 loads, 11 LSLICEs
-     Net HALL_I_M2/stable_counting_N_1746: 1 loads, 1 LSLICEs
-     Net HALL_I_M3/stable_counting: 14 loads, 14 LSLICEs
-     Net HALL_I_M3/clk_1mhz_enable_104: 11 loads, 11 LSLICEs
-     Net HALL_I_M3/stable_counting_N_1746: 1 loads, 1 LSLICEs
-     Net HALL_I_M1/stable_counting: 14 loads, 14 LSLICEs
-     Net HALL_I_M1/clk_1mhz_enable_66: 11 loads, 11 LSLICEs
-     Net HALL_I_M1/stable_counting_N_1746: 1 loads, 1 LSLICEs
-     Net COM_I_M4/clkout_c_enable_10: 1 loads, 1 LSLICEs
-     Net PID_I/clk_N_683_enable_73: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_41: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_101: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_129: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_157: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_185: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_213: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_241: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_269: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_297: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_325: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_353: 15 loads, 15 LSLICEs
+     Net HALL_I_M2/clk_1mhz_enable_177: 10 loads, 10 LSLICEs
+     Net AVG_SPEED_M4/clk_1mhz_enable_139: 10 loads, 10 LSLICEs
+     Net AVG_SPEED_M3/clk_1mhz_enable_120: 10 loads, 10 LSLICEs
+     Net AVG_SPEED_M2/clk_1mhz_enable_101: 10 loads, 10 LSLICEs
+     Net AVG_SPEED_M1/clk_1mhz_enable_82: 10 loads, 10 LSLICEs
+     Net SPI_I/clkout_c_enable_254: 44 loads, 44 LSLICEs
+     Net SPI_I/enable_m1_N_633: 2 loads, 2 LSLICEs
+     Net SPI_I/clkout_c_enable_60: 25 loads, 25 LSLICEs
+     Net SPI_I/clkout_c_enable_94: 17 loads, 17 LSLICEs
      Net PID_I/clk_N_683_enable_392: 26 loads, 26 LSLICEs
-     Net HALL_I_M4/clk_1mhz_enable_47: 11 loads, 11 LSLICEs
+     Net PID_I/clk_N_683_enable_387: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_70: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_42: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_98: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_126: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_154: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_182: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_210: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_238: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_303: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_331: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_683_enable_390: 15 loads, 15 LSLICEs
+     Net HALL_I_M1/clk_1mhz_enable_63: 11 loads, 11 LSLICEs
+     Net HALL_I_M1/clk_1mhz_enable_3: 1 loads, 1 LSLICEs
+     Net HALL_I_M1/stable_counting: 14 loads, 14 LSLICEs
+     Net HALL_I_M3/stable_counting: 14 loads, 14 LSLICEs
+     Net HALL_I_M3/clk_1mhz_enable_158: 10 loads, 10 LSLICEs
+     Net HALL_I_M3/clk_1mhz_enable_179: 1 loads, 1 LSLICEs
+     Net HALL_I_M4/clk_1mhz_enable_178: 1 loads, 1 LSLICEs
+     Net HALL_I_M4/clk_1mhz_enable_44: 11 loads, 11 LSLICEs
      Net HALL_I_M4/stable_counting: 14 loads, 14 LSLICEs
-     Net HALL_I_M4/stable_counting_N_1746: 1 loads, 1 LSLICEs
-   Number of LSRs:  48
-     Net enable_m3: 3 loads, 3 LSLICEs
-     Net n19650: 1 loads, 1 LSLICEs
-     Net n3093: 1 loads, 1 LSLICEs
-     Net n3057: 1 loads, 1 LSLICEs
-     Net enable_m2: 3 loads, 3 LSLICEs
-     Net n19656: 1 loads, 1 LSLICEs
-     Net n2963: 1 loads, 1 LSLICEs
-     Net n2927: 1 loads, 1 LSLICEs
-     Net n19654: 1 loads, 1 LSLICEs
-     Net n2833: 1 loads, 1 LSLICEs
+   Number of LSRs:  52
+     Net enable_m3: 4 loads, 4 LSLICEs
+     Net n19427: 1 loads, 1 LSLICEs
+     Net n3124: 1 loads, 1 LSLICEs
+     Net n3088: 1 loads, 1 LSLICEs
+     Net enable_m2: 4 loads, 4 LSLICEs
+     Net n19411: 1 loads, 1 LSLICEs
+     Net n3016: 1 loads, 1 LSLICEs
+     Net n2980: 1 loads, 1 LSLICEs
+     Net enable_m1: 4 loads, 4 LSLICEs
+     Net n19421: 1 loads, 1 LSLICEs
 
-     Net n2797: 1 loads, 1 LSLICEs
-     Net enable_m1: 3 loads, 3 LSLICEs
-     Net enable_m4: 3 loads, 3 LSLICEs
-     Net SPI_I/n12557: 11 loads, 11 LSLICEs
-     Net SPI_I/n12577: 11 loads, 11 LSLICEs
-     Net SPI_I/n12597: 11 loads, 11 LSLICEs
-     Net SPI_I/n12617: 11 loads, 11 LSLICEs
-     Net n19662: 1 loads, 1 LSLICEs
-     Net HALL_I_M2/n21514: 4 loads, 4 LSLICEs
-     Net HALL_I_M2/clk_1mhz_enable_85: 10 loads, 10 LSLICEs
-     Net HALL_I_M2/n4333: 11 loads, 11 LSLICEs
-     Net HALL_I_M2/n19963: 1 loads, 1 LSLICEs
-     Net HALL_I_M3/n21493: 4 loads, 4 LSLICEs
-     Net HALL_I_M3/clk_1mhz_enable_104: 10 loads, 10 LSLICEs
-     Net HALL_I_M3/n4331: 11 loads, 11 LSLICEs
-     Net HALL_I_M3/n19961: 1 loads, 1 LSLICEs
-     Net HALL_I_M1/n21494: 4 loads, 4 LSLICEs
-     Net HALL_I_M1/clk_1mhz_enable_66: 10 loads, 10 LSLICEs
-     Net HALL_I_M1/n4298: 11 loads, 11 LSLICEs
-     Net HALL_I_M1/n19965: 1 loads, 1 LSLICEs
-     Net n3223: 1 loads, 1 LSLICEs
-     Net n3187: 1 loads, 1 LSLICEs
-     Net CLKDIV_I/n12555: 3 loads, 3 LSLICEs
-     Net CLKDIV_I/n12554: 5 loads, 5 LSLICEs
-     Net PWM_I_M3/n12551: 6 loads, 6 LSLICEs
-     Net PWM_I_M2/n12552: 6 loads, 6 LSLICEs
-     Net PWM_I_M1/n12553: 6 loads, 6 LSLICEs
-     Net PID_I/n12655: 3 loads, 3 LSLICEs
+     Net n2908: 1 loads, 1 LSLICEs
+     Net n2872: 1 loads, 1 LSLICEs
+     Net CLKDIV_I/n14136: 3 loads, 3 LSLICEs
+     Net CLKDIV_I/n14135: 5 loads, 5 LSLICEs
+     Net enable_m4: 4 loads, 4 LSLICEs
+     Net n19415: 1 loads, 1 LSLICEs
+     Net n3232: 1 loads, 1 LSLICEs
+     Net n3196: 1 loads, 1 LSLICEs
+     Net HALL_I_M2/n14371: 5 loads, 5 LSLICEs
+     Net HALL_I_M2/n4551: 11 loads, 11 LSLICEs
+     Net AVG_SPEED_M4/clk_1mhz_enable_139: 4 loads, 4 LSLICEs
+     Net AVG_SPEED_M3/clk_1mhz_enable_120: 4 loads, 4 LSLICEs
+     Net AVG_SPEED_M2/clk_1mhz_enable_101: 4 loads, 4 LSLICEs
+     Net AVG_SPEED_M1/clk_1mhz_enable_82: 4 loads, 4 LSLICEs
+     Net SPI_I/n14142: 11 loads, 11 LSLICEs
+     Net SPI_I/n14162: 11 loads, 11 LSLICEs
+     Net SPI_I/n14202: 11 loads, 11 LSLICEs
+     Net SPI_I/n14182: 11 loads, 11 LSLICEs
+     Net PWM_I_M3/n14138: 6 loads, 6 LSLICEs
+     Net PWM_I_M2/n14139: 6 loads, 6 LSLICEs
+     Net PWM_I_M1/n14140: 6 loads, 6 LSLICEs
+     Net PWM_I_M4/n14137: 6 loads, 6 LSLICEs
+     Net PID_I/n14334: 3 loads, 3 LSLICEs
+     Net PID_I/n14222: 3 loads, 3 LSLICEs
+     Net PID_I/n14312: 12 loads, 12 LSLICEs
+     Net PID_I/n14284: 12 loads, 12 LSLICEs
+     Net PID_I/n14256: 12 loads, 12 LSLICEs
      Net PID_I/ss_4: 3 loads, 3 LSLICEs
-     Net PID_I/n12666: 3 loads, 3 LSLICEs
-     Net PID_I/n12641: 12 loads, 12 LSLICEs
-     Net PID_I/n12648: 3 loads, 3 LSLICEs
-     Net PID_I/n12639: 3 loads, 3 LSLICEs
-     Net PWM_I_M4/n12550: 6 loads, 6 LSLICEs
-     Net HALL_I_M4/clk_1mhz_enable_47: 10 loads, 10 LSLICEs
-     Net HALL_I_M4/n4329: 11 loads, 11 LSLICEs
-     Net HALL_I_M4/n21492: 4 loads, 4 LSLICEs
-     Net HALL_I_M4/n5227: 1 loads, 1 LSLICEs
+     Net PID_I/n14228: 12 loads, 12 LSLICEs
+     Net PID_I/n14307: 3 loads, 3 LSLICEs
+     Net PID_I/n14343: 3 loads, 3 LSLICEs
+     Net PID_I/n14352: 3 loads, 3 LSLICEs
+     Net PID_I/n14338: 12 loads, 12 LSLICEs
+     Net PID_I/n14361: 3 loads, 3 LSLICEs
+     Net PID_I/n14278: 3 loads, 3 LSLICEs
+     Net PID_I/n14250: 3 loads, 3 LSLICEs
+     Net HALL_I_M1/n14400: 5 loads, 5 LSLICEs
+     Net HALL_I_M1/n4545: 10 loads, 10 LSLICEs
+     Net HALL_I_M3/n4557: 11 loads, 11 LSLICEs
+     Net HALL_I_M3/n14382: 5 loads, 5 LSLICEs
+     Net HALL_I_M4/n14392: 5 loads, 5 LSLICEs
+     Net HALL_I_M4/n4565: 10 loads, 10 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net PID_I/multIn2_4: 94 loads
-     Net SPI_I/CSlatched: 91 loads
-     Net PID_I/n22208: 90 loads
-     Net SPI_I/n22201: 86 loads
-     Net SPI_I/n22202: 83 loads
-     Net SPI_I/n21580: 81 loads
-     Net PID_I/multIn2_6: 64 loads
-     Net PID_I/n21552: 63 loads
-     Net PID_I/n21554: 62 loads
-     Net PID_I/n21551: 61 loads
+     Net SPI_I/CSlatched: 202 loads
+     Net PID_I/multIn2_4: 142 loads
+     Net SPI_I/n21355: 95 loads
+     Net SPI_I/n22098: 90 loads
+     Net PID_I/n22105: 71 loads
+     Net PID_I/n22083: 62 loads
+     Net PID_I/ss_2: 49 loads
+     Net PID_I/n16470: 46 loads
+     Net PID_I/n35: 45 loads
+     Net SPI_I/clkout_c_enable_254: 44 loads
+
+
 
 
 
 
    Number of warnings:  0
    Number of errors:    0
-
-
      
+
 
 
 
@@ -238,10 +243,10 @@ Mapped on:  04/19/17  12:27:57
 | MA_m4[1]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MB_m1[1]            | OUTPUT    | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
 | MC_m3[0]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-
 | H_C_m4              | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | MA_m1[0]            | OUTPUT    | LVCMOS25  |            |
@@ -295,18 +300,21 @@ Mapped on:  04/19/17  12:27:57
 | MB_m2[1]            | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | H_C_m1              | INPUT     | LVCMOS25  |            |
+
 +---------------------+-----------+-----------+------------+
-
-
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
+Signal n5132 was merged into signal SPI_I/MISO_N_625
+Signal COM_I_M4/led1_N_1957 was merged into signal enable_m4
 Signal clk_N_683 was merged into signal CLKDIV_I/pi_clk
-Signal n4883 was merged into signal SPI_I/MISO_N_625
+Signal COM_I_M1/led1_N_1957 was merged into signal enable_m1
+Signal COM_I_M2/led1_N_1957 was merged into signal enable_m2
+Signal COM_I_M3/led1_N_1957 was merged into signal enable_m3
 Signal GND_net undriven or does not drive anything - clipped.
-Signal PID_I/multOut_28_N_1178_0 undriven or does not drive anything - clipped.
+Signal PID_I/multOut_28_N_1217_0 undriven or does not drive anything - clipped.
 Signal PID_I/mult_29s_25s_0_pp_5_10 undriven or does not drive anything -
      clipped.
 Signal PID_I/mult_29s_25s_0_pp_6_12 undriven or does not drive anything -
@@ -336,244 +344,342 @@ Signal HALL_I_M4/add_7_1/S0 undriven or does not drive anything - clipped.
 Signal HALL_I_M4/add_7_1/CI undriven or does not drive anything - clipped.
 Signal HALL_I_M4/add_7_21/S1 undriven or does not drive anything - clipped.
 Signal HALL_I_M4/add_7_21/CO undriven or does not drive anything - clipped.
-Signal PWM_I_M4/cnt_2067_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/cnt_2067_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/cnt_2067_add_4_11/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/cnt_2067_add_4_11/CO undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_1/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_3/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_3/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_5/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_5/S0 undriven or does not drive anything -
+Signal HALL_I_M3/add_7_1/S0 undriven or does not drive anything - clipped.
+Signal HALL_I_M3/add_7_1/CI undriven or does not drive anything - clipped.
+Signal HALL_I_M3/add_7_21/S1 undriven or does not drive anything - clipped.
+Signal HALL_I_M3/add_7_21/CO undriven or does not drive anything - clipped.
+Signal HALL_I_M1/add_7_1/S0 undriven or does not drive anything - clipped.
+Signal HALL_I_M1/add_7_1/CI undriven or does not drive anything - clipped.
+Signal HALL_I_M1/add_7_21/S1 undriven or does not drive anything - clipped.
+Signal HALL_I_M1/add_7_21/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/addOut_2081_add_4_1/S0 undriven or does not drive anything -
      clipped.
 
-Signal PWM_I_M4/sub_1795_add_2_7/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_7/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_9/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_9/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_11/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M4/sub_1795_add_2_11/CO undriven or does not drive anything -
-     clipped.
-Signal PID_I/add_15798_14/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_14/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_16/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_16/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_18/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_18/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_20/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_20/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_22/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_22/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_cout/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_cout/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_191_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_191_17/CO undriven or does not drive anything - clipped.
-Signal PID_I/sub_16_rep_3_add_2_23/S1 undriven or does not drive anything -
+Signal PID_I/addOut_2081_add_4_1/CI undriven or does not drive anything -
      clipped.
 Signal PID_I/sub_16_rep_3_add_2_23/CO undriven or does not drive anything -
      clipped.
-Signal PID_I/add_15810_1/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_3/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_3/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_5/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_5/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_7/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_7/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_9/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_9/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_11/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_13/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_13/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_15/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_15/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_17/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_19/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_19/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_21/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15810_21/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_1/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_1171_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_1171_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_2/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_2/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_2/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_223_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_223_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_4/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_4/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_6/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_6/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_8/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_8/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_10/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_10/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_12/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_12/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_14/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_14/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_16/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_16/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_18/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_18/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_20/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_20/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_cout/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15000_cout/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14999_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_2/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_2/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_2/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_4/S1 undriven or does not drive anything - clipped.
 
-Signal PID_I/add_15802_3/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_3/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_5/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_5/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_7/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_7/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1179_23/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_1179_23/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_9/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_9/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_11/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_13/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_13/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_179_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_179_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/sub_16_rep_2_add_2_1/S1 undriven or does not drive anything -
-     clipped.
-Signal PID_I/sub_16_rep_2_add_2_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PID_I/sub_16_rep_2_add_2_1/CI undriven or does not drive anything -
-     clipped.
-Signal PID_I/add_15802_15/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_15/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_17/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_19/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_19/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_21/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15802_21/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_1/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_3/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_3/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_179_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_179_17/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_5/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_5/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_7/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_7/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_183_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_183_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_9/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_9/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_11/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_13/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_13/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_15/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_15/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_17/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_19/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_19/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15801_21/S0 undriven or does not drive anything - clipped.
-
-Signal PID_I/add_15801_21/CO undriven or does not drive anything - clipped.
-Signal PID_I/sub_16_rep_2_add_2_25/S1 undriven or does not drive anything -
-     clipped.
-Signal PID_I/sub_16_rep_2_add_2_25/CO undriven or does not drive anything -
-     clipped.
-Signal PID_I/add_183_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_183_17/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_187_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_187_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_1174_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1174_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_1/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_3/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_3/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_5/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_5/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_7/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_7/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_9/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_9/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_11/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1174_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_1174_11/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_13/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_13/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1175_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1175_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_15/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_15/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_17/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_19/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_19/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_21/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15800_21/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_1/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_3/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_3/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_187_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_187_17/CO undriven or does not drive anything - clipped.
-Signal PID_I/addOut_2063_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PID_I/addOut_2063_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal PID_I/add_1175_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_1175_11/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_5/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_5/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_7/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_7/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_9/S1 undriven or does not drive anything - clipped.
-
-Signal PID_I/add_15799_9/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1176_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1176_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_191_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_191_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_11/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_13/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_13/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_15/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_15/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1176_11/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_1176_11/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_17/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_17/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_19/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_19/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_21/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_21/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_23/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_23/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_4/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_6/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_6/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_8/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_8/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_1171_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_1171_11/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_1172_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_1172_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_10/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_10/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_12/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_12/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_14/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_14/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_16/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_16/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_18/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_18/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_20/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_20/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_cout/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14998_cout/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_2/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_2/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_2/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_1172_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_1172_11/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_4/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_4/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_6/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_6/S0 undriven or does not drive anything - clipped.
 Signal PID_I/add_1173_1/S0 undriven or does not drive anything - clipped.
 Signal PID_I/add_1173_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_8/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_8/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_10/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_10/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_12/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_12/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_14/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_14/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_16/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_16/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_18/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_18/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_20/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_20/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_cout/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14997_cout/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_2/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_2/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_2/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_4/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_4/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_6/S1 undriven or does not drive anything - clipped.
+
+Signal PID_I/add_14996_6/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_8/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_8/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_10/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_10/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_12/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_12/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_14/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_14/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_16/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_16/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_18/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_18/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_20/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_20/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_22/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_22/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_cout/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14996_cout/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_19/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_19/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_21/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_21/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_23/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_23/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_25/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_25/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_27/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_27/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_29/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14995_29/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_5/S1 undriven or does not drive anything - clipped.
+
+Signal PID_I/add_14994_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_14994_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/addOut_2081_add_4_29/CO undriven or does not drive anything -
+     clipped.
+Signal PID_I/add_15006_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/sub_16_rep_4_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PID_I/sub_16_rep_4_add_2_1/CI undriven or does not drive anything -
+     clipped.
 Signal PID_I/add_1173_11/S1 undriven or does not drive anything - clipped.
 Signal PID_I/add_1173_11/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_1179_1/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_1179_1/CI undriven or does not drive anything - clipped.
-Signal PID_I/addOut_2063_add_4_29/CO undriven or does not drive anything -
+Signal PID_I/add_15006_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_19/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_19/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_21/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15006_21/CO undriven or does not drive anything - clipped.
+Signal PID_I/sub_16_rep_4_add_2_23/S1 undriven or does not drive anything -
      clipped.
-Signal PID_I/add_15799_25/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_25/S0 undriven or does not drive anything - clipped.
+Signal PID_I/sub_16_rep_4_add_2_23/CO undriven or does not drive anything -
+     clipped.
+Signal PID_I/add_15013_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_3/S0 undriven or does not drive anything - clipped.
+
+Signal PID_I/add_15005_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_1176_23/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_1176_23/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_211_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_211_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_19/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_19/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_21/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15005_21/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_19/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_19/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_21/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15013_21/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_13/S1 undriven or does not drive anything - clipped.
+
+Signal PID_I/add_15004_13/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_15/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_211_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_211_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_215_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_215_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_19/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_19/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_21/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15004_21/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_215_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_215_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_219_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_219_1/CI undriven or does not drive anything - clipped.
 Signal PID_I/sub_16_rep_3_add_2_1/S0 undriven or does not drive anything -
      clipped.
 Signal PID_I/sub_16_rep_3_add_2_1/CI undriven or does not drive anything -
      clipped.
-Signal PID_I/add_15799_27/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_27/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_29/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15799_29/CO undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_2/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_2/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_2/CI undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_4/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_4/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_11/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_13/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_13/S0 undriven or does not drive anything - clipped.
 Signal PID_I/mult_29s_25s_0_cin_lr_add_0/S1 undriven or does not drive anything
      - clipped.
 Signal PID_I/mult_29s_25s_0_cin_lr_add_0/S0 undriven or does not drive anything
@@ -586,7 +692,6 @@ Signal PID_I/mult_29s_25s_0_mult_18_4/CO undriven or does not drive anything -
      clipped.
 Signal PID_I/mult_29s_25s_0_mult_16_5/CO undriven or does not drive anything -
      clipped.
-
 Signal PID_I/mult_29s_25s_0_mult_14_6/CO undriven or does not drive anything -
      clipped.
 Signal PID_I/mult_29s_25s_0_mult_12_7/CO undriven or does not drive anything -
@@ -595,6 +700,7 @@ Signal PID_I/mult_29s_25s_0_mult_10_8/CO undriven or does not drive anything -
      clipped.
 Signal PID_I/mult_29s_25s_0_mult_8_9/CO undriven or does not drive anything -
      clipped.
+
 Signal PID_I/mult_29s_25s_0_mult_6_10/CO undriven or does not drive anything -
      clipped.
 Signal PID_I/mult_29s_25s_0_mult_4_11/CO undriven or does not drive anything -
@@ -643,7 +749,6 @@ Signal PID_I/mult_29s_25s_0_add_3_8/COUT undriven or does not drive anything -
      clipped.
 Signal PID_I/Cadd_mult_29s_25s_0_3_1/S0 undriven or does not drive anything -
      clipped.
-
 Signal PID_I/mult_29s_25s_0_add_2_10/COUT undriven or does not drive anything -
      clipped.
 Signal PID_I/Cadd_mult_29s_25s_0_2_1/S0 undriven or does not drive anything -
@@ -652,6 +757,7 @@ Signal PID_I/mult_29s_25s_0_add_1_12/COUT undriven or does not drive anything -
      clipped.
 Signal PID_I/Cadd_mult_29s_25s_0_1_1/S0 undriven or does not drive anything -
      clipped.
+
 Signal PID_I/mult_29s_25s_0_add_0_14/COUT undriven or does not drive anything -
      clipped.
 Signal PID_I/Cadd_mult_29s_25s_0_0_1/S0 undriven or does not drive anything -
@@ -700,308 +806,414 @@ Signal PID_I/mult_29s_25s_0_cin_lr_add_2/S1 undriven or does not drive anything
      - clipped.
 Signal PID_I/mult_29s_25s_0_cin_lr_add_2/S0 undriven or does not drive anything
      - clipped.
+Signal PID_I/add_1170_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_1170_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_1170_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_1170_11/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_1176_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_1176_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_15/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_15/S0 undriven or does not drive anything - clipped.
 
-Signal PID_I/add_15798_6/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_6/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_8/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_8/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_10/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_10/S0 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_12/S1 undriven or does not drive anything - clipped.
-Signal PID_I/add_15798_12/S0 undriven or does not drive anything - clipped.
-Signal PWM_I_M1/sub_1789_add_2_3/S1 undriven or does not drive anything -
+Signal PID_I/add_15003_17/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15003_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_2/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_2/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_2/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_4/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_4/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_6/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_6/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_8/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_8/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_10/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_10/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_12/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_12/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_14/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_14/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_16/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_16/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_18/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_18/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_20/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_20/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_cout/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15002_cout/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_1/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_219_17/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_219_17/CO undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_3/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_3/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_223_1/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_223_1/CI undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_5/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_5/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_7/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_7/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_9/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_9/S0 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_11/S1 undriven or does not drive anything - clipped.
+Signal PID_I/add_15001_11/S0 undriven or does not drive anything - clipped.
+Signal PWM_I_M4/sub_1796_add_2_1/S1 undriven or does not drive anything -
      clipped.
-Signal PWM_I_M1/sub_1789_add_2_3/S0 undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_1/S0 undriven or does not drive anything -
      clipped.
-Signal PWM_I_M1/sub_1789_add_2_5/S1 undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_1/CI undriven or does not drive anything -
      clipped.
-Signal PWM_I_M1/sub_1789_add_2_5/S0 undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_3/S1 undriven or does not drive anything -
      clipped.
-Signal PWM_I_M1/sub_1789_add_2_7/S1 undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_3/S0 undriven or does not drive anything -
      clipped.
-Signal PWM_I_M1/sub_1789_add_2_7/S0 undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_5/S1 undriven or does not drive anything -
      clipped.
-Signal PWM_I_M1/sub_1789_add_2_9/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/sub_1789_add_2_9/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/sub_1789_add_2_11/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/sub_1789_add_2_11/CO undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/cnt_2064_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/cnt_2064_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/cnt_2064_add_4_11/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/cnt_2064_add_4_11/CO undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/sub_1789_add_2_1/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/sub_1789_add_2_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M1/sub_1789_add_2_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/cnt_2065_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/cnt_2065_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/cnt_2065_add_4_11/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/cnt_2065_add_4_11/CO undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_1/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_1/CI undriven or does not drive anything -
-     clipped.
-
-Signal PWM_I_M2/sub_1791_add_2_3/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_3/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_5/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_5/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_7/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_7/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_9/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_9/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_11/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M2/sub_1791_add_2_11/CO undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/cnt_2066_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/cnt_2066_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/cnt_2066_add_4_11/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/cnt_2066_add_4_11/CO undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_1/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_1/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_1/CI undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_3/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_3/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_5/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_5/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_7/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_7/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_9/S1 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_9/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_11/S0 undriven or does not drive anything -
-     clipped.
-Signal PWM_I_M3/sub_1793_add_2_11/CO undriven or does not drive anything -
-     clipped.
-Signal CLKDIV_I/cntpi_2060_2061_add_4_1/S0 undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_5/S0 undriven or does not drive anything -
      clipped.
 
-Signal CLKDIV_I/cntpi_2060_2061_add_4_1/CI undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_7/S1 undriven or does not drive anything -
      clipped.
-Signal CLKDIV_I/cntpi_2060_2061_add_4_9/CO undriven or does not drive anything -
+Signal PWM_I_M4/sub_1796_add_2_7/S0 undriven or does not drive anything -
      clipped.
-Signal HALL_I_M1/add_7_1/S0 undriven or does not drive anything - clipped.
-Signal HALL_I_M1/add_7_1/CI undriven or does not drive anything - clipped.
-Signal HALL_I_M1/add_7_21/S1 undriven or does not drive anything - clipped.
-Signal HALL_I_M1/add_7_21/CO undriven or does not drive anything - clipped.
-Signal HALL_I_M3/add_7_1/S0 undriven or does not drive anything - clipped.
-Signal HALL_I_M3/add_7_1/CI undriven or does not drive anything - clipped.
-Signal HALL_I_M3/add_7_21/S1 undriven or does not drive anything - clipped.
-Signal HALL_I_M3/add_7_21/CO undriven or does not drive anything - clipped.
+Signal PWM_I_M4/sub_1796_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/sub_1796_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/sub_1796_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/sub_1796_add_2_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/cnt_2085_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/cnt_2085_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/cnt_2085_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M4/cnt_2085_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/sub_1790_add_2_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/cnt_2082_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/cnt_2082_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/cnt_2082_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M1/cnt_2082_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+
+Signal PWM_I_M2/sub_1792_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/sub_1792_add_2_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/cnt_2083_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/cnt_2083_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/cnt_2083_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M2/cnt_2083_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/sub_1794_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+
+Signal PWM_I_M3/sub_1794_add_2_11/CO undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/cnt_2084_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/cnt_2084_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/cnt_2084_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal PWM_I_M3/cnt_2084_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal SPI_I/add_15009_21/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_21/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_1/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_1/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_1/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_2/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_2/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_2/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_3/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_3/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_5/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_5/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_7/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_7/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_9/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_9/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_11/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_11/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_13/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_13/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_4/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_4/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_15/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_15/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_17/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_17/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_19/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_19/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_6/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_6/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_21/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15008_21/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_2/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_2/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_2/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_8/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_8/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_4/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_4/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_6/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_6/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_8/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_8/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_10/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_10/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_10/S1 undriven or does not drive anything - clipped.
+
+Signal SPI_I/add_14992_10/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_12/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_12/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_14/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_14/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_16/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_16/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_12/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_12/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_14/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_14/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_cout/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14992_cout/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_16/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_16/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_cout/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15007_cout/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_1/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_1/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_1/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_3/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_3/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_5/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_5/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_7/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_7/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_9/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_9/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_11/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_11/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_2/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_2/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_2/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_13/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_13/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_4/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_4/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_6/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_6/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_8/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_8/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_15/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_15/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_10/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_10/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_17/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_17/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_19/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_19/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_12/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_12/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_21/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_14993_21/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_14/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_14/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_16/S1 undriven or does not drive anything - clipped.
+
+Signal SPI_I/add_15012_16/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_cout/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15012_cout/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_1/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_1/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_1/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_3/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_3/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_5/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_5/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_7/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_7/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_9/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_9/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_11/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_11/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_13/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_13/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_15/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_15/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_17/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_17/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_19/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_19/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_21/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15011_21/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_2/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_2/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_2/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_4/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_4/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_6/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_6/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_8/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_8/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_10/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_10/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_12/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_12/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_14/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_14/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_16/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_16/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_cout/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15010_cout/CO undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_1/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_1/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_1/CI undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_3/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_3/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_5/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_5/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_7/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_7/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_9/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_9/S0 undriven or does not drive anything - clipped.
+
+Signal SPI_I/add_15009_11/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_11/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_13/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_13/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_15/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_15/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_17/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_17/S0 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_19/S1 undriven or does not drive anything - clipped.
+Signal SPI_I/add_15009_19/S0 undriven or does not drive anything - clipped.
+Signal AVG_SPEED_M1/clk_cnt_2087_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M1/clk_cnt_2087_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M1/clk_cnt_2087_add_4_7/CO undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M2/clk_cnt_2089_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M2/clk_cnt_2089_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M2/clk_cnt_2089_add_4_7/CO undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M3/clk_cnt_2091_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M3/clk_cnt_2091_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M3/clk_cnt_2091_add_4_7/CO undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M4/clk_cnt_2093_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M4/clk_cnt_2093_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal AVG_SPEED_M4/clk_cnt_2093_add_4_7/CO undriven or does not drive anything
+     - clipped.
 Signal HALL_I_M2/add_7_1/S0 undriven or does not drive anything - clipped.
 Signal HALL_I_M2/add_7_1/CI undriven or does not drive anything - clipped.
 Signal HALL_I_M2/add_7_21/S1 undriven or does not drive anything - clipped.
 Signal HALL_I_M2/add_7_21/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_1/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_1/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_1/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_3/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_3/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_5/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_5/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_7/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_7/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_9/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_9/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_11/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_11/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_13/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_13/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_15/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_15/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_17/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_17/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_19/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_19/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_21/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15797_21/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_1/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_1/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_1/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_3/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_3/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_5/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_5/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_7/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_7/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_9/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_9/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_11/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_11/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_13/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_13/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_15/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_15/S0 undriven or does not drive anything - clipped.
-
-Signal SPI_I/add_15804_17/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_17/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_19/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_19/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_21/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15804_21/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_2/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_2/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_2/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_4/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_4/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_1/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_1/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_1/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_6/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_6/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_8/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_8/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_10/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_10/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_12/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_12/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_14/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_14/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_3/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_3/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_16/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15803_16/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_5/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_5/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_7/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_7/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_9/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_9/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_11/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_11/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_13/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_13/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_15/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_15/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_17/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_17/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_19/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_19/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_21/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15809_21/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_2/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_2/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_2/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_4/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_4/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_6/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_6/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_8/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_8/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_10/S1 undriven or does not drive anything - clipped.
-
-Signal SPI_I/add_15808_10/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_12/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_12/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_14/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_14/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_16/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15808_16/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_1/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_1/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_1/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_3/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_3/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_5/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_5/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_7/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_7/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_9/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_9/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_11/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_11/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_13/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_13/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_15/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_15/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_17/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_17/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_19/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_19/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_21/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15807_21/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_2/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_2/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_2/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_4/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_4/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_6/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_6/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_8/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_8/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_10/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_10/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_12/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_12/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_14/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_14/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_16/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15806_16/CO undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_2/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_2/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_2/CI undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_4/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_4/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_6/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_6/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_8/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_8/S0 undriven or does not drive anything - clipped.
-
-Signal SPI_I/add_15805_10/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_10/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_12/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_12/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_14/S1 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_14/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_16/S0 undriven or does not drive anything - clipped.
-Signal SPI_I/add_15805_16/CO undriven or does not drive anything - clipped.
-Signal start_cnt_2058_add_4_15/S1 undriven or does not drive anything - clipped.
+Signal CLKDIV_I/cntpi_2078_2079_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal CLKDIV_I/cntpi_2078_2079_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal CLKDIV_I/cntpi_2078_2079_add_4_9/CO undriven or does not drive anything -
+     clipped.
+Signal start_cnt_2076_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal start_cnt_2076_add_4_1/CI undriven or does not drive anything - clipped.
+Signal start_cnt_2076_add_4_15/S1 undriven or does not drive anything - clipped.
      
-Signal start_cnt_2058_add_4_15/CO undriven or does not drive anything - clipped.
+Signal start_cnt_2076_add_4_15/CO undriven or does not drive anything - clipped.
      
-Signal start_cnt_2058_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal start_cnt_2058_add_4_1/CI undriven or does not drive anything - clipped.
-Block CLKDIV_I/i18313 was optimized away.
-Block SPI_I/i2655_1_lut was optimized away.
+Block SPI_I/i2716_1_lut was optimized away.
+Block COM_I_M4/i10621_1_lut was optimized away.
+Block CLKDIV_I/i17492 was optimized away.
+Block COM_I_M1/i10616_1_lut was optimized away.
+Block COM_I_M2/i10617_1_lut was optimized away.
+Block COM_I_M3/i10618_1_lut was optimized away.
+
 Block i1 was optimized away.
 Block PID_I/AND2_t64 was optimized away.
 Block PID_I/AND2_t49 was optimized away.
@@ -1045,15 +1257,12 @@ Instance Name: OSCInst0
 
 
 
-
-
-
 <A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
 ---------
 
 GSR Component:
    The Global Set Reset (GSR) resource has been used to implement a global reset
-        of the design. The reset signal used for GSR control is 'n22203'.
+        of the design. The reset signal used for GSR control is 'n22100'.
         
 
      GSR Property:
@@ -1066,17 +1275,17 @@ GSR Component:
 -------------------------------------
 
      These components have the GSR property set to DISABLED. The components will
-     not respond to the reset signal 'n22203' via the GSR component.
+
+     not respond to the reset signal 'n22100' via the GSR component.
 
      Type and number of components of the type: 
-   Register = 525 
+   Register = 632 
 
      Type and instance name of component: 
-   Register : start_cnt_2058__i0
+   Register : start_cnt_2076__i0
+   Register : rst_12_rep_411
+   Register : rst_12_rep_410
    Register : rst_12
-   Register : rst_12_rep_408
-   Register : rst_12_rep_407
-   Register : rst_12_rep_406
    Register : COM_I_M3/MospairB_i1
    Register : COM_I_M3/MospairC_i1
    Register : COM_I_M3/MospairA_i1
@@ -1098,103 +1307,260 @@ GSR Component:
    Register : COM_I_M1/MospairA_i2
    Register : COM_I_M1/MospairC_i2
    Register : COM_I_M1/MospairB_i2
+   Register : CLKDIV_I/mhz_buf_29
+   Register : CLKDIV_I/pi_buf_30
+   Register : CLKDIV_I/pwm_buf_32
+   Register : CLKDIV_I/clk_1mhz_33
+   Register : CLKDIV_I/pwm_clk_34
+   Register : CLKDIV_I/pi_clk_35
+   Register : CLKDIV_I/cntpi_2078_2079__i2
+   Register : CLKDIV_I/count_2077__i0
+   Register : CLKDIV_I/cntpi_2078_2079__i1
+   Register : CLKDIV_I/cntpi_2078_2079__i3
+   Register : CLKDIV_I/cntpi_2078_2079__i4
+   Register : CLKDIV_I/cntpi_2078_2079__i5
+   Register : CLKDIV_I/cntpi_2078_2079__i6
+   Register : CLKDIV_I/cntpi_2078_2079__i7
+   Register : CLKDIV_I/cntpi_2078_2079__i8
+   Register : CLKDIV_I/cntpi_2078_2079__i9
+   Register : CLKDIV_I/count_2077__i1
+   Register : CLKDIV_I/count_2077__i2
+   Register : CLKDIV_I/count_2077__i3
+   Register : CLKDIV_I/count_2077__i4
+   Register : COM_I_M4/MospairB_i1
+   Register : COM_I_M4/MospairC_i1
+   Register : COM_I_M4/MospairA_i1
+   Register : COM_I_M4/led1_46
+   Register : COM_I_M4/MospairA_i2
+
+   Register : COM_I_M4/MospairC_i2
+   Register : COM_I_M4/MospairB_i2
+   Register : HALL_I_M2/hall3_old_56
+   Register : HALL_I_M2/hall3_lat_59
+   Register : HALL_I_M2/hall1_old_54
+   Register : HALL_I_M2/hall2_old_55
+   Register : HALL_I_M2/hall1_lat_57
+   Register : HALL_I_M2/hall2_lat_58
+   Register : AVG_SPEED_M4/speed_avg_i0_i0
+   Register : AVG_SPEED_M4/clk_cnt_2093__i0
+   Register : AVG_SPEED_M4/speed_avg_i0_i1
+   Register : AVG_SPEED_M4/speed_avg_i0_i2
+   Register : AVG_SPEED_M4/speed_avg_i0_i3
+   Register : AVG_SPEED_M4/speed_avg_i0_i4
+   Register : AVG_SPEED_M4/speed_avg_i0_i5
+   Register : AVG_SPEED_M4/speed_avg_i0_i6
+   Register : AVG_SPEED_M4/speed_avg_i0_i7
+   Register : AVG_SPEED_M4/speed_avg_i0_i8
+   Register : AVG_SPEED_M4/speed_avg_i0_i9
+   Register : AVG_SPEED_M4/speed_avg_i0_i10
+   Register : AVG_SPEED_M4/speed_avg_i0_i11
+   Register : AVG_SPEED_M4/speed_avg_i0_i12
+   Register : AVG_SPEED_M4/speed_avg_i0_i13
+   Register : AVG_SPEED_M4/speed_avg_i0_i14
+   Register : AVG_SPEED_M4/speed_avg_i0_i15
+   Register : AVG_SPEED_M4/speed_avg_i0_i16
+   Register : AVG_SPEED_M4/speed_avg_i0_i17
+   Register : AVG_SPEED_M4/speed_avg_i0_i18
+   Register : AVG_SPEED_M4/speed_avg_i0_i19
+   Register : AVG_SPEED_M4/clk_cnt_2093__i1
+   Register : AVG_SPEED_M4/clk_cnt_2093__i2
+   Register : AVG_SPEED_M4/clk_cnt_2093__i3
+   Register : AVG_SPEED_M4/clk_cnt_2093__i4
+   Register : AVG_SPEED_M4/clk_cnt_2093__i5
+   Register : AVG_SPEED_M4/clk_cnt_2093__i6
+   Register : start_cnt_2076__i1
+   Register : start_cnt_2076__i2
+   Register : start_cnt_2076__i3
+   Register : start_cnt_2076__i4
+   Register : start_cnt_2076__i5
+   Register : start_cnt_2076__i6
+   Register : start_cnt_2076__i7
+   Register : start_cnt_2076__i8
+   Register : start_cnt_2076__i9
+   Register : start_cnt_2076__i10
+   Register : start_cnt_2076__i11
+   Register : start_cnt_2076__i12
+   Register : start_cnt_2076__i13
+   Register : AVG_SPEED_M3/speed_avg_i0_i0
+   Register : AVG_SPEED_M3/clk_cnt_2091__i0
+   Register : AVG_SPEED_M3/speed_avg_i0_i1
+   Register : AVG_SPEED_M3/speed_avg_i0_i2
+   Register : AVG_SPEED_M3/speed_avg_i0_i3
+   Register : AVG_SPEED_M3/speed_avg_i0_i4
+   Register : AVG_SPEED_M3/speed_avg_i0_i5
+   Register : AVG_SPEED_M3/speed_avg_i0_i6
+
+   Register : AVG_SPEED_M3/speed_avg_i0_i7
+   Register : AVG_SPEED_M3/speed_avg_i0_i8
+   Register : AVG_SPEED_M3/speed_avg_i0_i9
+   Register : AVG_SPEED_M3/speed_avg_i0_i10
+   Register : AVG_SPEED_M3/speed_avg_i0_i11
+   Register : AVG_SPEED_M3/speed_avg_i0_i12
+   Register : AVG_SPEED_M3/speed_avg_i0_i13
+   Register : AVG_SPEED_M3/speed_avg_i0_i14
+   Register : AVG_SPEED_M3/speed_avg_i0_i15
+   Register : AVG_SPEED_M3/speed_avg_i0_i16
+   Register : AVG_SPEED_M3/speed_avg_i0_i17
+   Register : AVG_SPEED_M3/speed_avg_i0_i18
+   Register : AVG_SPEED_M3/speed_avg_i0_i19
+   Register : AVG_SPEED_M3/clk_cnt_2091__i1
+   Register : AVG_SPEED_M3/clk_cnt_2091__i2
+   Register : AVG_SPEED_M3/clk_cnt_2091__i3
+   Register : AVG_SPEED_M3/clk_cnt_2091__i4
+   Register : AVG_SPEED_M3/clk_cnt_2091__i5
+   Register : AVG_SPEED_M3/clk_cnt_2091__i6
+   Register : AVG_SPEED_M2/speed_avg_i0_i0
+   Register : AVG_SPEED_M2/clk_cnt_2089__i0
+   Register : AVG_SPEED_M2/speed_avg_i0_i1
+   Register : AVG_SPEED_M2/speed_avg_i0_i2
+   Register : AVG_SPEED_M2/speed_avg_i0_i3
+   Register : AVG_SPEED_M2/speed_avg_i0_i4
+   Register : AVG_SPEED_M2/speed_avg_i0_i5
+   Register : AVG_SPEED_M2/speed_avg_i0_i6
+   Register : AVG_SPEED_M2/speed_avg_i0_i7
+   Register : AVG_SPEED_M2/speed_avg_i0_i8
+   Register : AVG_SPEED_M2/speed_avg_i0_i9
+   Register : AVG_SPEED_M2/speed_avg_i0_i10
+   Register : AVG_SPEED_M2/speed_avg_i0_i11
+   Register : AVG_SPEED_M2/speed_avg_i0_i12
+   Register : AVG_SPEED_M2/speed_avg_i0_i13
+   Register : AVG_SPEED_M2/speed_avg_i0_i14
+   Register : AVG_SPEED_M2/speed_avg_i0_i15
+   Register : AVG_SPEED_M2/speed_avg_i0_i16
+   Register : AVG_SPEED_M2/speed_avg_i0_i17
+   Register : AVG_SPEED_M2/speed_avg_i0_i18
+   Register : AVG_SPEED_M2/speed_avg_i0_i19
+   Register : AVG_SPEED_M2/clk_cnt_2089__i1
+   Register : AVG_SPEED_M2/clk_cnt_2089__i2
+   Register : AVG_SPEED_M2/clk_cnt_2089__i3
+   Register : AVG_SPEED_M2/clk_cnt_2089__i4
+   Register : AVG_SPEED_M2/clk_cnt_2089__i5
+   Register : AVG_SPEED_M2/clk_cnt_2089__i6
+   Register : AVG_SPEED_M1/speed_avg_i0_i0
+   Register : AVG_SPEED_M1/clk_cnt_2087__i0
+   Register : AVG_SPEED_M1/speed_avg_i0_i1
+   Register : AVG_SPEED_M1/speed_avg_i0_i2
+   Register : AVG_SPEED_M1/speed_avg_i0_i3
+   Register : AVG_SPEED_M1/speed_avg_i0_i4
+   Register : AVG_SPEED_M1/speed_avg_i0_i5
+   Register : AVG_SPEED_M1/speed_avg_i0_i6
+   Register : AVG_SPEED_M1/speed_avg_i0_i7
+   Register : AVG_SPEED_M1/speed_avg_i0_i8
+
+   Register : AVG_SPEED_M1/speed_avg_i0_i9
+   Register : AVG_SPEED_M1/speed_avg_i0_i10
+   Register : AVG_SPEED_M1/speed_avg_i0_i11
+   Register : AVG_SPEED_M1/speed_avg_i0_i12
+   Register : AVG_SPEED_M1/speed_avg_i0_i13
+   Register : AVG_SPEED_M1/speed_avg_i0_i14
+   Register : AVG_SPEED_M1/speed_avg_i0_i15
+   Register : AVG_SPEED_M1/speed_avg_i0_i16
+   Register : AVG_SPEED_M1/speed_avg_i0_i17
+   Register : AVG_SPEED_M1/speed_avg_i0_i18
+   Register : AVG_SPEED_M1/speed_avg_i0_i19
+   Register : AVG_SPEED_M1/clk_cnt_2087__i1
+   Register : AVG_SPEED_M1/clk_cnt_2087__i2
+   Register : AVG_SPEED_M1/clk_cnt_2087__i3
+   Register : AVG_SPEED_M1/clk_cnt_2087__i4
+   Register : AVG_SPEED_M1/clk_cnt_2087__i5
+   Register : AVG_SPEED_M1/clk_cnt_2087__i6
+   Register : SPI_I/speed_set_m4_i0_i20
    Register : SPI_I/MISO_124
+   Register : SPI_I/MISOb_118
+   Register : SPI_I/speed_set_m4_i0_i0
    Register : SPI_I/CSold_113
    Register : SPI_I/SCKold_114
-   Register : SPI_I/speed_set_m4_i0_i0
    Register : SPI_I/CSlatched_115
    Register : SPI_I/SCKlatched_116
-   Register : SPI_I/\SPI__7_rep_4__i0
-   Register : SPI_I/i101_125
-
-   Register : SPI_I/MISOb_118
-   Register : SPI_I/\SPI__7__i83
-   Register : SPI_I/\SPI__7__i82
-   Register : SPI_I/\SPI__7__i81
-   Register : SPI_I/\SPI__7__i80
-   Register : SPI_I/\SPI__7__i79
-   Register : SPI_I/\SPI__7__i78
-   Register : SPI_I/\SPI__7__i77
-   Register : SPI_I/\SPI__7__i76
-   Register : SPI_I/\SPI__7__i75
-   Register : SPI_I/\SPI__7__i74
-   Register : SPI_I/\SPI__7__i73
-   Register : SPI_I/\SPI__7__i72
-   Register : SPI_I/\SPI__7__i71
-   Register : SPI_I/\SPI__7__i70
-   Register : SPI_I/\SPI__7__i69
-   Register : SPI_I/\SPI__7__i68
-   Register : SPI_I/\SPI__7__i67
-   Register : SPI_I/\SPI__7__i66
-   Register : SPI_I/\SPI__7__i65
-   Register : SPI_I/\SPI__7__i64
-   Register : SPI_I/\SPI__7__i63
-   Register : SPI_I/\SPI__7__i62
-   Register : SPI_I/\SPI__7__i61
-   Register : SPI_I/\SPI__7__i60
-   Register : SPI_I/\SPI__7__i59
-   Register : SPI_I/\SPI__7__i58
-   Register : SPI_I/\SPI__7__i57
-   Register : SPI_I/\SPI__7__i56
-   Register : SPI_I/\SPI__7__i55
-   Register : SPI_I/\SPI__7__i54
-   Register : SPI_I/\SPI__7__i53
-   Register : SPI_I/\SPI__7__i52
-   Register : SPI_I/\SPI__7__i51
-   Register : SPI_I/\SPI__7__i50
-   Register : SPI_I/\SPI__7__i49
-   Register : SPI_I/\SPI__7__i48
-   Register : SPI_I/\SPI__7__i47
-   Register : SPI_I/\SPI__7__i46
-   Register : SPI_I/\SPI__7__i45
-   Register : SPI_I/\SPI__7__i44
-   Register : SPI_I/\SPI__7__i43
-   Register : SPI_I/\SPI__7__i42
-   Register : SPI_I/\SPI__7__i41
-   Register : SPI_I/\SPI__7__i40
-   Register : SPI_I/\SPI__7__i39
-   Register : SPI_I/\SPI__7__i38
-   Register : SPI_I/\SPI__7__i37
-   Register : SPI_I/\SPI__7__i36
-   Register : SPI_I/\SPI__7__i35
-   Register : SPI_I/\SPI__7__i34
-   Register : SPI_I/\SPI__7__i33
-   Register : SPI_I/\SPI__7__i32
-   Register : SPI_I/\SPI__7__i31
-   Register : SPI_I/\SPI__7__i30
-   Register : SPI_I/\SPI__7__i29
-
-   Register : SPI_I/\SPI__7__i28
-   Register : SPI_I/\SPI__7__i27
-   Register : SPI_I/\SPI__7__i26
-   Register : SPI_I/\SPI__7__i25
-   Register : SPI_I/\SPI__7__i24
-   Register : SPI_I/\SPI__7__i23
-   Register : SPI_I/\SPI__7__i22
-   Register : SPI_I/\SPI__7__i21
-   Register : SPI_I/\SPI__7__i20
-   Register : SPI_I/\SPI__7__i19
-   Register : SPI_I/\SPI__7__i18
-   Register : SPI_I/\SPI__7__i17
-   Register : SPI_I/\SPI__7__i16
-   Register : SPI_I/\SPI__7__i15
-   Register : SPI_I/\SPI__7__i14
-   Register : SPI_I/\SPI__7__i13
-   Register : SPI_I/\SPI__7__i12
-   Register : SPI_I/\SPI__7__i11
-   Register : SPI_I/\SPI__7__i10
-   Register : SPI_I/\SPI__7__i9
-   Register : SPI_I/\SPI__7__i8
-   Register : SPI_I/\SPI__7__i7
-   Register : SPI_I/\SPI__7__i6
-   Register : SPI_I/\SPI__7__i5
-   Register : SPI_I/\SPI__7__i4
-   Register : SPI_I/\SPI__7__i3
-   Register : SPI_I/\SPI__7__i2
-   Register : SPI_I/\SPI__7__i1
    Register : SPI_I/speed_set_m3_i0_i0
-   Register : SPI_I/speed_set_m2_i0_i0
-   Register : SPI_I/speed_set_m1_i0_i0
+   Register : SPI_I/i101_125
+   Register : SPI_I/\SPI__5_rep_5__i0
+   Register : SPI_I/CSold_113_rep_407
+   Register : SPI_I/\SPI__5__i83
+   Register : SPI_I/\SPI__5__i82
+   Register : SPI_I/\SPI__5__i81
+   Register : SPI_I/\SPI__5__i80
+   Register : SPI_I/\SPI__5__i79
+   Register : SPI_I/\SPI__5__i78
+   Register : SPI_I/\SPI__5__i77
+   Register : SPI_I/\SPI__5__i76
+   Register : SPI_I/\SPI__5__i75
+   Register : SPI_I/\SPI__5__i74
+   Register : SPI_I/\SPI__5__i73
+   Register : SPI_I/\SPI__5__i72
+   Register : SPI_I/\SPI__5__i71
+   Register : SPI_I/\SPI__5__i70
+   Register : SPI_I/\SPI__5__i69
+   Register : SPI_I/\SPI__5__i68
+   Register : SPI_I/\SPI__5__i67
+   Register : SPI_I/\SPI__5__i66
+   Register : SPI_I/\SPI__5__i65
+   Register : SPI_I/\SPI__5__i64
+   Register : SPI_I/\SPI__5__i63
+   Register : SPI_I/\SPI__5__i62
+   Register : SPI_I/\SPI__5__i61
+   Register : SPI_I/\SPI__5__i60
+   Register : SPI_I/\SPI__5__i59
+   Register : SPI_I/\SPI__5__i58
+   Register : SPI_I/\SPI__5__i57
+
+   Register : SPI_I/\SPI__5__i56
+   Register : SPI_I/\SPI__5__i55
+   Register : SPI_I/\SPI__5__i54
+   Register : SPI_I/\SPI__5__i53
+   Register : SPI_I/\SPI__5__i52
+   Register : SPI_I/\SPI__5__i51
+   Register : SPI_I/\SPI__5__i50
+   Register : SPI_I/\SPI__5__i49
+   Register : SPI_I/\SPI__5__i48
+   Register : SPI_I/\SPI__5__i47
+   Register : SPI_I/\SPI__5__i46
+   Register : SPI_I/\SPI__5__i45
+   Register : SPI_I/\SPI__5__i44
+   Register : SPI_I/\SPI__5__i43
+   Register : SPI_I/\SPI__5__i42
+   Register : SPI_I/\SPI__5__i41
+   Register : SPI_I/\SPI__5__i40
+   Register : SPI_I/\SPI__5__i39
+   Register : SPI_I/\SPI__5__i38
+   Register : SPI_I/\SPI__5__i37
+   Register : SPI_I/\SPI__5__i36
+   Register : SPI_I/\SPI__5__i35
+   Register : SPI_I/\SPI__5__i34
+   Register : SPI_I/\SPI__5__i33
+   Register : SPI_I/\SPI__5__i32
+   Register : SPI_I/\SPI__5__i31
+   Register : SPI_I/\SPI__5__i30
+   Register : SPI_I/\SPI__5__i29
+   Register : SPI_I/\SPI__5__i28
+   Register : SPI_I/\SPI__5__i27
+   Register : SPI_I/\SPI__5__i26
+   Register : SPI_I/\SPI__5__i25
+   Register : SPI_I/\SPI__5__i24
+   Register : SPI_I/\SPI__5__i23
+   Register : SPI_I/\SPI__5__i22
+   Register : SPI_I/\SPI__5__i21
+   Register : SPI_I/\SPI__5__i20
+   Register : SPI_I/\SPI__5__i19
+   Register : SPI_I/\SPI__5__i18
+   Register : SPI_I/\SPI__5__i17
+   Register : SPI_I/\SPI__5__i16
+   Register : SPI_I/\SPI__5__i15
+   Register : SPI_I/\SPI__5__i14
+   Register : SPI_I/\SPI__5__i13
+   Register : SPI_I/\SPI__5__i12
+   Register : SPI_I/\SPI__5__i11
+   Register : SPI_I/\SPI__5__i10
+   Register : SPI_I/\SPI__5__i9
+   Register : SPI_I/\SPI__5__i8
+   Register : SPI_I/\SPI__5__i7
+   Register : SPI_I/\SPI__5__i6
+   Register : SPI_I/\SPI__5__i5
+   Register : SPI_I/\SPI__5__i4
+   Register : SPI_I/\SPI__5__i3
+   Register : SPI_I/\SPI__5__i2
+   Register : SPI_I/\SPI__5__i1
+
    Register : SPI_I/send_buffer_i0_i1
    Register : SPI_I/send_buffer_i0_i2
    Register : SPI_I/send_buffer_i0_i3
@@ -1220,7 +1586,6 @@ GSR Component:
    Register : SPI_I/send_buffer_i0_i23
    Register : SPI_I/send_buffer_i0_i24
    Register : SPI_I/send_buffer_i0_i25
-
    Register : SPI_I/send_buffer_i0_i26
    Register : SPI_I/send_buffer_i0_i27
    Register : SPI_I/send_buffer_i0_i28
@@ -1252,6 +1617,7 @@ GSR Component:
    Register : SPI_I/send_buffer_i0_i54
    Register : SPI_I/send_buffer_i0_i55
    Register : SPI_I/send_buffer_i0_i56
+
    Register : SPI_I/send_buffer_i0_i57
    Register : SPI_I/send_buffer_i0_i58
    Register : SPI_I/send_buffer_i0_i59
@@ -1277,7 +1643,6 @@ GSR Component:
    Register : SPI_I/send_buffer_i0_i79
    Register : SPI_I/send_buffer_i0_i80
    Register : SPI_I/send_buffer_i0_i81
-
    Register : SPI_I/send_buffer_i0_i82
    Register : SPI_I/send_buffer_i0_i83
    Register : SPI_I/send_buffer_i0_i84
@@ -1291,7 +1656,11 @@ GSR Component:
    Register : SPI_I/send_buffer_i0_i92
    Register : SPI_I/send_buffer_i0_i93
    Register : SPI_I/send_buffer_i0_i94
-   Register : SPI_I/CSold_113_rep_405
+   Register : SPI_I/speed_set_m2_i0_i0
+   Register : SPI_I/speed_set_m1_i0_i0
+   Register : SPI_I/speed_set_m4_i0_i12
+   Register : SPI_I/speed_set_m4_i0_i13
+   Register : SPI_I/speed_set_m4_i0_i14
    Register : SPI_I/speed_set_m1_i0_i1
    Register : SPI_I/speed_set_m1_i0_i2
    Register : SPI_I/speed_set_m1_i0_i3
@@ -1303,9 +1672,9 @@ GSR Component:
    Register : SPI_I/speed_set_m1_i0_i9
    Register : SPI_I/speed_set_m1_i0_i10
    Register : SPI_I/speed_set_m1_i0_i11
-   Register : SPI_I/CSlatched_115_rep_404
    Register : SPI_I/speed_set_m1_i0_i12
    Register : SPI_I/speed_set_m1_i0_i13
+
    Register : SPI_I/speed_set_m1_i0_i14
    Register : SPI_I/speed_set_m1_i0_i15
    Register : SPI_I/speed_set_m1_i0_i16
@@ -1334,7 +1703,6 @@ GSR Component:
    Register : SPI_I/speed_set_m2_i0_i19
    Register : SPI_I/speed_set_m2_i0_i20
    Register : SPI_I/speed_set_m3_i0_i1
-
    Register : SPI_I/speed_set_m3_i0_i2
    Register : SPI_I/speed_set_m3_i0_i3
    Register : SPI_I/speed_set_m3_i0_i4
@@ -1363,70 +1731,27 @@ GSR Component:
    Register : SPI_I/speed_set_m4_i0_i7
    Register : SPI_I/speed_set_m4_i0_i8
    Register : SPI_I/speed_set_m4_i0_i9
+
    Register : SPI_I/speed_set_m4_i0_i10
-   Register : SPI_I/speed_set_m4_i0_i11
-   Register : SPI_I/speed_set_m4_i0_i12
-   Register : SPI_I/speed_set_m4_i0_i13
-   Register : SPI_I/speed_set_m4_i0_i14
    Register : SPI_I/speed_set_m4_i0_i15
    Register : SPI_I/speed_set_m4_i0_i16
    Register : SPI_I/speed_set_m4_i0_i17
+   Register : SPI_I/speed_set_m4_i0_i11
    Register : SPI_I/speed_set_m4_i0_i18
    Register : SPI_I/speed_set_m4_i0_i19
-   Register : SPI_I/speed_set_m4_i0_i20
-   Register : HALL_I_M2/hall3_old_56
-   Register : HALL_I_M2/hall1_old_54
-   Register : HALL_I_M2/hall3_lat_59
-   Register : HALL_I_M2/hall2_lat_58
-   Register : HALL_I_M2/hall2_old_55
-   Register : HALL_I_M2/hall1_lat_57
-   Register : HALL_I_M3/hall1_lat_57
-   Register : HALL_I_M3/hall2_lat_58
-   Register : HALL_I_M3/hall3_lat_59
-   Register : HALL_I_M3/hall3_old_56
-   Register : HALL_I_M3/hall1_old_54
-   Register : HALL_I_M3/hall2_old_55
-   Register : HALL_I_M1/hall1_old_54
-   Register : HALL_I_M1/hall2_old_55
-   Register : HALL_I_M1/hall3_old_56
-   Register : HALL_I_M1/hall1_lat_57
-   Register : HALL_I_M1/hall2_lat_58
-
-   Register : HALL_I_M1/hall3_lat_59
-   Register : COM_I_M4/MospairB_i1
-   Register : COM_I_M4/MospairC_i1
-   Register : COM_I_M4/MospairA_i1
-   Register : COM_I_M4/led1_46
-   Register : COM_I_M4/MospairA_i2
-   Register : COM_I_M4/MospairC_i2
-   Register : COM_I_M4/MospairB_i2
-   Register : CLKDIV_I/mhz_buf_29
-   Register : CLKDIV_I/pi_buf_30
-   Register : CLKDIV_I/pwm_buf_32
-   Register : CLKDIV_I/clk_1mhz_33
-   Register : CLKDIV_I/pwm_clk_34
-   Register : CLKDIV_I/pi_clk_35
-   Register : CLKDIV_I/count_2059__i0
-   Register : CLKDIV_I/cntpi_2060_2061__i1
-   Register : CLKDIV_I/cntpi_2060_2061__i2
-   Register : CLKDIV_I/cntpi_2060_2061__i3
-   Register : CLKDIV_I/cntpi_2060_2061__i4
-   Register : CLKDIV_I/cntpi_2060_2061__i5
-   Register : CLKDIV_I/cntpi_2060_2061__i6
-   Register : CLKDIV_I/cntpi_2060_2061__i7
-   Register : CLKDIV_I/cntpi_2060_2061__i8
-   Register : CLKDIV_I/cntpi_2060_2061__i9
-   Register : CLKDIV_I/count_2059__i1
-   Register : CLKDIV_I/count_2059__i2
-   Register : CLKDIV_I/count_2059__i3
-   Register : CLKDIV_I/count_2059__i4
+   Register : rst_12_rep_409
    Register : PWM_I_M3/free_19
    Register : PWM_I_M2/free_19
    Register : PWM_I_M1/free_19
+   Register : PWM_I_M4/free_19
    Register : PID_I/backOut0_i0_i0
    Register : PID_I/backOut1_i0_i0
    Register : PID_I/backOut2_i0_i0
    Register : PID_I/backOut3_i0_i0
+   Register : PID_I/dirout_m2_347
+   Register : PID_I/dirout_m3_348
+   Register : PID_I/dirout_m1_346
+   Register : PID_I/dirout_m4_349
    Register : PID_I/backOut1_i0_i28
    Register : PID_I/backOut1_i0_i27
    Register : PID_I/backOut1_i0_i26
@@ -1441,14 +1766,12 @@ GSR Component:
    Register : PID_I/backOut1_i0_i17
    Register : PID_I/backOut1_i0_i16
    Register : PID_I/backOut1_i0_i15
-   Register : PID_I/dutyout_m3_i0_i0
    Register : PID_I/backOut1_i0_i14
    Register : PID_I/backOut1_i0_i13
    Register : PID_I/backOut1_i0_i12
    Register : PID_I/backOut1_i0_i11
    Register : PID_I/backOut1_i0_i10
    Register : PID_I/backOut1_i0_i9
-
    Register : PID_I/backOut1_i0_i8
    Register : PID_I/backOut1_i0_i7
    Register : PID_I/backOut1_i0_i6
@@ -1457,10 +1780,6 @@ GSR Component:
    Register : PID_I/backOut1_i0_i3
    Register : PID_I/backOut1_i0_i2
    Register : PID_I/backOut1_i0_i1
-   Register : PID_I/dirout_m2_308
-   Register : PID_I/dirout_m3_309
-   Register : PID_I/dirout_m1_307
-   Register : PID_I/dirout_m4_310
    Register : PID_I/backOut0_i0_i28
    Register : PID_I/backOut0_i0_i27
    Register : PID_I/backOut0_i0_i26
@@ -1469,6 +1788,7 @@ GSR Component:
    Register : PID_I/backOut0_i0_i23
    Register : PID_I/backOut0_i0_i22
    Register : PID_I/backOut0_i0_i21
+
    Register : PID_I/backOut0_i0_i20
    Register : PID_I/backOut0_i0_i19
    Register : PID_I/backOut0_i0_i18
@@ -1505,7 +1825,6 @@ GSR Component:
    Register : PID_I/backOut2_i0_i14
    Register : PID_I/backOut2_i0_i15
    Register : PID_I/backOut2_i0_i16
-
    Register : PID_I/backOut2_i0_i17
    Register : PID_I/backOut2_i0_i18
    Register : PID_I/backOut2_i0_i19
@@ -1526,6 +1845,7 @@ GSR Component:
    Register : PID_I/backOut3_i0_i6
    Register : PID_I/backOut3_i0_i7
    Register : PID_I/backOut3_i0_i8
+
    Register : PID_I/backOut3_i0_i9
    Register : PID_I/backOut3_i0_i10
    Register : PID_I/backOut3_i0_i11
@@ -1546,23 +1866,10 @@ GSR Component:
    Register : PID_I/backOut3_i0_i26
    Register : PID_I/backOut3_i0_i27
    Register : PID_I/backOut3_i0_i28
-   Register : PID_I/dutyout_m2_i0_i0
-   Register : PID_I/dutyout_m1_i0_i0
-   Register : PID_I/dutyout_m2_i0_i1
-   Register : PID_I/dutyout_m1_i0_i9
-   Register : PID_I/dutyout_m1_i0_i8
-   Register : PID_I/dutyout_m1_i0_i7
-   Register : PID_I/dutyout_m1_i0_i6
-   Register : PID_I/dutyout_m1_i0_i5
-   Register : PID_I/dutyout_m1_i0_i4
-   Register : PID_I/dutyout_m1_i0_i3
-   Register : PID_I/dutyout_m1_i0_i2
-   Register : PID_I/dutyout_m1_i0_i1
    Register : PID_I/dutyout_m4_i0_i9
    Register : PID_I/dutyout_m4_i0_i8
    Register : PID_I/dutyout_m4_i0_i7
    Register : PID_I/dutyout_m4_i0_i6
-
    Register : PID_I/dutyout_m4_i0_i5
    Register : PID_I/dutyout_m4_i0_i4
    Register : PID_I/dutyout_m4_i0_i3
@@ -1585,49 +1892,54 @@ GSR Component:
    Register : PID_I/dutyout_m2_i0_i4
    Register : PID_I/dutyout_m2_i0_i3
    Register : PID_I/dutyout_m2_i0_i2
+   Register : PID_I/dutyout_m2_i0_i1
+   Register : PID_I/dutyout_m1_i0_i9
+   Register : PID_I/dutyout_m1_i0_i8
+   Register : PID_I/dutyout_m1_i0_i7
+   Register : PID_I/dutyout_m1_i0_i6
+   Register : PID_I/dutyout_m1_i0_i5
+   Register : PID_I/dutyout_m1_i0_i4
+   Register : PID_I/dutyout_m1_i0_i3
+   Register : PID_I/dutyout_m1_i0_i2
+   Register : PID_I/dutyout_m1_i0_i1
+
    Register : PID_I/dutyout_m4_i0_i0
-   Register : PWM_I_M4/free_19
+   Register : PID_I/dutyout_m3_i0_i0
+   Register : PID_I/dutyout_m2_i0_i0
+   Register : PID_I/dutyout_m1_i0_i0
+   Register : HALL_I_M1/hall1_old_54
+   Register : HALL_I_M1/hall2_old_55
+   Register : HALL_I_M1/hall3_old_56
+   Register : HALL_I_M1/hall1_lat_57
+   Register : HALL_I_M1/hall2_lat_58
+   Register : HALL_I_M1/hall3_lat_59
+   Register : HALL_I_M3/hall3_old_56
+   Register : HALL_I_M3/hall1_lat_57
+   Register : HALL_I_M3/hall2_lat_58
+   Register : HALL_I_M3/hall3_lat_59
+   Register : HALL_I_M3/hall1_old_54
+   Register : HALL_I_M3/hall2_old_55
    Register : HALL_I_M4/hall3_old_56
    Register : HALL_I_M4/hall1_lat_57
    Register : HALL_I_M4/hall2_lat_58
-   Register : HALL_I_M4/hall3_lat_59
    Register : HALL_I_M4/hall1_old_54
+   Register : HALL_I_M4/hall3_lat_59
    Register : HALL_I_M4/hall2_old_55
-   Register : start_cnt_2058__i1
-   Register : start_cnt_2058__i2
-   Register : start_cnt_2058__i3
-   Register : start_cnt_2058__i4
-   Register : start_cnt_2058__i5
-   Register : start_cnt_2058__i6
-   Register : start_cnt_2058__i7
-   Register : start_cnt_2058__i8
-   Register : start_cnt_2058__i9
-   Register : start_cnt_2058__i10
-   Register : start_cnt_2058__i11
-   Register : start_cnt_2058__i12
-   Register : start_cnt_2058__i13
 
      Components with synchronous local reset also reset by asynchronous GSR
 ----------------------------------------------------------------------
 
      These components have the GSR property set to ENABLED and the local reset
      is synchronous. The components will respond to the synchronous local reset
-     and to the unrelated asynchronous reset signal 'n22203' via the GSR
+     and to the unrelated asynchronous reset signal 'n22100' via the GSR
      component.
 
      Type and number of components of the type: 
-   Register = 237 
+   Register = 273 
 
      Type and instance name of component: 
-
-   Register : HALL_I_M2/stable_count__i0
-   Register : HALL_I_M2/speedt__i0
-   Register : HALL_I_M2/stable_count__i1
-   Register : HALL_I_M2/stable_count__i2
-   Register : HALL_I_M2/stable_count__i3
-   Register : HALL_I_M2/stable_count__i4
-   Register : HALL_I_M2/stable_count__i5
-   Register : HALL_I_M2/stable_count__i6
+   Register : HALL_I_M2/stable_counting_62
+   Register : HALL_I_M2/count__i0
    Register : HALL_I_M2/count__i1
    Register : HALL_I_M2/count__i2
    Register : HALL_I_M2/count__i3
@@ -1647,36 +1959,207 @@ GSR Component:
    Register : HALL_I_M2/count__i17
    Register : HALL_I_M2/count__i18
    Register : HALL_I_M2/count__i19
-   Register : HALL_I_M2/speedt__i1
-   Register : HALL_I_M2/speedt__i2
-   Register : HALL_I_M2/speedt__i3
-   Register : HALL_I_M2/speedt__i4
-   Register : HALL_I_M2/speedt__i5
-   Register : HALL_I_M2/speedt__i6
-   Register : HALL_I_M2/speedt__i7
-   Register : HALL_I_M2/speedt__i8
-   Register : HALL_I_M2/speedt__i9
-   Register : HALL_I_M2/speedt__i10
-   Register : HALL_I_M2/speedt__i11
-   Register : HALL_I_M2/speedt__i12
-   Register : HALL_I_M2/speedt__i13
-   Register : HALL_I_M2/speedt__i14
-   Register : HALL_I_M2/speedt__i15
-   Register : HALL_I_M2/speedt__i16
-   Register : HALL_I_M2/speedt__i17
-   Register : HALL_I_M2/speedt__i18
-   Register : HALL_I_M2/speedt__i19
-   Register : HALL_I_M2/count__i0
-   Register : HALL_I_M2/stable_counting_62
-   Register : HALL_I_M3/stable_count__i0
-   Register : HALL_I_M3/speedt__i0
-   Register : HALL_I_M3/stable_count__i1
-   Register : HALL_I_M3/stable_count__i2
-   Register : HALL_I_M3/stable_count__i3
-   Register : HALL_I_M3/stable_count__i4
-   Register : HALL_I_M3/stable_count__i5
-   Register : HALL_I_M3/stable_count__i6
 
+   Register : HALL_I_M2/stable_count__i6
+   Register : HALL_I_M2/stable_count__i5
+   Register : HALL_I_M2/stable_count__i4
+   Register : HALL_I_M2/stable_count__i3
+   Register : HALL_I_M2/stable_count__i2
+   Register : HALL_I_M2/stable_count__i1
+   Register : HALL_I_M2/stable_count__i0
+   Register : PWM_I_M3/cnt_2084__i0
+   Register : PWM_I_M3/cnt_2084__i1
+   Register : PWM_I_M3/cnt_2084__i2
+   Register : PWM_I_M3/cnt_2084__i3
+   Register : PWM_I_M3/cnt_2084__i4
+   Register : PWM_I_M3/cnt_2084__i5
+   Register : PWM_I_M3/cnt_2084__i6
+   Register : PWM_I_M3/cnt_2084__i7
+   Register : PWM_I_M3/cnt_2084__i8
+   Register : PWM_I_M3/cnt_2084__i9
+   Register : PWM_I_M2/cnt_2083__i0
+   Register : PWM_I_M2/cnt_2083__i1
+   Register : PWM_I_M2/cnt_2083__i2
+   Register : PWM_I_M2/cnt_2083__i3
+   Register : PWM_I_M2/cnt_2083__i4
+   Register : PWM_I_M2/cnt_2083__i5
+   Register : PWM_I_M2/cnt_2083__i6
+   Register : PWM_I_M2/cnt_2083__i7
+   Register : PWM_I_M2/cnt_2083__i8
+   Register : PWM_I_M2/cnt_2083__i9
+   Register : PWM_I_M1/cnt_2082__i0
+   Register : PWM_I_M1/cnt_2082__i1
+   Register : PWM_I_M1/cnt_2082__i2
+   Register : PWM_I_M1/cnt_2082__i3
+   Register : PWM_I_M1/cnt_2082__i4
+   Register : PWM_I_M1/cnt_2082__i5
+   Register : PWM_I_M1/cnt_2082__i6
+   Register : PWM_I_M1/cnt_2082__i7
+   Register : PWM_I_M1/cnt_2082__i8
+   Register : PWM_I_M1/cnt_2082__i9
+   Register : PWM_I_M4/cnt_2085__i0
+   Register : PWM_I_M4/cnt_2085__i1
+   Register : PWM_I_M4/cnt_2085__i2
+   Register : PWM_I_M4/cnt_2085__i3
+   Register : PWM_I_M4/cnt_2085__i4
+   Register : PWM_I_M4/cnt_2085__i5
+   Register : PWM_I_M4/cnt_2085__i6
+   Register : PWM_I_M4/cnt_2085__i7
+   Register : PWM_I_M4/cnt_2085__i8
+   Register : PWM_I_M4/cnt_2085__i9
+   Register : PID_I/intgOut0_i0
+   Register : PID_I/ss_i0
+   Register : PID_I/ss_i1
+   Register : PID_I/ss_i2
+   Register : PID_I/ss_i3
+   Register : PID_I/intgOut3_i0
+   Register : PID_I/ss_i2_rep_408
+   Register : PID_I/intgOut2_i0
+   Register : PID_I/intgOut3_i28
+
+   Register : PID_I/intgOut3_i27
+   Register : PID_I/intgOut3_i26
+   Register : PID_I/intgOut3_i25
+   Register : PID_I/intgOut3_i24
+   Register : PID_I/intgOut3_i23
+   Register : PID_I/intgOut3_i22
+   Register : PID_I/intgOut3_i21
+   Register : PID_I/intgOut3_i20
+   Register : PID_I/intgOut3_i19
+   Register : PID_I/intgOut3_i18
+   Register : PID_I/intgOut3_i17
+   Register : PID_I/intgOut3_i16
+   Register : PID_I/intgOut3_i15
+   Register : PID_I/intgOut3_i14
+   Register : PID_I/intgOut3_i13
+   Register : PID_I/intgOut3_i12
+   Register : PID_I/intgOut3_i11
+   Register : PID_I/intgOut3_i10
+   Register : PID_I/intgOut3_i9
+   Register : PID_I/intgOut3_i8
+   Register : PID_I/intgOut3_i7
+   Register : PID_I/intgOut3_i6
+   Register : PID_I/intgOut3_i5
+   Register : PID_I/intgOut3_i4
+   Register : PID_I/intgOut3_i3
+   Register : PID_I/intgOut3_i2
+   Register : PID_I/intgOut3_i1
+   Register : PID_I/intgOut2_i28
+   Register : PID_I/intgOut2_i27
+   Register : PID_I/intgOut2_i26
+   Register : PID_I/intgOut2_i25
+   Register : PID_I/intgOut2_i24
+   Register : PID_I/intgOut2_i23
+   Register : PID_I/intgOut2_i22
+   Register : PID_I/intgOut2_i21
+   Register : PID_I/intgOut2_i20
+   Register : PID_I/intgOut2_i19
+   Register : PID_I/intgOut2_i18
+   Register : PID_I/intgOut2_i17
+   Register : PID_I/intgOut2_i16
+   Register : PID_I/intgOut2_i15
+   Register : PID_I/intgOut2_i14
+   Register : PID_I/intgOut2_i13
+   Register : PID_I/intgOut2_i12
+   Register : PID_I/intgOut2_i11
+   Register : PID_I/intgOut2_i10
+   Register : PID_I/intgOut2_i9
+   Register : PID_I/intgOut2_i8
+   Register : PID_I/intgOut2_i7
+   Register : PID_I/intgOut2_i6
+   Register : PID_I/intgOut2_i5
+   Register : PID_I/intgOut2_i4
+   Register : PID_I/intgOut2_i3
+   Register : PID_I/intgOut2_i2
+   Register : PID_I/intgOut2_i1
+   Register : PID_I/intgOut1_i28
+
+   Register : PID_I/intgOut1_i27
+   Register : PID_I/intgOut1_i26
+   Register : PID_I/intgOut1_i25
+   Register : PID_I/intgOut1_i24
+   Register : PID_I/intgOut1_i23
+   Register : PID_I/intgOut1_i22
+   Register : PID_I/intgOut1_i21
+   Register : PID_I/intgOut1_i20
+   Register : PID_I/intgOut1_i19
+   Register : PID_I/intgOut1_i18
+   Register : PID_I/intgOut1_i17
+   Register : PID_I/intgOut1_i16
+   Register : PID_I/intgOut1_i15
+   Register : PID_I/intgOut1_i14
+   Register : PID_I/intgOut1_i13
+   Register : PID_I/intgOut1_i12
+   Register : PID_I/intgOut1_i11
+   Register : PID_I/intgOut1_i10
+   Register : PID_I/intgOut1_i9
+   Register : PID_I/intgOut1_i8
+   Register : PID_I/intgOut1_i7
+   Register : PID_I/intgOut1_i6
+   Register : PID_I/intgOut1_i5
+   Register : PID_I/intgOut1_i4
+   Register : PID_I/intgOut1_i3
+   Register : PID_I/intgOut1_i2
+   Register : PID_I/intgOut1_i1
+   Register : PID_I/intgOut0_i28
+   Register : PID_I/intgOut0_i27
+   Register : PID_I/intgOut0_i26
+   Register : PID_I/intgOut0_i25
+   Register : PID_I/intgOut0_i24
+   Register : PID_I/intgOut0_i23
+   Register : PID_I/intgOut0_i22
+   Register : PID_I/intgOut0_i21
+   Register : PID_I/intgOut0_i20
+   Register : PID_I/intgOut0_i19
+   Register : PID_I/intgOut0_i18
+   Register : PID_I/intgOut0_i17
+   Register : PID_I/intgOut0_i16
+   Register : PID_I/intgOut0_i15
+   Register : PID_I/intgOut0_i14
+   Register : PID_I/intgOut0_i13
+   Register : PID_I/intgOut0_i12
+   Register : PID_I/intgOut0_i11
+   Register : PID_I/intgOut0_i10
+   Register : PID_I/intgOut0_i9
+   Register : PID_I/intgOut0_i8
+   Register : PID_I/intgOut0_i7
+   Register : PID_I/intgOut0_i6
+   Register : PID_I/intgOut0_i5
+   Register : PID_I/intgOut0_i4
+   Register : PID_I/intgOut0_i3
+   Register : PID_I/intgOut0_i2
+   Register : PID_I/intgOut0_i1
+   Register : PID_I/intgOut1_i0
+
+   Register : HALL_I_M1/stable_counting_62
+   Register : HALL_I_M1/count__i0
+   Register : HALL_I_M1/count__i1
+   Register : HALL_I_M1/count__i2
+   Register : HALL_I_M1/count__i3
+   Register : HALL_I_M1/count__i4
+   Register : HALL_I_M1/count__i5
+   Register : HALL_I_M1/count__i6
+   Register : HALL_I_M1/count__i7
+   Register : HALL_I_M1/count__i8
+   Register : HALL_I_M1/count__i9
+   Register : HALL_I_M1/count__i10
+   Register : HALL_I_M1/count__i11
+   Register : HALL_I_M1/count__i12
+   Register : HALL_I_M1/count__i13
+   Register : HALL_I_M1/count__i14
+   Register : HALL_I_M1/count__i15
+   Register : HALL_I_M1/count__i16
+   Register : HALL_I_M1/count__i17
+   Register : HALL_I_M1/count__i18
+   Register : HALL_I_M1/count__i19
+   Register : HALL_I_M1/stable_count__i6
+   Register : HALL_I_M1/stable_count__i5
+   Register : HALL_I_M1/stable_count__i4
+   Register : HALL_I_M1/stable_count__i3
+   Register : HALL_I_M1/stable_count__i2
+   Register : HALL_I_M1/stable_count__i1
+   Register : HALL_I_M1/stable_count__i0
+   Register : HALL_I_M3/count__i0
    Register : HALL_I_M3/count__i1
    Register : HALL_I_M3/count__i2
    Register : HALL_I_M3/count__i3
@@ -1696,143 +2179,16 @@ GSR Component:
    Register : HALL_I_M3/count__i17
    Register : HALL_I_M3/count__i18
    Register : HALL_I_M3/count__i19
-   Register : HALL_I_M3/speedt__i1
-   Register : HALL_I_M3/speedt__i2
-   Register : HALL_I_M3/speedt__i3
-   Register : HALL_I_M3/speedt__i4
-   Register : HALL_I_M3/speedt__i5
-   Register : HALL_I_M3/speedt__i6
-   Register : HALL_I_M3/speedt__i7
-   Register : HALL_I_M3/speedt__i8
-   Register : HALL_I_M3/speedt__i9
-   Register : HALL_I_M3/speedt__i10
-   Register : HALL_I_M3/speedt__i11
-   Register : HALL_I_M3/speedt__i12
-   Register : HALL_I_M3/speedt__i13
-   Register : HALL_I_M3/speedt__i14
-   Register : HALL_I_M3/speedt__i15
-   Register : HALL_I_M3/speedt__i16
-   Register : HALL_I_M3/speedt__i17
-   Register : HALL_I_M3/speedt__i18
-   Register : HALL_I_M3/speedt__i19
-   Register : HALL_I_M3/count__i0
+   Register : HALL_I_M3/stable_count__i6
+   Register : HALL_I_M3/stable_count__i5
+   Register : HALL_I_M3/stable_count__i4
+   Register : HALL_I_M3/stable_count__i3
+   Register : HALL_I_M3/stable_count__i2
+   Register : HALL_I_M3/stable_count__i1
    Register : HALL_I_M3/stable_counting_62
-   Register : HALL_I_M1/stable_count__i0
-   Register : HALL_I_M1/speedt__i0
-   Register : HALL_I_M1/stable_count__i6
-   Register : HALL_I_M1/stable_count__i5
-   Register : HALL_I_M1/stable_count__i4
-   Register : HALL_I_M1/stable_count__i3
-   Register : HALL_I_M1/stable_count__i2
-   Register : HALL_I_M1/stable_count__i1
-   Register : HALL_I_M1/count__i1
-   Register : HALL_I_M1/count__i2
-   Register : HALL_I_M1/count__i3
-   Register : HALL_I_M1/count__i4
-   Register : HALL_I_M1/count__i5
-   Register : HALL_I_M1/count__i6
-   Register : HALL_I_M1/count__i7
-   Register : HALL_I_M1/count__i8
+   Register : HALL_I_M3/stable_count__i0
 
-   Register : HALL_I_M1/count__i9
-   Register : HALL_I_M1/count__i10
-   Register : HALL_I_M1/count__i11
-   Register : HALL_I_M1/count__i12
-   Register : HALL_I_M1/count__i13
-   Register : HALL_I_M1/count__i14
-   Register : HALL_I_M1/count__i15
-   Register : HALL_I_M1/count__i16
-   Register : HALL_I_M1/count__i17
-   Register : HALL_I_M1/count__i18
-   Register : HALL_I_M1/count__i19
-   Register : HALL_I_M1/speedt__i1
-   Register : HALL_I_M1/speedt__i2
-   Register : HALL_I_M1/speedt__i3
-   Register : HALL_I_M1/speedt__i4
-   Register : HALL_I_M1/speedt__i5
-   Register : HALL_I_M1/speedt__i6
-   Register : HALL_I_M1/speedt__i7
-   Register : HALL_I_M1/speedt__i8
-   Register : HALL_I_M1/speedt__i9
-   Register : HALL_I_M1/speedt__i10
-   Register : HALL_I_M1/speedt__i11
-   Register : HALL_I_M1/speedt__i12
-   Register : HALL_I_M1/speedt__i13
-   Register : HALL_I_M1/speedt__i14
-   Register : HALL_I_M1/speedt__i15
-   Register : HALL_I_M1/speedt__i16
-   Register : HALL_I_M1/speedt__i17
-   Register : HALL_I_M1/speedt__i18
-   Register : HALL_I_M1/speedt__i19
-   Register : HALL_I_M1/count__i0
-   Register : HALL_I_M1/stable_counting_62
-   Register : PWM_I_M3/cnt_2066__i0
-   Register : PWM_I_M3/cnt_2066__i1
-   Register : PWM_I_M3/cnt_2066__i2
-   Register : PWM_I_M3/cnt_2066__i3
-   Register : PWM_I_M3/cnt_2066__i4
-   Register : PWM_I_M3/cnt_2066__i5
-   Register : PWM_I_M3/cnt_2066__i6
-   Register : PWM_I_M3/cnt_2066__i7
-   Register : PWM_I_M3/cnt_2066__i8
-   Register : PWM_I_M3/cnt_2066__i9
-   Register : PWM_I_M2/cnt_2065__i0
-   Register : PWM_I_M2/cnt_2065__i1
-   Register : PWM_I_M2/cnt_2065__i2
-   Register : PWM_I_M2/cnt_2065__i3
-   Register : PWM_I_M2/cnt_2065__i4
-   Register : PWM_I_M2/cnt_2065__i5
-   Register : PWM_I_M2/cnt_2065__i6
-   Register : PWM_I_M2/cnt_2065__i7
-   Register : PWM_I_M2/cnt_2065__i8
-   Register : PWM_I_M2/cnt_2065__i9
-   Register : PWM_I_M1/cnt_2064__i0
-   Register : PWM_I_M1/cnt_2064__i1
-   Register : PWM_I_M1/cnt_2064__i2
-   Register : PWM_I_M1/cnt_2064__i3
-
-   Register : PWM_I_M1/cnt_2064__i4
-   Register : PWM_I_M1/cnt_2064__i5
-   Register : PWM_I_M1/cnt_2064__i6
-   Register : PWM_I_M1/cnt_2064__i7
-   Register : PWM_I_M1/cnt_2064__i8
-   Register : PWM_I_M1/cnt_2064__i9
-   Register : PID_I/ss_i2
-   Register : PID_I/ss_i3
-   Register : PID_I/ss_i0
-   Register : PID_I/ss_i1
-   Register : PID_I/ss_i2_rep_402
-   Register : PWM_I_M4/cnt_2067__i1
-   Register : PWM_I_M4/cnt_2067__i0
-   Register : PWM_I_M4/cnt_2067__i2
-   Register : PWM_I_M4/cnt_2067__i3
-   Register : PWM_I_M4/cnt_2067__i4
-   Register : PWM_I_M4/cnt_2067__i5
-   Register : PWM_I_M4/cnt_2067__i6
-   Register : PWM_I_M4/cnt_2067__i7
-   Register : PWM_I_M4/cnt_2067__i8
-   Register : PWM_I_M4/cnt_2067__i9
-   Register : HALL_I_M4/speedt__i0
-   Register : HALL_I_M4/stable_count__i0
-   Register : HALL_I_M4/speedt__i1
-   Register : HALL_I_M4/speedt__i2
-   Register : HALL_I_M4/speedt__i3
-   Register : HALL_I_M4/speedt__i4
-   Register : HALL_I_M4/speedt__i5
-   Register : HALL_I_M4/speedt__i6
-   Register : HALL_I_M4/speedt__i7
-   Register : HALL_I_M4/speedt__i8
-   Register : HALL_I_M4/speedt__i9
-   Register : HALL_I_M4/speedt__i10
-   Register : HALL_I_M4/speedt__i11
-   Register : HALL_I_M4/speedt__i12
-   Register : HALL_I_M4/speedt__i13
-   Register : HALL_I_M4/speedt__i14
-   Register : HALL_I_M4/speedt__i15
-   Register : HALL_I_M4/speedt__i16
-   Register : HALL_I_M4/speedt__i17
-   Register : HALL_I_M4/speedt__i18
-   Register : HALL_I_M4/speedt__i19
+   Register : HALL_I_M4/count__i0
    Register : HALL_I_M4/count__i1
    Register : HALL_I_M4/count__i2
    Register : HALL_I_M4/count__i3
@@ -1847,20 +2203,19 @@ GSR Component:
    Register : HALL_I_M4/count__i12
    Register : HALL_I_M4/count__i13
    Register : HALL_I_M4/count__i14
-
    Register : HALL_I_M4/count__i15
    Register : HALL_I_M4/count__i16
    Register : HALL_I_M4/count__i17
    Register : HALL_I_M4/count__i18
    Register : HALL_I_M4/count__i19
-   Register : HALL_I_M4/stable_count__i1
-   Register : HALL_I_M4/stable_count__i2
-   Register : HALL_I_M4/stable_count__i3
-   Register : HALL_I_M4/stable_count__i4
-   Register : HALL_I_M4/stable_count__i5
-   Register : HALL_I_M4/stable_count__i6
    Register : HALL_I_M4/stable_counting_62
-   Register : HALL_I_M4/count__i0
+   Register : HALL_I_M4/stable_count__i6
+   Register : HALL_I_M4/stable_count__i5
+   Register : HALL_I_M4/stable_count__i4
+   Register : HALL_I_M4/stable_count__i3
+   Register : HALL_I_M4/stable_count__i2
+   Register : HALL_I_M4/stable_count__i1
+   Register : HALL_I_M4/stable_count__i0
 
 
 
@@ -1868,24 +2223,9 @@ GSR Component:
 -------------------------
 
    Total CPU Time: 1 secs  
-   Total REAL Time: 0 secs  
-   Peak Memory Usage: 64 MB
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 66 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1913,7 +2253,7 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
      Copyright (c) 1995 AT&T Corp.   All rights reserved.
      Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
      Copyright (c) 2001 Agere Systems   All rights reserved.
-     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights
      reserved.
 
 

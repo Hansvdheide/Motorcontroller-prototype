@@ -30,17 +30,18 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/Clockdivider.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/COMMUTATION.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/HallInput.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/PWM_GEN.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/SPI loopbacktest v2.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/ToplevelFinal.vhd"
-"D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/PID.vhd"
+-lib "work" -vhd "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/Clockdivider.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/COMMUTATION.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/HallInput.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/PWM_GEN.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/SPI loopbacktest v2.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/ToplevelFinal.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/PID.vhd"
+"C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/speed_avg.vhd"
 -top SPI_loopback_Top
 
 
--p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/controller" "D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController"
+-p "C:/lscc/diamond/3.8_x64/ispfpga/xo2c00/data" "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/controller" "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype"
 
 -ngd "Motorcontrollerfinal_controller.ngd"
 

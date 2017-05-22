@@ -29,6 +29,9 @@
         <Source name="testBench.vhd" type="VHDL" type_short="VHDL" excluded="TRUE" syn_sim="SimOnly">
             <Options/>
         </Source>
+        <Source name="speed_avg.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
         <Source name="blauw.lpf" type="Logic Preference" type_short="LPF" excluded="TRUE">
             <Options/>
         </Source>

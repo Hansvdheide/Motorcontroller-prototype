@@ -1,11 +1,11 @@
-BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
+BITGEN: Bitstream Generator Diamond (64-bit) 3.8.0.115.3
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController -w -jedec -gui -msgset D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/promote.xml Motorcontrollerfinal_controller.ncd Motorcontrollerfinal_controller.prf 
+Command: bitgen -g RamCfg:Reset -path C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype -w -jedec -gui -msgset C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/promote.xml Motorcontrollerfinal_controller.ncd Motorcontrollerfinal_controller.prf 
 
 Loading design for application Bitgen from file Motorcontrollerfinal_controller.ncd.
 Design name: SPI_loopback_Top
@@ -14,7 +14,7 @@ Vendor:      LATTICE
 Device:      LCMXO2-4000ZE
 Package:     TQFP144
 Performance: 1
-Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 34.4.
 
@@ -31,8 +31,6 @@ Preference Summary:
 |                     MCCLK_FREQ  |                         2.08**  |
 +---------------------------------+---------------------------------+
 |                  CONFIG_SECURE  |                          OFF**  |
-+---------------------------------+---------------------------------+
-|                          INBUF  |                           ON**  |
 +---------------------------------+---------------------------------+
 |                      JTAG_PORT  |                       ENABLE**  |
 +---------------------------------+---------------------------------+
@@ -66,7 +64,7 @@ Preference Summary:
 
 Creating bit map...
  
-Bitstream Status: Final           Version 1.94.
+Bitstream Status: Final           Version 1.92.
  
 Saving bit stream in "Motorcontrollerfinal_controller.jed".
  

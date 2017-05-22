@@ -84,9 +84,10 @@ else
 		hall3_lat <= hall3;
 	
 		count := count+1; -- Increase clock count
-		if (count = 999999) then -- If clockcount overflows update speed and reset clock
+		if (count = 9998) then -- If clockcount overflows update speed and reset clock
 			speedt := count;
-			count := 0;
+			--count := 0;
+			stable_counting <= '1';
 		end if;
 		
 		if( (hall1_old /= hall1_lat) OR (hall2_old /= hall2_lat) OR (hall3_old /= hall3_lat) ) then -- Trigger on any edge of the hall effect sensors, update the speed count
@@ -109,7 +110,7 @@ else
 				count := 0;
 				
 			END IF;
-		speed <= speedt; -- Update speed output
+			speed <= speedt; -- Update speed output
 		END IF;
 		
 		-- Update the hall position sensors for use with commutation IN THE FORMAT HALLA - HALLB - HALLC HALLA = msb

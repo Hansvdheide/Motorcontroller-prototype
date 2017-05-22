@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
-<ispXCF version="3.9.0">
+<ispXCF version="3.7.0">
 	<Comment></Comment>
 	<Chain>
 		<Comm>JTAG</Comm>
@@ -19,9 +19,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/controller/Motorcontrollerfinal_controller.jed</File>
-			<FileTime>04/17/17 13:16:48</FileTime>
-			<JedecChecksum>0x1146</JedecChecksum>
+			<File>C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/controller/Motorcontrollerfinal_controller.jed</File>
+			<FileTime>05/15/17 15:39:45</FileTime>
+			<JedecChecksum>0xFF86</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -29,6 +29,7 @@
 				<PreloadLength>552</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
+				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>

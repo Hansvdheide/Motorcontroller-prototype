@@ -6,150 +6,170 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>35001781</ID>
-            <Severity>Info</Severity>
-        </Message>
-        <Message>
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>D:/WybeData/Projects/RoboTeamTwente/Electronics/Lattice/MotorController/controller</Dynamic>
+            <Dynamic>C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/controller</Dynamic>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/clockdivider.vhd(20): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/clockdivider.vhd(20): </Dynamic>
             <Dynamic>clkdiv</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/clockdivider.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/clockdivider.vhd</Navigation>
             <Navigation>20</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/clockdivider.vhd(34): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/clockdivider.vhd(34): </Dynamic>
             <Dynamic>clkdiv</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/clockdivider.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/clockdivider.vhd</Navigation>
             <Navigation>34</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/commutation.vhd(28): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(28): </Dynamic>
             <Dynamic>commutation</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/commutation.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/commutation.vhd(53): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(53): </Dynamic>
             <Dynamic>commutation</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/commutation.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd</Navigation>
             <Navigation>53</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/hallinput.vhd(22): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/hallinput.vhd(22): </Dynamic>
             <Dynamic>hall</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/hallinput.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/hallinput.vhd</Navigation>
             <Navigation>22</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/hallinput.vhd(41): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/hallinput.vhd(41): </Dynamic>
             <Dynamic>hall</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/hallinput.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/hallinput.vhd</Navigation>
             <Navigation>41</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pwm_gen.vhd(25): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pwm_gen.vhd(25): </Dynamic>
             <Dynamic>pwmgenerator</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pwm_gen.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pwm_gen.vhd</Navigation>
             <Navigation>25</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pwm_gen.vhd(36): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pwm_gen.vhd(36): </Dynamic>
             <Dynamic>pwmgenerator</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pwm_gen.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pwm_gen.vhd</Navigation>
             <Navigation>36</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/spi loopbacktest v2.vhd(21): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd(21): </Dynamic>
             <Dynamic>spi</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/spi loopbacktest v2.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd</Navigation>
             <Navigation>21</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/spi loopbacktest v2.vhd(54): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd(54): </Dynamic>
             <Dynamic>spi</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/spi loopbacktest v2.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd</Navigation>
             <Navigation>54</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/toplevelfinal.vhd(24): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/toplevelfinal.vhd(24): </Dynamic>
             <Dynamic>spi_loopback_top</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/toplevelfinal.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/toplevelfinal.vhd</Navigation>
             <Navigation>24</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/toplevelfinal.vhd(80): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/toplevelfinal.vhd(80): </Dynamic>
             <Dynamic>arch</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/toplevelfinal.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/toplevelfinal.vhd</Navigation>
             <Navigation>80</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pid.vhd(9): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd(9): </Dynamic>
             <Dynamic>pid</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pid.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd</Navigation>
             <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pid.vhd(47): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd(47): </Dynamic>
             <Dynamic>pid</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pid.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd</Navigation>
             <Navigation>47</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd(15): </Dynamic>
+            <Dynamic>avg_speed</Dynamic>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd(28): </Dynamic>
+            <Dynamic>avg_speed</Dynamic>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd</Navigation>
+            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/toplevelfinal.vhd(78): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/toplevelfinal.vhd(78): </Dynamic>
             <Dynamic>SPI_loopback_Top</Dynamic>
             <Dynamic>arch</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/toplevelfinal.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/toplevelfinal.vhd</Navigation>
             <Navigation>78</Navigation>
         </Message>
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pid.vhd(229): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd(229): </Dynamic>
             <Dynamic>a[28]</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/pid.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd</Navigation>
             <Navigation>229</Navigation>
         </Message>
         <Message>
             <ID>35935013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/spi loopbacktest v2.vhd(213): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd(66): </Dynamic>
+            <Dynamic>\AVG_SPEED_M1/speed_avg_i0_i20</Dynamic>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd(213): </Dynamic>
             <Dynamic>\SPI_I/send_buffer_i0_i95</Dynamic>
-            <Navigation>d:/wybedata/projects/roboteamtwente/electronics/lattice/motorcontroller/spi loopbacktest v2.vhd</Navigation>
+            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd</Navigation>
             <Navigation>213</Navigation>
         </Message>
         <Message>
