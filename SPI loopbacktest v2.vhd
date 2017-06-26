@@ -131,7 +131,7 @@ BEGIN
 			send_buffer(7 downto 0) := x"AA"; -- Bogus bits, toggle to give synchronization
 			
 			--DEGUB LINE
-			--send_buffer := temp_buffer;
+			send_buffer := temp_buffer;
 			
 			--send_buffer := x"AAAAAAAAAAAAAAAAAAAAAABA"; --"AAAAAAAAAAAAAAAAAAAAAAAA"   "FFFFFFFFFFFFFFFFFFFFFFFF"  "000000000000000000000000"
 			MISOb := send_buffer(0);

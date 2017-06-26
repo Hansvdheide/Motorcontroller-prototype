@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Mon May 22 15:05:01 2017
+Mon Jun 26 11:00:26 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/promote.xml 
@@ -131,12 +131,11 @@ Loading NGL library 'C:/lscc/diamond/3.8_x64/ispfpga/or5g00/data/orc5glib.ngl'..
 Loading device for application map from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.8_x64/ispfpga.
 Package Status:                     Final          Version 1.44.
 Top-level module name = SPI_loopback_Top.
-Rejecting instance in MergeCSE due to signature collison : HALL_I_M3
 
 
 
 SCUBA, Version Diamond (64-bit) 3.8.0.115.3
-Mon May 22 15:05:06 2017
+Mon Jun 26 11:00:32 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -169,72 +168,104 @@ Analyzing Verilog file C:/lscc/diamond/3.8_x64/ispfpga/userware/NT/SYNTHESIS_HEA
 Analyzing Verilog file mult_29s_25s.v. VERI-1482
     <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd(229): " arg1="a[28]" arg2="c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/pid.vhd" arg3="229"  />
     <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd(66): " arg1="\AVG_SPEED_M1/speed_avg_i0_i20" arg2="c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/speed_avg.vhd" arg3="66"  />
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd(213): " arg1="\SPI_I/send_buffer_i0_i95" arg2="c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd" arg3="213"  />
 Duplicate register/latch removal. \PID_I/subOut_i22 is a one-to-one match with \PID_I/subOut_i24.
 Duplicate register/latch removal. \PID_I/subOut_i23 is a one-to-one match with \PID_I/subOut_i22.
 GSR instance connected to net rst.
-Duplicate register/latch removal. \SPI__5__i83 is a one-to-one match with \SPI__5_rep_5__i83.
-Duplicate register/latch removal. \SPI__5__i82 is a one-to-one match with \SPI__5_rep_5__i82.
-Duplicate register/latch removal. \SPI__5__i81 is a one-to-one match with \SPI__5_rep_5__i81.
-Duplicate register/latch removal. \SPI__5__i80 is a one-to-one match with \SPI__5_rep_5__i80.
-Duplicate register/latch removal. \SPI__5__i79 is a one-to-one match with \SPI__5_rep_5__i79.
-Duplicate register/latch removal. \SPI__5__i78 is a one-to-one match with \SPI__5_rep_5__i78.
-Duplicate register/latch removal. \SPI__5__i77 is a one-to-one match with \SPI__5_rep_5__i77.
-Duplicate register/latch removal. \SPI__5__i76 is a one-to-one match with \SPI__5_rep_5__i76.
-Duplicate register/latch removal. \SPI__5__i75 is a one-to-one match with \SPI__5_rep_5__i75.
-Duplicate register/latch removal. \SPI__5__i74 is a one-to-one match with \SPI__5_rep_5__i74.
-Duplicate register/latch removal. \SPI__5__i73 is a one-to-one match with \SPI__5_rep_5__i73.
-Duplicate register/latch removal. \SPI__5__i72 is a one-to-one match with \SPI__5_rep_5__i72.
-Duplicate register/latch removal. \SPI__5__i71 is a one-to-one match with \SPI__5_rep_5__i71.
-Duplicate register/latch removal. \SPI__5__i70 is a one-to-one match with \SPI__5_rep_5__i70.
-Duplicate register/latch removal. \SPI__5__i69 is a one-to-one match with \SPI__5_rep_5__i69.
-Duplicate register/latch removal. \SPI__5__i68 is a one-to-one match with \SPI__5_rep_5__i68.
-Duplicate register/latch removal. \SPI__5__i67 is a one-to-one match with \SPI__5_rep_5__i67.
-Duplicate register/latch removal. \SPI__5__i66 is a one-to-one match with \SPI__5_rep_5__i66.
-Duplicate register/latch removal. \SPI__5__i65 is a one-to-one match with \SPI__5_rep_5__i65.
-Duplicate register/latch removal. \SPI__5__i64 is a one-to-one match with \SPI__5_rep_5__i64.
-Duplicate register/latch removal. \SPI__5__i63 is a one-to-one match with \SPI__5_rep_5__i63.
-Duplicate register/latch removal. \SPI__5__i62 is a one-to-one match with \SPI__5_rep_5__i62.
-Duplicate register/latch removal. \SPI__5__i61 is a one-to-one match with \SPI__5_rep_5__i61.
-Duplicate register/latch removal. \SPI__5__i60 is a one-to-one match with \SPI__5_rep_5__i60.
-Duplicate register/latch removal. \SPI__5__i59 is a one-to-one match with \SPI__5_rep_5__i59.
-Duplicate register/latch removal. \SPI__5__i58 is a one-to-one match with \SPI__5_rep_5__i58.
-Duplicate register/latch removal. \SPI__5__i57 is a one-to-one match with \SPI__5_rep_5__i57.
-Duplicate register/latch removal. \SPI__5__i56 is a one-to-one match with \SPI__5_rep_5__i56.
-Duplicate register/latch removal. \SPI__5__i55 is a one-to-one match with \SPI__5_rep_5__i55.
-Duplicate register/latch removal. \SPI__5__i54 is a one-to-one match with \SPI__5_rep_5__i54.
-Duplicate register/latch removal. \SPI__5__i53 is a one-to-one match with \SPI__5_rep_5__i53.
-Duplicate register/latch removal. \SPI__5__i52 is a one-to-one match with \SPI__5_rep_5__i52.
-Duplicate register/latch removal. \SPI__5__i51 is a one-to-one match with \SPI__5_rep_5__i51.
-Duplicate register/latch removal. \SPI__5__i50 is a one-to-one match with \SPI__5_rep_5__i50.
-Duplicate register/latch removal. \SPI__5__i49 is a one-to-one match with \SPI__5_rep_5__i49.
-Duplicate register/latch removal. \SPI__5__i48 is a one-to-one match with \SPI__5_rep_5__i48.
-Duplicate register/latch removal. \SPI__5__i47 is a one-to-one match with \SPI__5_rep_5__i47.
-Duplicate register/latch removal. \SPI__5__i46 is a one-to-one match with \SPI__5_rep_5__i46.
-Duplicate register/latch removal. \SPI__5__i45 is a one-to-one match with \SPI__5_rep_5__i45.
-Duplicate register/latch removal. \SPI__5__i44 is a one-to-one match with \SPI__5_rep_5__i44.
-Duplicate register/latch removal. \SPI__5__i43 is a one-to-one match with \SPI__5_rep_5__i43.
-Duplicate register/latch removal. \SPI__5__i42 is a one-to-one match with \SPI__5_rep_5__i42.
-Duplicate register/latch removal. \SPI__5__i20 is a one-to-one match with \SPI__5_rep_5__i20.
-Duplicate register/latch removal. \SPI__5__i19 is a one-to-one match with \SPI__5_rep_5__i19.
-Duplicate register/latch removal. \SPI__5__i18 is a one-to-one match with \SPI__5_rep_5__i18.
-Duplicate register/latch removal. \SPI__5__i17 is a one-to-one match with \SPI__5_rep_5__i17.
-Duplicate register/latch removal. \SPI__5__i16 is a one-to-one match with \SPI__5_rep_5__i16.
-Duplicate register/latch removal. \SPI__5__i15 is a one-to-one match with \SPI__5_rep_5__i15.
-Duplicate register/latch removal. \SPI__5__i14 is a one-to-one match with \SPI__5_rep_5__i14.
-Duplicate register/latch removal. \SPI__5__i13 is a one-to-one match with \SPI__5_rep_5__i13.
-Duplicate register/latch removal. \SPI__5__i12 is a one-to-one match with \SPI__5_rep_5__i12.
-Duplicate register/latch removal. \SPI__5__i11 is a one-to-one match with \SPI__5_rep_5__i11.
-Duplicate register/latch removal. \SPI__5__i10 is a one-to-one match with \SPI__5_rep_5__i10.
-Duplicate register/latch removal. \SPI__5__i9 is a one-to-one match with \SPI__5_rep_5__i9.
-Duplicate register/latch removal. \SPI__5__i8 is a one-to-one match with \SPI__5_rep_5__i8.
-Duplicate register/latch removal. \SPI__5__i7 is a one-to-one match with \SPI__5_rep_5__i7.
-Duplicate register/latch removal. \SPI__5__i6 is a one-to-one match with \SPI__5_rep_5__i6.
-Duplicate register/latch removal. \SPI__5__i5 is a one-to-one match with \SPI__5_rep_5__i5.
-Duplicate register/latch removal. \SPI__5__i4 is a one-to-one match with \SPI__5_rep_5__i4.
-Duplicate register/latch removal. \SPI__5__i3 is a one-to-one match with \SPI__5_rep_5__i3.
-Duplicate register/latch removal. \SPI__5__i2 is a one-to-one match with \SPI__5_rep_5__i2.
-Duplicate register/latch removal. \SPI__5__i1 is a one-to-one match with \SPI__5_rep_5__i1.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i95 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i95.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i94 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i94.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i93 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i93.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i92 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i92.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i91 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i91.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i90 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i90.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i89 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i89.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i88 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i88.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i87 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i87.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i86 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i86.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i85 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i85.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i84 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i84.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i83 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i83.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i82 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i82.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i81 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i81.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i80 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i80.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i79 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i79.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i78 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i78.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i77 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i77.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i76 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i76.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i75 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i75.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i74 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i74.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i73 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i73.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i72 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i72.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i71 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i71.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i70 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i70.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i69 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i69.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i68 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i68.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i67 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i67.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i66 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i66.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i65 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i65.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i64 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i64.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i63 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i63.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i62 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i62.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i61 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i61.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i60 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i60.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i59 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i59.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i58 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i58.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i57 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i57.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i56 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i56.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i55 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i55.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i54 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i54.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i53 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i53.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i52 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i52.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i51 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i51.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i50 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i50.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i49 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i49.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i48 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i48.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i47 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i47.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i46 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i46.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i45 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i45.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i44 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i44.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i43 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i43.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i42 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i42.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i41 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i41.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i40 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i40.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i39 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i39.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i38 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i38.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i37 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i37.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i36 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i36.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i35 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i35.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i34 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i34.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i33 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i33.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i32 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i32.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i31 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i31.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i30 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i30.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i29 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i29.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i28 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i28.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i27 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i27.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i26 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i26.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i25 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i25.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i24 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i24.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i23 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i23.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i22 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i22.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i21 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i21.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i20 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i20.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i19 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i19.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i18 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i18.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i17 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i17.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i16 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i16.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i15 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i15.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i14 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i14.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i13 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i13.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i12 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i12.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i11 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i11.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i10 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i10.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i9 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i9.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i8 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i8.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i7 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i7.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i6 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i6.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i5 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i5.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i4 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i4.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i3 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i3.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i2 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i2.
+Duplicate register/latch removal. \SPI_I/recv_buffer__i1 is a one-to-one match with \SPI_I/recv_buffer_rep_5__i1.
 Applying 1.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -250,18 +281,18 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-   3339 blocks expanded
+   3459 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 1284 of 4665 (27 % )
+Number of register bits => 1394 of 4665 (29 % )
 AND2 => 12
 CCU2D => 463
 FADD2B => 117
-FD1P3AX => 706
-FD1P3IX => 252
+FD1P3AX => 826
+FD1P3IX => 242
 FD1P3JX => 20
 FD1S3AX => 97
 FD1S3AY => 14
@@ -271,13 +302,13 @@ GSR => 1
 IB => 15
 INV => 1
 L6MUX21 => 29
-LUT4 => 1144
+LUT4 => 1157
 MULT2 => 102
 ND2 => 5
 OB => 32
 OBZ => 1
 OSCH => 1
-PFUMX => 129
+PFUMX => 126
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -287,35 +318,35 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 4
-  Net : clk_N_683, loads : 480
+  Net : clk_N_875, loads : 480
+  Net : clkout_c, loads : 451
   Net : clk_1mhz, loads : 416
-  Net : clkout_c, loads : 341
   Net : pwm_clk, loads : 48
 Clock Enable Nets
 Number of Clock Enables: 37
 Top 10 highest fanout Clock Enables:
-  Net : SPI_I/clkout_c_enable_254, loads : 84
-  Net : SPI_I/clkout_c_enable_60, loads : 50
-  Net : PID_I/clk_N_683_enable_392, loads : 49
-  Net : SPI_I/clkout_c_enable_94, loads : 34
-  Net : PID_I/clk_N_683_enable_387, loads : 31
-  Net : PID_I/clk_N_683_enable_331, loads : 31
-  Net : PID_I/clk_N_683_enable_390, loads : 31
-  Net : PID_I/clk_N_683_enable_303, loads : 31
+  Net : SPI_I/clkout_c_enable_350, loads : 180
+  Net : SPI_I/clkout_c_enable_63, loads : 50
+  Net : PID_I/clk_N_875_enable_391, loads : 48
+  Net : SPI_I/clkout_c_enable_109, loads : 46
+  Net : PID_I/clk_N_875_enable_392, loads : 31
+  Net : PID_I/clk_N_875_enable_389, loads : 31
+  Net : HALL_I_M3/stable_counting, loads : 30
+  Net : PID_I/clk_N_875_enable_309, loads : 30
   Net : HALL_I_M4/stable_counting, loads : 30
   Net : HALL_I_M1/stable_counting, loads : 30
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SPI_I/CSlatched, loads : 202
-  Net : PID_I/multIn2_4, loads : 142
-  Net : SPI_I/n21355, loads : 95
-  Net : SPI_I/n22098, loads : 90
-  Net : SPI_I/clkout_c_enable_254, loads : 84
-  Net : PID_I/n22105, loads : 71
-  Net : PID_I/n22083, loads : 62
+  Net : SPI_I/clkout_c_enable_350, loads : 180
+  Net : SPI_I/CSlatched, loads : 107
+  Net : SPI_I/n22431, loads : 97
+  Net : SPI_I/n22432, loads : 96
+  Net : SPI_I/n21690, loads : 95
+  Net : PID_I/multIn2_8, loads : 91
+  Net : PID_I/n22440, loads : 71
   Net : HALL_I_M2/stable_counting, loads : 60
-  Net : HALL_I_M3/stable_counting, loads : 60
-  Net : PID_I/clk_N_683_enable_70, loads : 58
+  Net : PID_I/clk_N_875_enable_333, loads : 60
+  Net : clkout_c_enable_341, loads : 59
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -328,13 +359,13 @@ create_clock -period 1000.000000 -name  |             |             |
 clk3 [get_nets pwm_clk]                 |    1.000 MHz|   63.359 MHz|     4  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk2 [get_nets clkout_c]                |    1.000 MHz|   42.180 MHz|     6  
+clk2 [get_nets clk_1mhz]                |    1.000 MHz|   36.928 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets clk_1mhz]                |    1.000 MHz|   36.928 MHz|     6  
+clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   12.310 MHz|    23  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   14.365 MHz|    20  
+clk0 [get_nets clkout_c]                |    1.000 MHz|   41.946 MHz|     6  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -342,13 +373,13 @@ clk0 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   14.365 MHz|    20
 All constraints were met.
 
 
-Peak Memory Usage: 127.574  MB
+Peak Memory Usage: 124.637  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 8.313  secs
+Elapsed CPU time for LSE flow : 9.453  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-4000ZE -t TQFP144 -s 1 -oc Industrial   "Motorcontrollerfinal_controller.ngd" -o "Motorcontrollerfinal_controller_map.ncd" -pr "Motorcontrollerfinal_controller.prf" -mp "Motorcontrollerfinal_controller.mrp" -lpf "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/controller/Motorcontrollerfinal_controller.lpf" -lpf "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/OnBoard4000ZE.lpf" -c 0            
+map -a "MachXO2" -p LCMXO2-4000ZE -t TQFP144 -s 1 -oc Industrial   "Motorcontrollerfinal_controller.ngd" -o "Motorcontrollerfinal_controller_map.ncd" -pr "Motorcontrollerfinal_controller.prf" -mp "Motorcontrollerfinal_controller.mrp" -lpf "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/controller/Motorcontrollerfinal_controller.lpf" -lpf "C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/twoBoards.lpf" -c 0            
 map:  version Diamond (64-bit) 3.8.0.115.3
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -382,15 +413,15 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:   1284 out of  4665 (28%)
-      PFU registers:         1284 out of  4320 (30%)
+   Number of registers:   1394 out of  4665 (30%)
+      PFU registers:         1394 out of  4320 (32%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:      1277 out of  2160 (59%)
-      SLICEs as Logic/ROM:   1277 out of  2160 (59%)
+   Number of SLICEs:      1285 out of  2160 (59%)
+      SLICEs as Logic/ROM:   1285 out of  2160 (59%)
       SLICEs as RAM:            0 out of  1620 (0%)
       SLICEs as Carry:        682 out of  2160 (32%)
-   Number of LUT4s:        2540 out of  4320 (59%)
-      Number used as logic LUTs:        1176
+   Number of LUT4s:        2555 out of  4320 (59%)
+      Number used as logic LUTs:        1191
       Number used as distributed RAM:     0
       Number used as ripple logic:      1364
       Number used as shift registers:     0
@@ -418,113 +449,111 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  4
-     Net clkout_c: 195 loads, 195 rising, 0 falling (Driver: OSCInst0 )
+     Net clkout_c: 248 loads, 248 rising, 0 falling (Driver: OSCInst0 )
      Net clk_1mhz: 219 loads, 219 rising, 0 falling (Driver: CLKDIV_I/clk_1mhz_33 )
      Net pwm_clk: 28 loads, 28 rising, 0 falling (Driver: CLKDIV_I/pwm_clk_34 )
-     Net CLKDIV_I/pi_clk: 255 loads, 0 rising, 255 falling (Driver: CLKDIV_I/pi_clk_35 )
+     Net CLKDIV_I/pi_clk: 256 loads, 0 rising, 256 falling (Driver: CLKDIV_I/pi_clk_35 )
    Number of Clock Enables:  37
-     Net clkout_c_enable_266: 7 loads, 7 LSLICEs
-     Net clkout_c_enable_173: 28 loads, 28 LSLICEs
-     Net clkout_c_enable_172: 28 loads, 28 LSLICEs
-     Net rst: 16 loads, 16 LSLICEs
-     Net HALL_I_M2/clk_1mhz_enable_4: 1 loads, 1 LSLICEs
-     Net HALL_I_M2/stable_counting: 14 loads, 14 LSLICEs
-     Net HALL_I_M2/clk_1mhz_enable_177: 10 loads, 10 LSLICEs
-     Net AVG_SPEED_M4/clk_1mhz_enable_139: 10 loads, 10 LSLICEs
-     Net AVG_SPEED_M3/clk_1mhz_enable_120: 10 loads, 10 LSLICEs
-     Net AVG_SPEED_M2/clk_1mhz_enable_101: 10 loads, 10 LSLICEs
-     Net AVG_SPEED_M1/clk_1mhz_enable_82: 10 loads, 10 LSLICEs
-     Net SPI_I/clkout_c_enable_254: 44 loads, 44 LSLICEs
-     Net SPI_I/enable_m1_N_633: 2 loads, 2 LSLICEs
-     Net SPI_I/clkout_c_enable_60: 25 loads, 25 LSLICEs
-     Net SPI_I/clkout_c_enable_94: 17 loads, 17 LSLICEs
-     Net PID_I/clk_N_683_enable_392: 26 loads, 26 LSLICEs
-     Net PID_I/clk_N_683_enable_387: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_70: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_42: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_98: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_126: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_154: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_182: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_210: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_238: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_303: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_331: 15 loads, 15 LSLICEs
-     Net PID_I/clk_N_683_enable_390: 15 loads, 15 LSLICEs
-     Net HALL_I_M1/clk_1mhz_enable_63: 11 loads, 11 LSLICEs
-     Net HALL_I_M1/clk_1mhz_enable_3: 1 loads, 1 LSLICEs
+     Net clkout_c_enable_362: 7 loads, 7 LSLICEs
+     Net rst: 17 loads, 17 LSLICEs
+     Net HALL_I_M1/clk_1mhz_enable_70: 11 loads, 11 LSLICEs
      Net HALL_I_M1/stable_counting: 14 loads, 14 LSLICEs
+     Net clkout_c_enable_341: 27 loads, 27 LSLICEs
+     Net clkout_c_enable_272: 27 loads, 27 LSLICEs
+     Net HALL_I_M1/clk_1mhz_enable_187: 1 loads, 1 LSLICEs
+     Net AVG_SPEED_M4/clk_1mhz_enable_165: 10 loads, 10 LSLICEs
+     Net SPI_I/clkout_c_enable_63: 25 loads, 25 LSLICEs
+     Net SPI_I/clkout_c_enable_350: 92 loads, 92 LSLICEs
+     Net SPI_I/enable_m1_N_825: 2 loads, 2 LSLICEs
+     Net SPI_I/clkout_c_enable_109: 23 loads, 23 LSLICEs
+     Net AVG_SPEED_M3/clk_1mhz_enable_146: 10 loads, 10 LSLICEs
+     Net AVG_SPEED_M2/clk_1mhz_enable_127: 10 loads, 10 LSLICEs
+     Net AVG_SPEED_M1/clk_1mhz_enable_108: 10 loads, 10 LSLICEs
+     Net HALL_I_M3/clk_1mhz_enable_3: 1 loads, 1 LSLICEs
      Net HALL_I_M3/stable_counting: 14 loads, 14 LSLICEs
-     Net HALL_I_M3/clk_1mhz_enable_158: 10 loads, 10 LSLICEs
-     Net HALL_I_M3/clk_1mhz_enable_179: 1 loads, 1 LSLICEs
-     Net HALL_I_M4/clk_1mhz_enable_178: 1 loads, 1 LSLICEs
-     Net HALL_I_M4/clk_1mhz_enable_44: 11 loads, 11 LSLICEs
+     Net HALL_I_M3/clk_1mhz_enable_184: 10 loads, 10 LSLICEs
+     Net HALL_I_M2/clk_1mhz_enable_51: 11 loads, 11 LSLICEs
+     Net HALL_I_M2/stable_counting: 14 loads, 14 LSLICEs
+     Net HALL_I_M2/clk_1mhz_enable_186: 1 loads, 1 LSLICEs
+     Net PID_I/clk_N_875_enable_72: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_44: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_333: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_309: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_108: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_136: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_164: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_192: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_220: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_248: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_389: 15 loads, 15 LSLICEs
+     Net PID_I/clk_N_875_enable_391: 26 loads, 26 LSLICEs
+     Net PID_I/clk_N_875_enable_392: 15 loads, 15 LSLICEs
+     Net HALL_I_M4/clk_1mhz_enable_89: 11 loads, 11 LSLICEs
      Net HALL_I_M4/stable_counting: 14 loads, 14 LSLICEs
-   Number of LSRs:  52
+     Net HALL_I_M4/clk_1mhz_enable_185: 1 loads, 1 LSLICEs
+   Number of LSRs:  50
      Net enable_m3: 4 loads, 4 LSLICEs
-     Net n19427: 1 loads, 1 LSLICEs
-     Net n3124: 1 loads, 1 LSLICEs
-     Net n3088: 1 loads, 1 LSLICEs
+     Net n19845: 1 loads, 1 LSLICEs
+     Net n3136: 1 loads, 1 LSLICEs
+     Net n3100: 1 loads, 1 LSLICEs
      Net enable_m2: 4 loads, 4 LSLICEs
-     Net n19411: 1 loads, 1 LSLICEs
-     Net n3016: 1 loads, 1 LSLICEs
-     Net n2980: 1 loads, 1 LSLICEs
+     Net n19830: 1 loads, 1 LSLICEs
+     Net n3028: 1 loads, 1 LSLICEs
+     Net n2992: 1 loads, 1 LSLICEs
      Net enable_m1: 4 loads, 4 LSLICEs
-     Net n19421: 1 loads, 1 LSLICEs
-     Net n2908: 1 loads, 1 LSLICEs
-     Net n2872: 1 loads, 1 LSLICEs
-     Net CLKDIV_I/n14136: 3 loads, 3 LSLICEs
-     Net CLKDIV_I/n14135: 5 loads, 5 LSLICEs
+     Net n19843: 1 loads, 1 LSLICEs
+     Net n2920: 1 loads, 1 LSLICEs
+     Net n2884: 1 loads, 1 LSLICEs
+     Net CLKDIV_I/n14145: 5 loads, 5 LSLICEs
+     Net CLKDIV_I/n14146: 3 loads, 3 LSLICEs
+     Net HALL_I_M1/n4585: 10 loads, 10 LSLICEs
+     Net HALL_I_M1/n14402: 5 loads, 5 LSLICEs
+     Net AVG_SPEED_M4/clk_1mhz_enable_165: 4 loads, 4 LSLICEs
+     Net SPI_I/n14152: 11 loads, 11 LSLICEs
      Net enable_m4: 4 loads, 4 LSLICEs
-     Net n19415: 1 loads, 1 LSLICEs
-     Net n3232: 1 loads, 1 LSLICEs
-     Net n3196: 1 loads, 1 LSLICEs
-     Net HALL_I_M2/n14371: 5 loads, 5 LSLICEs
-     Net HALL_I_M2/n4551: 11 loads, 11 LSLICEs
-     Net AVG_SPEED_M4/clk_1mhz_enable_139: 4 loads, 4 LSLICEs
-     Net AVG_SPEED_M3/clk_1mhz_enable_120: 4 loads, 4 LSLICEs
-     Net AVG_SPEED_M2/clk_1mhz_enable_101: 4 loads, 4 LSLICEs
-     Net AVG_SPEED_M1/clk_1mhz_enable_82: 4 loads, 4 LSLICEs
-     Net SPI_I/n14142: 11 loads, 11 LSLICEs
-     Net SPI_I/n14162: 11 loads, 11 LSLICEs
-     Net SPI_I/n14202: 11 loads, 11 LSLICEs
-     Net SPI_I/n14182: 11 loads, 11 LSLICEs
-     Net PWM_I_M3/n14138: 6 loads, 6 LSLICEs
-     Net PWM_I_M2/n14139: 6 loads, 6 LSLICEs
-     Net PWM_I_M1/n14140: 6 loads, 6 LSLICEs
-     Net PWM_I_M4/n14137: 6 loads, 6 LSLICEs
-     Net PID_I/n14334: 3 loads, 3 LSLICEs
-     Net PID_I/n14222: 3 loads, 3 LSLICEs
-     Net PID_I/n14312: 12 loads, 12 LSLICEs
-     Net PID_I/n14284: 12 loads, 12 LSLICEs
-     Net PID_I/n14256: 12 loads, 12 LSLICEs
+     Net SPI_I/n14172: 11 loads, 11 LSLICEs
+     Net SPI_I/n14192: 11 loads, 11 LSLICEs
+     Net SPI_I/n14212: 11 loads, 11 LSLICEs
+     Net n19826: 1 loads, 1 LSLICEs
+     Net AVG_SPEED_M3/clk_1mhz_enable_146: 4 loads, 4 LSLICEs
+     Net AVG_SPEED_M2/clk_1mhz_enable_127: 4 loads, 4 LSLICEs
+     Net AVG_SPEED_M1/clk_1mhz_enable_108: 4 loads, 4 LSLICEs
+     Net HALL_I_M3/n14384: 5 loads, 5 LSLICEs
+     Net HALL_I_M3/n4597: 11 loads, 11 LSLICEs
+     Net PWM_I_M2/n14149: 6 loads, 6 LSLICEs
+     Net n3244: 1 loads, 1 LSLICEs
+     Net n3208: 1 loads, 1 LSLICEs
+     Net PWM_I_M1/n14150: 6 loads, 6 LSLICEs
+     Net PWM_I_M3/n14148: 6 loads, 6 LSLICEs
+     Net HALL_I_M2/n4591: 10 loads, 10 LSLICEs
+     Net HALL_I_M2/n14372: 5 loads, 5 LSLICEs
+     Net PID_I/n14232: 3 loads, 3 LSLICEs
      Net PID_I/ss_4: 3 loads, 3 LSLICEs
-     Net PID_I/n14228: 12 loads, 12 LSLICEs
-     Net PID_I/n14307: 3 loads, 3 LSLICEs
-     Net PID_I/n14343: 3 loads, 3 LSLICEs
-     Net PID_I/n14352: 3 loads, 3 LSLICEs
-     Net PID_I/n14338: 12 loads, 12 LSLICEs
-     Net PID_I/n14361: 3 loads, 3 LSLICEs
-     Net PID_I/n14278: 3 loads, 3 LSLICEs
-     Net PID_I/n14250: 3 loads, 3 LSLICEs
-     Net HALL_I_M1/n14400: 5 loads, 5 LSLICEs
-     Net HALL_I_M1/n4545: 10 loads, 10 LSLICEs
-     Net HALL_I_M3/n4557: 11 loads, 11 LSLICEs
-     Net HALL_I_M3/n14382: 5 loads, 5 LSLICEs
-     Net HALL_I_M4/n14392: 5 loads, 5 LSLICEs
-     Net HALL_I_M4/n4565: 10 loads, 10 LSLICEs
+     Net PID_I/n14363: 3 loads, 3 LSLICEs
+     Net PID_I/n14345: 3 loads, 3 LSLICEs
+     Net PID_I/n14260: 3 loads, 3 LSLICEs
+     Net PID_I/n14336: 3 loads, 3 LSLICEs
+     Net PID_I/n14237: 12 loads, 12 LSLICEs
+     Net PID_I/n14265: 12 loads, 12 LSLICEs
+     Net PID_I/n14313: 12 loads, 12 LSLICEs
+     Net PID_I/n14289: 12 loads, 12 LSLICEs
+     Net PID_I/n14340: 12 loads, 12 LSLICEs
+     Net PID_I/n14354: 3 loads, 3 LSLICEs
+     Net PWM_I_M4/n14147: 6 loads, 6 LSLICEs
+     Net HALL_I_M4/n4605: 10 loads, 10 LSLICEs
+     Net HALL_I_M4/n14393: 5 loads, 5 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net SPI_I/CSlatched: 202 loads
-     Net PID_I/multIn2_4: 142 loads
-     Net SPI_I/n21355: 95 loads
-     Net SPI_I/n22098: 90 loads
-     Net PID_I/n22105: 71 loads
-     Net PID_I/n22083: 62 loads
-     Net PID_I/ss_2: 49 loads
-     Net PID_I/n16470: 46 loads
-     Net PID_I/n35: 45 loads
-     Net SPI_I/clkout_c_enable_254: 44 loads
+     Net SPI_I/CSlatched: 107 loads
+     Net SPI_I/n22431: 97 loads
+     Net SPI_I/n22432: 96 loads
+     Net SPI_I/n21690: 95 loads
+     Net SPI_I/clkout_c_enable_350: 92 loads
+     Net PID_I/multIn2_8: 91 loads
+     Net PID_I/n22440: 71 loads
+     Net PID_I/n21721: 58 loads
+     Net PID_I/multIn2_2: 51 loads
+     Net PID_I/ss_1: 49 loads
  
 
    Number of warnings:  0
@@ -534,7 +563,7 @@ Design Summary:
 
 Total CPU Time: 1 secs  
 Total REAL Time: 2 secs  
-Peak Memory Usage: 66 MB
+Peak Memory Usage: 67 MB
 
 Dumping design to file Motorcontrollerfinal_controller_map.ncd.
 
@@ -565,7 +594,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.8.0.115.3
-Mon May 22 15:05:17 2017
+Mon Jun 26 11:00:44 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -595,11 +624,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5170 paths, 1 nets, and 9649 connections (98.49% coverage)
+Constraints cover 5481 paths, 1 nets, and 9864 connections (97.34% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.8.0.115.3
-Mon May 22 15:05:18 2017
+Mon Jun 26 11:00:44 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -629,7 +658,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5170 paths, 1 nets, and 9649 connections (98.49% coverage)
+Constraints cover 5481 paths, 1 nets, and 9864 connections (97.34% coverage)
 
 
 
@@ -643,7 +672,7 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total time: 0 secs 
+Total time: 2 secs 
 
 mpartrce -p "Motorcontrollerfinal_controller.p2t" -f "Motorcontrollerfinal_controller.p3t" -tf "Motorcontrollerfinal_controller.pt" "Motorcontrollerfinal_controller_map.ncd" "Motorcontrollerfinal_controller.ncd"
 
@@ -652,7 +681,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Motorcontrollerfinal_controller_map.ncd"
-Mon May 22 15:05:19 2017
+Mon Jun 26 11:00:46 2017
 
 PAR: Place And Route Diamond (64-bit) 3.8.0.115.3.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Motorcontrollerfinal_controller_map.ncd Motorcontrollerfinal_controller.dir/5_1.ncd Motorcontrollerfinal_controller.prf
@@ -679,36 +708,36 @@ Device utilization summary:
    PIO (prelim)   48+4(JTAG)/280     19% used
                   48+4(JTAG)/115     45% bonded
 
-   SLICE           1277/2160         59% used
+   SLICE           1285/2160         59% used
 
    GSR                1/1           100% used
    OSC                1/1           100% used
 
 
-Number of Signals: 3809
-Number of Connections: 9797
+Number of Signals: 3937
+Number of Connections: 10134
 
 Pin Constraint Summary:
    40 out of 48 pins locked (83% locked).
 
 The following 4 signals are selected to use the primary clock routing resources:
-    CLKDIV_I/pi_clk (driver: CLKDIV_I/SLICE_688, clk load #: 255)
+    CLKDIV_I/pi_clk (driver: CLKDIV_I/SLICE_688, clk load #: 256)
+    clkout_c (driver: OSCInst0, clk load #: 248)
     clk_1mhz (driver: CLKDIV_I/SLICE_685, clk load #: 219)
-    clkout_c (driver: OSCInst0, clk load #: 195)
-    pwm_clk (driver: SLICE_623, clk load #: 28)
+    pwm_clk (driver: SLICE_646, clk load #: 28)
 
 
 The following 8 signals are selected to use the secondary clock routing resources:
-    SPI_I/clkout_c_enable_254 (driver: SPI_I/SLICE_1523, clk load #: 0, sr load #: 0, ce load #: 44)
-    clkout_c_enable_173 (driver: SLICE_1117, clk load #: 0, sr load #: 0, ce load #: 28)
-    clkout_c_enable_172 (driver: SLICE_1117, clk load #: 0, sr load #: 0, ce load #: 28)
-    PID_I/clk_N_683_enable_392 (driver: PID_I/SLICE_1436, clk load #: 0, sr load #: 0, ce load #: 26)
-    SPI_I/clkout_c_enable_60 (driver: SPI_I/SLICE_1520, clk load #: 0, sr load #: 0, ce load #: 25)
-    SPI_I/clkout_c_enable_94 (driver: SPI_I/SLICE_1520, clk load #: 0, sr load #: 0, ce load #: 17)
-    rst (driver: SLICE_1260, clk load #: 0, sr load #: 0, ce load #: 16)
-    PID_I/clk_N_683_enable_387 (driver: PID_I/SLICE_1389, clk load #: 0, sr load #: 0, ce load #: 15)
+    SPI_I/clkout_c_enable_350 (driver: SPI_I/SLICE_1578, clk load #: 0, sr load #: 0, ce load #: 92)
+    clkout_c_enable_341 (driver: SLICE_1172, clk load #: 0, sr load #: 0, ce load #: 27)
+    clkout_c_enable_272 (driver: SLICE_1172, clk load #: 0, sr load #: 0, ce load #: 27)
+    PID_I/clk_N_875_enable_391 (driver: PID_I/SLICE_1550, clk load #: 0, sr load #: 0, ce load #: 26)
+    SPI_I/clkout_c_enable_63 (driver: SPI_I/SLICE_1577, clk load #: 0, sr load #: 0, ce load #: 25)
+    SPI_I/clkout_c_enable_109 (driver: SPI_I/SLICE_1577, clk load #: 0, sr load #: 0, ce load #: 23)
+    rst (driver: SLICE_1314, clk load #: 0, sr load #: 0, ce load #: 17)
+    PID_I/clk_N_875_enable_72 (driver: PID_I/SLICE_1537, clk load #: 0, sr load #: 0, ce load #: 15)
 
-Signal n22100 is selected as Global Set/Reset.
+Signal n22435 is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
 ...........
@@ -716,13 +745,13 @@ Finished Placer Phase 0.  REAL time: 2 secs
 
 Starting Placer Phase 1.
 ....................
-Placer score = 820967.
-Finished Placer Phase 1.  REAL time: 15 secs 
+Placer score = 834997.
+Finished Placer Phase 1.  REAL time: 18 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  801156
-Finished Placer Phase 2.  REAL time: 16 secs 
+Placer score =  825051
+Finished Placer Phase 2.  REAL time: 18 secs 
 
 
 ------------------ Clock Report ------------------
@@ -734,18 +763,18 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "CLKDIV_I/pi_clk" from Q1 on comp "CLKDIV_I/SLICE_688" on site "R2C16D", clk load = 255
-  PRIMARY "clk_1mhz" from Q1 on comp "CLKDIV_I/SLICE_685" on site "R12C2D", clk load = 219
-  PRIMARY "clkout_c" from OSC on comp "OSCInst0" on site "OSC", clk load = 195
-  PRIMARY "pwm_clk" from Q0 on comp "SLICE_623" on site "R3C16A", clk load = 28
-  SECONDARY "SPI_I/clkout_c_enable_254" from F0 on comp "SPI_I/SLICE_1523" on site "R13C31D", clk load = 0, ce load = 44, sr load = 0
-  SECONDARY "clkout_c_enable_173" from Q1 on comp "SLICE_1117" on site "R13C31A", clk load = 0, ce load = 28, sr load = 0
-  SECONDARY "clkout_c_enable_172" from Q0 on comp "SLICE_1117" on site "R13C31A", clk load = 0, ce load = 28, sr load = 0
-  SECONDARY "PID_I/clk_N_683_enable_392" from F1 on comp "PID_I/SLICE_1436" on site "R12C15A", clk load = 0, ce load = 26, sr load = 0
-  SECONDARY "SPI_I/clkout_c_enable_60" from F0 on comp "SPI_I/SLICE_1520" on site "R12C17D", clk load = 0, ce load = 25, sr load = 0
-  SECONDARY "SPI_I/clkout_c_enable_94" from F1 on comp "SPI_I/SLICE_1520" on site "R12C17D", clk load = 0, ce load = 17, sr load = 0
-  SECONDARY "rst" from Q1 on comp "SLICE_1260" on site "R13C31C", clk load = 0, ce load = 16, sr load = 0
-  SECONDARY "PID_I/clk_N_683_enable_387" from F1 on comp "PID_I/SLICE_1389" on site "R12C15B", clk load = 0, ce load = 15, sr load = 0
+  PRIMARY "CLKDIV_I/pi_clk" from Q1 on comp "CLKDIV_I/SLICE_688" on site "R2C16D", clk load = 256
+  PRIMARY "clkout_c" from OSC on comp "OSCInst0" on site "OSC", clk load = 248
+  PRIMARY "clk_1mhz" from Q1 on comp "CLKDIV_I/SLICE_685" on site "R12C2C", clk load = 219
+  PRIMARY "pwm_clk" from Q0 on comp "SLICE_646" on site "R3C16B", clk load = 28
+  SECONDARY "SPI_I/clkout_c_enable_350" from F0 on comp "SPI_I/SLICE_1578" on site "R12C17A", clk load = 0, ce load = 92, sr load = 0
+  SECONDARY "clkout_c_enable_341" from Q1 on comp "SLICE_1172" on site "R20C21A", clk load = 0, ce load = 27, sr load = 0
+  SECONDARY "clkout_c_enable_272" from Q0 on comp "SLICE_1172" on site "R20C21A", clk load = 0, ce load = 27, sr load = 0
+  SECONDARY "PID_I/clk_N_875_enable_391" from F1 on comp "PID_I/SLICE_1550" on site "R12C17D", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "SPI_I/clkout_c_enable_63" from F0 on comp "SPI_I/SLICE_1577" on site "R12C15C", clk load = 0, ce load = 25, sr load = 0
+  SECONDARY "SPI_I/clkout_c_enable_109" from F1 on comp "SPI_I/SLICE_1577" on site "R12C15C", clk load = 0, ce load = 23, sr load = 0
+  SECONDARY "rst" from Q1 on comp "SLICE_1314" on site "R20C21B", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "PID_I/clk_N_875_enable_72" from F0 on comp "PID_I/SLICE_1537" on site "R12C15A", clk load = 0, ce load = 15, sr load = 0
 
   PRIMARY  : 4 out of 8 (50%)
   SECONDARY: 8 out of 8 (100%)
@@ -766,24 +795,24 @@ I/O Bank Usage Summary:
 +----------+----------------+------------+-----------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
-| 0        | 18 / 28 ( 64%) | 2.5V       | -         |
-| 1        | 6 / 29 ( 20%)  | 2.5V       | -         |
-| 2        | 19 / 29 ( 65%) | 2.5V       | -         |
+| 0        | 1 / 28 (  3%)  | 2.5V       | -         |
+| 1        | 20 / 29 ( 68%) | 2.5V       | -         |
+| 2        | 23 / 29 ( 79%) | 2.5V       | -         |
 | 3        | 0 / 9 (  0%)   | -          | -         |
-| 4        | 5 / 10 ( 50%)  | 2.5V       | -         |
+| 4        | 4 / 10 ( 40%)  | 2.5V       | -         |
 | 5        | 0 / 10 (  0%)  | -          | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 15 secs 
+Total placer CPU time: 17 secs 
 
 Dumping design to file Motorcontrollerfinal_controller.dir/5_1.ncd.
 
-0 connections routed; 9797 unrouted.
+0 connections routed; 10134 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 18 secs 
+Completed router resource preassignment. Real time: 20 secs 
 
-Start NBR router at 15:05:37 05/22/17
+Start NBR router at 11:01:07 06/26/17
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -798,77 +827,80 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 15:05:37 05/22/17
+Start NBR special constraint process at 11:01:07 06/26/17
 
-Start NBR section for initial routing at 15:05:37 05/22/17
+Start NBR section for initial routing at 11:01:07 06/26/17
 Level 1, iteration 1
-15(0.01%) conflicts; 7547(77.03%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.121ns/0.000ns; real time: 20 secs 
+12(0.00%) conflicts; 7750(76.48%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.593ns/0.000ns; real time: 24 secs 
 Level 2, iteration 1
-9(0.00%) conflicts; 7512(76.68%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.282ns/0.000ns; real time: 21 secs 
+1(0.00%) conflict; 7758(76.55%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.500ns/0.000ns; real time: 24 secs 
 Level 3, iteration 1
-5(0.00%) conflicts; 7346(74.98%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.282ns/0.000ns; real time: 22 secs 
+8(0.00%) conflicts; 7601(75.00%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.554ns/0.000ns; real time: 25 secs 
 Level 4, iteration 1
-240(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 26 secs 
+299(0.12%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.455ns/0.000ns; real time: 30 secs 
 
 Info: Initial congestion level at 75% usage is 0
-Info: Initial congestion area  at 75% usage is 5 (0.81%)
+Info: Initial congestion area  at 75% usage is 8 (1.29%)
 
-Start NBR section for normal routing at 15:05:45 05/22/17
+Start NBR section for normal routing at 11:01:16 06/26/17
 Level 1, iteration 1
-3(0.00%) conflicts; 380(3.88%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 26 secs 
+2(0.00%) conflicts; 537(5.30%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.455ns/0.000ns; real time: 30 secs 
 Level 2, iteration 1
-1(0.00%) conflict; 382(3.90%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 26 secs 
+1(0.00%) conflict; 538(5.31%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.455ns/0.000ns; real time: 31 secs 
 Level 3, iteration 1
-3(0.00%) conflicts; 379(3.87%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 26 secs 
+3(0.00%) conflicts; 535(5.28%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.455ns/0.000ns; real time: 31 secs 
 Level 4, iteration 1
-90(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 27 secs 
+147(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.501ns/0.000ns; real time: 32 secs 
 Level 4, iteration 2
-51(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 27 secs 
+78(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.501ns/0.000ns; real time: 32 secs 
 Level 4, iteration 3
-27(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 27 secs 
+39(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.501ns/0.000ns; real time: 33 secs 
 Level 4, iteration 4
-10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+16(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.501ns/0.000ns; real time: 33 secs 
 Level 4, iteration 5
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.461ns/0.000ns; real time: 33 secs 
 Level 4, iteration 6
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.461ns/0.000ns; real time: 33 secs 
 Level 4, iteration 7
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.461ns/0.000ns; real time: 33 secs 
 Level 4, iteration 8
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.461ns/0.000ns; real time: 34 secs 
 Level 4, iteration 9
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+Estimated worst slack/total negative slack<setup>: 0.249ns/0.000ns; real time: 34 secs 
 Level 4, iteration 10
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+Estimated worst slack/total negative slack<setup>: 0.249ns/0.000ns; real time: 34 secs 
 Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 0.461ns/0.000ns; real time: 34 secs 
+Level 4, iteration 12
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 28 secs 
+Estimated worst slack/total negative slack<setup>: 0.461ns/0.000ns; real time: 34 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 15:05:47 05/22/17
+Start NBR section for setup/hold timing optimization with effort level 3 at 11:01:20 06/26/17
 
-Start NBR section for re-routing at 15:05:48 05/22/17
+Start NBR section for re-routing at 11:01:21 06/26/17
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.197ns/0.000ns; real time: 29 secs 
+Estimated worst slack/total negative slack<setup>: 0.249ns/0.000ns; real time: 35 secs 
 
-Start NBR section for post-routing at 15:05:48 05/22/17
+Start NBR section for post-routing at 11:01:21 06/26/17
 
 End NBR router with 0 unrouted connection
 
@@ -876,17 +908,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 1.197ns
+  Estimated worst slack<setup> : 0.249ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 29 secs 
-Total REAL time: 31 secs 
+Total CPU time 35 secs 
+Total REAL time: 37 secs 
 Completely routed.
-End of route.  9797 routed (100.00%); 0 unrouted.
+End of route.  10134 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -897,14 +929,14 @@ Dumping design to file Motorcontrollerfinal_controller.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 1.197
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 0.249
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.687
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 30 secs 
-Total REAL time to completion: 31 secs 
+Total CPU  time to completion: 36 secs 
+Total REAL time to completion: 38 secs 
 
 par done!
 
@@ -939,7 +971,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.8.0.115.3
-Mon May 22 15:05:51 2017
+Mon Jun 26 11:01:25 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -969,11 +1001,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5170 paths, 1 nets, and 9649 connections (98.49% coverage)
+Constraints cover 5481 paths, 1 nets, and 9864 connections (97.34% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.8.0.115.3
-Mon May 22 15:05:51 2017
+Mon Jun 26 11:01:25 2017
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1003,7 +1035,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5170 paths, 1 nets, and 9649 connections (98.49% coverage)
+Constraints cover 5481 paths, 1 nets, and 9864 connections (97.34% coverage)
 
 
 
@@ -1017,7 +1049,7 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total time: 2 secs 
+Total time: 0 secs 
 
 bitgen -f "Motorcontrollerfinal_controller.t2b" -w "Motorcontrollerfinal_controller.ncd" -jedec "Motorcontrollerfinal_controller.prf"
 

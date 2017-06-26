@@ -288,9 +288,9 @@ architecture arch of SPI_loopback_Top is
 		
 begin
 
-	HALL_A_OUT <= H_A_m4;
-	HALL_B_OUT <= H_B_m4; 
-	HALL_C_OUT <= H_C_m4;
+	HALL_A_OUT <= H_A_m1;
+	HALL_B_OUT <= H_B_m1; 
+	HALL_C_OUT <= H_C_m1;
 	
 
 	

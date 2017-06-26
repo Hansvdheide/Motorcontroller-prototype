@@ -165,14 +165,6 @@
             <Navigation>66</Navigation>
         </Message>
         <Message>
-            <ID>35935013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd(213): </Dynamic>
-            <Dynamic>\SPI_I/send_buffer_i0_i95</Dynamic>
-            <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/spi loopbacktest v2.vhd</Navigation>
-            <Navigation>213</Navigation>
-        </Message>
-        <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>

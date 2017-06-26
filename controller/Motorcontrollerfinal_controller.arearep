@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------
 Report for cell SPI_loopback_Top.TECH
-Register bits:  1284 of 4665 (27.524%)
+Register bits:  1394 of 4665 (29.882%)
 I/O cells:      48
                                   Cell usage:
                                cell     count   Res Usage(%)
                                AND2        12          100.0
                               CCU2D       463          100.0
                              FADD2B       117          100.0
-                            FD1P3AX       706          100.0
-                            FD1P3IX       252          100.0
+                            FD1P3AX       826          100.0
+                            FD1P3IX       242          100.0
                             FD1P3JX        20          100.0
                             FD1S3AX        97          100.0
                             FD1S3AY        14          100.0
@@ -18,13 +18,13 @@ I/O cells:      48
                                  IB        15          100.0
                                 INV         1          100.0
                             L6MUX21        29          100.0
-                               LUT4      1144          100.0
+                               LUT4      1157          100.0
                               MULT2       102          100.0
                                 ND2         5          100.0
                                  OB        32          100.0
                                 OBZ         1          100.0
                                OSCH         1          100.0
-                              PFUMX       129          100.0
+                              PFUMX       126          100.0
 SUB MODULES
                           AVG_SPEED         1
                       AVG_SPEED_U10         1
@@ -45,7 +45,7 @@ SUB MODULES
                     PWMGENERATOR_U1         1
                     PWMGENERATOR_U2         1
                                 SPI         1
-                              TOTAL      3355
+                              TOTAL      3475
 ----------------------------------------------------------------------
 Report for cell COMMUTATION_U6.v1
 Instance Path : COM_I_M3
@@ -85,43 +85,47 @@ Instance Path : CLKDIV_I
                                LUT4        14            1.2
                               TOTAL        40
 ----------------------------------------------------------------------
-Report for cell COMMUTATION.v1
-Instance Path : COM_I_M4
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3IX         6            3.1
-                            FD1S3JX         1           25.0
-                               LUT4         5            0.4
-                              TOTAL        12
-----------------------------------------------------------------------
-Report for cell HALL_U4.v1
-Instance Path : HALL_I_M2
+Report for cell HALL_U5.v1
+Instance Path : HALL_I_M1
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        11            2.4
-                            FD1P3AX        46            6.5
-                            FD1P3IX         8            3.2
+                            FD1P3AX        46            5.6
+                            FD1P3IX         8            3.3
                             FD1S3AY         3           21.4
                             FD1S3IX        20           10.5
-                               LUT4        57            5.0
-                              TOTAL       145
+                               LUT4        58            5.0
+                              TOTAL       146
 ----------------------------------------------------------------------
 Report for cell AVG_SPEED.v1
 Instance Path : AVG_SPEED_M4
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D         4            0.9
-                            FD1P3AX        20            2.8
+                            FD1P3AX        20            2.4
                             FD1S3IX         7            3.7
                                LUT4         3            0.3
                               TOTAL        34
+----------------------------------------------------------------------
+Report for cell SPI.v1
+Instance Path : SPI_I
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        80           17.3
+                            FD1P3AX       299           36.2
+                            FD1P3IX        64           26.4
+                            FD1P3JX        20          100.0
+                            FD1S3AX         1            1.0
+                               LUT4       259           22.4
+                              PFUMX         1            0.8
+                              TOTAL       724
 ----------------------------------------------------------------------
 Report for cell AVG_SPEED_U9.v1
 Instance Path : AVG_SPEED_M3
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D         4            0.9
-                            FD1P3AX        20            2.8
+                            FD1P3AX        20            2.4
                             FD1S3IX         7            3.7
                                LUT4         3            0.3
                               TOTAL        34
@@ -131,7 +135,7 @@ Instance Path : AVG_SPEED_M2
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D         4            0.9
-                            FD1P3AX        20            2.8
+                            FD1P3AX        20            2.4
                             FD1S3IX         7            3.7
                                LUT4         3            0.3
                               TOTAL        34
@@ -141,34 +145,22 @@ Instance Path : AVG_SPEED_M1
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D         4            0.9
-                            FD1P3AX        20            2.8
+                            FD1P3AX        20            2.4
                             FD1S3IX         7            3.7
-                               LUT4         2            0.2
-                              TOTAL        33
+                               LUT4         3            0.3
+                              TOTAL        34
 ----------------------------------------------------------------------
-Report for cell SPI.v1
-Instance Path : SPI_I
+Report for cell HALL_U3.v1
+Instance Path : HALL_I_M3
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        80           17.3
-                            FD1P3AX       189           26.8
-                            FD1P3IX        64           25.4
-                            FD1P3JX        20          100.0
-                            FD1S3AX         1            1.0
-                               LUT4       256           22.4
-                              PFUMX         4            3.1
-                              TOTAL       614
-----------------------------------------------------------------------
-Report for cell PWMGENERATOR_U0.v1
-Instance Path : PWM_I_M3
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        12            2.6
-                            FD1P3AX         1            0.1
-                            FD1S3AX         1            1.0
-                            FD1S3IX        10            5.2
-                               LUT4        17            1.5
-                              TOTAL        41
+                              CCU2D        11            2.4
+                            FD1P3AX        46            5.6
+                            FD1P3IX         8            3.3
+                            FD1S3AY         3           21.4
+                            FD1S3IX        20           10.5
+                               LUT4        56            4.8
+                              TOTAL       144
 ----------------------------------------------------------------------
 Report for cell PWMGENERATOR_U1.v1
 Instance Path : PWM_I_M2
@@ -178,8 +170,17 @@ Instance Path : PWM_I_M2
                             FD1P3AX         1            0.1
                             FD1S3AX         1            1.0
                             FD1S3IX        10            5.2
-                               LUT4        17            1.5
-                              TOTAL        41
+                               LUT4        16            1.4
+                              TOTAL        40
+----------------------------------------------------------------------
+Report for cell COMMUTATION.v1
+Instance Path : COM_I_M4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         6            3.1
+                            FD1S3JX         1           25.0
+                               LUT4         5            0.4
+                              TOTAL        12
 ----------------------------------------------------------------------
 Report for cell PWMGENERATOR_U2.v1
 Instance Path : PWM_I_M1
@@ -192,8 +193,8 @@ Instance Path : PWM_I_M1
                                LUT4        16            1.4
                               TOTAL        40
 ----------------------------------------------------------------------
-Report for cell PWMGENERATOR.v1
-Instance Path : PWM_I_M4
+Report for cell PWMGENERATOR_U0.v1
+Instance Path : PWM_I_M3
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        12            2.6
@@ -203,6 +204,18 @@ Instance Path : PWM_I_M4
                                LUT4        17            1.5
                               TOTAL        41
 ----------------------------------------------------------------------
+Report for cell HALL_U4.v1
+Instance Path : HALL_I_M2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11            2.4
+                            FD1P3AX        46            5.6
+                            FD1P3IX         8            3.3
+                            FD1S3AY         3           21.4
+                            FD1S3IX        20           10.5
+                               LUT4        57            4.9
+                              TOTAL       145
+----------------------------------------------------------------------
 Report for cell PID(16000000,160000000,10000000).v1
 Instance Path : PID_I
                                   Cell usage:
@@ -210,50 +223,37 @@ Instance Path : PID_I
                                AND2        12          100.0
                               CCU2D       262           56.6
                              FADD2B       117          100.0
-                            FD1P3AX       236           33.4
-                            FD1P3IX       156           61.9
+                            FD1P3AX       246           29.8
+                            FD1P3IX       146           60.3
                             FD1S3AX        81           83.5
                             FD1S3AY         2           14.3
                             FD1S3IX         5            2.6
                             L6MUX21        29          100.0
-                               LUT4       506           44.2
+                               LUT4       518           44.8
                               MULT2       102          100.0
                                 ND2         5          100.0
-                              PFUMX       124           96.1
-                              TOTAL      1637
+                              PFUMX       125           99.2
+                              TOTAL      1650
 ----------------------------------------------------------------------
-Report for cell HALL_U5.v1
-Instance Path : HALL_I_M1
+Report for cell PWMGENERATOR.v1
+Instance Path : PWM_I_M4
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D        11            2.4
-                            FD1P3AX        46            6.5
-                            FD1P3IX         8            3.2
-                            FD1S3AY         3           21.4
-                            FD1S3IX        20           10.5
-                               LUT4        57            5.0
-                              TOTAL       145
-----------------------------------------------------------------------
-Report for cell HALL_U3.v1
-Instance Path : HALL_I_M3
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D        11            2.4
-                            FD1P3AX        46            6.5
-                            FD1P3IX         8            3.2
-                            FD1S3AY         3           21.4
-                            FD1S3IX        20           10.5
-                               LUT4        56            4.9
-                              TOTAL       144
+                              CCU2D        12            2.6
+                            FD1P3AX         1            0.1
+                            FD1S3AX         1            1.0
+                            FD1S3IX        10            5.2
+                               LUT4        16            1.4
+                              TOTAL        40
 ----------------------------------------------------------------------
 Report for cell HALL.v1
 Instance Path : HALL_I_M4
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2D        11            2.4
-                            FD1P3AX        46            6.5
-                            FD1P3IX         8            3.2
+                            FD1P3AX        46            5.6
+                            FD1P3IX         8            3.3
                             FD1S3AY         3           21.4
                             FD1S3IX        20           10.5
-                               LUT4        59            5.2
+                               LUT4        59            5.1
                               TOTAL       147
