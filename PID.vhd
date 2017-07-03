@@ -46,12 +46,12 @@ end PID;
 
 ARCHITECTURE PID OF PID IS
 
-	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 2000;--2000;--3000; 
+	CONSTANT PROP_GAIN : integer RANGE 0 TO GAIN_RANGE := 4000;--2000;--3000; 
 	CONSTANT INTG_GAIN : integer RANGE 0 TO GAIN_RANGE := 1;--1; --8
-	CONSTANT MAX_INTG_GAIN : integer := 1500000;
+	CONSTANT MAX_INTG_GAIN : integer := 3000000;
 	CONSTANT SHIFT : integer RANGE 0 TO GAIN_RANGE := 8192;
 	CONSTANT FORW_MINUS : integer := 5000; --5000
-	CONSTANT FORW_MULT : integer := 500;--500;--700;
+	CONSTANT FORW_MULT : integer := 1000;--500;--700;
 
 	
 	------------------------------------------------------------------------------------------------------------------------

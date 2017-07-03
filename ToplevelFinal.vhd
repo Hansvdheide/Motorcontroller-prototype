@@ -280,7 +280,6 @@ architecture arch of SPI_loopback_Top is
 			Hall_sns : IN std_logic_vector(2 downto 0); 
 			enable : IN std_logic;
 			dir : IN std_logic;
-			led1 : OUT std_logic;
 			clk : IN std_logic;
 			free : IN std_logic
 		);
@@ -291,6 +290,13 @@ begin
 	HALL_A_OUT <= H_A_m1;
 	HALL_B_OUT <= H_B_m1; 
 	HALL_C_OUT <= H_C_m1;
+	
+	LED1 <= free_m1;
+	LED2 <= free_m2;
+	LED3 <= free_m3;
+	LED4 <= free_m4;
+	
+	--MA_m2 <= "00";
 	
 
 	
@@ -317,7 +323,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m1, speed => speed_m1, hall1 => H_A_m1, hall2 => H_B_m1, hall3 => H_C_m1);
 		
 	COM_I_M1 : COMMUTATION
-		Port Map (clk => clk, led1 => LED1, dir => dir_m1, enable => enable_m1, PWM_in => PWM_m1, Hall_sns => hallsense_m1, MospairA => MA_m1, MospairB => MB_m1, MospairC => MC_m1, free => free_m1);  
+		Port Map (clk => clk, dir => dir_m1, enable => enable_m1, PWM_in => PWM_m1, Hall_sns => hallsense_m1, MospairA => MA_m1, MospairB => MB_m1, MospairC => MC_m1, free => free_m1);  
 		
 	PWM_I_M1 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m1, DutyCycle => PWMdut_m1, free => free_m1);
@@ -327,7 +333,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m2, speed => speed_m2, hall1 => H_A_m2, hall2 => H_B_m2, hall3 => H_C_m2);
 		
 	COM_I_M2 : COMMUTATION
-		Port Map (clk => clk, led1 => LED2, dir => dir_m2, enable => enable_m2, PWM_in => PWM_m2, Hall_sns => hallsense_m2, MospairA => MA_m2, MospairB => MB_m2, MospairC => MC_m2, free => free_m2);  
+		Port Map (clk => clk, dir => dir_m2, enable => enable_m2, PWM_in => PWM_m2, Hall_sns => hallsense_m2, MospairA => MA_m2, MospairB => MB_m2, MospairC => MC_m2, free => free_m2);  
 		
 	PWM_I_M2 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m2, DutyCycle => PWMdut_m2, free => free_m2);
@@ -337,7 +343,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m3, speed => speed_m3, hall1 => H_A_m3, hall2 => H_B_m3, hall3 => H_C_m3);
 		
 	COM_I_M3 : COMMUTATION
-		Port Map (clk => clk, led1 => LED3, dir => dir_m3, enable => enable_m3, PWM_in => PWM_m3, Hall_sns => hallsense_m3, MospairA => MA_m3, MospairB => MB_m3, MospairC => MC_m3, free => free_m3);  
+		Port Map (clk => clk, dir => dir_m3, enable => enable_m3, PWM_in => PWM_m3, Hall_sns => hallsense_m3, MospairA => MA_m3, MospairB => MB_m3, MospairC => MC_m3, free => free_m3);  
 		
 	PWM_I_M3 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m3, DutyCycle => PWMdut_m3, free => free_m3);
@@ -347,7 +353,7 @@ begin
 		Port Map (clk_1mhz => clk_1mhz, rst => rst, Hall_sns => hallsense_m4, speed => speed_m4, hall1 => H_A_m4, hall2 => H_B_m4, hall3 => H_C_m4);
 		
 	COM_I_M4 : COMMUTATION
-		Port Map (clk => clk, led1 => LED4, dir => dir_m4, enable => enable_m4, PWM_in => PWM_m4, Hall_sns => hallsense_m4, MospairA => MA_m4, MospairB => MB_m4, MospairC => MC_m4, free => free_m4);  
+		Port Map (clk => clk, dir => dir_m4, enable => enable_m4, PWM_in => PWM_m4, Hall_sns => hallsense_m4, MospairA => MA_m4, MospairB => MB_m4, MospairC => MC_m4, free => free_m4);  
 		
 	PWM_I_M4 : PWMGENERATOR
 		Port Map(rst => rst, pwm_clk => pwm_clk,  PWM => PWM_m4, DutyCycle => PWMdut_m4, free => free_m4);

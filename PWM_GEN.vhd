@@ -53,15 +53,19 @@ else
 	
 		IF(DutyCycle = 0) THEN
 			free <= '1';
+			PWM <= '0';
+			limited_dutycycle := 0;
 		ELSE
+			IF (DutyCycle > 1000) THEN
+				limited_dutycycle := 1000;
+			ELSE
+				limited_dutycycle := dutycycle;
+			END IF;
+		
 			free <= '0';
 		END IF;
 	
-		IF (DutyCycle > 1000) THEN
-			limited_dutycycle := 1000;
-		ELSE
-			limited_dutycycle := dutycycle;
-		END IF;
+
 	
 		if (cnt < limited_dutycycle) then -- Remain in a high state for when count is under dutycycle.
 			PWM <= '1';

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001102</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>51</Dynamic>
+            <Dynamic>LED2</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103694</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>Semantic error in &quot;LOCATE COMP &quot;LED2&quot; SITE &quot;51&quot; ;&quot;: </Dynamic>
+            <Dynamic>51</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -38,10 +52,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(53): </Dynamic>
+            <Dynamic>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(51): </Dynamic>
             <Dynamic>commutation</Dynamic>
             <Navigation>c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd</Navigation>
-            <Navigation>53</Navigation>
+            <Navigation>51</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>

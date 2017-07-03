@@ -50,10 +50,13 @@
         <Source name="OnBoard4000ZE.lpf" type="Logic Preference" type_short="LPF" excluded="TRUE">
             <Options/>
         </Source>
+        <Source name="print5Beun.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
         <Source name="testBench/testBench.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
-        <Source name="twoBoards.lpf" type="Logic Preference" type_short="LPF">
+        <Source name="twoBoards.lpf" type="Logic Preference" type_short="LPF" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="untitled.rva" type="Reveal Analyzer Project File" type_short="RVA" excluded="TRUE">

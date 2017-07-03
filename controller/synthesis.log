@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Jun 26 11:00:26 2017
+Fri Jun 30 13:54:14 2017
 
 
 Command Line:  synthesis -f Motorcontrollerfinal_controller_lattice.synproj -gui -msgset C:/Users/gebruiker/workspace/lattice/Motorcontroller-prototype/promote.xml 
@@ -89,7 +89,7 @@ INFO - synthesis: c:/users/gebruiker/workspace/lattice/motorcontroller-prototype
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(28): analyzing entity commutation. VHDL-1012
-INFO - synthesis: c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(53): analyzing architecture commutation. VHDL-1010
+INFO - synthesis: c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/commutation.vhd(51): analyzing architecture commutation. VHDL-1010
 unit SPI_loopback_Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/hallinput.vhd. VHDL-1481
 INFO - synthesis: c:/users/gebruiker/workspace/lattice/motorcontroller-prototype/hallinput.vhd(22): analyzing entity hall. VHDL-1012
@@ -244,28 +244,28 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Motorcontrollerfinal_controller.ngd.
 
 ################### Begin Area Report (SPI_loopback_Top)######################
-Number of register bits => 1394 of 4665 (29 % )
+Number of register bits => 1390 of 4665 (29 % )
 AND2 => 12
-CCU2D => 463
+CCU2D => 464
 FADD2B => 117
-FD1P3AX => 826
-FD1P3IX => 242
+FD1P3AX => 816
+FD1P3IX => 252
 FD1P3JX => 20
-FD1S3AX => 97
+FD1S3AX => 105
 FD1S3AY => 14
-FD1S3IX => 191
+FD1S3IX => 179
 FD1S3JX => 4
 GSR => 1
 IB => 15
 INV => 1
 L6MUX21 => 29
-LUT4 => 1157
+LUT4 => 1149
 MULT2 => 102
 ND2 => 5
 OB => 32
 OBZ => 1
 OSCH => 1
-PFUMX => 126
+PFUMX => 123
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -276,34 +276,34 @@ TSALL => 1
 Clock Nets
 Number of Clocks: 4
   Net : clk_N_875, loads : 480
-  Net : clkout_c, loads : 451
+  Net : clkout_c, loads : 447
   Net : clk_1mhz, loads : 416
   Net : pwm_clk, loads : 48
 Clock Enable Nets
 Number of Clock Enables: 37
 Top 10 highest fanout Clock Enables:
-  Net : SPI_I/clkout_c_enable_350, loads : 180
-  Net : SPI_I/clkout_c_enable_63, loads : 50
+  Net : SPI_I/clkout_c_enable_348, loads : 180
+  Net : SPI_I/clkout_c_enable_60, loads : 50
   Net : PID_I/clk_N_875_enable_391, loads : 48
-  Net : SPI_I/clkout_c_enable_109, loads : 46
+  Net : SPI_I/clkout_c_enable_107, loads : 46
   Net : PID_I/clk_N_875_enable_392, loads : 31
-  Net : PID_I/clk_N_875_enable_389, loads : 31
-  Net : HALL_I_M3/stable_counting, loads : 30
-  Net : PID_I/clk_N_875_enable_309, loads : 30
+  Net : PID_I/clk_N_875_enable_303, loads : 31
+  Net : PID_I/clk_N_875_enable_387, loads : 31
+  Net : PID_I/clk_N_875_enable_359, loads : 31
   Net : HALL_I_M4/stable_counting, loads : 30
-  Net : HALL_I_M1/stable_counting, loads : 30
+  Net : HALL_I_M2/stable_counting, loads : 30
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : SPI_I/clkout_c_enable_350, loads : 180
-  Net : SPI_I/CSlatched, loads : 107
-  Net : SPI_I/n22431, loads : 97
-  Net : SPI_I/n22432, loads : 96
-  Net : SPI_I/n21690, loads : 95
-  Net : PID_I/multIn2_8, loads : 91
-  Net : PID_I/n22440, loads : 71
-  Net : HALL_I_M2/stable_counting, loads : 60
-  Net : PID_I/clk_N_875_enable_333, loads : 60
-  Net : clkout_c_enable_341, loads : 59
+  Net : SPI_I/clkout_c_enable_348, loads : 180
+  Net : SPI_I/CSlatched, loads : 106
+  Net : SPI_I/n22207, loads : 98
+  Net : SPI_I/n22208, loads : 96
+  Net : SPI_I/n21480, loads : 95
+  Net : PID_I/multIn2_9, loads : 87
+  Net : PID_I/n22216, loads : 66
+  Net : HALL_I_M1/stable_counting, loads : 60
+  Net : HALL_I_M3/stable_counting, loads : 60
+  Net : clkout_c_enable_362, loads : 59
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -316,13 +316,13 @@ create_clock -period 1000.000000 -name  |             |             |
 clk3 [get_nets pwm_clk]                 |    1.000 MHz|   63.359 MHz|     4  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk2 [get_nets clk_1mhz]                |    1.000 MHz|   36.928 MHz|     6  
+clk2 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   12.536 MHz|    22  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk1 [get_nets \CLKDIV_I/pi_clk]        |    1.000 MHz|   12.310 MHz|    23  
+clk1 [get_nets clkout_c]                |    1.000 MHz|   41.946 MHz|     6  
                                         |             |             |
 create_clock -period 1000.000000 -name  |             |             |
-clk0 [get_nets clkout_c]                |    1.000 MHz|   41.946 MHz|     6  
+clk0 [get_nets clk_1mhz]                |    1.000 MHz|   36.928 MHz|     6  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -330,8 +330,8 @@ clk0 [get_nets clkout_c]                |    1.000 MHz|   41.946 MHz|     6
 All constraints were met.
 
 
-Peak Memory Usage: 124.637  MB
+Peak Memory Usage: 123.238  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 9.453  secs
+Elapsed CPU time for LSE flow : 9.078  secs
 --------------------------------------------------------------

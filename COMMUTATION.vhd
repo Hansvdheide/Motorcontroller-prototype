@@ -39,8 +39,6 @@ enable : IN std_logic;
 dir : IN std_logic; -- Indicates the direction of the motor, 1 for positive, 0 for negative
 free : IN std_logic;
 
-led1: OUT std_logic;
-
 clk : IN std_logic
 
 );
@@ -72,17 +70,15 @@ BEGIN
 			MospairA <= "00";
 			MospairB <= "00";
 			MospairC <= "00";
-		    led1 <= '1';
 			Hall_prev <= "000";
 			
 		ELSIF free /= '0' THEN
 			
-			MospairA <= "01";
-			MospairB <= "01";
-			MospairC <= "01";
+			MospairA <= "00";
+			MospairB <= "00";
+			MospairC <= "00";
 			
 		ELSE
-			led1 <= '0';
 
 			if (dir = '1') then -- Clockwise (positive direction)
 				case Hall_sns is -- NOTE: Gate driver low input is inverted, so invert all lowside here NOTE: PWM is only applied to the lowside, to prevent repeated charging/discharging of bootstrap cap
